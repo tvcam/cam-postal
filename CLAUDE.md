@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Rules
+
+- **Never include Co-Authored-By lines in git commits** - Do not add "Co-Authored-By: Claude" or any AI attribution in commit messages
+
 ## Project Overview
 
 Cambodia Postal Code Search - a Rails 8.1 web application for searching Cambodian postal codes (provinces, districts, communes) with bilingual support (English and Khmer).
