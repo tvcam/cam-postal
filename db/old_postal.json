@@ -904,7 +904,8 @@
           {
             "km": "ឃុំ ស្វាយចេក",
             "en": "Svay Check Commune",
-            "code": "0106          },
+            "code": "010604"
+          },
           {
             "km": "ឃុំ តាបែន",
             "en": "Ta Baen Commune",
@@ -922,7 +923,8 @@
           },
           {
             "km": "ឃុំ រលួស",
-            "en": "Roluos Commune"  "code": "010608"
+            "en": "Roluos Commune",
+            "code": "010608"
           }
         ]
       },
@@ -943,7 +945,7 @@
             "code": "010702"
           },
           {
-      "km": "ឃុំ អូរស្រឡៅ",
+            "km": "ឃុំ អូរស្រឡៅ",
             "en": "Ou Sralau Commune",
             "code": "010703"
           },
@@ -959,7 +961,8 @@
           },
           {
             "km": "ឃុំ តាគង់",
-            "en": "Ta Kongg Comm    "code": "010706"
+            "en": "Ta Kongg Commune",
+            "code": "010706"
           }
         ]
       },
@@ -976,7 +979,7 @@
           },
           {
             "km": "សង្កាត់ កោះពងសត្វ",
-            "en": Pong Satv",
+            "en": "Sangkat Kaoh Pong Satv",
             "code": "010802"
           },
           {
@@ -1011,7 +1014,7 @@
         "no": "1.9",
         "location_kh": "ក្រុងប៉ោយប៉ែត",
         "location_en": "Paoy Paet Minicipality",
-     des": [
+        "codes": [
           {
             "km": "សង្កាត់ ប៉ោយប៉ែត",
             "en": "Sangkat Paoy Paet",
@@ -1028,7 +1031,10 @@
             "code": "010903"
           }
         ]
-       {
+      }
+    ]
+  },
+  {
     "id": 2,
     "name": "ខេត្តបាត់ដំបង",
     "districts": [
@@ -1045,7 +1051,7 @@
           },
           {
             "km": "ឃុំ កន្ទឺ១",
- ": "Kantueu I Commune",
+            "en": "Kantueu I Commune",
             "code": "020101"
           },
           {
@@ -1063,7 +1069,8 @@
             "en": "Chheu Teal Commune",
             "code": "020104"
           },
-          {     "km": "ឃុំ ចែងមានជ័យ",
+          {
+            "km": "ឃុំ ចែងមានជ័យ",
             "en": "Chaeng Mean Chey Commune",
             "code": "020105"
           },
@@ -1079,7 +1086,7 @@
           },
           {
             "km": "ឃុំ តាគ្រាម",
-            "en": a Kream Commune",
+            "en": "Ta Kream Commune",
             "code": "020108"
           }
         ]
@@ -1098,7 +1105,8 @@
           {
             "km": "ឃុំ តាម៉ឺន",
             "en": "Ta Meun Commune",
-            "code": "0202      },
+            "code": "020202"
+          },
           {
             "km": "ឃុំ អូរតាគី",
             "en": "Ou Ta Ki Commune",
@@ -1116,7 +1124,7 @@
           },
           {
             "km": "ឃុំ ជ្រោយស្តៅ",
-          "en": "Chrouy Sdau Commune",
+            "en": "Chrouy Sdau Commune",
             "code": "020206"
           },
           {
@@ -1132,7 +1140,7 @@
           {
             "km": "ឃុំ បន្សាយត្រែង",
             "en": "Bansay Traeng Commune",
-            "020209"
+            "code": "020209"
           },
           {
             "km": "ឃុំ រូងជ្រៃ",
@@ -1153,7 +1161,7 @@
             "code": "020301"
           },
           {
-            "km":  ខ្នាចរមាស",
+            "km": "ឃុំ ខ្នាចរមាស",
             "en": "Khnach Romeas Commune",
             "code": "020302"
           },
@@ -1169,7 +1177,7 @@
           },
           {
             "km": "ឃុំ អំពិលប្រាំដើម",
-            "en": "Ampil PraCommune",
+            "en": "Ampil Pram Daeum Commune",
             "code": "020305"
           },
           {
@@ -1186,7 +1194,8 @@
             "km": "ឃុំ បឹងប្រាំ",
             "en": "Boeung Pram Commune",
             "code": "020308"
-            ]
+          }
+        ]
       },
       {
         "id": 251,
@@ -1204,6 +1213,7 @@
             "en": "Samraong Knong Commune",
             "code": "020402"
           },
+          {
             "km": "ឃុំ ព្រែកខ្ពប",
             "en": "Preak Khpob Commune",
             "code": "020403"
@@ -1220,7 +1230,7 @@
           },
           {
             "km": "ឃុំ ព្រៃចាស់",
-           Prey Chas Commune",
+            "en": "Prey Chas Commune",
             "code": "020406"
           },
           {
@@ -1239,7 +1249,7 @@
         "id": 260,
         "no": "2.5",
         "location_kh": "ស្រុកមោងឬស្សី",
-     n": "Moung Ruessei District",
+        "location_en": "Moung Ruessei District",
         "codes": [
           {
             "km": "ឃុំ មោង",
@@ -1257,7 +1267,8 @@
             "code": "020503"
           },
           {
-            "km": "ឃុំ ជ្រá "en": "Chrey Commune",
+            "km": "ឃុំ ជ្រៃ",
+            "en": "Chrey Commune",
             "code": "020504"
           },
           {
@@ -1275,7 +1286,8 @@
             "en": "Robas Mongkol Commune",
             "code": "020507"
           }
-  },
+        ]
+      },
       {
         "id": 269,
         "no": "2.6",
@@ -1293,7 +1305,7 @@
             "code": "020602"
           },
           {
-       ឃុំ មុខរាហ៍",
+            "km": "ឃុំ មុខរាហ៍",
             "en": "Mukh Reah Commune",
             "code": "020603"
           },
@@ -1312,7 +1324,7 @@
       {
         "id": 276,
         "no": "2.7",
-        "location_kh": "ស្á្ឌល",
+        "location_kh": "ស្រុករតនមណ្ឌល",
         "location_en": "Rotanak Mondol District",
         "codes": [
           {
@@ -1329,7 +1341,7 @@
             "km": "ឃុំ ផ្លូវមាស",
             "en": "Phlov Meas Commune",
             "code": "020703"
-      },
+          },
           {
             "km": "ឃុំ ត្រែង",
             "en": "Traeng Commune",
@@ -1366,7 +1378,7 @@
           {
             "km": "ឃុំ រកា",
             "en": "Roka Commune",
-            "code": "0804"
+            "code": "020804"
           },
           {
             "km": "ឃុំ កំពង់ព្រះ",
@@ -1384,7 +1396,7 @@
             "code": "020807"
           },
           {
-            "kmអូរដំបង១",
+            "km": "ឃុំ អូរដំបង១",
             "en": "Ou Dambang I Commune",
             "code": "020808"
           },
@@ -1457,7 +1469,7 @@
           {
             "km": "ឃុំ អង្គរបាន",
             "en": "Angkor Ban Commune",
-          "code": "021002"
+            "code": "021002"
           },
           {
             "km": "ឃុំ តាស្តា",
@@ -1475,7 +1487,7 @@
             "code": "021005"
           },
           {
-          "km": "ឃុំ ជ្រៃសីមា",
+            "km": "ឃុំ ជ្រៃសីមា",
             "en": "Chrey Seima Commune",
             "code": "021006"
           }
@@ -1493,7 +1505,8 @@
             "code": "021101"
           },
           {
-            "km": "ឃុំ បឹងរាំ    "en": "Boeng Reang Commune",
+            "km": "ឃុំ បឹងរាំង",
+            "en": "Boeng Reang Commune",
             "code": "021102"
           },
           {
@@ -1530,7 +1543,8 @@
             "code": "021201"
           },
           {
-            "km": "ឃុំ គាស់ក្á"en": "Kaos Krala Commune",
+            "km": "ឃុំ គាស់ក្រឡ",
+            "en": "Kaos Krala Commune",
             "code": "021202"
           },
           {
@@ -1549,7 +1563,7 @@
             "code": "021205"
           },
           {
-            m": "ឃុំ ឆ្នាល់មាន់",
+            "km": "ឃុំ ឆ្នាល់មាន់",
             "en": "Chhnal Moan Commune",
             "code": "021206"
           }
@@ -1567,7 +1581,7 @@
             "code": "021301"
           },
           {
-            "រចិន្តា",
+            "km": "ឃុំ ពេជ្រចិន្តា",
             "en": "Pech Chenda Commune",
             "code": "021302"
           },
@@ -1584,7 +1598,7 @@
           {
             "km": "ឃុំ អូររំដួល",
             "en": "Ou Rumduol Commune",
-   ": "021305"
+            "code": "021305"
           }
         ]
       },
@@ -1617,7 +1631,7 @@
           {
             "km": "សង្កាត់ ស្លាកែត",
             "en": "Sangkat Sla Ket",
-            "": "021405"
+            "code": "021405"
           },
           {
             "km": "សង្កាត់ ក្តុលដូនទាវ",
@@ -1634,6 +1648,7 @@
             "en": "Sangkat Wat Kor",
             "code": "021408"
           },
+          {
             "km": "សង្កាត់ អូរចារ",
             "en": "Sangkat Ou Char",
             "code": "021409"
@@ -1654,7 +1669,7 @@
       {
         "id": 349,
         "no": "3.1",
-        "location_kh": "ស្រុកបាá",
+        "location_kh": "ស្រុកបាធាយ",
         "location_en": "Batheay District",
         "codes": [
           {
@@ -1673,7 +1688,7 @@
             "code": "030103"
           },
           {
-"km": " ឃុំ ជើងព្រៃ",
+            "km": " ឃុំ ជើងព្រៃ",
             "en": "Cheung Prey Commune",
             "code": "030104"
           },
@@ -1690,7 +1705,7 @@
           {
             "km": "ឃុំ សំបូរ",
             "en": "Sambour Commune",
-   ": "030107"
+            "code": "030107"
           },
           {
             "km": "ឃុំ សណ្ដែក",
@@ -1708,7 +1723,7 @@
             "code": "030110"
           },
           {
-            "kរប់",
+            "km": "ឃុំ ត្រប់",
             "en": "Trab Commune",
             "code": "030111"
           },
@@ -1727,7 +1742,7 @@
         "codes": [
           {
             "km": "ឃុំ បុសខ្នុរ",
-            "en":or  Commune",
+            "en": "Bos Khnor  Commune",
             "code": "030201"
           },
           {
@@ -1746,7 +1761,7 @@
             "code": "030204"
           },
           {
-    : "ឃុំ ស្ពឺ",
+            "km": "ឃុំ ស្ពឺ",
             "en": "Spueu Commune",
             "code": "030205"
           },
@@ -1763,7 +1778,7 @@
           {
             "km": "ឃុំ តាប្រុក",
             "en": "Ta Prok Commune",
-            "co"
+            "code": "030208"
           }
         ]
       },
@@ -1782,7 +1797,7 @@
             "km": " ឃុំ គោកររៀង",
             "en": "Kouk Rovieng  Commune",
             "code": "030302"
-  },
+          },
           {
             "km": " ឃុំ ផ្ដៅជុំ",
             "en": "Pdau Chum Commune",
@@ -1799,7 +1814,7 @@
             "code": "030305"
           },
           {
-            "km": " ឃុំâជ័យ",
+            "km": " ឃុំ​ សំពងជ័យ",
             "en": "Sampong chey Commune",
             "code": "030306"
           },
@@ -1816,7 +1831,7 @@
           {
             "km": " ឃុំ ស្រម៉រ",
             "en": "Sramar Commune",
-      "030309"
+            "code": "030309"
           },
           {
             "km": " ឃុំ ត្រពាំងគរ",
@@ -1834,7 +1849,7 @@
           {
             "km": "សង្កាត់​ បឺងកុក",
             "en": "Sangkat Boeng Kok",
-           "code": "030401"
+            "code": "030401"
           },
           {
             "km": "សង្កាត់ កំពង់ចាម",
@@ -1850,7 +1865,8 @@
             "km": "សង្កាត់ វាលវង់",
             "en": "Sangkat veal vong",
             "code": "030404"
-           ]
+          }
+        ]
       },
       {
         "id": 391,
@@ -1869,7 +1885,7 @@
             "code": "030502"
           },
           {
-            "kmុំ​ កៀនជ្រៃ",
+            "km": "ឃុំ​ កៀនជ្រៃ",
             "en": "Kien Chrey Commune",
             "code": "030503"
           },
@@ -1886,7 +1902,7 @@
           {
             "km": "ឃុំ​ កោះរកា",
             "en": "Kaoh Roka  Commune",
-          "code": "030506"
+            "code": "030506"
           },
           {
             "km": "ឃុំកោះសំរោង",
@@ -1921,7 +1937,7 @@
           {
             "km": "ឃុំ ស្រក",
             "en": "Srak  Commune",
-            "code":13"
+            "code": "030513"
           },
           {
             "km": "ឃុំ ទ្រាន",
@@ -1942,7 +1958,7 @@
         "location_en": "Kang Meas District",
         "codes": [
           {
-        "ឃុំ អង្គរបាន",
+            "km": "ឃុំ អង្គរបាន",
             "en": "Angkor Ban  Commune",
             "code": "030601"
           },
@@ -1958,7 +1974,7 @@
           },
           {
             "km": "ឃុំ ពាមជីកង",
-            "en": "Peam Chi Kang Comune",
+            "en": "Peam Chi Kang Commune",
             "code": "030604"
           },
           {
@@ -1976,7 +1992,8 @@
             "en": "Reay Pay Commune",
             "code": "030607"
           },
-                 "km": "ឃុំ​ រកាអារ",
+          {
+            "km": "ឃុំ​ រកាអារ",
             "en": "Roka Ar Commune",
             "code": "030608"
           },
@@ -1993,7 +2010,7 @@
           {
             "km": "ឃុំ សូរគង",
             "en": "Sour Kong Commune",
-      code": "030611"
+            "code": "030611"
           }
         ]
       },
@@ -2011,7 +2028,7 @@
           {
             "km": " ឃុំ​​ កោះសូទិន",
             "en": "Kaoh Soutin Commune",
-          "code": "030702"
+            "code": "030702"
           },
           {
             "km": " ឃុំ​​ ល្វេ",
@@ -2029,7 +2046,7 @@
             "code": "030705"
           },
           {
-            ឃុំ​​ ពាមប្រធ្នោះ",
+            "km": " ឃុំ​​ ពាមប្រធ្នោះ",
             "en": "Peam Prathnuoh Commune",
             "code": "030706"
           },
@@ -2047,7 +2064,7 @@
       },
       {
         "id": 431,
-        "no": 
+        "no": "3.8",
         "location_kh": "ស្រុកព្រៃឈរ",
         "location_en": "Prey Chhor District",
         "codes": [
@@ -2063,7 +2080,7 @@
           },
           {
             "km": "ឃុំជ្រែវៀន",
-            "en": "Chrey Vien Comne ",
+            "en": "Chrey Vien Commune ",
             "code": "030803"
           },
           {
@@ -2082,7 +2099,8 @@
             "code": "030806"
           },
           {
-            "km": "ឃុំ ល្á  "en": "Lvea Commune ",
+            "km": "ឃុំ ល្វា",
+            "en": "Lvea Commune ",
             "code": "030807"
           },
           {
@@ -2101,7 +2119,7 @@
             "code": "030810"
           },
           {
-   "km": "ឃុំ សំរោង",
+            "km": "ឃុំ សំរោង",
             "en": "Samraong Commune ",
             "code": "030811"
           },
@@ -2117,7 +2135,8 @@
           },
           {
             "km": "ឃុំ តុងរ៉ុង",
-            "en": "Tong Rong Commune ", "code": "030814"
+            "en": "Tong Rong Commune ",
+            "code": "030814"
           },
           {
             "km": " ត្រពាំងព្រះ",
@@ -2135,7 +2154,7 @@
           {
             "km": "ឃុំ បារាយណ៏",
             "en": "Baray Commune ",
-            "code": 
+            "code": "030301"
           },
           {
             "km": "ឃុំ ជីបាល",
@@ -2153,7 +2172,8 @@
             "code": "038504"
           },
           {
-            "km": "ឃុំ មានជ័áen": "Mean Chey Commune ",
+            "km": "ឃុំ មានជ័យ",
+            "en": "Mean Chey Commune ",
             "code": "037905"
           },
           {
@@ -2169,7 +2189,7 @@
           {
             "km": "ឃុំ ព្រែកដំបូក",
             "en": "Preaek Dambouk Commune ",
-         6108"
+            "code": "036108"
           },
           {
             "km": "ឃុំ ព្រែកពោធិ",
@@ -2186,7 +2206,8 @@
             "en": "Ruessei Srok   Commune ",
             "code": "034311"
           },
-          {m": "ឃុំ ស្វាយពោធិ",
+          {
+            "km": "ឃុំ ស្វាយពោធិ",
             "en": "Svay Pou   Commune ",
             "code": "033712"
           },
@@ -2204,7 +2225,7 @@
       },
       {
         "id": 464,
-   "no": "3.10",
+        "no": "3.10",
         "location_kh": "ស្រុកស្ទឹងត្រង់",
         "location_en": "Stueng Trang District",
         "codes": [
@@ -2219,7 +2240,7 @@
             "code": "031002"
           },
           {
-            "km"ពបតាងួន",
+            "km": "​ឃុំ​​ ខ្ពបតាងួន",
             "en": "Khpob Ta Nguon Commune ",
             "code": "031003"
           },
@@ -2234,7 +2255,8 @@
             "code": "031005"
           },
           {
-            "km": "​ឃុំ​​ ពាមកោះស្នា      "en": "Peam Kaoh Snar Commune ",
+            "km": "​ឃុំ​​ ពាមកោះស្នា",
+            "en": "Peam Kaoh Snar Commune ",
             "code": "031006"
           },
           {
@@ -2249,7 +2271,7 @@
           },
           {
             "km": "​ឃុំ​​ ព្រែកកក់",
-            "en": "Pune ",
+            "en": "Preah Kak Commune ",
             "code": "031009"
           },
           {
@@ -2265,7 +2287,7 @@
           {
             "km": "​ឃុំ​​ ទួលសំបួរ",
             "en": "Tuol Sambuor Commune ",
-         "031012"
+            "code": "031012"
           }
         ]
       }
@@ -2287,7 +2309,7 @@
             "code": "040101"
           },
           {
-            "km": "ឃá ជៀប",
+            "km": "ឃុំ ជៀប",
             "en": "Chieb Commune",
             "code": "040102"
           },
@@ -2304,7 +2326,7 @@
           {
             "km": "ឃុំ ខ្លុងពពក",
             "en": "Khlong Popok Commune",
-            "040105"
+            "code": "040105"
           },
           {
             "km": "ឃុំ ក្រាំងស្គារ",
@@ -2322,7 +2344,7 @@
             "code": "040108"
           },
           {
-      ុំ ក្ដុលសែនជ័យ",
+            "km": "ឃុំ ក្ដុលសែនជ័យ",
             "en": "Kdol Saen Chey Commune",
             "code": "040109"
           }
@@ -2356,7 +2378,8 @@
           },
           {
             "km": "ឃុំ លង្វែក",
-            "en": "Longveak Commune"  "code": "040205"
+            "en": "Longveak Commune",
+            "code": "040205"
           },
           {
             "km": "ឃុំ អូរឫស្សី",
@@ -2394,7 +2417,7 @@
           {
             "km": "ឃុំ ជលសា",
             "en": "Chol Sar  Commune",
-            "040301"
+            "code": "040301"
           },
           {
             "km": "ឃុំ កោះថ្កូវ",
@@ -2412,7 +2435,7 @@
             "code": "040304"
           },
           {
-            "km": "á្រៃគ្រី",
+            "km": "ឃុំ ព្រៃគ្រី",
             "en": "Prey Kri Commune",
             "code": "040305"
           }
@@ -2430,7 +2453,7 @@
             "code": "040401"
           },
           {
-            "km": "ឃុំ ឆ្នូកទ,
+            "km": "ឃុំ ឆ្នូកទ្រូ",
             "en": "Chhnok Tru Commune",
             "code": "040402"
           },
@@ -2447,7 +2470,8 @@
           {
             "km": "ឃុំ កំពង់ព្រះគគីរ",
             "en": "Kampong Pres Kokir Commune",
-            "code": "040405",
+            "code": "040405"
+          },
           {
             "km": "ឃុំ​ មេលំ",
             "en": "Melum Commune",
@@ -2465,7 +2489,7 @@
           },
           {
             "km": "ឃុំ ពពេល",
-            "en": "PoPel Co,
+            "en": "PoPel Commune",
             "code": "040409"
           },
           {
@@ -2501,7 +2525,7 @@
             "en": "Krang Lvea Commune",
             "code": "040503"
           },
-    {
+          {
             "km": "ឃុំ ពាម",
             "en": "Peam Commune",
             "code": "040504"
@@ -2519,7 +2543,7 @@
           {
             "km": "ឃុំ ស្វាយជុក",
             "en": "Svay Chuk Commune",
-        "code": "040507"
+            "code": "040507"
           },
           {
             "km": "ឃុំ ត្បែងខ្ពស់",
@@ -2537,7 +2561,8 @@
         "id": 547,
         "no": "4.6",
         "location_kh": "ស្រុកកំពង់លែង",
-        "location_en": "Kampong Leang Distri     "codes": [
+        "location_en": "Kampong Leang District",
+        "codes": [
           {
             "km": "ឃុំ ច្រណូក",
             "en": "Chranouk Commune",
@@ -2555,7 +2580,7 @@
           },
           {
             "km": "ឃុំ ផ្លូវទូក",
-          "Phlov Tuk Commune",
+            "en": "Phlov Tuk Commune",
             "code": "040604"
           },
           {
@@ -2573,7 +2598,8 @@
             "en": "Samraong Saen Commune",
             "code": "040607"
           },
-          "km": "ឃុំ ស្វាយរំពារ",
+          {
+            "km": "ឃុំ ស្វាយរំពារ",
             "en": "Svay Rumpean Commune",
             "code": "040608"
           },
@@ -2591,7 +2617,7 @@
         "location_en": "Rolea B'ier District",
         "codes": [
           {
-            "km": "ឃុនាយ",
+            "km": "ឃុំ អណ្ដូងស្នាយ",
             "en": "Andoung Snay Commune",
             "code": "040701"
           },
@@ -2607,7 +2633,8 @@
           },
           {
             "km": "ឃុំ ជ្រៃបាក់",
-            "en": "Chrey Bak Commu   "code": "040704"
+            "en": "Chrey Bak Commune",
+            "code": "040704"
           },
           {
             "km": "ឃុំ គោកបន្ទាយ",
@@ -2625,7 +2652,7 @@
             "code": "040707"
           },
           {
-            "km": "ឃុប្រស្នឹប",
+            "km": "ឃុំ ប្រស្នឹប",
             "en": "Prasnoeb Commune",
             "code": "040708"
           },
@@ -2660,7 +2687,7 @@
         "id": 573,
         "no": "4.8",
         "location_kh": "ក្រុងកំពង់ឆ្នាំង",
-        "location_en": "Kampongicipality",
+        "location_en": "Kampong chhnang Municipality",
         "codes": [
           {
             "km": "សង្កាត់ ផ្សារឆ្នាំង",
@@ -2697,7 +2724,7 @@
         "location_en": "Samraong tong District",
         "codes": [
           {
-            "km": "áចក",
+            "km": "ឃុំ រលាំងចក",
             "en": "Roleang Chak Commune",
             "code": "050101"
           },
@@ -2713,7 +2740,8 @@
           },
           {
             "km": "ឃុំ ក្រាំងអំពិល",
-            "en": "Krang Amoil Commune",code": "050104"
+            "en": "Krang Amoil Commune",
+            "code": "050104"
           },
           {
             "km": "ឃុំ ព្នាយ",
@@ -2731,7 +2759,7 @@
             "code": "050107"
           },
           {
-            "km": "ឃុសំបូរ",
+            "km": "ឃុំ សំបូរ",
             "en": "Sambour Commune",
             "code": "050108"
           },
@@ -2749,7 +2777,7 @@
             "km": "ឃុំ តាំងក្រូច",
             "en": "Tang Krouch Commune",
             "code": "050111"
-        },
+          },
           {
             "km": "ឃុំ ធម្មតាអរ",
             "en": "Thummoda Ar Commune",
@@ -2766,7 +2794,8 @@
             "code": "050114"
           },
           {
-            "km": "ឃុំ á         "en": "Voa Sar Commune",
+            "km": "ឃុំ វល្លិសរ",
+            "en": "Voa Sar Commune",
             "code": "050115"
           }
         ]
@@ -2784,7 +2813,7 @@
           },
           {
             "km": "ឃុំ កាត់ភ្លុក",
-            "enKat Phluk Commune",
+            "en": "Kat Phluk Commune",
             "code": "050202"
           },
           {
@@ -2803,7 +2832,7 @@
             "code": "050205"
           },
           {
-  "km": "ឃុំ ផុង",
+            "km": "ឃុំ ផុង",
             "en": "Phong Commune",
             "code": "050206"
           },
@@ -2819,7 +2848,7 @@
           },
           {
             "km": "ឃុំ ពោធិ៍ម្រាល",
-       u Mreal Commune",
+            "en": "Pou Mreal Commune",
             "code": "050209"
           },
           {
@@ -2837,7 +2866,7 @@
             "en": "Tuol Sala Commune",
             "code": "050212"
           },
-        {
+          {
             "km": "ឃុំ កក់",
             "en": "Kak Commune",
             "code": "050213"
@@ -2857,7 +2886,7 @@
       {
         "id": 615,
         "no": "5.3",
-        "location_khកគងពីសី",
+        "location_kh": "ស្រុកគងពីសី",
         "location_en": "Kong Pisei District",
         "codes": [
           {
@@ -2873,7 +2902,8 @@
           {
             "km": "ឃុំ មហាឬស្សី",
             "en": "Moha Ruessei Commune",
-            "code": "      },
+            "code": "050303"
+          },
           {
             "km": "ឃុំ ពេជ្រមុន្នី",
             "en": "pechr Muni Commune",
@@ -2890,7 +2920,8 @@
             "code": "050306"
           },
           {
-            "km": "ឃá          "en": "Prey Vihear Commune",
+            "km": "ឃុំ ព្រៃវិហារ",
+            "en": "Prey Vihear Commune",
             "code": "050307"
           },
           {
@@ -2908,7 +2939,7 @@
             "en": "Snam Krapeu Commune",
             "code": "050310"
           },
-  {
+          {
             "km": "ឃុំ ស្រង់",
             "en": "Srang Commune",
             "code": "050311"
@@ -2928,7 +2959,8 @@
       {
         "id": 630,
         "no": "5.4",
-        "location_kh": "ស្រុá   "location_en": "Odongk District",
+        "location_kh": "ស្រុកឧដុង្គ",
+        "location_en": "Odongk District",
         "codes": [
           {
             "km": "ឃុំ ចាន់សែន",
@@ -2944,7 +2976,8 @@
             "km": "ឃុំ ជំពូព្រឹក្ស",
             "en": "Chumpu Proeks Commune",
             "code": "050403"
-          },       {
+          },
+          {
             "km": "ឃុំ ក្សេមក្សាន្ត",
             "en": "khsem Khsant Commune",
             "code": "050404"
@@ -2960,7 +2993,8 @@
             "code": "050406"
           },
           {
-            "km": "ឃុំ ព្រះá          "en": "Preah Srae Commune",
+            "km": "ឃុំ ព្រះស្រែ",
+            "en": "Preah Srae Commune",
             "code": "050407"
           },
           {
@@ -2976,7 +3010,7 @@
           {
             "km": "ឃុំ វាលពង់",
             "en": "Veal pong Commune",
-            "code": "0410"
+            "code": "050410"
           },
           {
             "km": "ឃុំ វាលចាស់",
@@ -2994,7 +3028,7 @@
             "code": "050413"
           },
           {
-           ពាំងល្វា",
+            "km": "ឃុំ ពាំងល្វា",
             "en": "Peang Lvea Commune",
             "code": "050414"
           },
@@ -3012,7 +3046,8 @@
         "location_en": "Phnum Sruoch District",
         "codes": [
           {
-            "km": "ឃុំ ចំបក  "en": "Chambak Commune",
+            "km": "ឃុំ ចំបក់",
+            "en": "Chambak Commune",
             "code": "050501"
           },
           {
@@ -3029,7 +3064,7 @@
             "km": "ឃុំ គិរីវន្ដ",
             "en": "Kiri Voan Commune",
             "code": "050504"
-        },
+          },
           {
             "km": "ឃុំ ក្រាំងដីវ៉ាយ",
             "en": "Krang Dei Vay Commune",
@@ -3046,7 +3081,8 @@
             "code": "050507"
           },
           {
-            "km": "ឃុំ ព្រៃរំដá            "en": "Prey Rumduol Commune",
+            "km": "ឃុំ ព្រៃរំដួល",
+            "en": "Prey Rumduol Commune",
             "code": "050508"
           },
           {
@@ -3062,7 +3098,7 @@
           {
             "km": "ឃុំ តាំងស្យា",
             "en": "Tang Sya Commune",
-            "co "050511"
+            "code": "050511"
           },
           {
             "km": "ឃុំ ត្រែងត្រយឹង",
@@ -3099,7 +3135,7 @@
           },
           {
             "km": "ឃុំ ទ័ពមាន",
-          "en": "Toap Mean Commune",
+            "en": "Toap Mean Commune",
             "code": "050605"
           },
           {
@@ -3118,7 +3154,7 @@
         "id": 670,
         "no": "5.7",
         "location_kh": "ស្រុកឳរ៉ាល់",
-        "location_en": "Aora",
+        "location_en": "Aoral District",
         "codes": [
           {
             "km": "ឃុំ ហោងសំណំ",
@@ -3136,7 +3172,7 @@
             "code": "050703"
           },
           {
-    m": "ឃុំ សង្កែសាទប",
+            "km": "ឃុំ សង្កែសាទប",
             "en": "Sangkae Satob Commune",
             "code": "050704"
           },
@@ -3152,7 +3188,7 @@
           },
           {
             "km": "សង្កាត់ កណ្ដោលដុំ",
-        "en": "sangkat Kandol Dom",
+            "en": "sangkat Kandol Dom",
             "code": "050802"
           },
           {
@@ -3206,7 +3242,8 @@
           },
           {
             "km": "ឃុំចើងដើង",
-            "en": "Chaeung Daeung Commune"      "code": "060105"
+            "en": "Chaeung Daeung Commune",
+            "code": "060105"
           },
           {
             "km": "ឃុំ ច្រនាង",
@@ -3224,7 +3261,8 @@
             "code": "060108"
           },
           {
-            "km": "á         "en": "Chrolong  Commune",
+            "km": "ឃុំ ជ្រលង",
+            "en": "Chrolong  Commune",
             "code": "060109"
           },
           {
@@ -3259,7 +3297,7 @@
           },
           {
             "km": "ឃុំ ស្វាយភ្លើង",
-            "en": "Svng Commune",
+            "en": "Svay Phleung Commune",
             "code": "060116"
           },
           {
@@ -3278,7 +3316,7 @@
         "id": 706,
         "no": "6.2",
         "location_kh": "ស្រុកកំពង់ស្វាយ",
-        "location_en": "Kampong SDistrict",
+        "location_en": "Kampong Svay District",
         "codes": [
           {
             "km": "ឃុំ​ ជ័យ",
@@ -3296,7 +3334,7 @@
             "code": "060203"
           },
           {
-            "km": "ឃុំ កស្វាយ",
+            "km": "ឃុំ កំពង់ស្វាយ",
             "en": "Kampong Svay Commune",
             "code": "060204"
           },
@@ -3313,7 +3351,7 @@
           {
             "km": "ឃុំ សាន់គ",
             "en": "San Kor Commune",
-            "code": 207"
+            "code": "060207"
           },
           {
             "km": "ឃុំ ត្បែង",
@@ -3331,7 +3369,7 @@
             "code": "060210"
           },
           {
-            "km": "ឃុំ ,
+            "km": "ឃុំ ព្រៃគុយ",
             "en": "Prey Kuy Commune",
             "code": "060211"
           }
@@ -3350,7 +3388,7 @@
           },
           {
             "km": "ឃុំ ក្រយា",
-            "en": "K Commune",
+            "en": "Kraya Commune",
             "code": "060302"
           },
           {
@@ -3387,7 +3425,7 @@
         "location_en": "Prasat Sambour District",
         "codes": [
           {
-       ឃុំ ឈូក",
+            "km": "ឃុំ ឈូក",
             "en": "Chhouk commune ",
             "code": "060401"
           },
@@ -3406,6 +3444,7 @@
             "en": "Sroeung commune",
             "code": "060404"
           },
+          {
             "km": "ឃុំ តាំងក្រសៅ",
             "en": "Taing Krasav commune ",
             "code": "060405"
@@ -3424,7 +3463,7 @@
             "code": "060501"
           },
           {
-            "km": "ឃáកាំបិត",
+            "km": "ឃុំ ដងកាំបិត",
             "en": "Dang Kambet commune ",
             "code": "060502"
           },
@@ -3441,7 +3480,7 @@
           {
             "km": "ឃុំ មានជ័យ",
             "en": "Mean Chey commune ",
-            "co060505"
+            "code": "060505"
           },
           {
             "km": "ឃុំ ងន",
@@ -3460,7 +3499,7 @@
           },
           {
             "km": "ឃុំ ទំរីង",
-            "en""Tumring commune ",
+            "en": "Tumring commune ",
             "code": "060509"
           }
         ]
@@ -3479,7 +3518,7 @@
           {
             "km": "ឃុំ ជ្រាប់",
             "en": "Chroap commune ",
-            2"
+            "code": "060602"
           },
           {
             "km": "ឃុំ​ កំពង់ថ្ម",
@@ -3498,7 +3537,7 @@
           },
           {
             "km": "ឃុំ ព្នៅ",
-            "enPhneou commune",
+            "en": "Phneou commune",
             "code": "060606"
           },
           {
@@ -3517,7 +3556,7 @@
             "code": "060609"
           },
           {
-    "ឃុំ ត្បូងក្រពើ",
+            "km": "ឃុំ ត្បូងក្រពើ",
             "en": "Tbaung Krapeu commune",
             "code": "060610"
           }
@@ -3535,7 +3574,8 @@
             "code": "060701"
           },
           {
-            "km": "ឃá            "en": "Chamna Kraom Commune",
+            "km": "ឃុំ ចំណាក្រោម",
+            "en": "Chamna Kraom Commune",
             "code": "060702"
           },
           {
@@ -3550,7 +3590,7 @@
           },
           {
             "km": "ឃុំ កំពង់ចិនត្បូង",
-            "en": "Kampong Chene",
+            "en": "Kampong Chen Tboung Commune",
             "code": "060705"
           },
           {
@@ -3569,7 +3609,8 @@
             "code": "060708"
           },
           {
-            "km": "ឃុំ ប        "en": "Pralay Commune",
+            "km": "ឃុំ ប្រឡាយ",
+            "en": "Pralay Commune",
             "code": "060709"
           },
           {
@@ -3586,7 +3627,8 @@
             "km": "ឃុំ សំព្រោជ",
             "en": "Samprouch Commune",
             "code": "060712"
-           {
+          },
+          {
             "km": "ឃុំ ទ្រា",
             "en": "Trea Commune",
             "code": "060713"
@@ -3604,7 +3646,8 @@
             "en": "Sangkat Damrei Choan Khla",
             "code": "060801"
           },
-          "km": "សង្កាត់ កំពង់ធំ",
+          {
+            "km": "សង្កាត់ កំពង់ធំ",
             "en": "Sangkat Kampong Thum",
             "code": "060802"
           },
@@ -3619,7 +3662,7 @@
             "code": "060804"
           },
           {
-            "km": "សáបៅ",
+            "km": "សង្កាត់ កំពង់ក្របៅ",
             "en": "Sangkat Kampong Kraoau",
             "code": "060805"
           },
@@ -3635,7 +3678,7 @@
           },
           {
             "km": "សង្កាត់ ស្រយ៉ូវ",
-      "en": "Sangkat Srayov",
+            "en": "Sangkat Srayov",
             "code": "060808"
           }
         ]
@@ -3657,7 +3700,7 @@
             "en": "Baek Chan Commune",
             "code": "080101"
           },
-      {
+          {
             "km": "ឃុំ ឆក់ឈើនាង",
             "en": "Chhak Chhe Neang Commune",
             "code": "080102"
@@ -3673,7 +3716,7 @@
             "code": "080104"
           },
           {
-            "km": "ឃុá¶ច",
+            "km": "ឃុំ លំហាច",
             "en": "Lumhach Commune",
             "code": "080105"
           },
@@ -3692,7 +3735,8 @@
             "en": "Prey Puoch Commune",
             "code": "080108"
           },
-                  "km": "ឃុំ សំរោងលើ",
+          {
+            "km": "ឃុំ សំរោងលើ",
             "en": "Samraong Lu Commune",
             "code": "080109"
           },
@@ -3710,7 +3754,7 @@
         "location_en": "Khsach Kandal District",
         "codes": [
           {
-      "ឃុំ បាក់ដាវ",
+            "km": "ឃុំ បាក់ដាវ",
             "en": "Bak Dav Commune",
             "code": "080201"
           },
@@ -3726,7 +3770,7 @@
           },
           {
             "km": "ឃុំ កោះចូរ៉ាម",
-            "en": "Kaoh ChouCommune",
+            "en": "Kaoh Chouram Commune",
             "code": "080204"
           },
           {
@@ -3742,7 +3786,8 @@
           {
             "km": "ឃុំ ព្រែកអំបិល",
             "en": "Preaek Ampil Commune",
-            "code": "08020,
+            "code": "080207"
+          },
           {
             "km": "ឃុំ ព្រែកលួង",
             "en": "Preaek Luong Commune",
@@ -3759,7 +3804,8 @@
             "code": "080210"
           },
           {
-            "km": "ឃá         "en": "Pun Ruessei Commune",
+            "km": "ឃុំ ពុកឬស្សី",
+            "en": "Pun Ruessei Commune",
             "code": "080211"
           },
           {
@@ -3776,7 +3822,8 @@
             "km": "ឃុំ ស៊ីធរ",
             "en": "Sithor Commune",
             "code": "080214"
-             {
+          },
+          {
             "km": "ឃុំ ស្វាយជ្រំ",
             "en": "Svay Chrum Commune",
             "code": "080215"
@@ -3793,7 +3840,7 @@
           },
           {
             "km": "ឃុំ វិហារសួគ៌",
-      "en": "Vihea Suork Commune",
+            "en": "Vihea Suork Commune",
             "code": "080218"
           }
         ]
@@ -3829,7 +3876,7 @@
             "en": "Cheung Kaeub Commune",
             "code": "080305"
           },
-  {
+          {
             "km": "ឃុំ ដើមឬស",
             "en": "Daeum Rues Commune",
             "code": "080306"
@@ -3846,7 +3893,8 @@
           },
           {
             "km": "ឃុំ គោកត្រប់",
-            "en": "Kouk Trab Commune",       "code": "080309"
+            "en": "Kouk Trab Commune",
+            "code": "080309"
           },
           {
             "km": "ឃុំ ព្រះពុទ្ធ",
@@ -3864,7 +3912,7 @@
             "code": "080312"
           },
           {
-    "km": "ឃុំ រកា",
+            "km": "ឃុំ រកា",
             "en": "Roka Commune",
             "code": "080313"
           },
@@ -3881,7 +3929,7 @@
           {
             "km": "ឃុំ ត្បែង",
             "en": "Tbaeng Commune",
-            "": "080316"
+            "code": "080316"
           },
           {
             "km": "ឃុំ ត្រពាំងវែង",
@@ -3901,6 +3949,7 @@
         "location_kh": "ស្រុកកោះធំ",
         "location_en": "Kaoh Thum District",
         "codes": [
+          {
             "km": "ឃុំ ឈើខ្មៅ",
             "en": "Chheu Kmau Commune",
             "code": "080401"
@@ -3917,7 +3966,7 @@
           },
           {
             "km": "ឃុំ កោះធំ ក",
-            : "Kaoh Thum Ka Commune",
+            "en": "Kaoh Thum Ka Commune",
             "code": "080404"
           },
           {
@@ -3935,7 +3984,8 @@
             "en": "Pouthi Ban Commune",
             "code": "080407"
           },
-              "km": "ឃុំ ព្រែកជ្រៃ",
+          {
+            "km": "ឃុំ ព្រែកជ្រៃ",
             "en": "Preaek Chrey Commune",
             "code": "080408"
           },
@@ -3950,7 +4000,8 @@
             "code": "080410"
           },
           {
-            "km": "ឃុំ សំពៅពូá   "en": "Sampeou Poun Commune",
+            "km": "ឃុំ សំពៅពូន",
+            "en": "Sampeou Poun Commune",
             "code": "080411"
           }
         ]
@@ -3968,7 +4019,7 @@
           },
           {
             "km": "ឃុំ ក្អមសំណរ",
-            "en": "K'anar Commune",
+            "en": "K'amSamnar Commune",
             "code": "080502"
           },
           {
@@ -3986,7 +4037,7 @@
             "en": "Preaek Dach Commune",
             "code": "080505"
           },
-      {
+          {
             "km": "ឃុំ ព្រែកទន្លាប់",
             "en": "Preaek Tonloab Commune",
             "code": "080506"
@@ -4005,7 +4056,7 @@
         "location_en": "Lvea Aem District",
         "codes": [
           {
-          : "ឃុំ អរិយក្សត្រ",
+            "km": "ឃុំ អរិយក្សត្រ",
             "en": "Akreiy Ksatr Commune",
             "code": "080601"
           },
@@ -4040,7 +4091,7 @@
             "code": "080607"
           },
           {
-            "មិធំ",
+            "km": "ឃុំ ភូមិធំ",
             "en": "Phum Thum Commune",
             "code": "080608"
           },
@@ -4075,7 +4126,7 @@
             "code": "080614"
           },
           {
-            "km": "ឃំង",
+            "km": "ឃុំ ទឹកឃ្លាំង",
             "en": "Tuek Khleang Commune",
             "code": "080615"
           }
@@ -4093,7 +4144,8 @@
             "code": "080701"
           },
           {
-            "km": "ឃុំ ព្រែកá      "en": "Preaek Dambang Commune",
+            "km": "ឃុំ ព្រែកដំបង",
+            "en": "Preaek Dambang Commune",
             "code": "080702"
           },
           {
@@ -4108,7 +4160,8 @@
           },
           {
             "km": "ឃុំ ឬស្សីជ្រោយ",
-            "en": "Ruessei Chrouy Commune "code": "080705"
+            "en": "Ruessei Chrouy Commune",
+            "code": "080705"
           },
           {
             "km": "ឃុំ សំបួរមាស",
@@ -4127,7 +4180,7 @@
         "no": "8.8",
         "location_kh": "ស្រុកពញាឮ",
         "location_en": "Ponhea Lueu District",
-      "codes": [
+        "codes": [
           {
             "km": "ឃុំ ឈ្លាំង",
             "en": "Chhveang Commune",
@@ -4144,7 +4197,8 @@
             "code": "080803"
           },
           {
-            "km": "ឃុំ កំá      "en": "Kampong Os Commune",
+            "km": "ឃុំ កំពង់អុស",
+            "en": "Kampong Os Commune",
             "code": "080804"
           },
           {
@@ -4162,7 +4216,7 @@
             "en": "Ponhea Lueu Commune",
             "code": "080807"
           },
-       
+          {
             "km": "ឃុំ ព្រែកតាទែន",
             "en": "Preaek Ta Teaen Commune",
             "code": "080808"
@@ -4178,7 +4232,8 @@
             "code": "080810"
           },
           {
-            "km": "ឃុំ វិហារហ្á       "en": "Vihear Luong Commune",
+            "km": "ឃុំ វិហារហ្លួង",
+            "en": "Vihear Luong Commune",
             "code": "080811"
           }
         ]
@@ -4212,7 +4267,8 @@
           {
             "km": "ឃុំ ក្រាំងយ៉ូវ",
             "en": "Krang Yov Commune",
-            "code": "080905
+            "code": "080905"
+          },
           {
             "km": "ឃុំ ប្រាសាទ",
             "en": "Prasat Commune",
@@ -4229,7 +4285,8 @@
             "code": "080908"
           },
           {
-            "km": "ឃុំ រកាខ្ពសá       "en": "Roka Khpos Commune",
+            "km": "ឃុំ រកាខ្ពស់",
+            "en": "Roka Khpos Commune",
             "code": "080909"
           },
           {
@@ -4245,7 +4302,7 @@
           {
             "km": "ឃុំ ស្វាយប្រទាល",
             "en": "Svay Prateal Commune",
-            "code": 2"
+            "code": "080912"
           },
           {
             "km": "ឃុំ ស្វាយរលំ",
@@ -4263,7 +4320,8 @@
             "code": "080915"
           },
           {
-            "km": "ឃុំ ទឹកវិ  "en": "Tuek Vil Commune",
+            "km": "ឃុំ ទឹកវិល",
+            "en": "Tuek Vil Commune",
             "code": "080916"
           }
         ]
@@ -4281,7 +4339,7 @@
           },
           {
             "km": "ឃុំ ឈើទាល",
-            "en": "Chheu Teal Cmune",
+            "en": "Chheu Teal Commune",
             "code": "081002"
           },
           {
@@ -4300,7 +4358,7 @@
             "code": "081005"
           },
           {
-            "km": ំ",
+            "km": "ឃុំ គគីរធំ",
             "en": "Kokir Thum Commune",
             "code": "081006"
           },
@@ -4320,7 +4378,7 @@
         "id": 926,
         "no": "8.11",
         "location_kh": "ក្រុងតាខ្មៅ",
-    en": "Ta Khmau Municipality",
+        "location_en": "Ta Khmau Municipality",
         "codes": [
           {
             "km": "សង្កាត់ តាក្តុល",
@@ -4335,7 +4393,8 @@
           {
             "km": "សង្កាត់ ដើមមៀន",
             "en": "Sangkat Doeu Mien",
-            "code": "081       },
+            "code": "081103"
+          },
           {
             "km": "សង្កាត់ តាខ្មៅ",
             "en": "Sangkat Ta Khmao",
@@ -4352,7 +4411,9 @@
             "code": "081106"
           }
         ]
-    },
+      }
+    ]
+  },
   {
     "id": 9,
     "name": "ខេត្តកោះកុង",
@@ -4370,7 +4431,7 @@
           },
           {
             "km": "ឃុំ កណ្ដោល",
-            "en": "Kanda
+            "en": "Kandaol Commune",
             "code": "090102"
           },
           {
@@ -4390,7 +4451,8 @@
         "no": "9.2",
         "location_kh": "ស្រុកគិរីសាគរ",
         "location_en": "Kiri Sakor District",
-        "codes":     {
+        "codes": [
+          {
             "km": "ឃុំ កោះស្ដេច",
             "en": "Kaoh Sdach Commune ",
             "code": "090201"
@@ -4409,7 +4471,7 @@
       },
       {
         "id": 947,
-        "no"",
+        "no": "9.3",
         "location_kh": "ស្រុកកោះកុង",
         "location_en": "Kaoh Kong District",
         "codes": [
@@ -4425,7 +4487,7 @@
           },
           {
             "km": "ឃុំ តាតៃក្រោម",
-           ai Kraom Commune",
+            "en": "Ta Tai Kraom Commune",
             "code": "090303"
           },
           {
@@ -4462,7 +4524,7 @@
         "id": 958,
         "no": "9.5",
         "location_kh": "ស្រុកស្រែអំបិល",
-        "_en": "Srae Ambel District",
+        "location_en": "Srae Ambel District",
         "codes": [
           {
             "km": "ឃុំ បឹងព្រាវ",
@@ -4480,7 +4542,7 @@
             "code": "090503"
           },
           {
-  m": "ឃុំ ជ្រោយស្វាយ",
+            "km": "ឃុំ ជ្រោយស្វាយ",
             "en": "Chrouy Svay Commune",
             "code": "090504"
           },
@@ -4499,7 +4561,7 @@
       {
         "id": 966,
         "no": "9.6",
-        "location_kh "ស្រុកថ្មបាំង",
+        "location_kh": "ស្រុកថ្មបាំង",
         "location_en": "Thma Bang District",
         "codes": [
           {
@@ -4515,7 +4577,8 @@
           {
             "km": "ឃុំ ជំនាប់",
             "en": "Chumnoab Commune",
-            "code": "09  },
+            "code": "090603"
+          },
           {
             "km": "ឃុំ ឬស្សីជ្រុំ",
             "en": "Ruessei Chrum Commune",
@@ -4550,7 +4613,7 @@
             "code": "090702"
           },
           {
-          ត់ ស្ទឹងវែង",
+            "km": "សង្កាត់ ស្ទឹងវែង",
             "en": "Sangkat Stueng Veaeng",
             "code": "090703"
           }
@@ -4571,7 +4634,8 @@
           {
             "km": "ឃុំឃ្សឹម",
             "en": "Khsuem Commune",
-            "code        },
+            "code": "100201"
+          },
           {
             "km": "ឃុំ ពីរធ្នូ",
             "en": "Pir Thnu Commune",
@@ -4588,7 +4652,8 @@
             "code": "100204"
           },
           {
-            "km": "ឃុំ ស្វាយជ្រះ",         "en": "Svay Chreah  Commune",
+            "km": "ឃុំ ស្វាយជ្រះ",
+            "en": "Svay Chreah  Commune",
             "code": "100205"
           },
           {
@@ -4606,7 +4671,7 @@
         "codes": [
           {
             "km": "​ឃុំ បឹងចារ",
-     en": "Boeng Char   Commune",
+            "en": "Boeng Char   Commune",
             "code": "100301"
           },
           {
@@ -4622,7 +4687,7 @@
           {
             "km": "​ឃុំ កោះខ្ងែរ",
             "en": "Kaoh Khnhaer  Commune",
-          0304"
+            "code": "100304"
           },
           {
             "km": "​ឃុំ អូរគ្រៀង",
@@ -4640,7 +4705,7 @@
             "code": "100307"
           },
           {
-            "km":្ដាន់",
+            "km": "​ឃុំ សណ្ដាន់",
             "en": "Sandan  Commune",
             "code": "100308"
           },
@@ -4659,7 +4724,7 @@
       {
         "id": 1021,
         "no": "10.5",
-        "location_kh": "ស្រុកចិត្,
+        "location_kh": "ស្រុកចិត្របុរី",
         "location_en": "Chetr Borei Districts",
         "codes": [
           {
@@ -4678,7 +4743,7 @@
             "code": "100503"
           },
           {
-    "km": "ឃុំ កន្ទួត",
+            "km": "ឃុំ កន្ទួត",
             "en": "Kantuot  Commune",
             "code": "100504"
           },
@@ -4694,7 +4759,8 @@
           },
           {
             "km": "ឃុំ សំបុក",
-            "en": "Sambok  Commun  "code": "100507"
+            "en": "Sambok  Commune",
+            "code": "100507"
           },
           {
             "km": "ឃុំ ថ្មអណ្ដើក",
@@ -4714,7 +4780,8 @@
         ]
       },
       {
-        "id":  "no": "10.6",
+        "id": 1033,
+        "no": "10.6",
         "location_kh": "ក្រុងក្រចេះ",
         "location_en": "Kracheh Municipality",
         "codes": [
@@ -4729,7 +4796,8 @@
             "code": "100602"
           },
           {
-            "km": "សង្កាត់ ក     "en": "Sangkat Krachen",
+            "km": "សង្កាត់ ក្រចេះ",
+            "en": "Sangkat Krachen",
             "code": "100603"
           },
           {
@@ -4747,7 +4815,7 @@
       {
         "id": 2108,
         "no": "10.10",
-        "location_kh": "ស្រុកá,
+        "location_kh": "ស្រុកព្រែកប្រសព្វ",
         "location_en": "Prek Prasab District",
         "codes": [
           {
@@ -4803,7 +4871,7 @@
         "no": "11.1",
         "location_kh": "ស្រុកកែវសីមា",
         "location_en": "Kaev Seima District",
-     : [
+        "codes": [
           {
             "km": "ឃុំ ចុងផ្លាស់",
             "en": "Chong Phlas Commune",
@@ -4820,7 +4888,8 @@
             "code": "110103"
           },
           {
-            "km": "ឃុំ ស្រែខ្ទុ            "en": "Srae Khtum  Commune",
+            "km": "ឃុំ ស្រែខ្ទុម",
+            "en": "Srae Khtum  Commune",
             "code": "110104"
           },
           {
@@ -4857,7 +4926,8 @@
             "code": "110204"
           },
           {
-            "km": "ឃុំ á          "en": "Srae Huy Commune",
+            "km": "ឃុំ ស្រែហ៊ុយ",
+            "en": "Srae Huy Commune",
             "code": "110205"
           },
           {
@@ -4875,7 +4945,7 @@
         "codes": [
           {
             "km": "ឃុំ ដាក់ដាំ",
-      "en": "Dak Dam Commune",
+            "en": "Dak Dam Commune",
             "code": "110301"
           },
           {
@@ -4893,7 +4963,7 @@
         "codes": [
           {
             "km": "ឃុំ ក្រង់តេះ",
-            "e The Commune",
+            "en": "Krang The Commune",
             "code": "110401"
           },
           {
@@ -4912,7 +4982,9 @@
             "code": "110404"
           }
         ]
-      },   "id": 1067,
+      },
+      {
+        "id": 1067,
         "no": "11.5",
         "location_kh": "ក្រុងសែនមនោរម្យ",
         "location_en": "Saen Monourom Municipility",
@@ -4928,7 +5000,7 @@
             "code": "110502"
           },
           {
-        "km": "សង្កាត់ ស្ពានមានជ័យ",
+            "km": "សង្កាត់ ស្ពានមានជ័យ",
             "en": "Sangkat Spean Mean Chey",
             "code": "110503"
           },
@@ -4948,7 +5020,7 @@
       {
         "id": 1075,
         "no": "13.1",
-        "location_kh": "ស្រុកáយសែន",
+        "location_kh": "ស្រុកជ័យសែន",
         "location_en": "Chey Saen District",
         "codes": [
           {
@@ -4967,7 +5039,7 @@
             "code": "130103"
           },
           {
-            "km" ច្រាច់",
+            "km": "ឃុំ ច្រាច់",
             "en": "Chrach Commune",
             "code": "130104"
           },
@@ -4987,7 +5059,7 @@
         "id": 1083,
         "no": "13.2",
         "location_kh": "ស្រុកឆែប",
-        "location_enistrict",
+        "location_en": "Chhaeb District",
         "codes": [
           {
             "km": "ឃុំ ឆែបមួយ",
@@ -5005,7 +5077,7 @@
             "code": "130203"
           },
           {
-            "km": "ឃុំ សងá,
+            "km": "ឃុំ សង្កែពីរ",
             "en": "Sangkae II Commune",
             "code": "130204"
           },
@@ -5021,7 +5093,7 @@
           },
           {
             "km": "ឃុំ កំពង់ស្រឡៅមួយ",
-            "en": "Kampon I Commune",
+            "en": "Kampong Sralau I Commune",
             "code": "130207"
           },
           {
@@ -5039,7 +5111,7 @@
         "codes": [
           {
             "km": "ឃុំ ជាំក្សាន្ត",
-     en": "Choam Ksant Commune",
+            "en": "Choam Ksant Commune",
             "code": "130301"
           },
           {
@@ -5056,7 +5128,7 @@
             "km": "ឃុំ រំដោះស្រែ",
             "en": "Rumdaoh Srae Commune",
             "code": "130304"
-        },
+          },
           {
             "km": "ឃុំ យាង",
             "en": "Yeang Commune",
@@ -5074,7 +5146,8 @@
           },
           {
             "km": "ឃុំ ស្រអែម",
-            "en": "Sror Aem Commune "code": "130308"
+            "en": "Sror Aem Commune",
+            "code": "130308"
           }
         ]
       },
@@ -5092,7 +5165,7 @@
           {
             "km": "ឃុំ គូលែនជើង",
             "en": "Koleaen Cheung Commune",
-            "code": "12"
+            "code": "130402"
           },
           {
             "km": "ឃុំ ថ្មី",
@@ -5110,7 +5183,8 @@
             "code": "130405"
           },
           {
-            "km": "ឃុំ ស្á      "en": "Srayang Commune",
+            "km": "ឃុំ ស្រយង់",
+            "en": "Srayang Commune",
             "code": "130406"
           }
         ]
@@ -5148,7 +5222,7 @@
           },
           {
             "km": "ឃុំ រួសរាន់",
-         ": "Ruos Roan Commune",
+            "en": "Ruos Roan Commune",
             "code": "130506"
           },
           {
@@ -5167,7 +5241,7 @@
             "code": "130509"
           },
           {
-            "km": "ឃá រំដោះ",
+            "km": "ឃុំ រំដោះ",
             "en": "Rumdaoh Commune",
             "code": "130510"
           },
@@ -5187,7 +5261,7 @@
         "id": 1125,
         "no": "13.6",
         "location_kh": "ស្រុកសង្គមថ្មី",
-  "location_en": "Sangkum Thmei District",
+        "location_en": "Sangkum Thmei District",
         "codes": [
           {
             "km": "ឃុំ ចំរើន",
@@ -5205,7 +5279,7 @@
             "code": "130603"
           },
           {
-"km": "ឃុំ ស្តៅ",
+            "km": "ឃុំ ស្តៅ",
             "en": "Sdau Commune",
             "code": "130604"
           },
@@ -5223,7 +5297,8 @@
         "location_en": "Tbaeng Mean Chey District",
         "codes": [
           {
-            "km": "ឃុំ ឈ          "en": "Chhean Mukh Commune",
+            "km": "ឃុំ ឈានមុខ",
+            "en": "Chhean Mukh Commune",
             "code": "130701"
           },
           {
@@ -5240,7 +5315,9 @@
             "km": "ឃុំ ព្រះឃ្លាំង",
             "en": "Preah Khleang Commune",
             "code": "130704"
-              },
+          }
+        ]
+      },
       {
         "id": 1138,
         "no": "13.8",
@@ -5255,7 +5332,7 @@
           {
             "km": "សង្កាត់ ប៉ាលហាល",
             "en": "Sangkat Pal Hal",
-          802"
+            "code": "130802"
           }
         ]
       }
@@ -5277,7 +5354,8 @@
             "code": "140101"
           },
           {
-            "km": "ឃុំâ       "en": "Kanhchriech Commune",
+            "km": "ឃុំ​ កញ្រ្ជៀច",
+            "en": "Kanhchriech Commune",
             "code": "140102"
           },
           {
@@ -5293,7 +5371,7 @@
           {
             "km": "ឃុំ  គោកគង់លិច",
             "en": "Kouk Kong Lech Kouk Kong",
-  "code": "140105"
+            "code": "140105"
           },
           {
             "km": "ឃុំ ព្រាល",
@@ -5314,7 +5392,8 @@
       },
       {
         "id": 1154,
-        "no": "14        "location_kh": "ស្រុកពាមជរ",
+        "no": "14.2",
+        "location_kh": "ស្រុកពាមជរ",
         "location_en": "Peam Chor District",
         "codes": [
           {
@@ -5329,7 +5408,7 @@
           },
           {
             "km": "ឃុំ កោះចេក",
-    Kaoh Chek  Commune",
+            "en": "Kaoh Chek  Commune",
             "code": "140203"
           },
           {
@@ -5346,7 +5425,7 @@
             "km": "ឃុំ ក្រាំងតាយ៉ុង",
             "en": "Krang Ta Yang  Commune",
             "code": "140206"
-   },
+          },
           {
             "km": "ឃុំ ព្រែកក្របៅ",
             "en": "Preaek Krabau  Commune",
@@ -5363,7 +5442,7 @@
             "code": "140209"
           },
           {
-           "km": "ឃុំ ស្វាយភ្លោះ",
+            "km": "ឃុំ ស្វាយភ្លោះ",
             "en": "Svay Phluoh  Commune",
             "code": "140210"
           }
@@ -5381,7 +5460,7 @@
             "code": "140301"
           },
           {
-            "km": "ឃុំ បទ",
+            "km": "ឃុំ បន្លិចប្រាសាទ",
             "en": "Banlich Prasat  Commune",
             "code": "140302"
           },
@@ -5398,7 +5477,7 @@
           {
             "km": "ឃុំ ពាមរក៍​ ",
             "en": "Peam Ro  Commune",
-      "code": "140305"
+            "code": "140305"
           },
           {
             "km": "ឃុំ ព្រែកខ្សាយ​ ក",
@@ -5413,7 +5492,7 @@
           {
             "km": "ឃុំ ព្រៃកណ្ដៀង",
             "en": "Prey Kandieng   Commune",
-            "cod"
+            "code": "140308"
           }
         ]
       },
@@ -5431,7 +5510,7 @@
           {
             "km": "ឃុំ បន្ទាយចក្រី",
             "en": "Bantean Chakrei Commune",
-      "code": "140402"
+            "code": "140402"
           },
           {
             "km": "ឃុំ បឹងដោល",
@@ -5449,7 +5528,7 @@
             "code": "140405"
           },
           {
-            "km": "ឃុ ក្រាំងស្វាយ",
+            "km": "ឃុំ ក្រាំងស្វាយ",
             "en": "Krang Svay Commune",
             "code": "140406"
           },
@@ -5466,7 +5545,7 @@
           {
             "km": "ឃុំ រាធរ",
             "en": "Reathor Commune",
-          409"
+            "code": "140409"
           },
           {
             "km": "ឃុំ រំចេក",
@@ -5485,7 +5564,7 @@
         "no": "14.5",
         "location_kh": "ស្រុកកំចាយមារ",
         "location_en": "Kamchay Mear  District",
-   s": [
+        "codes": [
           {
             "km": "ឃុំ ជាច",
             "en": "Cheach Commune",
@@ -5503,7 +5582,7 @@
           },
           {
             "km": "ឃុំ ក្របៅ",
-            "en": "Krabau une",
+            "en": "Krabau Commune",
             "code": "140504"
           },
           {
@@ -5519,7 +5598,7 @@
           {
             "km": "ឃុំ ស្មោងខាងត្បូង",
             "en": "Smaong Khang Tboung  Commune",
-     "code": "140507"
+            "code": "140507"
           },
           {
             "km": "ឃុំ ត្របែក",
@@ -5537,7 +5616,7 @@
           {
             "km": "ឃុំ អំពិលក្រៅ",
             "en": "Ampil Krau  Commune",
-           0601"
+            "code": "140601"
           },
           {
             "km": "ឃុំ ជ្រៃឃ្មុំ",
@@ -5555,7 +5634,8 @@
             "code": "140604"
           },
           {
-            "km": "ឃុំ ព្នៅá   "en": "Pnov II   Commune",
+            "km": "ឃុំ ព្នៅទី២",
+            "en": "Pnov II   Commune",
             "code": "140605"
           },
           {
@@ -5570,7 +5650,7 @@
           },
           {
             "km": "ឃុំ ព្រៃដើមថ្លឹង",
-            "en": "Prey Daeum Thnoeng mune",
+            "en": "Prey Daeum Thnoeng   Commune",
             "code": "140608"
           },
           {
@@ -5589,7 +5669,9 @@
             "code": "140611"
           }
         ]
-          "id": 1212,
+      },
+      {
+        "id": 1212,
         "no": "14.7",
         "location_kh": "ស្រុកបាភ្នំ​",
         "location_en": "Ba Phnum District",
@@ -5605,7 +5687,8 @@
             "code": "140702"
           },
           {
-            "km": "ឃុំ ឈá      "en": "Chheu Kach  Commune",
+            "km": "ឃុំ ឈើកាច់",
+            "en": "Chheu Kach  Commune",
             "code": "140703"
           },
           {
@@ -5621,7 +5704,9 @@
           {
             "km": "ឃុំ ស្ដៅកោង",
             "en": "Sdau Kaong  Commune",
-            "code": "140706          {
+            "code": "140706"
+          },
+          {
             "km": "ឃុំ ស្ពឺ ក",
             "en": "Spueu Ka  Commune",
             "code": "140707"
@@ -5641,7 +5726,7 @@
       {
         "id": 1223,
         "no": "14.8",
-        "location_kh": "á»កស្វាយអន្ទរ",
+        "location_kh": "ស្រុកស្វាយអន្ទរ",
         "location_en": "Svay Antor District",
         "codes": [
           {
@@ -5657,7 +5742,7 @@
           {
             "km": "ឃុំ ជ្រៃ",
             "en": "Chrey   Commune",
-      code": "140803"
+            "code": "140803"
           },
           {
             "km": "ឃុំ ដំរីពួន",
@@ -5675,7 +5760,7 @@
             "code": "140806"
           },
           {
-            "km": "ឃុំ ",
+            "km": "ឃុំ ពពឹស",
             "en": "Popueus  Commune",
             "code": "140807"
           },
@@ -5692,7 +5777,7 @@
           {
             "km": "ឃុំ ស្វាយអន្ទរ",
             "en": "Svay Antor  Commune",
-            "code": "810"
+            "code": "140810"
           },
           {
             "km": "ឃុំ ទឹកថ្លា",
@@ -5711,7 +5796,8 @@
             "km": "ឃុំ ពោធិ៍រៀង",
             "en": "Pou Rieng  Commune",
             "code": "140901"
-                 {
+          },
+          {
             "km": "ឃុំ ព្រែកអន្ទះ",
             "en": "Preaek Anteah  Commune",
             "code": "140902"
@@ -5727,7 +5813,7 @@
             "code": "140904"
           },
           {
-            "km": "ឃុាកោ",
+            "km": "ឃុំ តាកោ",
             "en": "Ta Keo  Commune",
             "code": "140905"
           },
@@ -5763,7 +5849,8 @@
             "km": "ឃុំ ជីផុច",
             "en": "Chi Phoch Commune",
             "code": "141003"
-          },      {
+          },
+          {
             "km": "ឃុំ ព្រៃឃ្នេស",
             "en": "Prey Khnes Commune",
             "code": "141004"
@@ -5779,7 +5866,7 @@
             "code": "141006"
           },
           {
-            "km": "ឃុំ ស្វá
+            "km": "ឃុំ ស្វាយជ្រុំ",
             "en": "Svay Chrum Commune",
             "code": "141007"
           },
@@ -5797,7 +5884,8 @@
         "location_en": "Kampong Trabaek  District",
         "codes": [
           {
-            "km": "ឃុំ អនá        "en": "Ansaong Commune",
+            "km": "ឃុំ អន្សោង",
+            "en": "Ansaong Commune",
             "code": "141101"
           },
           {
@@ -5816,7 +5904,7 @@
             "code": "141104"
           },
           {
-            "kអក",
+            "km": "ឃុំ កន្សោមអក",
             "en": "Kansoam Ak Commune",
             "code": "141105"
           },
@@ -5832,7 +5920,8 @@
           },
           {
             "km": "ឃុំ ពាមមន្ទារ",
-            "en": "Peam Montear Commune  "code": "141108"
+            "en": "Peam Montear Commune",
+            "code": "141108"
           },
           {
             "km": "ឃុំ ប្រាសាទ",
@@ -5850,7 +5939,7 @@
             "code": "141111"
           },
           {
-            "km": "ឃុំ ព",
+            "km": "ឃុំ ព្រៃពោន",
             "en": "prey poun Commune",
             "code": "141112"
           },
@@ -5885,7 +5974,8 @@
           {
             "km": "ឃុំ មេសរប្រចាន់",
             "en": "Mesar Prachan Kampong",
-            "code": "141204 },
+            "code": "141204"
+          },
           {
             "km": "ឃុំ ព្រៃព្នៅ",
             "en": "Prey pnov Commune",
@@ -5902,7 +5992,8 @@
             "code": "141207"
           },
           {
-            "km": "ឃុំ រá          "en": "Reab Commune",
+            "km": "ឃុំ រាប",
+            "en": "Reab Commune",
             "code": "141208"
           },
           {
@@ -5920,7 +6011,7 @@
         "codes": [
           {
             "km": "សង្កាត់ បារាយណ៍",
-            "en": "Sangkat Bay ",
+            "en": "Sangkat Baray ",
             "code": "141301"
           },
           {
@@ -5942,7 +6033,7 @@
     "name": "ខេត្តពោធិសាត់",
     "districts": [
       {
-        "id":8,
+        "id": 1288,
         "no": "15.1",
         "location_kh": "ស្រុកក្រគរ",
         "location_en": "Krakor District",
@@ -5958,7 +6049,7 @@
             "code": "150102"
           },
           {
-            "km": "ឃុំ បឹá",
+            "km": "ឃុំ បឹងកន្ទួត",
             "en": "Boeng Kantuot Commune",
             "code": "150103"
           },
@@ -5975,7 +6066,7 @@
           {
             "km": "ឃុំ កំពង់ពោធិ៍",
             "en": "Kampong Pou Commune",
-            "de": "150106"
+            "code": "150106"
           },
           {
             "km": "ឃុំ ក្បាលត្រាច",
@@ -5993,7 +6084,7 @@
             "code": "150109"
           },
           {
-           ស្វាយស",
+            "km": "ឃុំ ស្វាយស",
             "en": "Svay Sa Commune",
             "code": "150110"
           },
@@ -6030,7 +6121,7 @@
             "en": "Reang Til Commune",
             "code": "150204"
           },
-    {
+          {
             "km": "ឃុំ ស្រែស្តុក",
             "en": "Srae Sdok Commune",
             "code": "150205"
@@ -6048,7 +6139,7 @@
           {
             "km": "ឃុំ វាល",
             "en": "Veal Commune",
-    "code": "150208"
+            "code": "150208"
           },
           {
             "km": "ឃុំ កោះជុំ",
@@ -6066,7 +6157,7 @@
           {
             "km": "ឃុំ បឹងបត់កណ្តោល",
             "en": "Boeng Bat Kandaol Commune",
-            "code": "150
+            "code": "150301"
           },
           {
             "km": "ឃុំ បឹងខ្នារ",
@@ -6084,7 +6175,8 @@
             "code": "150304"
           },
           {
-            "km": "ឃុំ អូរត        "en": "Ou Ta Paong Commune",
+            "km": "ឃុំ អូរតាប៉ោង",
+            "en": "Ou Ta Paong Commune",
             "code": "150305"
           },
           {
@@ -6100,7 +6192,7 @@
           {
             "km": "ឃុំ ស្វាយដូនកែវ",
             "en": "Svay Doun Kaev Commune",
-            "code": "08"
+            "code": "150308"
           },
           {
             "km": "ឃុំ តាលោ",
@@ -6120,6 +6212,7 @@
         "location_kh": "ស្រុកវាលវែង",
         "location_en": "Veal Veaeng District",
         "codes": [
+          {
             "km": "ឃុំ អូសោម",
             "en": "Ou Saom Commune",
             "code": "150401"
@@ -6136,7 +6229,7 @@
           },
           {
             "km": "ឃុំ ប្រម៉ោយ",
-            "en": "Pramaoy mmune",
+            "en": "Pramaoy Commune",
             "code": "150404"
           },
           {
@@ -6154,7 +6247,8 @@
         "codes": [
           {
             "km": "ឃុំ បាក់ចិញ្ចៀន",
-            "en": "Bak Chenhchien Co        "code": "150501"
+            "en": "Bak Chenhchien Commune",
+            "code": "150501"
           },
           {
             "km": "ឃុំ លាច",
@@ -6225,7 +6319,7 @@
             "code": "150606"
           },
           {
-            "km": "សá់ បន្ទាយដី",
+            "km": "សង្កាត់ បន្ទាយដី",
             "en": "Sangkat Banteay Dei",
             "code": "150607"
           }
@@ -6245,7 +6339,8 @@
         "codes": [
           {
             "km": "ឃុំ ម៉ាលិក",
-            "en": "Malik Commu       "code": "160101"
+            "en": "Malik Commune",
+            "code": "160101"
           },
           {
             "km": "ឃុំ ញ៉ាង",
@@ -6266,7 +6361,7 @@
         "location_en": "Bar Kaev District",
         "codes": [
           {
-          "km": "ឃុំ កក់",
+            "km": "ឃុំ កក់",
             "en": "Kak Commune",
             "code": "160201"
           },
@@ -6304,7 +6399,7 @@
         "location_en": "Koun Mom District",
         "codes": [
           {
-          : "ឃុំ សិរីមង្គល",
+            "km": "ឃុំ សិរីមង្គល",
             "en": "Serei Mongkol Commune",
             "code": "160301"
           },
@@ -6321,7 +6416,7 @@
           {
             "km": "ឃុំ តឹន",
             "en": "Teun Commune",
- de": "160304"
+            "code": "160304"
           },
           {
             "km": "ឃុំ ត្រពាំងច្រេស",
@@ -6339,7 +6434,7 @@
         "id": 1372,
         "no": "16.4",
         "location_kh": "ស្រុកលំផាត់",
-        "location_en": "mphat District",
+        "location_en": "Lumphat District",
         "codes": [
           {
             "km": "ឃុំ ជ័យឧត្តម",
@@ -6357,7 +6452,7 @@
             "code": "160403"
           },
           {
-            "km": "ឃុំ áាំង២",
+            "km": "ឃុំ ល្បាំង២",
             "en": "Lbang II Commune",
             "code": "160404"
           },
@@ -6377,7 +6472,7 @@
         "id": 1380,
         "no": "16.5",
         "location_kh": "ស្រុកអូរជុំ",
-        "location District",
+        "location_en": "Ou Chum District",
         "codes": [
           {
             "km": "ឃុំ ចាអ៊ុង",
@@ -6396,7 +6491,7 @@
           },
           {
             "km": "ឃុំ កាឡៃ",
-           Commune",
+            "en": "Kalai Commune",
             "code": "160504"
           },
           {
@@ -6417,7 +6512,7 @@
         ]
       },
       {
-        "i,
+        "id": 1389,
         "no": "16.6",
         "location_kh": "ស្រុកអូរយ៉ាដាវ",
         "location_en": "Ou Ya Dav District",
@@ -6471,7 +6566,8 @@
             "code": "160701"
           },
           {
-            "km": "ឃុំ តាវែងក្á "en": "Ta Veaeng Kraom Commune",
+            "km": "ឃុំ តាវែងក្រោម",
+            "en": "Ta Veaeng Kraom Commune",
             "code": "160702"
           }
         ]
@@ -6490,7 +6586,7 @@
           {
             "km": "ឃុំ ហាត់ប៉ក់",
             "en": "Hat Pak Commune",
-         ": "160802"
+            "code": "160802"
           },
           {
             "km": "ឃុំ កាចូន",
@@ -6508,7 +6604,8 @@
             "code": "160805"
           },
           {
-            "km": "ឃុំ កុកឡ          "en": "Kok Lak Commune",
+            "km": "ឃុំ កុកឡាក់",
+            "en": "Kok Lak Commune",
             "code": "160806"
           },
           {
@@ -6526,7 +6623,8 @@
             "en": "Veun Sai Commune",
             "code": "160809"
           }
-    },
+        ]
+      },
       {
         "id": 1413,
         "no": "16.9",
@@ -6544,7 +6642,7 @@
             "code": "160902"
           },
           {
-      "សង្កាត់ យក្ខឡោម",
+            "km": "សង្កាត់ យក្ខឡោម",
             "en": "Sangkat Yeak Laom",
             "code": "160903"
           },
@@ -6564,7 +6662,7 @@
       {
         "id": 1421,
         "no": "17.1",
-        "location_kh": "ស្រុកវ៉ារ
+        "location_kh": "ស្រុកវ៉ារិន",
         "location_en": "Varin District",
         "codes": [
           {
@@ -6582,7 +6680,7 @@
             "en": "Srae Nouy Commune",
             "code": "170103"
           },
-        {
+          {
             "km": "ឃុំ ស្វាយស",
             "en": "Svay Sa Commune",
             "code": "170104"
@@ -6601,7 +6699,7 @@
         "location_en": "Svay Leu District",
         "codes": [
           {
-            "km": "ឃុំ បá,
+            "km": "ឃុំ បឹងមាលា",
             "en": "Boeng Mealea Commune",
             "code": "170201"
           },
@@ -6619,7 +6717,7 @@
             "km": "ឃុំ ស្វាយលើ",
             "en": "Svay Leu Commune",
             "code": "170204"
-
+          },
           {
             "km": "ឃុំ តាសៀម",
             "en": "Ta Siem Commune",
@@ -6638,7 +6736,8 @@
             "en": "Chrouy Neang Ngoun Commune",
             "code": "170301"
           },
-                  "km": "ឃុំ ក្លាំងហាយ",
+          {
+            "km": "ឃុំ ក្លាំងហាយ",
             "en": "Klang Hay Commune",
             "code": "170302"
           },
@@ -6654,7 +6753,8 @@
           },
           {
             "km": "ឃុំ ប្រីយ៍",
-            "en": "Prei Commune"  "code": "170305"
+            "en": "Prei Commune",
+            "code": "170305"
           },
           {
             "km": "ឃុំ ស្លែងស្ពាន",
@@ -6672,7 +6772,8 @@
           {
             "km": "ឃុំ ចាន់ស",
             "en": "Chan Sa Commune",
-            "code": "17          },
+            "code": "170401"
+          },
           {
             "km": "ឃុំ ដំដែក",
             "en": "Dam Daek Commune",
@@ -6689,7 +6790,8 @@
             "code": "170404"
           },
           {
-            "km": "ឃុំ កៀនសង    "en": "Kien Sangkae Commune",
+            "km": "ឃុំ កៀនសង្កែ",
+            "en": "Kien Sangkae Commune",
             "code": "170405"
           },
           {
@@ -6707,7 +6809,8 @@
             "en": "Popel Commune",
             "code": "170408"
           },
-              "km": "ឃុំ សំរោង",
+          {
+            "km": "ឃុំ សំរោង",
             "en": "Samraong Commune",
             "code": "170409"
           },
@@ -6725,7 +6828,8 @@
         "location_en": "Prasat Bakong District",
         "codes": [
           {
-            "km": "ឃុá            "en": "Bakong Commune",
+            "km": "ឃុំ បាគង",
+            "en": "Bakong Commune",
             "code": "170501"
           },
           {
@@ -6741,7 +6845,7 @@
           {
             "km": "ឃុំ កន្ទ្រាំង",
             "en": "Kantreang Commune",
-            "cod504"
+            "code": "170504"
           },
           {
             "km": "ឃុំ កណ្តែក",
@@ -6760,7 +6864,7 @@
           },
           {
             "km": "ឃុំ ត្រពាំងធំ",
-     ": "Trapeang Thum Commune",
+            "en": "Trapeang Thum Commune",
             "code": "170508"
           },
           {
@@ -6779,7 +6883,7 @@
           {
             "km": "ឃុំ សសរស្តម្ភ",
             "en": "Sasar Sdam Commune",
-            "code01"
+            "code": "170601"
           },
           {
             "km": "ឃុំ ដូនកែវ",
@@ -6798,7 +6902,7 @@
           },
           {
             "km": "ឃុំ ខ្នាត",
-     en": "Khnat Commune",
+            "en": "Khnat Commune",
             "code": "170605"
           },
           {
@@ -6817,7 +6921,7 @@
             "code": "170608"
           },
           {
-   ": "ឃុំ ពួក",
+            "km": "ឃុំ ពួក",
             "en": "Puok Commune",
             "code": "170609"
           },
@@ -6834,7 +6938,7 @@
           {
             "km": "ឃុំ សំរោងយា",
             "en": "Samraong Yea Commune",
-            "code": "12"
+            "code": "170612"
           },
           {
             "km": "ឃុំ ត្រីញ័រ",
@@ -6855,7 +6959,7 @@
         "location_en": "Kralanh District",
         "codes": [
           {
-            "ំ ចន្លាសដៃ",
+            "km": "ឃុំ ចន្លាសដៃ",
             "en": "Chanleas Dai Commune",
             "code": "170701"
           },
@@ -6871,7 +6975,7 @@
           },
           {
             "km": "ឃុំ ក្រូចគរ",
-            "en": "Krouch Kormune",
+            "en": "Krouch Kor Commune",
             "code": "170704"
           },
           {
@@ -6890,7 +6994,8 @@
             "code": "170707"
           },
           {
-            "km": "ឃុំ á         "en": "Snuol Commune",
+            "km": "ឃុំ ស្នួល",
+            "en": "Snuol Commune",
             "code": "170708"
           },
           {
@@ -6909,7 +7014,7 @@
         "id": 1494,
         "no": "17.8",
         "location_kh": "ស្រុកជីក្រែង",
-        "location_en": "Chi Krict",
+        "location_en": "Chi Kraeng District",
         "codes": [
           {
             "km": "ឃុំ អន្លង់សំណរ",
@@ -6927,7 +7032,7 @@
             "code": "170803"
           },
           {
-            "ឃុំ ខ្វាវ",
+            "km": "ឃុំ ខ្វាវ",
             "en": "Khvav Commune",
             "code": "170804"
           },
@@ -6959,7 +7064,8 @@
           {
             "km": "ឃុំ ឬស្សីលក",
             "en": "Ruessei Lok Commune",
-            "code": "170810
+            "code": "170810"
+          },
           {
             "km": "ឃុំ សង្វើយ",
             "en": "Sangvaeuy Commune",
@@ -6978,7 +7084,8 @@
         "location_kh": "ស្រុកបន្ទាយស្រី",
         "location_en": "Banteay Srei District",
         "codes": [
-              "km": "ឃុំ ខ្នារសណ្តាយ",
+          {
+            "km": "ឃុំ ខ្នារសណ្តាយ",
             "en": "Khanr Sanday Commune",
             "code": "170901"
           },
@@ -6994,7 +7101,7 @@
           },
           {
             "km": "ឃុំ រំចេក",
-            "e"Rumcheck Commune",
+            "en": "Rumcheck Commune",
             "code": "170904"
           },
           {
@@ -7013,7 +7120,7 @@
         "id": 1516,
         "no": "17.10",
         "location_kh": "ស្រុកអង្គរធំ",
-        "location_en": "Angkor Thu
+        "location_en": "Angkor Thum District",
         "codes": [
           {
             "km": "ឃុំ ជាប់តាត្រាវ",
@@ -7031,7 +7138,7 @@
             "code": "171003"
           },
           {
-            "km": "ឃុេក",
+            "km": "ឃុំ ស្វាយចេក",
             "en": "Svay Check Commune",
             "code": "171004"
           }
@@ -7050,7 +7157,7 @@
           },
           {
             "km": "ឃុំ ដូនពេង",
-            "e: "Doun Peng Commune",
+            "en": "Doun Peng Commune",
             "code": "171102"
           },
           {
@@ -7087,7 +7194,8 @@
         "location_en": "Siem Reap Minicipality",
         "codes": [
           {
-            "km": "សង្កាត់            "en": "Sangkat Sla Kram",
+            "km": "សង្កាត់ ស្លក្រាម",
+            "en": "Sangkat Sla Kram",
             "code": "171201"
           },
           {
@@ -7102,7 +7210,7 @@
           },
           {
             "km": "សង្កាត់ សាលាកំរើក",
-            "en": "Sangkat Sala ,
+            "en": "Sangkat Sala Kamreuk",
             "code": "171204"
           },
           {
@@ -7120,7 +7228,8 @@
             "en": "Sangkat Chong Khnies",
             "code": "171207"
           },
-          "km": "សង្កាត់ សំបួរ",
+          {
+            "km": "សង្កាត់ សំបួរ",
             "en": "Sangkat Sambuor",
             "code": "171208"
           },
@@ -7136,7 +7245,7 @@
           },
           {
             "km": "សង្កាត់ ទឹកវិល",
-      "en": "Sangkat Tuek Vil",
+            "en": "Sangkat Tuek Vil",
             "code": "171211"
           },
           {
@@ -7156,7 +7265,7 @@
         "id": 1547,
         "no": "18.1",
         "location_kh": "ស្រុកព្រៃនប់",
-        "location_en": "Prey Nob  Distri",
+        "location_en": "Prey Nob  District",
         "codes": [
           {
             "km": "ឃុំ អណ្ដូងថ្ម",
@@ -7174,7 +7283,7 @@
             "code": "180103"
           },
           {
-          ជើងគោ",
+            "km": "ឃុំ ជើងគោ",
             "en": "Cheung Kou Commune",
             "code": "180104"
           },
@@ -7190,7 +7299,7 @@
           },
           {
             "km": "ឃុំ ព្រៃនប់",
-            "en": "Prey Nob C",
+            "en": "Prey Nob Commune",
             "code": "180107"
           },
           {
@@ -7209,7 +7318,7 @@
             "code": "180110"
           },
           {
-            "km": "ឃុំ ទឹកáអក់",
+            "km": "ឃុំ ទឹកល្អក់",
             "en": "Tuek L'ak Commune",
             "code": "180111"
           },
@@ -7226,7 +7335,7 @@
           {
             "km": "ឃុំ វាលរេញ",
             "en": "Veal Renh Commune",
-            "code80114"
+            "code": "180114"
           },
           {
             "km": "ឃុំ តានៃ",
@@ -7247,7 +7356,7 @@
             "code": "180201"
           },
           {
-        "ឃុំ អូរត្រេះ",
+            "km": "ឃុំ អូរត្រេះ",
             "en": "Ou Treh Commune",
             "code": "180202"
           },
@@ -7266,7 +7375,7 @@
       {
         "id": 1570,
         "no": "18.3",
-        "location_kh": "áកំពង់សិលា",
+        "location_kh": "ស្រុកកំពង់សិលា",
         "location_en": "Kampong Seila District",
         "codes": [
           {
@@ -7281,7 +7390,7 @@
           },
           {
             "km": "ឃុំ អូរបាក់រទេះ",
-            "en" Bak Roteh Commune",
+            "en": "Ou Bak Roteh Commune",
             "code": "180303"
           },
           {
@@ -7299,7 +7408,7 @@
         "codes": [
           {
             "km": "សង្កាត់ លេខ ១",
-            "en Lek I",
+            "en": "Sangkat Lek I",
             "code": "180401"
           },
           {
@@ -7318,7 +7427,8 @@
             "code": "180404"
           },
           {
-            "km": "សង្កា            "en": "Sangkat Kaoh Rung",
+            "km": "សង្កាត់ កោះរ៉ុង",
+            "en": "Sangkat Kaoh Rung",
             "code": "180405"
           },
           {
@@ -7338,7 +7448,7 @@
         "id": 1586,
         "no": "19.1",
         "location_kh": "ស្រុកសេសាន",
-        "locathantrea District",
+        "location_en": "Chantrea District",
         "codes": [
           {
             "km": "ឃុំ កំកុន",
@@ -7356,7 +7466,7 @@
             "code": "190103"
           },
           {
-            "km": "ឃុំ សáួយ",
+            "km": "ឃុំ សាមឃួយ",
             "en": "Samkhuoy Commune",
             "code": "190104"
           },
@@ -7376,7 +7486,7 @@
             "code": "190107"
           }
         ]
- ,
+      },
       {
         "id": 1595,
         "no": "19.2",
@@ -7394,7 +7504,7 @@
             "code": "190202"
           },
           {
-            "km": "ឃុះស្រឡាយ",
+            "km": "ឃុំ កោះស្រឡាយ",
             "en": "Kaoh Sralay Commune",
             "code": "190203"
           },
@@ -7410,7 +7520,7 @@
           },
           {
             "km": "ឃុំ សៀមបូក",
-            "en": "SiemCommune",
+            "en": "Siem Bouk Commune",
             "code": "190206"
           },
           {
@@ -7428,7 +7538,8 @@
         "codes": [
           {
             "km": "ឃុំ ព្រែមាស",
-            "en": "Preaek Meas Commune"      "code": "190301"
+            "en": "Preaek Meas Commune",
+            "code": "190301"
           },
           {
             "km": "ឃុំ សេកុង",
@@ -7464,7 +7575,8 @@
             "code": "190401"
           },
           {
-            "km": "ឃុំ         "en": "Chamkar Leu Commune",
+            "km": "ឃុំ ចំការលើ",
+            "en": "Chamkar Leu Commune",
             "code": "190402"
           },
           {
@@ -7480,7 +7592,7 @@
           {
             "km": "ឃុំ អន្លង់ជ្រៃ",
             "en": "Anlong Chrey Commune",
-            "code":0405"
+            "code": "190405"
           },
           {
             "km": "ឃុំ អូររ៉ៃ",
@@ -7498,7 +7610,8 @@
             "code": "190408"
           },
           {
-            "km": "ឃុំ សំអá  "en": "Sam Ang Commune",
+            "km": "ឃុំ សំអាង",
+            "en": "Sam Ang Commune",
             "code": "190409"
           },
           {
@@ -7516,7 +7629,8 @@
       {
         "id": 1624,
         "no": "19.5",
-        "location_kh": "ក្រុងស្ទឹង      "location_en": "Steung Treng Minicipality",
+        "location_kh": "ក្រុងស្ទឹងត្រែង",
+        "location_en": "Steung Treng Minicipality",
         "codes": [
           {
             "km": "សង្កាត់ ស្ទឹងត្រែង",
@@ -7530,7 +7644,8 @@
           },
           {
             "km": "សង្កាត់ ព្រះបាទ",
-            "en": "Sangkat Pr        "code": "190503"
+            "en": "Sangkat Preah Bat",
+            "code": "190503"
           },
           {
             "km": "សង្កាត់ សាមគ្គី",
@@ -7552,7 +7667,7 @@
         "location_en": "Chantrea District",
         "codes": [
           {
-         ចន្ទ្រា",
+            "km": "ឃុំ ចន្ទ្រា",
             "en": "Chantrea Commune",
             "code": "200101"
           },
@@ -7569,7 +7684,7 @@
           {
             "km": "ឃុំ ព្រៃគគីរ",
             "en": "Prey Kokir Commune",
-          "200104"
+            "code": "200104"
           },
           {
             "km": "ឃុំ សំរោង",
@@ -7606,7 +7721,7 @@
           },
           {
             "km": "ឃុំ ព្រះពន្លា",
-        "en": "Preah Ponlea Commune",
+            "en": "Preah Ponlea Commune",
             "code": "200204"
           },
           {
@@ -7624,7 +7739,8 @@
             "en": "Samlei Commune",
             "code": "200207"
           },
-                "km": "ឃុំ សំយ៉ោង",
+          {
+            "km": "ឃុំ សំយ៉ោង",
             "en": "Samyaong Commune",
             "code": "200208"
           },
@@ -7641,7 +7757,7 @@
           {
             "km": "ឃុំ ត្នោត",
             "en": "Tnaot Commune",
-  "code": "200211"
+            "code": "200211"
           }
         ]
       },
@@ -7662,7 +7778,7 @@
             "code": "200302"
           },
           {
-           km": "ឃុំ កំពង់ចក",
+            "km": "ឃុំ កំពង់ចក",
             "en": "Kampong Chak Commune",
             "code": "200303"
           },
@@ -7678,7 +7794,7 @@
           },
           {
             "km": "ឃុំ ម៉ឺនជ័យ",
-         Meun Chey Commune",
+            "en": "Meun Chey Commune",
             "code": "200306"
           },
           {
@@ -7697,7 +7813,7 @@
             "code": "200309"
           },
           {
-            "ឃុំ ថ្នាធ្នង់",
+            "km": "ឃុំ ថ្នាធ្នង់",
             "en": "Than Thnong Commune",
             "code": "200310"
           }
@@ -7715,7 +7831,8 @@
             "code": "200401"
           },
           {
-            "km": "ឃុំ អណ្តá     "en": "Andoung Pou Commune",
+            "km": "ឃុំ អណ្តូងពោធិ៍",
+            "en": "Andoung Pou Commune",
             "code": "200402"
           },
           {
@@ -7731,7 +7848,7 @@
           {
             "km": "ឃុំ ចន្ត្រី",
             "en": "Chantrei Commune",
-   ": "200405"
+            "code": "200405"
           },
           {
             "km": "ឃុំ ជ្រៃធំ",
@@ -7749,7 +7866,8 @@
             "code": "200408"
           },
           {
-            "km": "ឃុំ គគីរ"        "en": "Kokir Commune",
+            "km": "ឃុំ គគីរ",
+            "en": "Kokir Commune",
             "code": "200409"
           },
           {
@@ -7768,7 +7886,7 @@
             "code": "200412"
           },
           {
-         km": "ឃុំ សំបូរ",
+            "km": "ឃុំ សំបូរ",
             "en": "Sambuor Commune",
             "code": "200413"
           },
@@ -7784,7 +7902,7 @@
           },
           {
             "km": "ឃុំ ត្រស់",
-    "Tras Commune",
+            "en": "Tras Commune",
             "code": "200416"
           }
         ]
@@ -7803,7 +7921,7 @@
           {
             "km": "ឃុំ បាសាក់",
             "en": "Basak Commune",
-        "code": "200502"
+            "code": "200502"
           },
           {
             "km": "ឃុំ ចំបក់",
@@ -7821,7 +7939,8 @@
             "code": "200505"
           },
           {
-            "km": "ឃុំ á   "en": "Chheu Teal Commune",
+            "km": "ឃុំ ឈើទាល",
+            "en": "Chheu Teal Commune",
             "code": "200506"
           },
           {
@@ -7839,7 +7958,8 @@
             "en": "Kraol Kou Commune",
             "code": "200509"
           },
-                "km": "ឃុំ គ្រួស",
+          {
+            "km": "ឃុំ គ្រួស",
             "en": "Krous Commune",
             "code": "200510"
           },
@@ -7855,7 +7975,7 @@
           },
           {
             "km": "ឃុំ ស្វាយជ្រំ",
-            "en": y Chrum Commune",
+            "en": "Svay Chrum Commune",
             "code": "200513"
           },
           {
@@ -7876,7 +7996,7 @@
         ]
       },
       {
-  "id": 1701,
+        "id": 1701,
         "no": "20.6",
         "location_kh": "ស្រុកស្វាយទាប",
         "location_en": "Svay Teab District",
@@ -7892,7 +8012,8 @@
             "code": "200602"
           },
           {
-            "km": "ឃុំ មនá   "en": "Monourom Commune",
+            "km": "ឃុំ មនោរម្យ",
+            "en": "Monourom Commune",
             "code": "200603"
           },
           {
@@ -7910,7 +8031,8 @@
             "en": "Prasoutr Commune",
             "code": "200606"
           },
-              "km": "ឃុំ រមាំងថ្កោល",
+          {
+            "km": "ឃុំ រមាំងថ្កោល",
             "en": "Romeang Thkaol Commune",
             "code": "200607"
           },
@@ -7929,7 +8051,7 @@
       {
         "id": 1712,
         "no": "20.7",
-      ocation_kh": "ក្រុងស្វាយរៀង",
+        "location_kh": "ក្រុងស្វាយរៀង",
         "location_en": "Svay Reang Municipality",
         "codes": [
           {
@@ -7943,7 +8065,8 @@
             "code": "200702"
           },
           {
-            "km": "សង្កាត់ គ            "en": "Sangkat Koy Trabaek",
+            "km": "សង្កាត់ គយត្របែក",
+            "en": "Sangkat Koy Trabaek",
             "code": "200703"
           },
           {
@@ -7978,7 +8101,7 @@
             "km": "សង្កាត់ បាទី",
             "en": "Sangkat Bati",
             "code": "200801"
-      },
+          },
           {
             "km": "សង្កាត់ បាវិត",
             "en": "Sangkat Bavet",
@@ -7995,7 +8118,7 @@
             "code": "200804"
           },
           {
-            "km": "សងរៃអង្គុញ",
+            "km": "សង្កាត់ ព្រៃអង្គុញ",
             "en": "Sangkat Prey Angkunh",
             "code": "200805"
           }
@@ -8016,7 +8139,8 @@
           {
             "km": "ឃុំ អង្កាញ់",
             "en": "Angkanh Commune",
-            "code        },
+            "code": "210101"
+          },
           {
             "km": "ឃុំ អង្គខ្នុរ",
             "en": "Angk Khnor Commune",
@@ -8033,7 +8157,8 @@
             "code": "210104"
           },
           {
-            "km": "ឃុំ ប្រាំបីមុá           "en": "Prambei Mum Commune",
+            "km": "ឃុំ ប្រាំបីមុំ",
+            "en": "Prambei Mum Commune",
             "code": "210105"
           },
           {
@@ -8050,7 +8175,8 @@
             "km": "ឃុំ រនាម",
             "en": "Roneam Commune",
             "code": "210108"
-             {
+          },
+          {
             "km": "ឃុំ សំបូរ",
             "en": "Sambuor Commune",
             "code": "210109"
@@ -8068,7 +8194,7 @@
           {
             "km": "ឃុំ ស្រង៉ែ",
             "en": "Srangae Commune",
-        "code": "210112"
+            "code": "210112"
           },
           {
             "km": "ឃុំ ធ្លក",
@@ -8088,7 +8214,8 @@
         "location_kh": "ស្រុកត្រាំកក់",
         "location_en": "Tram Kak District",
         "codes": [
-              "km": "ឃុំ អង្គតាសោម",
+          {
+            "km": "ឃុំ អង្គតាសោម",
             "en": "Angk Ta Saom Commune",
             "code": "210201"
           },
@@ -8105,7 +8232,7 @@
           {
             "km": "ឃុំ លាយបូរ",
             "en": "Leay Bour Commune",
-      "code": "210204"
+            "code": "210204"
           },
           {
             "km": "ឃុំ ញ៉ែងញ៉ង",
@@ -8122,7 +8249,8 @@
             "en": "Trapeang Kranhoung Commune",
             "code": "210207"
           },
-              "km": "ឃុំ ឧត្តមសុរិយា",
+          {
+            "km": "ឃុំ ឧត្តមសុរិយា",
             "en": "Otdam Sorya Commune",
             "code": "210208"
           },
@@ -8154,7 +8282,8 @@
           {
             "km": "ឃុំ ត្រពាំងធំខាងជើង",
             "en": "Trapeang Thum Khang Cheung Commune",
-            "code": "210214  },
+            "code": "210214"
+          },
           {
             "km": "ឃុំ ត្រពាំងធំខាងត្បូង",
             "en": "Trapeang Thum Khang Tboung Commune",
@@ -8186,7 +8315,7 @@
           {
             "km": "ឃុំ ជំរះពេន",
             "en": "Chumreah Pen Commune",
-         0304"
+            "code": "210304"
           },
           {
             "km": "ឃុំ ខ្វាវ",
@@ -8205,7 +8334,8 @@
           },
           {
             "km": "ឃុំ សំរោង",
-            "en": "Samra            "code": "210308"
+            "en": "Samraong Commune",
+            "code": "210308"
           },
           {
             "km": "ឃុំ សឹង្ហ",
@@ -8227,7 +8357,7 @@
       {
         "id": 1776,
         "no": "21.4",
-  ion_kh": "ស្រុកព្រៃកប្បាស",
+        "location_kh": "ស្រុកព្រៃកប្បាស",
         "location_en": "Prey Kabbas District",
         "codes": [
           {
@@ -8243,7 +8373,7 @@
           {
             "km": "ឃុំ ចំប៉ា",
             "en": "Champa Commune",
-        "code": "210403"
+            "code": "210403"
           },
           {
             "km": "ឃុំ ចារ",
@@ -8261,7 +8391,8 @@
             "code": "210406"
           },
           {
-            "km": "ឃុំ ក្តាញ់",         "en": "Kdanh Commune",
+            "km": "ឃុំ ក្តាញ់",
+            "en": "Kdanh Commune",
             "code": "210407"
           },
           {
@@ -8277,7 +8408,7 @@
           {
             "km": "ឃុំ ព្រៃល្វា",
             "en": "Prey Lvea Commune",
-            "code"
+            "code": "210410"
           },
           {
             "km": "ឃុំ ព្រៃផ្តៅ",
@@ -8298,7 +8429,8 @@
       },
       {
         "id": 1791,
-        "no": "21.5",location_kh": "ស្រុកកោះអណ្តែត",
+        "no": "21.5",
+        "location_kh": "ស្រុកកោះអណ្តែត",
         "location_en": "Kaoh Andaet District",
         "codes": [
           {
@@ -8313,7 +8445,7 @@
           },
           {
             "km": "ឃុំ ព្រៃខ្លា",
-            "en": "Prune",
+            "en": "Prey Khla Commune",
             "code": "210503"
           },
           {
@@ -8332,7 +8464,7 @@
             "code": "210506"
           }
         ]
-    },
+      },
       {
         "id": 1799,
         "no": "21.6",
@@ -8348,7 +8480,8 @@
             "km": "ឃុំ ព្រះបាទជាន់ជុំ",
             "en": "Preah Bat Choan Chum Commune",
             "code": "210602"
-                 {
+          },
+          {
             "km": "ឃុំ កំណប់",
             "en": "Kamnab Commune",
             "code": "210603"
@@ -8381,7 +8514,8 @@
           {
             "km": "ឃុំ ព្រៃរំដេង",
             "en": "Prey Rumdeng Commune",
-            "code": "210609          },
+            "code": "210609"
+          },
           {
             "km": "ឃុំ រាមអណ្តើក",
             "en": "Ream Andaeuk Commune",
@@ -8402,7 +8536,7 @@
       {
         "id": 1813,
         "no": "21.7",
-        "loon_kh": "ស្រុកបូរីជល់សារ",
+        "location_kh": "ស្រុកបូរីជល់សារ",
         "location_en": "Borei Cholsar District",
         "codes": [
           {
@@ -8436,7 +8570,7 @@
         "id": 1820,
         "no": "21.8",
         "location_kh": "ស្រុកបាទី",
-       tion_en": "Bati District",
+        "location_en": "Bati District",
         "codes": [
           {
             "km": "ឃុំ ចំបក់",
@@ -8454,7 +8588,8 @@
             "code": "210803"
           },
           {
-            "km": "ឃុំ កណ្តឹង""en": "Kandoeng Commune",
+            "km": "ឃុំ កណ្តឹង",
+            "en": "Kandoeng Commune",
             "code": "210804"
           },
           {
@@ -8470,7 +8605,8 @@
           {
             "km": "ឃុំ ក្រាំងធ្នុង",
             "en": "Krang Thnong Commune",
-            "code":          },
+            "code": "210807"
+          },
           {
             "km": "ឃុំ លំពង់",
             "en": "Lumpong Commung",
@@ -8506,7 +8642,7 @@
             "en": "Trapeang Krasang Commune",
             "code": "210814"
           },
-    {
+          {
             "km": "ឃុំ ត្រពាំងសាប",
             "en": "Trapeang Sab Commune",
             "code": "210815"
@@ -8524,7 +8660,8 @@
             "en": "Angkor Borei Commune",
             "code": "210901"
           },
-          "km": "ឃុំ បាស្រែ",
+          {
+            "km": "ឃុំ បាស្រែ",
             "en": "Ba Srae Commune",
             "code": "210902"
           },
@@ -8559,7 +8696,7 @@
           {
             "km": "សង្កាត់ បារាយណ៍",
             "en": "",
-     de": "211001"
+            "code": "211001"
           },
           {
             "km": "សង្កាត់ រកាក្នុង",
@@ -8582,7 +8719,7 @@
       {
         "id": 1852,
         "no": "22.1",
-        "location_kh": "ស្រុកដំើរ",
+        "location_kh": "ស្រុកដំណាក់ចង្អើរ",
         "location_en": "Damnak Chang'aeur District",
         "codes": [
           {
@@ -8601,7 +8738,7 @@
         "id": 1856,
         "no": "22.2",
         "location_kh": "ក្រុងកែប",
-        "location_en": "Kaeb Mulity",
+        "location_en": "Kaeb Municipality",
         "codes": [
           {
             "km": "សង្កាត់ កែប",
@@ -8621,7 +8758,9 @@
         ]
       }
     ]
-  }: 23,
+  },
+  {
+    "id": 23,
     "name": "ខេត្តប៉ៃលិន",
     "districts": [
       {
@@ -8637,7 +8776,7 @@
           },
           {
             "km": "ឃុំ ស្ទឹងត្រង់",
-            "en": "Stueng Trang Cmune",
+            "en": "Stueng Trang Commune",
             "code": "230102"
           },
           {
@@ -8656,7 +8795,7 @@
         "id": 1869,
         "no": "23.2",
         "location_kh": "ក្រុងប៉ៃលិន",
-        "location_en": "unicipality",
+        "location_en": "Pailin Municipality",
         "codes": [
           {
             "km": "សង្កាត់ ប៉ៃលិន",
@@ -8673,7 +8812,7 @@
             "en": "Sangkat Tuol Lvea ",
             "code": "230203"
           },
-    
+          {
             "km": "សង្កាត់ បរយ៉ាខា",
             "en": "Sangkat Bar Yakha",
             "code": "230204"
@@ -8693,7 +8832,7 @@
         "location_en": "Banteay Ampil District",
         "codes": [
           {
-            "km": "ឃុំ á",
+            "km": "ឃុំ អំពិល",
             "en": "Ampil Commune",
             "code": "240201"
           },
@@ -8713,7 +8852,7 @@
             "code": "240204"
           }
         ]
-  },
+      },
       {
         "id": 1890,
         "no": "24.3",
@@ -8731,7 +8870,7 @@
             "code": "240302"
           },
           {
-            "km": "ឃុំ ាំង",
+            "km": "ឃុំ ក្រសាំង",
             "en": "Krasang Commune",
             "code": "240303"
           },
@@ -8766,7 +8905,7 @@
           {
             "km": "ឃុំ ព្រះប្រឡាយ",
             "en": "Preah Pralay Commune",
-            "co0404"
+            "code": "240404"
           },
           {
             "km": "ឃុំ ទំនប់ដាច់",
@@ -8784,7 +8923,8 @@
         "id": 1904,
         "no": "24.5",
         "location_kh": "ក្រុងសំរោង",
-        "location_en": "Samraong Municipa "codes": [
+        "location_en": "Samraong Municipality",
+        "codes": [
           {
             "km": "សង្កាត់ បន្សាយរាក់",
             "en": "Sangkat Bansay Reak",
@@ -8800,7 +8940,8 @@
             "en": "Sangkat Koun Kriel",
             "code": "240503"
           },
-          "km": "សង្កាត់ សំរោង",
+          {
+            "km": "សង្កាត់ សំរោង",
             "en": "Sangkat Samraong ",
             "code": "240504"
           },
@@ -8818,7 +8959,7 @@
         "location_en": "Anlong Veaeng District",
         "codes": [
           {
-      "km": "ស្រុក អន្លង់វែង",
+            "km": "ស្រុក អន្លង់វែង",
             "en": "Anlong Veaeng Commune",
             "code": "240101"
           },
@@ -8833,7 +8974,8 @@
             "code": "240103"
           },
           {
-            "km": "ឃុំ á     "en": "Thlat  Commune",
+            "km": "ឃុំ ថ្លាត",
+            "en": "Thlat  Commune",
             "code": "240104"
           },
           {
@@ -8889,7 +9031,7 @@
             "km": "ឃុំ តំបែរ",
             "en": "Dambae Commune",
             "code": "250102"
-          
+          },
           {
             "km": "ឃុំ គោកស្រុក",
             "en": "Kouk Srok Commune",
@@ -8907,7 +9049,7 @@
           },
           {
             "km": "ឃុំ ទឹកជ្រៅ",
-            "en": "Tuommune",
+            "en": "Tuek Chrov Commune",
             "code": "250106"
           },
           {
@@ -8925,7 +9067,8 @@
         "codes": [
           {
             "km": "ឃុំ ឈូក",
-            "en": "Chhuk Commune",     "code": "250201"
+            "en": "Chhuk Commune",
+            "code": "250201"
           },
           {
             "km": "ឃុំ ជំនីក",
@@ -8943,7 +9086,7 @@
             "code": "250204"
           },
           {
-            "km": "ឃុá្រូចឆ្មារ",
+            "km": "ឃុំ ក្រូចឆ្មារ",
             "en": "Krouch Chhmar Commune",
             "code": "250205"
           },
@@ -8960,7 +9103,7 @@
           {
             "km": "ឃុំ ព្រែកអាជី",
             "en": "Preaek A Chi Commune",
-      : "250208"
+            "code": "250208"
           },
           {
             "km": "ឃុំ រការខ្នុរ",
@@ -8978,7 +9121,8 @@
             "code": "250211"
           },
           {
-            "km": "ឃុំ á            "en": "Tuol Snuol Commune",
+            "km": "ឃុំ ទួលស្នួល",
+            "en": "Tuol Snuol Commune",
             "code": "250212"
           }
         ]
@@ -8997,7 +9141,7 @@
           {
             "km": "ឃុំ ជាំ",
             "en": "Choam Commune",
-          ode": "250302"
+            "code": "250302"
           },
           {
             "km": "ឃុំ ជាំក្រវៀន",
@@ -9015,7 +9159,8 @@
             "code": "250305"
           },
           {
-            "km": "ឃុំ កំá            "en": "Kampoan Commune",
+            "km": "ឃុំ កំពាន់",
+            "en": "Kampoan Commune",
             "code": "250306"
           },
           {
@@ -9034,7 +9179,8 @@
             "code": "250309"
           },
           {
-            "km": "á           "en": "Rumchek Commune",
+            "km": "ឃុំ រំចេក",
+            "en": "Rumchek Commune",
             "code": "250310"
           },
           {
@@ -9053,7 +9199,7 @@
             "code": "250313"
           },
           {
-        "km": "ឃុំ គគីរ",
+            "km": "ឃុំ គគីរ",
             "en": "Kokri Commune",
             "code": "250314"
           }
@@ -9071,7 +9217,8 @@
             "code": "250401"
           },
           {
-            "km": "ឃុំ ច          "en": "Chak Commune",
+            "km": "ឃុំ ចក",
+            "en": "Chak Commune",
             "code": "250402"
           },
           {
@@ -9090,7 +9237,7 @@
             "code": "250405"
           },
           {
-            "km":",
+            "km": "ឃុំ ព្រះធាតុ",
             "en": "Preah Theat Commune",
             "code": "250406"
           },
@@ -9109,7 +9256,7 @@
         "codes": [
           {
             "km": "ឃុំ ដូនតី",
-            "en": ne",
+            "en": "Dountei Commune",
             "code": "250501"
           },
           {
@@ -9128,7 +9275,7 @@
             "code": "250504"
           },
           {
-            "km": ",
+            "km": "ឃុំ ក្រែក",
             "en": "Kraek Commune",
             "code": "250505"
           },
@@ -9145,7 +9292,7 @@
           {
             "km": "ឃុំ វាលម្លូរ",
             "en": "Veal Mlu Commune",
-            "code": "25050
+            "code": "250508"
           }
         ]
       },
@@ -9164,7 +9311,8 @@
             "km": "ឃុំ បឹងព្រួល",
             "en": "Boeng Pruol Commune",
             "code": "250602"
-                 {
+          },
+          {
             "km": "ឃុំ​ ជីគរ",
             "en": "Chikor Commune",
             "code": "250603"
@@ -9181,7 +9329,8 @@
           },
           {
             "km": "ឃុំ ជប់",
-            "en": "Cob           "code": "250606"
+            "en": "Cob Commune",
+            "code": "250606"
           },
           {
             "km": "ឃុំ គរ",
@@ -9199,7 +9348,7 @@
             "code": "250609"
           },
           {
-            "km": "ឃុំ ពាមជីលាំ,
+            "km": "ឃុំ ពាមជីលាំង",
             "en": "Peam Chileang Commune",
             "code": "250610"
           },
@@ -9235,7 +9384,8 @@
             "km": "សង្កាត់ វិហារលួង",
             "en": "Sangkat Vihear Luong ",
             "code": "250701"
-                   {
+          },
+          {
             "km": "សង្កាត់ សួង",
             "en": "Sangkat Suong ",
             "code": "250702"
@@ -9256,7 +9406,8 @@
         "codes": [
           {
             "km": "ឃុំ បឹងទូក",
-            "en": "Boeng Tuk           "code": "070201"
+            "en": "Boeng Tuk Commune",
+            "code": "070201"
           },
           {
             "km": "ឃុំ ជុំគ្រៀល",
@@ -9273,7 +9424,7 @@
             "en": "Kampong Samraong Commune",
             "code": "070204"
           },
-{
+          {
             "km": "ឃុំ កណ្តោល",
             "en": "Kandaol Commune",
             "code": "070205"
@@ -9290,7 +9441,7 @@
           },
           {
             "km": "ឃុំ ម៉ាក់ប្រាង្គ",
-          : "Makprang Commune",
+            "en": "Makprang Commune",
             "code": "070208"
           },
           {
@@ -9306,7 +9457,8 @@
           {
             "km": "ឃុំ ព្រៃថ្នង",
             "en": "Prey Thnang Commune",
-            "code": "070211"   },
+            "code": "070211"
+          },
           {
             "km": "ឃុំ ស្ទឹងកែវ",
             "en": "Stueng Kaev Commune",
@@ -9323,7 +9475,7 @@
             "code": "070214"
           },
           {
-            "km": "ឃុំ ត្រពាសង្កែ",
+            "km": "ឃុំ ត្រពាំងសង្កែ",
             "en": "Trapeang Sangkae Commune",
             "code": "070215"
           },
@@ -9341,7 +9493,7 @@
         "location_en": "Banteay Meas District",
         "codes": [
           {
-            "km": "ឃុំ បនាងកើត",
+            "km": "ឃុំ បន្ទាយមាសខាងកើត",
             "en": "Banteay Meas Khang Kaeut Commune",
             "code": "070301"
           },
@@ -9356,7 +9508,8 @@
             "code": "070303"
           },
           {
-            "km": "ឃុំ សំរោងក្រោá     "en": "Samraong Kraom Commune",
+            "km": "ឃុំ សំរោងក្រោម",
+            "en": "Samraong Kraom Commune",
             "code": "070304"
           },
           {
@@ -9371,7 +9524,7 @@
           },
           {
             "km": "ឃុំ ស្តេចគង់ខាងលិច",
-            "en" kong khang Lech Commune",
+            "en": "Sdach kong khang Lech Commune",
             "code": "070307"
           },
           {
@@ -9385,7 +9538,8 @@
             "code": "070309"
           },
           {
-            "km": "ឃុំ ត្រពាំងសាលាខាងá       "en": "Trapeang Sala Khang Kaeut Commune",
+            "km": "ឃុំ ត្រពាំងសាលាខាងកើត",
+            "en": "Trapeang Sala Khang Kaeut Commune",
             "code": "070310"
           },
           {
@@ -9399,7 +9553,7 @@
             "code": "070312"
           },
           {
-            "km": "ឃុំ ទូកមá·ច",
+            "km": "ឃុំ ទូកមាសខាងលិច",
             "en": "Tuk Meas Khang Lech Commune",
             "code": "070313"
           },
@@ -9417,7 +9571,7 @@
       },
       {
         "id": 2043,
-: "7.4",
+        "no": "7.4",
         "location_kh": "ស្រុកអង្គរជ័យ",
         "location_en": "Angkor Chey District",
         "codes": [
@@ -9432,7 +9586,8 @@
             "code": "070402"
           },
           {
-            "km": "ឃុំ ចំប៉á   "en": "Champei Commune",
+            "km": "ឃុំ ចំប៉ី",
+            "en": "Champei Commune",
             "code": "070403"
           },
           {
@@ -9449,7 +9604,8 @@
             "km": "ឃុំ ដើមដូង",
             "en": "Daeum Doung Commune",
             "code": "070406"
-         {
+          },
+          {
             "km": "ឃុំ ម្រោម",
             "en": "Mroum Commune",
             "code": "070407"
@@ -9466,7 +9622,8 @@
           },
           {
             "km": "ឃុំ សំឡាញ",
-            "en": "Samlanh Commun        "code": "070410"
+            "en": "Samlanh Commune",
+            "code": "070410"
           },
           {
             "km": "ឃុំ តានី",
@@ -9502,7 +9659,7 @@
             "code": "070504"
           },
           {
-      "ឃុំ មានរិទ្ធិ",
+            "km": "ឃុំ មានរិទ្ធិ",
             "en": "Mean Ritth Commune",
             "code": "070505"
           },
@@ -9517,7 +9674,8 @@
             "code": "070507"
           },
           {
-            "km": "ឃ            "en": "Totoung Commune",
+            "km": "ឃុំ ទទុង",
+            "en": "Totoung Commune",
             "code": "070508"
           },
           {
@@ -9536,7 +9694,7 @@
         "id": 2068,
         "no": "7.6",
         "location_kh": "ស្រុកកំពង់ត្រាច",
-      ocation_en": "Kampong Trach District",
+        "location_en": "Kampong Trach District",
         "codes": [
           {
             "km": "ឃុំ បឹងសាលាខាងជើង",
@@ -9549,7 +9707,8 @@
             "code": "070602"
           },
           {
-            "km": "ឃុំ ដំណាក់កន្ទួតខាងជើ    "en": "Damnak Kantuot Khang Cheung Commune",
+            "km": "ឃុំ ដំណាក់កន្ទួតខាងជើង",
+            "en": "Damnak Kantuot Khang Cheung Commune",
             "code": "070603"
           },
           {
@@ -9563,7 +9722,7 @@
             "code": "070605"
           },
           {
-            "km":ំ កំពង់ត្រាចខាងលិច",
+            "km": "ឃុំ កំពង់ត្រាចខាងលិច",
             "en": "Kompong Trach Khang Lech Commune",
             "code": "070606"
           },
@@ -9578,7 +9737,7 @@
             "code": "070608"
           },
           {
-          "km": "ឃុំ អង្គសុរភី",
+            "km": "ឃុំ អង្គសុរភី",
             "en": "Angk Sophy Commune",
             "code": "070609"
           },
@@ -9593,7 +9752,7 @@
             "code": "070611"
           },
           {
-            "km": "ឃáខាងលិច",
+            "km": "ឃុំ ឬស្សីស្រុកខាងលិច",
             "en": "Ruessei Srok Khang Lech Commune",
             "code": "070612"
           },
@@ -9610,7 +9769,7 @@
         ]
       },
       {
-       id": 2084,
+        "id": 2084,
         "no": "7.7",
         "location_kh": "ស្រុកជុំគីរិ",
         "location_en": "Chum Kiri District: 7 Communes",
@@ -9626,7 +9785,8 @@
             "code": "070702"
           },
           {
-            "km": "ឃុំ ស្នá        "en": "Snay Anhchit Commune",
+            "km": "ឃុំ ស្នាយអញ្ជិត",
+            "en": "Snay Anhchit Commune",
             "code": "070703"
           },
           {
@@ -9642,7 +9802,7 @@
           {
             "km": "ឃុំ ស្រែសំរោង",
             "en": "Srae Somraong Commune",
-            "co "070706"
+            "code": "070706"
           },
           {
             "km": "ឃុំ ត្រពាំងរាំង",
@@ -9660,7 +9820,7 @@
           {
             "km": "សង្កាត់ កំពង់គណ្តាល",
             "en": "Sangkat Kampong Kandal",
-          "code": "070801"
+            "code": "070801"
           },
           {
             "km": "សង្កាត់ ក្រាំងអំពិល",
@@ -9675,7 +9835,7 @@
           {
             "km": "សង្កាត់ អណ្តូងខ្មែរ",
             "en": "Sangkat Andoung khmer",
-            : "070804"
+            "code": "070804"
           },
           {
             "km": "សង្កាត់ ត្រើយកោះ",
@@ -9695,7 +9855,8 @@
             "en": "Baniev Commune",
             "code": "070101"
           },
-          "km": "ឃុំ​ តាកែន",
+          {
+            "km": "ឃុំ​ តាកែន",
             "en": "Takaen Commune",
             "code": "070102"
           },
@@ -9712,7 +9873,7 @@
           {
             "km": "ឃុំ ដូនយ៉យ",
             "en": "Doun Yay Commune",
-            "code"70105"
+            "code": "070105"
           },
           {
             "km": "ឃុំ ក្រាំងស្បូវ",
@@ -9730,7 +9891,7 @@
             "code": "070108"
           },
           {
-            "km": "ឃុាំង",
+            "km": "ឃុំ ត្រពាំងភ្លាំង",
             "en": "Trapeang Phleang Commune ",
             "code": "070109"
           },
@@ -9747,7 +9908,8 @@
           {
             "km": "ឃុំ សត្វពង",
             "en": "Satv Pong Commune",
-            "code": "07  },
+            "code": "070112"
+          },
           {
             "km": "ឃុំ ត្រពាំងបី",
             "en": "Trapeang Bei Commune",
