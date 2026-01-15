@@ -18,6 +18,9 @@
               <% if postal_code.name_km.present? %>
                 <p class="name-km"><%= highlight_match(postal_code.name_km, query) %></p>
               <% end %>
+              <% if postal_code.parent_location.present? %>
+                <p class="parent-location"><%= postal_code.parent_location %></p>
+              <% end %>
             </div>
             <span class="copy-hint">Click to copy</span>
           </div>

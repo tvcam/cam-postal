@@ -173,4 +173,42 @@ class PostalCode < ApplicationRecord
     else location_type&.titleize
     end
   end
+
+  # Get province code from postal code (first 2 digits + 0000)
+  def province_code
+    "#{postal_code[0, 2]}0000"
+  end
+
+  # Get district code from postal code (first 4 digits + 00)
+  def district_code
+    "#{postal_code[0, 4]}00"
+  end
+
+  # Get parent province record
+  def province
+    return self if province?
+    @province ||= PostalCode.find_by(postal_code: province_code, location_type: "province")
+  end
+
+  # Get parent district record
+  def district
+    return self if district?
+    return nil if province?
+    @district ||= PostalCode.find_by(postal_code: district_code, location_type: "district")
+  end
+
+  # Get formatted parent location string
+  def parent_location
+    parts = []
+    parts << district.name_en if commune? && district
+    parts << province.name_en if province && !province?
+    parts.join(", ")
+  end
+
+  def parent_location_km
+    parts = []
+    parts << district.name_km if commune? && district&.name_km.present?
+    parts << province.name_km if province&.name_km.present? && !province?
+    parts.join(", ")
+  end
 end

@@ -393,6 +393,14 @@ body {
   color: var(--text-light);
 }
 
+.result-body .parent-location {
+  font-size: 0.8125rem;
+  color: var(--text-light);
+  opacity: 0.8;
+  margin-top: 0.25rem;
+  font-style: italic;
+}
+
 /* No Results */
 .no-results,
 .welcome-message {
