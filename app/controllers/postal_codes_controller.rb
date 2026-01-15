@@ -12,7 +12,13 @@ class PostalCodesController < ApplicationController
     SiteStat.increment("searches") if @query.present?
 
     respond_to do |format|
-      format.html { render layout: false }
+      format.html do
+        if turbo_frame_request?
+          render layout: false
+        else
+          render :search_page
+        end
+      end
       format.turbo_stream
     end
   end

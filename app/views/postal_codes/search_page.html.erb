@@ -1,0 +1,39 @@
+<% content_for :title, @query.present? ? "#{@query} - Cambodia Postal Code" : "Cambodia Postal Code Search" %>
+
+<div class="search-section" data-controller="geolocation" data-geolocation-search-outlet="#search-form">
+  <h1 class="title">Cambodia Postal Code</h1>
+
+  <%= form_with url: search_path, method: :get, id: "search-form", data: { controller: "search", turbo_frame: "results" } do |f| %>
+    <div class="search-box">
+      <input
+        type="search"
+        name="q"
+        value="<%= @query %>"
+        placeholder="Search by postal code, province, district, commune..."
+        class="search-input"
+        autocomplete="off"
+        autofocus
+        data-search-target="input"
+        data-action="input->search#search"
+      >
+      <button type="submit" class="search-btn">
+        Search
+      </button>
+    </div>
+  <% end %>
+
+  <div class="location-row">
+    <button type="button" class="location-btn" data-geolocation-target="button" data-action="geolocation#locate">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="3"/>
+        <path d="M12 2v4m0 12v4m10-10h-4M6 12H2"/>
+      </svg>
+      Use my location
+    </button>
+    <span class="location-status" data-geolocation-target="status"></span>
+  </div>
+</div>
+
+<%= turbo_frame_tag "results" do %>
+  <%= render partial: "results", locals: { results: @results, query: @query } %>
+<% end %>
