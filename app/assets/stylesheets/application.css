@@ -94,6 +94,40 @@ body {
   font-weight: 700;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: inherit;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.install-btn:hover {
+  background: var(--primary-dark);
+}
+
+.install-btn:active {
+  transform: scale(0.95);
+}
+
+.install-btn svg {
+  flex-shrink: 0;
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -490,6 +524,16 @@ body {
   .theme-toggle {
     width: 36px;
     height: 36px;
+  }
+
+  .install-btn {
+    padding: 0.375rem 0.625rem;
+    font-size: 0.75rem;
+  }
+
+  .install-btn svg {
+    width: 14px;
+    height: 14px;
   }
 
   .search-section {
