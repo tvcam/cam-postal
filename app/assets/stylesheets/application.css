@@ -86,7 +86,9 @@ body {
 }
 
 .logo-icon {
-  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
 }
 
 .logo-text {
@@ -607,11 +609,8 @@ body {
   }
 
   .logo-icon {
-    font-size: 1.5rem;
-  }
-
-  .logo-text {
-    font-size: 1.25rem;
+    width: 32px;
+    height: 32px;
   }
 
   .theme-toggle {
