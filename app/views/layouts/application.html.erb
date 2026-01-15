@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XGNMTH4T9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5XGNMTH4T9');
+    </script>
+
     <title><%= content_for(:title) || "Cambodia Postal Code Directory - Find ZIP Codes for All Provinces" %></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -69,6 +78,9 @@
           <span><%= number_with_delimiter(SiteStat.visits) %> visits</span>
           <span><%= number_with_delimiter(SiteStat.searches) %> searches</span>
           <span><%= number_with_delimiter(SiteStat.copies) %> copies</span>
+        </div>
+        <div class="legal-links">
+          <%= link_to "Privacy", privacy_path %> | <%= link_to "Terms", terms_path %>
         </div>
         <p>Hobby project by <a href="https://gotabs.net" target="_blank" rel="noopener">Gotabs Consulting</a></p>
       </footer>

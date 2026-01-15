@@ -14,6 +14,10 @@ Rails.application.routes.draw do
   # Sitemap
   get "sitemap", to: "sitemaps#show", as: :sitemap, defaults: { format: :xml }
 
+  # Legal pages
+  get "privacy", to: "pages#privacy", as: :privacy
+  get "terms", to: "pages#terms", as: :terms
+
   # Postal codes
   get "search", to: "postal_codes#search", as: :search
   get "locate", to: "postal_codes#locate", as: :locate

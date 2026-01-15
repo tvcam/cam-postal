@@ -17,12 +17,25 @@ class PostalCode < ApplicationRecord
 
     # Combine FTS and fuzzy results for best matches
     fts_results = fts_search(sanitized)
-    fuzzy_results = fuzzy_search(sanitized)
 
-    # Merge: FTS results first, then fuzzy results not in FTS
-    fts_ids = fts_results.map(&:id).to_set
-    combined = fts_results + fuzzy_results.reject { |r| fts_ids.include?(r.id) }
+    # Skip fuzzy search for Khmer queries (soundex won't help)
+    if khmer_query?(sanitized)
+      # For Khmer, also do direct LIKE search on name_km
+      khmer_like_results = where("name_km LIKE ?", "%#{sanitized}%").limit(50)
+      fts_ids = fts_results.map(&:id).to_set
+      combined = fts_results + khmer_like_results.reject { |r| fts_ids.include?(r.id) }
+    else
+      fuzzy_results = fuzzy_search(sanitized)
+      fts_ids = fts_results.map(&:id).to_set
+      combined = fts_results + fuzzy_results.reject { |r| fts_ids.include?(r.id) }
+    end
+
     combined.first(50)
+  end
+
+  def self.khmer_query?(query)
+    # Khmer Unicode range: U+1780 to U+17FF
+    query.match?(/[\u1780-\u17FF]/)
   end
 
   def self.fts_search(query)

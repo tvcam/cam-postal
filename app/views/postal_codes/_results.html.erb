@@ -15,7 +15,9 @@
             </div>
             <div class="result-body">
               <p class="name-en"><%= highlight_match(postal_code.name_en, query) %></p>
-              <p class="name-km"><%= postal_code.name_km %></p>
+              <% if postal_code.name_km.present? %>
+                <p class="name-km"><%= highlight_match(postal_code.name_km, query) %></p>
+              <% end %>
             </div>
             <span class="copy-hint">Click to copy</span>
           </div>
