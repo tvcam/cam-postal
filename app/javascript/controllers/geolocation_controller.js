@@ -67,7 +67,7 @@ export default class extends Controller {
   searchFor(query) {
     if (this.hasSearchOutlet) {
       this.searchOutlet.inputTarget.value = query
-      this.searchOutlet.element.requestSubmit()
+      this.searchOutlet.search()
     }
   }
 

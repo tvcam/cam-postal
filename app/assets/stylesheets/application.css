@@ -492,6 +492,27 @@ body {
   flex-shrink: 0;
 }
 
+/* Unity Slogan */
+.unity-slogan {
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.unity-slogan .slogan-km {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.unity-slogan .slogan-en {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  font-style: italic;
+}
+
 .no-results p:first-child,
 .welcome-message p:first-child {
   font-size: 1.125rem;

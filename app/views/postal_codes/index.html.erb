@@ -1,7 +1,7 @@
 <% content_for :title, "Cambodia Postal Code Search" %>
 
-<div data-controller="search">
-  <div class="search-section" data-controller="geolocation" data-geolocation-search-outlet="#search-form">
+<div data-controller="search" id="search-controller">
+  <div class="search-section" data-controller="geolocation" data-geolocation-search-outlet="#search-controller">
     <h1 class="title">Cambodia Postal Code</h1>
 
     <%= form_with url: search_path, method: :get, id: "search-form", data: { turbo_frame: "results" } do |f| %>

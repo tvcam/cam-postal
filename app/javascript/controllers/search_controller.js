@@ -139,6 +139,7 @@ export default class extends Controller {
       this.resultsTarget.innerHTML = `
         <div class="results-section">
           <div class="no-results"><p>No results found for "${this.escapeHtml(query)}"</p></div>
+          ${this.sloganTemplate()}
         </div>`
       return
     }
@@ -149,6 +150,15 @@ export default class extends Controller {
         <div class="results-list">
           ${items.map(item => this.cardTemplate(item, query)).join("")}
         </div>
+        ${this.sloganTemplate()}
+      </div>`
+  }
+
+  sloganTemplate() {
+    return `
+      <div class="unity-slogan">
+        <p class="slogan-km">🇰🇭 សាមគ្គីជាកម្លាំង 🇰🇭</p>
+        <p class="slogan-en">Unity is Strength</p>
       </div>`
   }
 
@@ -177,6 +187,7 @@ export default class extends Controller {
       this.resultsTarget.innerHTML = `
         <div class="results-section">
           <div class="welcome-message"><p>Enter a search term to find postal codes</p></div>
+          ${this.sloganTemplate()}
         </div>`
       return
     }
@@ -197,6 +208,7 @@ export default class extends Controller {
             `).join("")}
           </div>
         </div>
+        ${this.sloganTemplate()}
       </div>`
   }
 
