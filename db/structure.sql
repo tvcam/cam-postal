@@ -30,6 +30,9 @@ CREATE TRIGGER postal_codes_au AFTER UPDATE ON postal_codes BEGIN
         INSERT INTO postal_codes_fts(rowid, postal_code, name_km, name_en)
         VALUES (new.id, new.postal_code, new.name_km, new.name_en);
       END;
+CREATE TABLE IF NOT EXISTS "site_stats" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "value" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
+CREATE UNIQUE INDEX "index_site_stats_on_name" ON "site_stats" ("name") /*application='CamPostal'*/;
 INSERT INTO "schema_migrations" (version) VALUES
+('20260115031238'),
 ('20260114181406');
 

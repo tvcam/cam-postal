@@ -445,6 +445,22 @@ body {
   text-decoration: underline;
 }
 
+.footer .stats {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  opacity: 0.7;
+}
+
+.footer .stats span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 /* Responsive */
 @media (max-width: 640px) {
   .container {

@@ -1,3 +1,19 @@
-<svg width="512" height="512" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="256" cy="256" r="256" fill="red"/>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#1e40af"/>
+
+  <!-- Envelope body -->
+  <rect x="80" y="160" width="352" height="240" rx="24" fill="#ffffff"/>
+
+  <!-- Envelope flap -->
+  <path d="M80 184 L256 320 L432 184" fill="none" stroke="#1e40af" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Location pin -->
+  <circle cx="380" cy="140" r="52" fill="#3b82f6"/>
+  <circle cx="380" cy="132" r="20" fill="#ffffff"/>
+  <path d="M380 152 L380 192" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- Postal lines -->
+  <rect x="120" y="300" width="160" height="16" rx="8" fill="#e2e8f0"/>
+  <rect x="120" y="340" width="120" height="16" rx="8" fill="#e2e8f0"/>
 </svg>

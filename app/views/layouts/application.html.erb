@@ -65,6 +65,11 @@
       </main>
 
       <footer class="footer">
+        <div class="stats">
+          <span><%= number_with_delimiter(SiteStat.visits) %> visits</span>
+          <span><%= number_with_delimiter(SiteStat.searches) %> searches</span>
+          <span><%= number_with_delimiter(SiteStat.copies) %> copies</span>
+        </div>
         <p>Hobby project by <a href="https://gotabs.net" target="_blank" rel="noopener">Gotabs Consulting</a></p>
       </footer>
     </div>

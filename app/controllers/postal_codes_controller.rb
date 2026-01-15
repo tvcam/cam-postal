@@ -2,16 +2,24 @@ class PostalCodesController < ApplicationController
   def index
     @query = params[:q].to_s.strip
     @results = @query.present? ? PostalCode.search(@query) : []
+    SiteStat.increment("visits")
   end
 
   def search
     @query = params[:q].to_s.strip
     @results = @query.present? ? PostalCode.search(@query) : []
 
+    SiteStat.increment("searches") if @query.present?
+
     respond_to do |format|
       format.html { render layout: false }
       format.turbo_stream
     end
+  end
+
+  def track_copy
+    SiteStat.increment("copies")
+    head :ok
   end
 
   def locate

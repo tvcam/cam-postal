@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+visits:
+  name: visits
+  value: 100
+
+searches:
+  name: searches
+  value: 50
+
+copies:
+  name: copies
+  value: 25

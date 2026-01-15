@@ -9,6 +9,14 @@ export default class extends Controller {
       setTimeout(() => {
         this.element.classList.remove("copied")
       }, 1500)
+
+      // Track copy event
+      fetch("/track_copy", {
+        method: "POST",
+        headers: {
+          "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content
+        }
+      }).catch(() => {})
     })
   }
 }

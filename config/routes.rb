@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   # Postal codes
   get "search", to: "postal_codes#search", as: :search
   get "locate", to: "postal_codes#locate", as: :locate
+  post "track_copy", to: "postal_codes#track_copy", as: :track_copy
   root "postal_codes#index"
 end
