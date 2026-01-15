@@ -5,6 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Rules
 
 - **Never include Co-Authored-By lines in git commits** - Do not add "Co-Authored-By: Claude" or any AI attribution in commit messages
+- **Ask for commit & deploy when changes are complete** - After completing a feature or fix, ask the user if they want to commit and deploy using `kamal deploy`
 
 ## Project Overview
 
