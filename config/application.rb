@@ -35,5 +35,8 @@ module CamPostal
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Use structure.sql instead of schema.rb to support FTS5 virtual tables
+    config.active_record.schema_format = :sql
   end
 end

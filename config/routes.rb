@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  # Admin
+  namespace :admin do
+    resources :postal_codes, only: :index
+  end
+
   # Health check
   get "up" => "rails/health#show", as: :rails_health_check
 

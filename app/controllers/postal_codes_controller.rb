@@ -9,8 +9,9 @@ class PostalCodesController < ApplicationController
     @results = @query.present? ? PostalCode.search(@query) : []
 
     respond_to do |format|
-      format.html { render partial: "results", locals: { results: @results, query: @query } }
+      format.html { render layout: false }
       format.turbo_stream
     end
   end
+
 end

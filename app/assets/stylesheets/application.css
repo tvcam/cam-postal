@@ -180,12 +180,55 @@ body {
   padding: 1rem 1.25rem;
   box-shadow: var(--shadow);
   border-left: 4px solid var(--border);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  cursor: pointer;
+  position: relative;
 }
 
 .result-card:hover {
   transform: translateX(4px);
   box-shadow: var(--shadow-lg);
+}
+
+.result-card:active {
+  transform: scale(0.98);
+}
+
+.result-card.copied {
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.result-card.copied::after {
+  content: "Copied!";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  background: var(--success);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.copy-hint {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  font-size: 0.7rem;
+  color: var(--text-light);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.result-card:hover .copy-hint {
+  opacity: 1;
+}
+
+.result-card.copied .copy-hint {
+  opacity: 0;
 }
 
 .result-card.province {
@@ -294,9 +337,13 @@ body {
   font-size: 0.875rem;
 }
 
-.footer-km {
-  margin-top: 0.25rem;
-  opacity: 0.8;
+.footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */

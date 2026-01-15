@@ -1,2 +1,3 @@
-<h1>PostalCodes#search</h1>
-<p>Find me in app/views/postal_codes/search.html.erb</p>
+<%= turbo_frame_tag "results" do %>
+  <%= render partial: "results", locals: { results: @results, query: @query } %>
+<% end %>
