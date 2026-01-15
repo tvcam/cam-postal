@@ -11,6 +11,9 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
   get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
+  # Sitemap
+  get "sitemap", to: "sitemaps#show", as: :sitemap, defaults: { format: :xml }
+
   # Postal codes
   get "search", to: "postal_codes#search", as: :search
   get "locate", to: "postal_codes#locate", as: :locate

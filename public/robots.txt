@@ -1,1 +1,8 @@
-# See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
+# Cambodia Postal Code Directory
+# https://postal.gotabs.net
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://postal.gotabs.net/sitemap.xml
