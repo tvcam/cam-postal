@@ -128,6 +128,29 @@ body {
   flex-shrink: 0;
 }
 
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  cursor: pointer;
+  color: var(--text);
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+.share-btn:hover {
+  background: var(--secondary);
+  border-color: var(--primary-light);
+}
+
+.share-btn:active {
+  transform: scale(0.95);
+}
+
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -604,6 +627,16 @@ body {
   .install-btn svg {
     width: 14px;
     height: 14px;
+  }
+
+  .share-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .share-btn svg {
+    width: 16px;
+    height: 16px;
   }
 
   .search-section {
