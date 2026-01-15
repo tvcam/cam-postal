@@ -3,7 +3,9 @@ import Fuse from "fuse.js"
 import LZString from "lz-string"
 
 const STORAGE_KEY = "postal_data_v1"
+const RECENT_KEY = "recent_searches"
 const DATA_URL = "/data.json"
+const MAX_RECENT = 8
 
 export default class extends Controller {
   static targets = ["input", "results", "frame", "form"]
@@ -110,6 +112,11 @@ export default class extends Controller {
 
     this.renderResults(results.map(r => r.item), query)
 
+    // Save to recent searches if results found
+    if (results.length > 0) {
+      this.saveRecentSearch(query)
+    }
+
     // Track search stat (fire and forget)
     if (query !== this.lastQuery) {
       this.lastQuery = query
@@ -164,10 +171,63 @@ export default class extends Controller {
 
   renderWelcome() {
     if (!this.hasResultsTarget) return
+    const recent = this.getRecentSearches()
+
+    if (recent.length === 0) {
+      this.resultsTarget.innerHTML = `
+        <div class="results-section">
+          <div class="welcome-message"><p>Enter a search term to find postal codes</p></div>
+        </div>`
+      return
+    }
+
     this.resultsTarget.innerHTML = `
       <div class="results-section">
-        <div class="welcome-message"><p>Enter a search term to find postal codes</p></div>
+        <div class="recent-searches">
+          <p class="recent-title">Recent searches</p>
+          <div class="recent-list">
+            ${recent.map(item => `
+              <button type="button" class="recent-item" data-action="click->search#selectRecent" data-query="${this.escapeHtml(item)}">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+                ${this.escapeHtml(item)}
+              </button>
+            `).join("")}
+          </div>
+        </div>
       </div>`
+  }
+
+  getRecentSearches() {
+    try {
+      return JSON.parse(localStorage.getItem(RECENT_KEY)) || []
+    } catch {
+      return []
+    }
+  }
+
+  saveRecentSearch(query) {
+    if (!query || query.length < 2) return
+    try {
+      let recent = this.getRecentSearches()
+      // Remove if exists, add to front
+      recent = recent.filter(q => q.toLowerCase() !== query.toLowerCase())
+      recent.unshift(query)
+      // Keep only MAX_RECENT
+      recent = recent.slice(0, MAX_RECENT)
+      localStorage.setItem(RECENT_KEY, JSON.stringify(recent))
+    } catch {}
+  }
+
+  selectRecent(event) {
+    const query = event.currentTarget.dataset.query
+    if (this.hasInputTarget) {
+      this.inputTarget.value = query
+      this.inputTarget.focus()
+      this.clientSearch(query)
+    }
   }
 
   highlight(text, query) {

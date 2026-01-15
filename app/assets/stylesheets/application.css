@@ -443,6 +443,55 @@ body {
   color: var(--text-light);
 }
 
+/* Recent Searches */
+.recent-searches {
+  padding: 1.5rem 1rem;
+}
+
+.recent-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.recent-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.recent-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.1s;
+}
+
+.recent-item:hover {
+  background: var(--secondary);
+  border-color: var(--primary-light);
+}
+
+.recent-item:active {
+  transform: scale(0.95);
+}
+
+.recent-item svg {
+  color: var(--text-light);
+  flex-shrink: 0;
+}
+
 .no-results p:first-child,
 .welcome-message p:first-child {
   font-size: 1.125rem;
