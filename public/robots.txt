@@ -1,8 +1,8 @@
 # Cambodia Postal Code Directory
-# https://postal.gotabs.net
+# https://cam-postal.gotabs.net
 
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://postal.gotabs.net/sitemap.xml
+Sitemap: https://cam-postal.gotabs.net/sitemap.xml
