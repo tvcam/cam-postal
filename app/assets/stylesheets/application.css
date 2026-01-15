@@ -289,6 +289,13 @@ body {
   margin-bottom: 0.125rem;
 }
 
+.result-body .name-en mark {
+  background: rgba(59, 130, 246, 0.2);
+  color: var(--primary);
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+}
+
 .result-body .name-km {
   font-size: 0.9375rem;
   color: var(--text-light);

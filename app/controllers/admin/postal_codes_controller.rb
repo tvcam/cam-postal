@@ -23,17 +23,21 @@ module Admin
     private
 
     def filter_by_province(scope)
-      province_code = PostalCode.provinces.find_by(name_en: params[:province_filter])&.code
-      return scope unless province_code
+      province = PostalCode.provinces.find_by(name_en: params[:province_filter])
+      return scope unless province
 
-      scope.where("code LIKE ?", "#{province_code}%")
+      # Province postal codes are XX0000, match first 2 digits
+      prefix = province.postal_code[0, 2]
+      scope.where("postal_code LIKE ?", "#{prefix}%")
     end
 
     def filter_by_district(scope)
-      district_code = PostalCode.districts.find_by(name_en: params[:district_filter])&.code
-      return scope unless district_code
+      district = PostalCode.districts.find_by(name_en: params[:district_filter])
+      return scope unless district
 
-      scope.where("code LIKE ?", "#{district_code}%")
+      # District postal codes are XXXX00, match first 4 digits
+      prefix = district.postal_code[0, 4]
+      scope.where("postal_code LIKE ?", "#{prefix}%")
     end
   end
 end
