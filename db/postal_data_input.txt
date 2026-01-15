@@ -1,0 +1,2037 @@
+# Cambodia Postal Codes - English Names Only
+# Format: postal_code|English Name
+# Khmer names will be added in a separate step
+
+# Page 3: Banteay Meanchey Province (01)
+010000|Banteay Meanchey Province
+010200|Mangkul Bourei District
+010201|Banteay Neang Commune
+010202|Bat Trang Commune
+010203|Chamnaom Commune
+010204|Kouk Ballang Commune
+010205|Koy Maeng Commune
+010206|Ou Prasat Commune
+010207|Phnum Touch Commune
+010208|Rohat Tuek Commune
+010209|Ruessei Kraok Commune
+010210|Sambour Commune
+010211|Soea Commune
+010212|Srah Reang Commune
+010213|Ta Lam Commune
+010300|Phnum Srok District
+010301|Nam Tau Commune
+010302|Paoy Char Commune
+010303|Punley Commune
+010304|Spean Sraeng Commune
+010305|Srah Chik Commune
+010306|Phnum Dei Commune
+010400|Preah Net Preah District
+010401|Chhnuom Mean Chey Commune
+010402|Chub Vari Commune
+010403|Phnum Lieb Commune
+010404|Prasat Commune
+010405|Preah Net Preah Commune
+
+# Page 4
+010406|Rohal Commune
+010407|Tean Kam Commune
+010408|Tuek Chour Commune
+010409|Bos Sbouv Commune
+010500|Ou Chrov District
+010501|Changha Commune
+010502|Koub Commune
+010503|Kuttasat Commune
+010504|Samraong Commune
+010505|Souphi Commune
+010506|Soeng Commune
+010507|Ou Beichoan Commune
+010600|Serei Saophoan Municipality
+010601|Sangkat Kampong Svay
+010602|Sangkat Kaoh Pong Sat
+010603|Sangkat Mkak
+010604|Sangkat Ou Ambel
+010605|Sangkat Phniet
+010606|Sangkat Preah Punlea
+010607|Sangkat Tuek Thla
+010700|Thma Puok District
+010701|Banteay Chhmar Commune
+010702|Kouk Romiet Commune
+010703|Phum Thmei Commune
+010704|Thma Puok Commune
+010705|Kouk Kakthen Commune
+010706|Kumru Commune
+010800|Svay Chek District
+010801|Phkoam Commune
+010802|Sarung Commune
+010803|Sla Kram Commune
+010804|Svay Chek Commune
+010805|Ta Baen Commune
+010806|Ta Phou Commune
+010807|Treas Commune
+
+# Page 5
+010808|Rolous Commune
+010900|Malai District
+010901|Boeng Beng Commune
+010902|Malai Commune
+010903|Ou Sampoar Commune
+010904|Ou Sralau Commune
+010905|Tuol Pongro Commune
+010906|Ta Kung Commune
+011000|Paoy Paet Municipality
+011001|Sangkat Nimit
+011002|Sangkat Paoy Paet
+011003|Sangkat Phsar Kandal
+011004|Sangkat Ou Chrov
+011005|Sangkat Ou Ruessei
+
+# Province 02: Battambang
+020000|Battambang Province
+020100|Banan District
+020101|Kantueu Muoy Commune
+020102|Kantueu Pir Commune
+020103|Bay Damram Commune
+020104|Chheu Teal Commune
+020105|Chheung Mean Chey Commune
+020106|Phnum Sampov Commune
+020107|Snoeng Commune
+020108|Ta Kream Commune
+020200|Thma Koul District
+020201|Ta Pung Commune
+020202|Ta Meun Commune
+020203|Ou Ta Ki Commune
+020204|Chrey Commune
+020205|Anlung Run Commune
+020206|Chrouy Sdau Commune
+020207|Boeng Pring Commune
+020208|Kouk Khmum Commune
+
+# Page 6
+020209|Bansay Traeng Commune
+020210|Rung Chrey Commune
+020300|Bat Dambang Municipality
+020301|Sangkat Tuol Ta Aek
+020302|Sangkat Preaek Preah Sdach
+020303|Sangkat Rotanak
+020304|Sangkat Chamkar Samraong
+020305|Sangkat Sla Kaet
+020306|Sangkat Kdol Doun Teav
+020307|Sangkat Ou Mal
+020308|Sangkat Voat Kor
+020309|Sangkat Ou Char
+020310|Sangkat Svay Pao
+020400|Bavel District
+020401|Bavel Commune
+020402|Khnach Romeas Commune
+020403|Lvea Commune
+020404|Prey Khpuos Commune
+020405|Ampil Pram Daeum Commune
+020406|Kdol Ta Haen Commune
+020407|Boeng Pram Commune
+020408|Khleang Meas Commune
+020409|Buovel Commune
+020500|Aek Phnum District
+020501|Preaek Norin Commune
+020502|Samraong Knong Commune
+020503|Preaek Khpob Commune
+020504|Preaek Luong Commune
+020505|Peam Aek Commune
+020506|Prey Chas Commune
+020507|Kaoh Chiveang Commune
+020600|Moung Ruessei District
+020601|Moung Commune
+020602|Kear Commune
+
+# Page 7
+020603|Prey Svay Commune
+020604|Ruessei Krang Commune
+020605|Chrey Commune
+020606|Ta Loas Commune
+020607|Kakaoh Commune
+020608|Prey Touch Commune
+020609|Robas Mangkul Commune
+020700|Rotanak Mondol District
+020701|Sdau Commune
+020702|Andaeuk Haeb Commune
+020703|Pniouv Meas Commune
+020704|Traeng Commune
+020705|Reaksmei Sangha Commune
+020800|Sangkae District
+020801|Anlung Vil Commune
+020802|Norea Commune
+020803|Ta Pon Commune
+020804|Roka Commune
+020805|Kampong Preah Commune
+020806|Kampong Prieng Commune
+020807|Reang Kesei Commune
+020808|Ou Dambang Muoy Commune
+020809|Ou Dambang Pir Commune
+020810|Vaot Ta Muem Commune
+020900|Samlout District
+020901|Ta Taok Commune
+020902|Kampong Lpov Commune
+020903|Ou Samrel Commune
+020904|Sung Commune
+020905|Samlout Commune
+020906|Mean Chey Commune
+020907|Ta Sanh Commune
+021000|Sampov Lun District
+021001|Sampov Lun Commune
+
+# Page 8
+021002|Angkor Ban Commune
+021003|Ta Sda Commune
+021004|Santepheap Commune
+021005|Serei Mean Chey Commune
+021006|Chrey Seima Commune
+021100|Phnum Proek District
+021101|Phnum Proek Commune
+021102|Pech Chenda Commune
+021103|Barang Thleak Commune
+021104|Ou Rumduol Commune
+021105|Buor Commune
+021200|Kamrieng District
+021201|Kamrieng Commune
+021202|Boeng Reang Commune
+021203|Ou Da Commune
+021204|Trang Commune
+021205|Ta Saen Commune
+021206|Ta Krei Commune
+021300|Koas Krala District
+021301|Thipakdei Commune
+021302|Kaos Krala Commune
+021303|Hab Commune
+021304|Preah Phos Commune
+021305|Doun Ba Commune
+021306|Chhnai Moan Commune
+021400|Rukhak Kiri District
+021401|Preaek Chik Commune
+021402|Prey Tralach Commune
+021403|Basak Commune
+021404|Mukh Rea Commune
+021405|Sdok Pravoek Commune
+
+# Province 03: Kampong Cham
+030000|Kampong Cham Province
+030100|Batheay District
+030101|Batheay Commune
+
+# Page 9
+030102|Chbar Ampov Commune
+030103|Chealea Commune
+030104|Cheung Prey Commune
+030105|Me Pring Commune
+030106|Phav Commune
+030107|Sambour Commune
+030108|Sandaek Commune
+030109|Tang Krang Commune
+030110|Tang Krasang Commune
+030111|Trab Commune
+030112|Tumnub Commune
+030200|Chamkar Leu District
+030201|Bos Khnor Commune
+030202|Chamkar Andoung Commune
+030203|Cheyyou Commune
+030204|Lvea Leu Commune
+030205|Spueu Commune
+030206|Svay Teab Commune
+030207|Ta Ong Commune
+030208|Ta Prok Commune
+030300|Cheung Prey District
+030301|Khnor Dambang Commune
+030302|Kouk Rovieng Commune
+030303|Phdau Chum Commune
+030304|Prey Char Commune
+030305|Pring Chrum Commune
+030306|Sampong Chey Commune
+030307|Sdaeung Chey Commune
+030308|Soutr Commune
+030309|Sramar Commune
+030310|Trapeang Kor Commune
+030400|Kampong Cham Municipality
+030401|Sangkat Boeng Kok
+030402|Sangkat Kampong Cham
+
+# Page 10
+030503|Sangkat Sambuor Meas
+030504|Sangkat Veal Vung
+030500|Kampong Siem District
+030601|Ampi Commune
+030602|Hanchey Commune
+030603|Kien Chrey Commune
+030604|Kokor Commune
+030605|Kaoh Mit Commune
+030606|Kaoh Roka Commune
+030607|Kaoh Samraong Commune
+030608|Kaoh Tontuem Commune
+030609|Krala Commune
+030610|Ou Svay Commune
+030611|Rolang Commune
+030612|Rumchek Commune
+030613|Srak Commune
+030614|Trean Commune
+030615|Vihea Thum Commune
+030700|Kang Meas District
+030701|Angkor Ban Commune
+030702|Kang Ta Noeng Commune
+030703|Khchau Commune
+030704|Peam Chi Kang Commune
+030705|Preaek Koy Commune
+030706|Preaek Krabau Commune
+030707|Reay Pay Commune
+030708|Roka Ar Commune
+030709|Roka Koy Commune
+030710|Sdau Commune
+030711|Sou Kong Commune
+030800|Kaoh Soutin District
+030801|Kampong Reab Commune
+030802|Kaoh Sotin Commune
+030803|Lve Commune
+030804|Moha Leaph Commune
+
+# Page 11
+030805|Moha Khnhoung Commune
+030806|Peam Prathnuoh Commune
+030807|Pongro Commune
+030808|Preaek Ta Nung Commune
+031300|Prey Chhor District
+031301|Baray Commune
+031302|Boeng Nay Commune
+031303|Chrey Vien Commune
+031304|Khvet Thum Commune
+031305|Kor Commune
+031306|Krouch Commune
+031307|Lvea Commune
+031308|Mien Commune
+031309|Prey Chhor Commune
+031310|Sou Saen Commune
+031311|Samraong Commune
+031312|Srangae Commune
+031313|Thma Pun Commune
+031314|Tong Rong Commune
+031315|Trapeang Preah Commune
+031400|Srei Santhor District
+031401|Baray Commune
+031402|Chi Bal Commune
+031403|Khnar Sa Commune
+031404|Kaoh Andaet Commune
+031405|Mean Chey Commune
+031406|Phteas Kandal Commune
+031407|Pram Yam Commune
+031408|Preaek Dambouk Commune
+031409|Preaek Pou Commune
+031410|Preaek Rumdeng Commune
+031411|Ruessei Srok Commune
+031412|Svay Pou Commune
+031413|Svay Khsach Phnum Commune
+031414|Tong Tralach Commune
+
+# Page 12
+031500|Stueng Trang District
+031501|Areak Tnaot Commune
+031503|Dang Kdar Commune
+031504|Khpob Ta Nguon Commune
+031505|Me Sar Chrey Commune
+031506|Ou Mlu Commune
+031507|Peam Kaoh Sna Commune
+031508|Preah Andoung Commune
+031509|Preaek Bak Commune
+031510|Preaek Kak Commune
+031512|Soupheas Commune
+031513|Tuol Preah Khleang Commune
+031514|Tuol Sambour Commune
+
+# Province 04: Kampong Chhnang
+040000|Kampong Chhnang Province
+040100|Baribour District
+040101|Anhchanh Rung Commune
+040102|Chhnok Tru Commune
+040103|Chak Commune
+040104|Khon Rang Commune
+040105|Kampong Preah Kokir Commune
+040106|Melum Commune
+040107|Phsar Commune
+040108|Pech Changvar Commune
+040109|Popel Commune
+040110|Punley Commune
+040111|Trapeang Chan Commune
+040200|Chol Kiri District
+040201|Chol Sar Commune
+040202|Kaoh Thkov Commune
+040203|Kampong Ov Commune
+040204|Peam Chhkaok Commune
+040205|Prey Kri Commune
+
+# Page 13
+040300|Kampong Chhnang Municipality
+040301|Sangkat Phsar Chhnang
+040302|Sangkat Kampong Chhnang
+040303|Sangkat Bre
+040304|Sangkat Khsam
+040400|Kampong Leaeng District
+040401|Chranouk Commune
+040402|Dar Commune
+040403|Kampong Hau Commune
+040404|Pnilouv Tuk Commune
+040405|Pou Commune
+040406|Pralay Meas Commune
+040407|Samraong Saen Commune
+040408|Svay Rumpear Commune
+040409|Trangel Commune
+040500|Kampong Tralach District
+040501|Ampil Tuek Commune
+040502|Chhuk Sa Commune
+040503|Chres Commune
+040504|Kampong Tralach Commune
+040505|Longveaek Commune
+040506|Ou Ruessei Commune
+040507|Peani Commune
+040508|Saeb Commune
+040509|Ta Ches Commune
+040510|Thma Ed Commune
+040600|Rolea Bier District
+040601|Andoung Snay Commune
+040602|Banteay Preal Commune
+040603|Cheung Kreav Commune
+040604|Chrey Bak Commune
+040605|Kouk Banteay Commune
+040606|Krang Leav Commune
+040607|Pongro Commune
+040608|Prasnoeb Commune
+040609|Prey Mul Commune
+
+# Page 14
+040610|Rolea Bier Commune
+040611|Svai Thmer Commune
+040612|Svay Chrum Commune
+040613|Tuek Hout Commune
+040614|Phnum Krang Dei Meas Commune
+040700|Sameakki Mean Chey District
+040701|Chhean Laeung Commune
+040702|Knas Chhmar Commune
+040703|Krang Lvea Commune
+040704|Peam Commune
+040705|Sedthei Commune
+040706|Svay Commune
+040707|Svay Chuk Commune
+040708|Tbaeng Khpuos Commune
+040709|Thkok Vien Commune
+040800|Tuek Phos District
+040801|Akphivoad Commune
+040802|Chieb Commune
+040803|Chaong Maong Commune
+040804|Kbal Tuek Commune
+040805|Khlong Popok Commune
+040806|Krang Skear Commune
+040807|Tang Krasang Commune
+040808|Tuol Khpuos Commune
+040809|Kdol Saen Chey Commune
+
+# Province 05: Kampong Speu
+050000|Kampong Speu Province
+050100|Basaed District
+050101|Basaed Commune
+050102|Kat Phluk Commune
+050103|Nitean Commune
+050104|Pheakdei Commune
+050105|Phean Mean Chey Commune
+050106|Phong Commune
+050107|Pou Angkrang Commune
+050108|Pou Chamraeun Commune
+
+# Page 15
+050109|Pou Mreal Commune
+050110|Svay Chacheb Commune
+050111|Tuol Ampil Commune
+050112|Tuol Sala Commune
+050113|Kak Commune
+050114|Svay Rumpear Commune
+050115|Preah Khae Commune
+050200|Chbar Mon Municipality
+050201|Sangkat Chbar Mon
+050202|Sangkat Kandaol Dom
+050203|Sangkat Rokar Thum
+050204|Sangkat Sopoar Tep
+050205|Sangkat Svay Kravan
+050300|Kong Pisei District
+050301|Ang Popel Commune
+050302|Chungruk Commune
+050303|Moha Ruessei Commune
+050304|Pech Muni Commune
+050305|Preah Nipean Commune
+050306|Prey Nheat Commune
+050307|Prey Vihea Commune
+050308|Roka Kaoh Commune
+050309|Sdok Commune
+050310|Snam Krapeu Commune
+050311|Srang Commune
+050312|Tuek Lak Commune
+050313|Veal Commune
+050400|Aoral District
+050401|Haong Samnam Commune
+050402|Reaksmei Sameakki Commune
+050403|Trapeang Chou Commune
+050404|Sangkae Satob Commune
+050405|Ta Sal Commune
+050500|Phnum Sruoch District
+
+# Page 16
+050601|Chambak Commune
+050602|Choam Sangkae Commune
+050603|Dambouk Rung Commune
+050604|Kiri Voan Commune
+050605|Krang Dei Vay Commune
+050606|Moha Sang Commune
+050607|Ou Commune
+050608|Prey Rumduol Commune
+050609|Prey Kmeng Commune
+050610|Tang Samraong Commune
+050611|Tang Sya Commune
+050612|Traeng Trayueng Commune
+050613|Yeay Mau Pech Nil Commune
+050700|Samraong Tong District
+050701|Roleang Chak Commune
+050702|Kahaeng Commune
+050703|Khtum Krang Commune
+050704|Krang Ampil Commune
+050705|Pneay Commune
+050706|Roleang Kreul Commune
+050707|Samraong Tong Commune
+050708|Sambour Commune
+050709|Saen Dei Commune
+050710|Skuh Commune
+050711|Tang Krouch Commune
+050712|Thoam Ta Ar Commune
+050713|Trapeang Kong Commune
+050714|Tumpoar Meas Commune
+050715|Voa Sar Commune
+050800|Thpong District
+050801|Amleang Commune
+050802|Meaknoourm Commune
+050803|Prambei Mum Commune
+050804|Rung Roeang Commune
+
+# Page 17
+050806|Toap Mean Commune
+050807|Veal Pun Commune
+050808|Yea Ang Commune
+050900|Odong Mae Chey Municipality
+050901|Sangkat Veang Chas
+050902|Sangkat Veal Pung
+050903|Sangkat Trach Tong
+050904|Sangkat Preah Srae
+050905|Sangkat Khsem Khsarn
+050906|Sammeakki Muni Chey District
+051001|Chan Saen Commune
+051002|Cheung Roas Commune
+051003|Chumpu Proek Commune
+051004|Krang Chek Commune
+051005|Mean Chey Commune
+051006|Prey Krasang Commune
+051007|Yut Sammeakki Commune
+051008|Damnak Reang Commune
+051009|Peang Lvea Commune
+051010|Phnum Touch Commune
+
+# Province 06: Kampong Thom
+060000|Kampong Thom Province
+060100|Baray District
+060101|Bak Sna Commune
+060102|Ballang Commune
+060103|Baray Commune
+060104|Boeng Commune
+060105|Chaeung Daeung Commune
+060106|Chhuk Khsach Commune
+060107|Chong Doung Commune
+060108|Kokir Thum Commune
+060109|Krava Commune
+060110|Tnaot Chrum
+060117|Kampong Svay District
+
+# Page 18
+060201|Chey Commune
+060202|Damrei Slab Commune
+060203|Kampong Kou Commune
+060204|Kampong Svay Commune
+060205|Npeach Commune
+060206|Phat Sanday Commune
+060207|San Ko Commune
+060208|Tbaeng Commune
+060209|Trapeang Ruessei Commune
+060210|Kdei Doung Commune
+060211|Prey Kuy Commune
+060300|Stueng Saen Municipality
+060301|Sangkat Damrei Choan Khla
+060302|Sangkat Kampong Thum
+060303|Sangkat Kampong Roteh
+060304|Sangkat Ou Kanthor
+060305|Sangkat Kampong Krabau
+060306|Sangkat Prey Ta Hu
+060308|Sangkat Achar Leak
+060309|Sangkat Srayouv
+060310|Sangkat Srayouv
+060400|Prasat Ballang District
+060401|Doung Commune
+060402|Krava Commune
+060403|Phan Nheum Commune
+060404|Sa Kream Commune
+060405|Sala Visai Commune
+060406|Sammeakki Commune
+060407|Tuol Kreul Commune
+060500|Prasat Sambour District
+060501|Chhuk Commune
+060502|Koul Commune
+060503|Sambour Commune
+060504|Sraeung Commune
+060505|Tang Krasau Commune
+060600|Sandan District
+
+# Page 19
+060601|Chheu Teal Commune
+060602|Dang Kambet Commune
+060603|Klaeng Commune
+060604|Mean Rit Commune
+060605|Mean Chey Commune
+060606|Ngon Commune
+060607|Sandan Commune
+060608|Sochet Commune
+060609|Tum Ring Commune
+060700|Santuk District
+060701|Boeng Lvea Commune
+060702|Chroab Commune
+060703|Kampong Thma Commune
+060704|Kakaoh Commune
+060705|Kraya Commune
+060706|Pnov Commune
+060707|Prasat Commune
+060708|Tang Krasang Commune
+060709|Ti Pou Commune
+060710|Tboung Krapeu Commune
+060800|Stoung District
+060801|Banteay Stoung Commune
+060802|Chamna Kraom Commune
+060803|Chamna Leu Commune
+060804|Kampong Chen Cheung Commune
+060805|Kampong Chen Tboung Commune
+060806|Msa Krang Commune
+060807|Peam Bang Commune
+060808|Popok Commune
+060809|Pralay Commune
+060810|Preah Damrei Commune
+060811|Rung Roeang Commune
+060812|Samprouch Commune
+060813|Trea Commune
+
+# Page 20
+060900|Tang Kouk District
+060901|Pongro Commune
+060902|Chraneang Commune
+060903|Chrolong Commune
+060904|Triel Commune
+060905|Sou Young Commune
+060906|Sralau Commune
+060907|Svay Phleung Commune
+060908|Andoung Pou Commune
+
+# Province 07: Kampot
+070000|Kampot Province
+070100|Angkor Chey District
+070101|Ang Phnum Touch Commune
+070102|Angkor Chey Commune
+070103|Champei Commune
+070104|Dambouk Khpuos Commune
+070105|Dan Koum Commune
+070106|Daeum Doung Commune
+070107|Mroum Commune
+070108|Phnum Kong Commune
+070109|Praphnum Commune
+070110|Samlanh Commune
+070111|Tani Commune
+070200|Banteay Meas District
+070201|Banteay Meas Khang Kaeut Commune
+070202|Banteay Meas Khang Lech Commune
+070203|Prey Tonle Commune
+070204|Samraong Kraom Commune
+070205|Samraong Leu Commune
+070206|Sdach Kung Khang Cheung Commune
+070207|Sdach Kung Khang Lech Commune
+070208|Sdach Kung Khang Tboung Commune
+070209|Tnaot Chong Srang Commune
+
+# Page 21
+070210|Trapeang Sala Khang Kaeut Commune
+070211|Trapeang Sala Khang Lech Commune
+070212|Tuk Meas Khang Kaeut Commune
+070213|Tuk Meas Khang Lech Commune
+070214|Voat Ang Khang Cheung Commune
+070215|Voat Ang Khang Tboung Commune
+070300|Chhuk District
+070301|Ba Niev Commune
+070302|Ta Kaen Commune
+070303|Boeng Nimul Commune
+070304|Chhuk Commune
+070305|Doun Yay Commune
+070306|Krang Sbouv Commune
+070307|Krang Snay Commune
+070308|Lbaeuk Commune
+070309|Trapeang Phleang Commune
+070310|Mean Chey Commune
+070311|Nearoay Commune
+070312|Sat Pong Commune
+070313|Trapeang Bei Commune
+070314|Trameeang Commune
+070315|Dechou Akphivoad Commune
+070400|Chum Kiri District
+070401|Chres Commune
+070402|Chumpu Voan Commune
+070403|Snay Anhchit Commune
+070404|Srae Chaeng Commune
+070405|Srae Knong Commune
+070406|Srae Samraong Commune
+070407|Trapeang Reang Commune
+070500|Dang Tung District
+070501|Damnak Sokram Commune
+070502|Dang Tung Commune
+
+# Page 22
+070503|Khcheay Khang Cheung Commune
+070504|Khcheay Khang Tboung Commune
+070505|Mean Rit Commune
+070506|Srae Chea Khang Cheung Commune
+070507|Srae Chea Khang Tboung Commune
+070508|Totung Commune
+070509|Ang Romeas Commune
+070510|Lang Commune
+070600|Kampong Trach District
+070601|Boeng Sala Khang Cheung Commune
+070602|Boeng Sala Khang Tboung Commune
+070603|Damnak Kantuot Cheung Commune
+070604|Damnak Kantuot Khang Tboung Commune
+070605|Kampong Trach Khang Kaeut Commune
+070606|Kampong Trach Khang Lech Commune
+070607|Prasat Phnum Khyang Commune
+070608|Phnum Prasat Commune
+070609|Ang Sophi Commune
+070610|Preaek Kroes Commune
+070611|Ruessei Srok Khang Kaeut Commune
+070612|Ruessei Srok Khang Lech Commune
+070613|Svay Tong Khang Cheung Commune
+070614|Svay Tong Khang Tboung Commune
+070700|Tuek Chhu District
+070701|Chum Kriel Commune
+070702|Kampong Kraeng Commune
+070703|Kampong Samraong Commune
+070704|Kandaol Commune
+070705|Koun Sat Commune
+070706|Makprang Commune
+070707|Prey Khmum Commune
+
+# Page 23
+070713|Prey Thnang Commune
+070715|Stueng Kaev Commune
+070716|Thmei Commune
+070717|Trapeang Pring Commune
+070718|Trapeang Sangkae Commune
+070719|Trapeang Thum Commune
+070800|Kampot Municipality
+070801|Sangkat Kampong Kandal
+070802|Sangkat Krang Ampil
+070803|Sangkat Kampong Bay
+070804|Sangkat Andoung Khmer
+070805|Sangkat Traeuy Kaoh
+070900|Bouk Kou Municipality
+070901|Sangkat Boeng Tuk
+070902|Sangkat Kaoh Touch
+070903|Sangkat Preaek Tnaot
+
+# Province 08: Kandal
+080000|Kandal Province
+080100|Kandal Stueng District
+080101|Ampov Prey Commune
+080102|Anlung Romiet Commune
+080103|Barku Commune
+080104|Boeng Khyang Commune
+080105|Cheung Kaeub Commune
+080106|Daeum Rues Commune
+080107|Kandaok Commune
+080108|Thmei Commune
+080109|Kouk Trab Commune
+080110|Preah Put Commune
+080111|Preaek Roka Commune
+080112|Preaek Slaeng Commune
+080113|Roka Commune
+080114|Roleang Kaen Commune
+080115|Siem Reab Commune
+
+# Page 24
+080125|Tbaeng Commune
+080127|Trapeang Veaeng Commune
+080128|Trea Commune
+080200|Kien Svay District
+080201|Banteay Daek Commune
+080202|Chheu Teal Commune
+080203|Dei Ed Commune
+080204|Kampong Svay Commune
+080206|Kokir Commune
+080207|Kokir Thum Commune
+080208|Phum Thum Commune
+080211|Samraong Thum Commune
+080300|Khsach Kandal District
+080302|Chey Thum Commune
+080303|Kampong Chamlang Commune
+080304|Kaoh Chouram Commune
+080306|Preah Prasab Commune
+080310|Preaek Ta Meak Commune
+080311|Puk Ruessei Commune
+080312|Roka Chunlueng Commune
+080313|Sanlung Commune
+080314|Sithor Commune
+080316|Svay Romiet Commune
+080317|Ta Aek Commune
+080318|Vihea Suor Commune
+080400|Kaoh Thum District
+080403|Kampong Kong Commune
+080404|Kaoh Thum Ka Commune
+080405|Kaoh Thum Kha Commune
+080406|Leuk Daek Commune
+080407|Pou Ban Commune
+080408|Preaek Thmei Commune
+080500|Leuk Daek District
+080501|Kampong Phnum Commune
+
+# Page 25
+080502|Kam Samnar Commune
+080503|Khpob Ateav Commune
+080504|Peam Reang Commune
+080505|Preaek Dach Commune
+080506|Preaek Tunloab Commune
+080507|Sandar Commune
+080600|Lvea Aem District
+080601|Boeng Krum Commune
+080603|Kaoh Kaev Commune
+080604|Kaoh Reah Commune
+080605|Lvea Sar Commune
+080606|Phum Thum Commune
+080608|Preaek Rey Commune
+080610|Preaek Ruessei Commune
+080611|Sambour Commune
+080612|Thma Kor Commune
+080614|Tuek Khleang Commune
+080700|Mukh Kampul District
+080703|Preaek Anhchanh Commune
+080704|Preaek Dambang Commune
+080705|Roka Kaong Ti Muoy Commune
+080706|Roka Kaong Ti Pir Commune
+080709|Ruessei Chrouy Commune
+080710|Sambour Meas Commune
+080711|Svay Ampear Commune
+080800|Ang Snuol District
+080801|Baek Chan Commune
+080802|Chhak Chheu Neang Commune
+080803|Damnak Ampil Commune
+080804|Krang Mkak Commune
+080805|Lumhach Commune
+080806|Mkak Commune
+080807|Peuk Commune
+080808|Prey Puoch Commune
+
+# Page 26
+080814|Samraong Leu Commune
+080816|Tuol Prech Commune
+080900|Ponhea Lueu District
+080901|Chhiveang Commune
+080902|Chrey Loas Commune
+080903|Kampong Luong Commune
+080904|Kampong Os Commune
+080905|Kaoh Chen Commune
+080906|Phnum Bat Commune
+080907|Ponhea Lueu Commune
+080910|Preaek Ta Teaen Commune
+080911|Phsar Daek Commune
+080913|Tumnub Thum Commune
+080914|Vihea Luong Commune
+081000|Sang District
+081001|Khpob Commune
+081002|Kaoh Khael Commune
+081003|Kaoh Khsach Tunlea Commune
+081004|Krang Youv Commune
+081005|Prasat Commune
+081006|Preaek Ambel Commune
+081007|Preaek Koy Commune
+081008|Sang Phnum Commune
+081009|Svay Prateal Commune
+081010|Ta Lun Commune
+081012|Traeuy Sla Commune
+081015|Tuek Vil Commune
+081100|Ta Khmau Municipality
+081101|Sangkat Ta Kdol
+081102|Sangkat Prek Ruessei
+081103|Sangkat Daeum Mien
+081104|Sangkat Ta Khmau
+081105|Sangkat Praek Hour
+081106|Sangkat Kampong Samnanh
+
+# Page 27
+081107|Sangkat Svay Rolum
+081108|Sangkat Kaoh Anlung Chen
+081109|Sangkat Settak bou
+081110|Sangkat Roka Khpuos
+081200|Sampov Pun Municipality
+081201|Sangkat Chheu Khmau
+081202|Sangkat Preaek Chrey
+081203|Sangkat Preaek Sdei
+081204|Sangkat Chrouy Ta Kaev
+081205|Sangkat Sampov Pun
+081300|Akrey Ksat Municipality
+081301|Sangkat Bak Dav
+081302|Sangkat Kaoh Oknha Tei
+081303|Sangkat Preaek Ampil
+081304|Sangkat Preaek Luong
+081305|Sangkat Preaek Ta kouv
+081306|Sangkat Svay Chrum
+081307|Sangkat Akrey Ksat
+081308|Sangkat Sarikakev
+081309|Sangkat Peam Oknha Ong
+081310|Sangkat Preaek Kmeng
+081311|Sangkat Barong
+
+# Province 09: Koh Kong
+090000|Koh Kong Province
+090100|Botum Sakor District
+090101|Andoung Tuek Commune
+090102|Kandaol Commune
+090103|Ta Nun Commune
+090104|Thma Sa Commune
+090200|Kiri Sakor District
+090201|Kaoh Sdach Commune
+090202|Pnhri Meas Commune
+090203|Preaek Khsach Commune
+090300|Kaoh Kong District
+
+# Page 28
+090301|Chrouy Pras Commune
+090302|Kaoh Kapi Commune
+090303|Ta Tai Kraom Commune
+090304|Trapeang Rung Commune
+090400|Khemmarakphoumin Municipality
+090401|Sangkat Smach Mean Chey
+090402|Sangkat Dang Tung
+090403|Sangkat Stueng Veaeng
+090500|Mundul Seima District
+090501|Pak Khlang Commune
+090502|Peam Krasaob Commune
+090503|Tuol Kokir Commune
+090600|Srae Ambel District
+090601|Boeng Preav Commune
+090602|Chi Kha Kraom Commune
+090603|Chi Kha Leu Commune
+090604|Chrouy Svay Commune
+090605|Dang Peaeng Commune
+090606|Srae Ambel Commune
+090700|Thma Bang District
+090701|Ta Tey Leu Commune
+090702|Pralay Commune
+090703|Chumnoab Commune
+090704|Ruessei Chrum Commune
+090705|Chi Phat Commune
+090706|Thma Doun Pov Commune
+
+# Province 10: Kratie
+100000|Kratie Province
+100100|Chhloung District
+100101|Chhloung Commune
+100102|Damrei Phong Commune
+100103|Hanchey Commune
+100104|Kampong Damrei Commune
+100105|Kanhchor Commune
+
+# Page 29
+100106|Khsach Andaet Commune
+100107|Pongro Commune
+100108|Preaek Saman Commune
+100200|Kracheh Municipality
+100207|Sangkat Kaoh Trong
+100208|Sangkat Krakor
+100209|Sangkat Kracheh
+100210|Sangkat Ou Ruessei
+100211|Sangkat Roka Kandal
+100300|Preaek Prasab District
+100301|Chambak Commune
+100302|Chrouy Banteay Commune
+100303|Kampong Kor Commune
+100304|Kaoh Ta Suy Commune
+100305|Preaek Prasab Commune
+100306|Ruessei Kaev Commune
+100307|Saob Commune
+100308|Ta Mau Commune
+100400|Sambour District
+100401|Boeng Char Commune
+100402|Kampong Cham Commune
+100403|Kaoh Khnhaer Commune
+100404|Sambour Commune
+100407|Sandan Commune
+100408|Voadthneaknak Commune
+100410|Snuol District
+100500|Snuol District
+100501|Khsuem Commune
+100502|Pir Thnu Commune
+100503|Snuol Commune
+100504|Srae Char Commune
+100505|Svay Chreah Commune
+100506|Kranfung Saen Chey Commune
+100600|Chet Borei District
+100601|Bos Leav Commune
+
+# Page 30
+100602|Changkrang Commune
+100603|Dar Commune
+100604|Kantuot Commune
+100605|Kou Loab Commune
+100606|Kaoh Chraeng Commune
+100607|Sambok Commune
+100608|Thma Andaeuk Commune
+100609|Thma Kreae Commune
+100610|Thmei Commune
+100700|Ou Krieng Saen Chey District
+100701|Kbal Damrei Commune
+100702|Ou Krieng Commune
+100703|Ou Kandei Saen Chey Commune
+100704|Rolous Mean Chey Commune
+100705|Srae Chis Commune
+
+# Province 11: Mondul Kiri
+110000|Mondul Kiri Province
+110100|Kaev Seima District
+110101|Chong Phlah Commune
+110102|Me Mang Commune
+110103|Srae Chhuk Commune
+110104|Srae Khtum Commune
+110105|Srae Preah Commune
+110200|Kaoh Nheak District
+110201|Nang Khi Lik Commune
+110202|A Buon Leu Commune
+110203|Roya Commune
+110204|Sokh San Commune
+110205|Srae Huy Commune
+110206|Srae Sangkum Commune
+110300|Ou Reang District
+110301|Dak Dam Commune
+110302|Saen Meakhnoum Commune
+110400|Pechreda District
+110401|Krang Teh Commune
+110402|Pu Chrey Commune
+110403|Srae Ampum Commune
+110404|Bu Sra Commune
+110500|Saen Meakhnoum Municipality
+110501|Sangkat Meakhnoum
+110502|Sangkat Sokhak Dom
+110503|Sangkat Spean Mean Chey
+110504|Sangkat Rummeeaknea
+
+# Province 12: Phnom Penh Capital
+120000|Phnom Penh Capital
+120100|Khan Chamkar Mon
+120101|Sangkat Tonle Basak
+120109|Sangkat Tuol Tumpung Ti Pir
+120110|Sangkat Tuol Tumpung Ti Muoy
+120111|Sangkat Boeng Trabaek
+120112|Sangkat Phsar Daeum Thkov
+120200|Khan Doun Penh
+120201|Sangkat Phsar Thmei Ti Muoy
+120202|Sangkat Phsar Thmei Ti Pir
+120203|Sangkat Phsar Thmei Ti Bei
+120204|Sangkat Boeng Reang
+120205|Sangkat Phsar Kandal Ti Muoy
+120206|Sangkat Phsar Kandal Ti Pir
+120207|Sangkat Chakto Mukh
+120208|Sangkat Chey Chumneah
+120209|Sangkat Phsar Chas
+120210|Sangkat Srah Chak
+120211|Sangkat Voat Phnum
+120300|Khan Prampir Meakkakra
+120301|Sangkat Ou Ruessei Ti Muoy
+120302|Sangkat Ou Ruessei Ti Pir
+120303|Sangkat Ou Ruessei Ti Bei
+
+# Page 32
+120304|Sangkat Ou Ruessei Ti Buon
+120305|Sangkat Meakhnoum
+120306|Sangkat Mittakpheap
+120307|Sangkat Veal Vung
+120308|Sangkat Boeng Proluet
+120400|Khan Tuol Kouk
+120401|Sangkat Phsar Depou Ti Muoy
+120402|Sangkat Phsar Depou Ti Pir
+120403|Sangkat Phsar Depou Ti Bei
+120404|Sangkat Tuek Lak Ti Muoy
+120405|Sangkat Tuek Lak Ti Pir
+120406|Sangkat Tuek Lak Ti Bei
+120407|Sangkat Boeng Kak Ti Muoy
+120408|Sangkat Boeng Kak Ti Pir
+120409|Sangkat Phsar Daeum Kor
+120410|Sangkat Boeng Salang
+120500|Khan Dangkao
+120501|Sangkat Dangkao
+120507|Sangkat Pong Tuek
+120508|Sangkat Prey Veaeng
+120510|Sangkat Prey Sa
+120512|Sangkat Krang Pungro
+120514|Sangkat Sak Sampov
+120515|Sangkat Cheung Aek
+120516|Sangkat Kong Noy
+120517|Sangkat Preaek Kampues
+120518|Sangkat Rolous
+120519|Sangkat Spean Thma
+120520|Sangkat Tien
+120600|Khan Mean Chey
+120601|Sangkat Chak Angrae Leu
+120602|Sangkat Chak Angrae Kraom
+120603|Sangkat Stueng Mean Chey Ti Muoy
+120604|Sangkat Stueng Mean Chey Ti Pir
+
+# Page 33
+120610|Sangkat Stueng Mean Chey Ti Bei
+120611|Sangkat Boeng Tumpun Ti Muoy
+120612|Sangkat Boeng Tumpun Ti Pir
+120700|Khan Ruessei Kaev
+120703|Sangkat Svay Pak
+120704|Sangkat Kileumaet Lekh Prammuoy
+120706|Sangkat Ruessei Kaev
+120711|Sangkat Chrang Chamreh Ti Muoy
+120712|Sangkat Chrang Chamreh Ti Pir
+120713|Sangkat Tuol Sangkae Ti Muoy
+120714|Sangkat Tuol Sangkae Ti Pir
+120800|Khan Saen Sokh
+120801|Sangkat Phnum Penh Thmei
+120802|Sangkat Tuek Thla
+120803|Sangkat Khmounh
+120804|Sangkat Krang Thrnung
+120805|Sangkat Ou Baek Kam
+120806|Sangkat Kouk Khleang
+120900|Khan Pou Saen Chey
+120911|Sangkat Samraong Kraom
+120912|Sangkat Trapeang Krasang
+120914|Sangkat Kakab Ti Muoy
+120915|Sangkat Kakab Ti Pir
+120916|Sangkat Chaom Chau Ti Muoy
+120917|Sangkat Chaom Chau Ti Pir
+120918|Sangkat Chaom Chau Ti Bei
+121000|Khan Chbar Ampov
+121001|Sangkat Kbal Kaoh
+121002|Sangkat Chbar Ampov Ti Muoy
+121003|Sangkat Chbar Ampov Ti Pir
+121004|Sangkat Nirouth
+121005|Sangkat Preaek Pra
+
+# Page 34
+121006|Sangkat Preaek Aeng
+121007|Sangkat Preaek Thmei
+121008|Sangkat Veal Sbouv
+121100|Khan Chrouy Changvar
+121101|Sangkat Kaoh Dach
+121102|Sangkat Chrouy Changvar
+121103|Sangkat Bak Khaeng
+121104|Sangkat Preaek Lieb
+121105|Sangkat Preaek Ta Sek
+121200|Khan Preaek Pnov
+121201|Sangkat Kouk Roka
+121202|Sangkat Preaek Phnov
+121203|Sangkat Ponhea Pun
+121204|Sangkat Punsang
+121205|Sangkat Samraong
+121300|Khan Boeng Keng Kang
+121301|Sangkat Boeng Keng Kang Ti Muoy
+121302|Sangkat Boeng Keng Kang Ti Pir
+121303|Sangkat Boeng Keng Kang Ti Bei
+121304|Sangkat Oulampik
+121305|Sangkat Tumnub Tuek
+121306|Sangkat Tuol Svay Prey Ti Muoy
+121307|Sangkat Tuol Svay Prey Ti Pir
+121400|Khan Kamboul
+121401|Sangkat Kamboul
+121402|Sangkat Kantaok
+121403|Sangkat Ovlaok
+121404|Sangkat Snao
+121405|Sangkat Phleung Chheh Roteh
+121406|Sangkat Boeng Thum
+121407|Sangkat Prateah Lang
+
+# Province 13: Preah Vihear
+130000|Preah Vihear Province
+
+# Page 35
+130100|Chey Saen District
+130101|Sang Commune
+130102|Tasu Commune
+130103|Khyang Commune
+130104|Chrach Commune
+130105|Thmea Commune
+130106|Putrea Commune
+130200|Chhaeb District
+130201|Chhaeb Muoy Commune
+130202|Chhaeb Pir Commune
+130203|Sangkae Muoy Commune
+130204|Sangkae Pir Commune
+130205|Mlu Prey Muoy Commune
+130206|Mlu Prey Pir Commune
+130207|Kampong Sralau Muoy Commune
+130208|Kampong Sralau Pir Commune
+130300|Choam Khsan District
+130301|Choam Ksan Commune
+130302|Tuek Kraham Commune
+130303|Pring Thum Commune
+130304|Rumdaoh Srae Commune
+130305|Yeang Commune
+130306|Kantuot Commune
+130307|Morokat Commune
+130308|Sra Aem Commune
+130400|Kuleaen District
+130401|Kuleaen Tboung Commune
+130402|Kuleaen Cheung Commune
+130403|Thmei Commune
+130404|Phnum Penh Commune
+130405|Phnum Tbaeng Pir Commune
+130406|Srayang Commune
+130500|Rovieng District
+130501|Robieb Commune
+
+# Page 36
+130502|Reaksmei Commune
+130503|Rohas Commune
+130504|Rung Roeang Commune
+130505|Rik Reay Commune
+130506|Ruos Roan Commune
+130507|Rottaknak Commune
+130508|Rieb Roy Commune
+130509|Reaksa Commune
+130510|Rumdaoh Commune
+130511|Rumtum Commune
+130512|Rummeakney Commune
+130600|Sangkum Thmei District
+130601|Chamraeun Commune
+130602|Ro Ang Commune
+130603|Phnum Tbaeng Muoy Commune
+130604|Sdau Commune
+130605|Reaknak Se Commune
+130700|Tbaeng Mean Chey District
+130703|Chhean Mukh Commune
+130704|Pou Commune
+130705|Pramae Commune
+130706|Preah Khleang Commune
+130800|Preah Vihear Municipality
+130801|Sangkat Kampong Pranak
+130802|Sangkat Pal Hal
+
+# Province 14: Prey Veng
+140000|Prey Veng Province
+140100|Ba Phnum District
+140101|Boeng Preah Commune
+140102|Cheung Phnum Commune
+140103|Chheu Kach Commune
+140104|Reak Chey Commune
+140105|Roung Damrei Commune
+140106|Sdau Kaong Commune
+140107|Spueu Ka Commune
+
+# Page 37
+140108|Spueu Kha Commune
+140109|Theay Commune
+140200|Kamchay Mear District
+140201|Cheach Commune
+140202|Doun Koeng Commune
+140203|Kranhung Commune
+140204|Krabau Commune
+140205|Seang Khveang Commune
+140206|Smaong Cheung Commune
+140207|Smaong Tboung Commune
+140208|Trabaek Commune
+140300|Kampong Trabaek District
+140301|Ansaong Commune
+140302|Cham Commune
+140303|Cheang Daek Commune
+140304|Chrey Commune
+140305|Kansaom Ak Commune
+140306|Kou Khchak Commune
+140307|Kampong Trabaek Commune
+140308|Peam Muntear Commune
+140309|Prasat Commune
+140310|Pratheat Commune
+140311|Prey Chhor Commune
+140312|Prey Poun Commune
+140313|Thkouv Commune
+140400|Kanhchriech District
+140401|Chong Ampil Commune
+140402|Kanhchriech Commune
+140403|Kdoeang Reay Commune
+140404|Kouk Kung Kaeut Commune
+140405|Kouk Kung Lech Commune
+140406|Preal Commune
+140407|Thma Pun Commune
+140408|Tnaot Commune
+140500|Me Sang District
+
+# Page 38
+140501|Angkor Sar Commune
+140502|Chres Commune
+140503|Chi Phoch Commune
+140504|Prey Khnes Commune
+140505|Prey Rumdeng Commune
+140506|Prey Totueng Commune
+140507|Svay Chrum Commune
+140508|Trapeang Srae Commune
+140600|Peam Chor District
+140601|Angkor Ang Commune
+140602|Kampong Prasat Commune
+140603|Kaoh Chek Commune
+140604|Kaoh Roka Commune
+140605|Kaoh Sampov Commune
+140606|Krang Ta Yang Commune
+140607|Preaek Krabau Commune
+140608|Preaek Sambour Commune
+140609|Ruessei Srok Commune
+140610|Svay Phluoh Commune
+140700|Peam Ro District
+140701|Ba Baong Commune
+140702|Barlech Prasat Commune
+140703|Neak Loeang Commune
+140704|Peam Mean Chey Commune
+140705|Peam Ro Commune
+140706|Preaek Khsay Ka Commune
+140707|Preaek Khsay Kha Commune
+140708|Prey Kandieng Commune
+140800|Pea Reang District
+140801|Kampong Popil Commune
+140802|Kanhcham Commune
+140803|Kampong Prang Commune
+140804|Mesar Prachan Commune
+140805|Prey Pnov Commune
+140806|Prey Sniet Commune
+
+# Page 39
+140809|Prey Sraket Commune
+140810|Reab Commune
+140811|Roka Commune
+140900|Preah Sdach District
+140901|Angkor Reach Commune
+140902|Banteay Chakrei Commune
+140903|Boeng Daol Commune
+140904|Chey Kampok Commune
+140905|Kampong Soeng Commune
+140906|Krang Svay Commune
+140907|Lvea Commune
+140908|Preah Sdach Commune
+140909|Reathor Commune
+140910|Rumchek Commune
+140911|Sena Reach Otdam Commune
+141000|Prey Veaeng Municipality
+141001|Sangkat Baray
+141002|Sangkat Cheung Tuek
+141003|Sangkat Kampong Leav
+141004|Sangkat Ta Kao
+141100|Pou Rieng District
+141101|Pou Rieng Commune
+141102|Preaek Anteah Commune
+141103|Preaek Chrey Commune
+141104|Prey Kanlaong Commune
+141105|Kampong Ruessei Commune
+141106|Preaek Ta Sar Commune
+141110|Sithor Kandal District
+141200|Sithor Kandal District
+141201|Ampil Krav Commune
+141202|Chrey Khmum Commune
+141203|Lve Commune
+141204|Pnov Ti Muoy Commune
+141205|Pnov Ti Pir Commune
+141206|Pou Ti Commune
+
+# Page 40
+141207|Preaek Changkran Commune
+141208|Prey Daeum Thnoeng Commune
+141209|Prey Tueng Commune
+141210|Rumlech Commune
+141211|Ruessei Sanh Commune
+141300|Svay Antor District
+141301|Angkor Tret Commune
+141302|Chea Khiang Commune
+141303|Chrey Commune
+141304|Damrei Puon Commune
+141305|Me Bon Commune
+141306|Pean Roung Commune
+141307|Popueus Commune
+141308|Prey Khla Commune
+141309|Samraong Commune
+141310|Svay Antor Commune
+141311|Tuek Thla Commune
+
+# Province 15: Pursat
+150000|Pursat Province
+150100|Bakan District
+150101|Boeng Bat Kandaol Commune
+150102|Boeng Khnar Commune
+150103|Khnar Totueng Commune
+150104|Me Tuek Commune
+150105|Ou Ta Paong Commune
+150106|Rumlech Commune
+150107|Snam Preah Commune
+150108|Svay Doun Kaev Commune
+150109|Trapeang Chong Commune
+150200|Kandieng District
+150201|Anlung Vil Commune
+150202|Kandieng Commune
+150203|Kanhchor Commune
+150204|Reang Ti Commune
+
+# Page 41
+150205|Srae Sdok Commune
+150206|Svay Luong Commune
+150207|Sya Commune
+150208|Veal Commune
+150209|Kaoh Chum Commune
+150210|Krakor District
+150300|Krakor District
+150301|Anlung Tnaot Commune
+150302|Ansa Chambak Commune
+150303|Boeng Kantuot Commune
+150304|Chheu Tom Commune
+150305|Kampong Luong Commune
+150306|Kampong Pou Commune
+150307|Kbal Trach Commune
+150308|Ou Sandan Commune
+150309|Sna Ansa Commune
+150310|Svay Sa Commune
+150311|Tnaot Chum Commune
+150400|Phnum Kravanh District
+150401|Bak Chenhchien Commune
+150402|Leach Commune
+150403|Prongil Commune
+150404|Rokat Commune
+150405|Santreae Commune
+150406|Samraong Commune
+150407|Pousat Municipality
+150500|Pousat Municipality
+150501|Sangkat Chamraeun Phal
+150502|Sangkat Lolok Sa
+150503|Sangkat Phteah Prey
+150504|Sangkat Prey Nhi
+150505|Sangkat Roleab
+150506|Sangkat Svay At
+150507|Sangkat Banteay Dei
+150600|Veal Veaeng District
+150601|Ou Saom Commune
+150602|Krapeu Pir Commune
+
+# Page 42
+150603|Anlung Reab Commune
+150604|Pramaoy Commune
+150605|Thma Da Commune
+150700|Ta Lou Saen Chey District
+150701|Ta Lou Commune
+150702|Phteah Rung Commune
+
+# Province 16: Ratanak Kiri
+160000|Ratanak Kiri Province
+160100|Andoung Meas District
+160101|Malik Commune
+160102|Nhang Commune
+160103|Ta Lav Commune
+160104|Ban Lung Municipality
+160200|Ban Lung Municipality
+160201|Sangkat Kachanh
+160202|Sangkat Labansiek
+160203|Sangkat Yeak Laom
+160204|Sangkat Boeng Kansaeng
+160300|Bar Kaev District
+160301|Kak Commune
+160302|Keh Chong Commune
+160303|La Minh Commune
+160304|Lung Khung Commune
+160305|Seung Commune
+160306|Ting Chak Commune
+160400|Koun Mom District
+160401|Serei Mangkul Commune
+160402|Srae Angkrong Commune
+160403|Ta Ang Commune
+160404|Teun Commune
+160405|Trapeang Chres Commune
+160406|Trapeang Kraham Commune
+160500|Lumphat District
+160501|Chey Otdam Commune
+160502|Ka Laeng Commune
+160503|Lbang Muoy Commune
+
+# Page 43
+160504|Lbang Pir Commune
+160505|Ba Tang Commune
+160506|Seda Commune
+160600|Ou Chum District
+160601|Cha Ung Commune
+160602|Pouy Commune
+160603|Aekakpheap Commune
+160604|Kalai Commune
+160605|Ou Chum Commune
+160606|Sammeakki Commune
+160607|Lak Commune
+160700|Ou Ya Dav District
+160701|Bar Kham Commune
+160702|Lum Choar Commune
+160703|Pak Nhai Commune
+160704|Pa Te Commune
+160705|Sesan Commune
+160706|Saom Thum Commune
+160707|Ya Tung Commune
+160800|Ta Veaeng District
+160801|Ta Veaeng Leu Commune
+160802|Ta Veaeng Kraom Commune
+160900|Veun Sai District
+160901|Pong Commune
+160902|Hat Pak Commune
+160903|Ka Choun Commune
+160904|Kaoh Pang Commune
+160905|Kaoh Peak Commune
+160906|Kok Lak Commune
+160907|Pa Kalan Commune
+160908|Phnum Kok Commune
+160909|Veun Sai Commune
+
+# Province 17: Siem Reap
+170000|Siem Reap Province
+170100|Angkor Chum District
+
+# Page 44
+170101|Char Chhuk Commune
+170102|Doun Paeng Commune
+170103|Kouk Doung Commune
+170104|Koul Commune
+170105|Nokor Pheas Commune
+170106|Srae Khvav Commune
+170107|Ta Saom Commune
+170200|Angkor Thum District
+170201|Chub Ta Trav Commune
+170202|Leang Dai Commune
+170203|Peak Snaeng Commune
+170204|Svay Chek Commune
+170300|Banteay Srei District
+170301|Khnar Sanday Commune
+170302|Khun Ream Commune
+170303|Preah Dak Commune
+170304|Rumchek Commune
+170305|Tbaeng Commune
+170400|Chi Kraeng District
+170401|Anlung Samnar Commune
+170402|Chi Kraeng Commune
+170403|Kampong Kdei Commune
+170404|Khvav Commune
+170405|Kouk Thlok Kraom Commune
+170406|Kouk Thlok Leu Commune
+170407|Lveaeng Ruessei Commune
+170408|Pungro Kraom Commune
+170409|Pungro Leu Commune
+170410|Ruessei Lok Commune
+170411|Sangveauy Commune
+170412|Spean Tnaot Commune
+170500|Kralanh District
+170501|Chanleas Dai Commune
+170502|Kampong Thkov Commune
+170503|Kralanh Commune
+
+# Page 45
+170504|Krouch Kor Commune
+170505|Roung Kou Commune
+170506|Sambuor Commune
+170507|Saen Sokh Commune
+170508|Snoul Commune
+170509|Sranal Commune
+170510|Ta An Commune
+170600|Puok District
+170701|Sasar Sdam Commune
+170702|Doun Kaev Commune
+170703|Kdei Run Commune
+170704|Kaev Poar Commune
+170705|Khnat Commune
+170706|Lvea Commune
+170707|Mukh Paen Commune
+170708|Pou Treay Commune
+170709|Puok Commune
+170710|Prey Chruk Commune
+170711|Reul Commune
+170712|Samraong Yea Commune
+170713|Trei Nhoar Commune
+170714|Yeang Commune
+170700|Prasat Bakong District
+170901|Bakong Commune
+170902|Kampong Phluk Commune
+170903|Kantreang Commune
+170904|Kandaek Commune
+170905|Mean Chey Commune
+170906|Rolous Commune
+170907|Trapeang Thum Commune
+170908|Ampil Commune
+170800|Siem Reap Municipality
+170801|Sangkat Sla Kram
+170802|Sangkat Svay Dankum
+170803|Sangkat Kouk Chak
+
+# Page 46
+170804|Sangkat Sala Kamraeuk
+170805|Sangkat Nokor Thum
+170806|Sangkat Chreav
+170807|Sangkat Chong Khnies
+170808|Sangkat Sambour
+170809|Sangkat Siem Reap
+170810|Sangkat Srangae
+170811|Sangkat Krabei Riel
+170812|Sangkat Tuek Vil
+170900|Sout Nikum District
+170901|Chan Sa Commune
+170902|Dam Daek Commune
+170903|Dan Run Commune
+170904|Kampong Khleang Commune
+170905|Kien Sangkae Commune
+170906|Khchas Commune
+170907|Khnar Pou Commune
+170908|Popel Commune
+170909|Samraong Commune
+170910|Ta Yaek Commune
+171000|Srei Snam District
+171001|Chrouy Neang Nguon Commune
+171002|Klang Hay Commune
+171003|Tram Sasar Commune
+171004|Moung Commune
+171005|Prei Commune
+171006|Slaeng Spean Commune
+171100|Svay Leu District
+171101|Boeng Mealea Commune
+171102|Kantuot Commune
+171103|Khnang Phnum Commune
+171104|Svay Leu Commune
+171105|Ta Siem Commune
+171200|Varin District
+171401|Prasat Commune
+171402|Lvea Krang Commune
+171403|Srae Nouy Commune
+171404|Svay Sa Commune
+171405|Varin Commune
+171300|Run Ta Aek Techou Saen Municipality
+171501|Sangkat Run Ta Aek
+171502|Sangkat Ballang
+
+# Province 18: Sihanoukville
+180000|Sihanoukville Province
+180100|Preah Sihanouk Municipality
+180101|Sangkat Lekh Muoy
+180102|Sangkat Lekh Pir
+180103|Sangkat Lekh Bei
+180104|Sangkat Lekh Buon
+180200|Prey Nub District
+180201|Andoung Thma Commune
+180202|Cheung Kou Commune
+180204|Prey Nub Commune
+180205|Sammeakki Commune
+180206|Samrong Commune
+180210|Tuek Lak Commune
+180211|Tuek Thla Commune
+180212|Tuol Totueng Commune
+180213|Veal Ranh Commune
+180214|Ta Ney Commune
+180215|Stueng Hav District
+180300|Stueng Hav District
+180301|Kampenh Commune
+180302|Ou Treh Commune
+180303|Tumnub Rolok Commune
+180304|Kaev Phos Commune
+180400|Kampong Seila District
+180401|Chamkar Luong Commune
+180402|Kampong Seila Commune
+
+# Page 48
+180403|Ou Bak Roteh Commune
+180404|Stueng Chhay Commune
+180500|Kaoh Rong Municipality
+180501|Sangkat Kaoh Rong
+180502|Sangkat Kaoh Rong Sanloem
+180600|Kampong Saom Municipality
+180601|Sangkat Boeng Ta Prum
+180602|Sangkat Bet Trang
+180603|Sangkat Ou Chrov
+180604|Sangkat Ou Oknha Heng
+180605|Sangkat Ream
+
+# Province 19: Stung Treng
+190000|Stung Treng Province
+190100|Sesan District
+190101|Kamphun Commune
+190102|Kbal Romeas Commune
+190103|Phluk Commune
+190104|Samkhuoy Commune
+190105|Sdau Commune
+190106|Srae Kor Commune
+190107|Ta Lat Commune
+190200|Siem Bouk District
+190201|Kaoh Preah Commune
+190202|Kaoh Sampeay Commune
+190203|Kaoh Sralay Commune
+190204|Ou Mreah Commune
+190205|Ou Ruessei Kandal Commune
+190206|Siem Bouk Commune
+190207|Srae Krasang Commune
+190300|Siem Pang District
+190301|Preaek Meas Commune
+190302|Sekong Commune
+190303|Santepheap Commune
+190304|Srae Sambour Commune
+
+# Page 49
+190305|Thma Kaev Commune
+190400|Stueng Traeng Municipality
+190401|Sangkat Stueng Traeng
+190402|Sangkat Srah Ruessei
+190403|Sangkat Preah Bat
+190404|Sangkat Sameakki
+190500|Thala Barivat District
+190501|Anlung Phe Commune
+190502|Chamkar Leu Commune
+190503|Kang Cham Commune
+190504|Anlung Chrey Commune
+190505|Ou Rai Commune
+190506|Sam Ang Commune
+190507|Srae Ruessei Commune
+190510|Thala Barivat Commune
+190511|Borei Ou svay Saen Chey District
+190600|Borei Ou svay Saen Chey District
+190601|Ou Svay Commune
+190602|Kaoh Snaeng Commune
+190603|Preah Rumkel Commune
+
+# Province 20: Svay Rieng
+200000|Svay Rieng Province
+200100|Chantrea District
+200101|Chantrea Commune
+200103|Chres Commune
+200104|Me Sar Thngak Commune
+200105|Prey Kokir Commune
+200106|Samraong Commune
+200109|Tuol Sdei Commune
+200110|Kampong Rou District
+200200|Kampong Rou District
+200201|Banteay Krang Commune
+200202|Nhor Commune
+200203|Khsaet Commune
+200204|Preah Punlea Commune
+200205|Prey Thum Commune
+200206|Reach Muni Commune
+
+# Page 50
+200207|Samlei Commune
+200208|Samyaong Commune
+200209|Svay Ta Yean Commune
+200211|Thmei Commune
+200212|Tnaot Commune
+200300|Rumduol District
+200301|Bos Mon Commune
+200302|Thmea Commune
+200303|Kampong Chak Commune
+200304|Chrung Popel Commune
+200305|Kampong Ampil Commune
+200306|Meun Chey Commune
+200307|Pong Tuek Commune
+200308|Sangkae Commune
+200309|Svay Chek Commune
+200310|Thna Thrung Commune
+200400|Romeas Haek District
+200401|Ampil Commune
+200402|Andoung Pou Commune
+200403|Andoung Trabaek Commune
+200404|Ang Prasrae Commune
+200405|Chantrei Commune
+200406|Chrey Thum Commune
+200407|Doung Commune
+200408|Kampong Trach Commune
+200409|Kokir Commune
+200410|Krasang Commune
+200411|Mukh Da Commune
+200412|Mream Commune
+200413|Sambur Commune
+200414|Sambat Mean Chey Commune
+200415|Trapeang Sdau Commune
+200416|Tras Commune
+200500|Svay Chrum District
+
+# Page 51
+200501|Ang Ta Sou Commune
+200502|Basak Commune
+200503|Chambak Commune
+200504|Kampong Chamlang Commune
+200505|Ta Suos Commune
+200507|Chheu Teal Commune
+200508|Doun Sa Commune
+200509|Kouk Pring Commune
+200510|Kraol Kou Commune
+200511|Kruos Commune
+200512|Pou Reach Commune
+200513|Svay Ang Commune
+200514|Svay Chrum Commune
+200515|Svay Thum Commune
+200516|Svay Yea Commune
+200517|Thiok Commune
+200600|Svay Rieng Municipality
+200601|Sangkat Svay Rieng
+200602|Sangkat Prey Chhlak
+200603|Sangkat Koy Trabaek
+200604|Sangkat Pou Ta Hao
+200605|Sangkat Cheik
+200606|Sangkat Svay Toea
+200607|Sangkat Sangkhoar
+200700|Svay Teab District
+200701|Kokir Saom Commune
+200702|Kandieng Reay Commune
+200703|Meakhnoum Commune
+200704|Popeaet Commune
+200705|Prey Ta Ei Commune
+200706|Prasout Commune
+200707|Romeang Thkaol Commune
+200708|Sambour Commune
+200709|Svay Rumpear Commune
+
+# Page 52
+200800|Bavet Municipality
+200801|Sangkat Bati
+200802|Sangkat Bavet
+200803|Sangkat Chrak Mtes
+200804|Sangkat Prasat
+200805|Sangkat Prey Angkuhn
+
+# Province 21: Takeo
+210000|Takeo Province
+210100|Angkor Borei District
+210101|Angkor Borei Commune
+210102|Ba Srae Commune
+210103|Kouk Thlok Commune
+210104|Punley Commune
+210105|Preaek Phtoul Commune
+210106|Prey Phkoam Commune
+210200|Bati District
+210201|Chambak Commune
+210202|Champei Commune
+210203|Doung Commune
+210204|Kandoeng Commune
+210205|Komar Reachea Commune
+210206|Krang Leav Commune
+210207|Krang Thnong Commune
+210208|Lumpung Commune
+210209|Pea Ream Commune
+210210|Put Sar Commune
+210211|Souphi Commune
+210212|Tang Doung Commune
+210213|Tnaot Commune
+210214|Trapeang Krasang Commune
+210215|Trapeang Sab Commune
+210300|Bourei Cholsar District
+210301|Bourei Cholsar Commune
+210302|Chey Chouk Commune
+210303|Doung Khpuos Commune
+210304|Kampong Krasang Commune
+210305|Kouk Pou Commune
+210400|Kiri Vong District
+210401|Cheung Kuon Commune
+210402|Kiri Vong Commune
+210403|Phnum Den Commune
+210404|Preaek Tnaot Commune
+210405|Prey Khla Commune
+210406|Samraong Commune
+210407|Ta Phem Commune
+210500|Kaoh Andaet District
+210501|Angk Prasat Commune
+210502|Kaoh Andaet Commune
+210503|Kampong Reab Commune
+210504|Prambei Mum Commune
+210505|Prey Yuthka Commune
+210506|Ta Suos Commune
+210507|Tuol Snuol Commune
+210600|Prey Kabbas District
+210601|Angk Ta Saom Commune
+210602|Cheang Tong Commune
+210603|Chey Chouk Commune
+210604|Kampong Rotes Commune
+210605|Kus Commune
+210606|Prey Kabbas Commune
+210607|Prey Lvea Commune
+210608|Prey Sralet Commune
+210609|Snam Prampir Commune
+210610|Snao Commune
+210611|Srae Ronoung Commune
+210612|Ta Phem Commune
+210700|Samraong District
+210701|Boeng Tranh Khang Cheung Commune
+210702|Boeng Tranh Khang Tboung Commune
+210703|Cheung Kuon Commune
+210704|Chumreah Pen Commune
+210705|Khvav Commune
+210706|Lumchang Commune
+210707|Rovieng Commune
+210708|Samraong Commune
+210709|Soeng Commune
+210710|Sla Commune
+210711|Trea Commune
+210800|Doun Kaev Municipality
+210801|Sangkat Baray
+210802|Sangkat Roka Knong
+210803|Sangkat Roka Krau
+210900|Tram Kak District
+210901|Ang Ta Saom Commune
+210902|Cheang Tong Commune
+210903|Kus Commune
+210904|Leay Bour Commune
+210905|Nhaeng Nhang Commune
+210906|Ou Saray Commune
+210907|Trapeang Kranhoung Commune
+210908|Otdam Soriya Commune
+210909|Popel Commune
+210910|Samraong Commune
+210911|Srae Ronoung Commune
+210912|Ta Phem Commune
+210913|Tram Kak Commune
+210914|Trapeang Thum Khang Cheung Commune
+210915|Trapeang Thum Khang Tboung Commune
+211000|Treang District
+211001|Angkanh Commune
+211002|Ang Khnor Commune
+211003|Chi Khma Commune
+211004|Khvav Commune
+211005|Prambei Mum Commune
+211006|Ang Kaev Commune
+211007|Prey Sloek Commune
+211008|Roneam Commune
+211009|Sambour Commune
+211010|Sanlung Commune
+211011|Smaong Commune
+211012|Srangae Commune
+211013|Thlok Commune
+211014|Tralach Commune
+
+# Province 22: Oddar Meanchey
+220000|Oddar Meanchey Province
+220100|Anlung Veang District
+220101|Anlung Veang Commune
+220103|Trapeang Tav Commune
+220104|Trapeang Prei Commune
+220105|Thma Commune
+220106|Lumtong Commune
+220200|Banteay Ampil District
+220201|Ampil Commune
+220202|Beng Commune
+220203|Kouk Khpuos Commune
+220204|Kouk Mon Commune
+220300|Chong Kal District
+220301|Cheung Tien Commune
+220302|Chong Kal Commune
+220303|Krasang Commune
+220304|Pongro Commune
+220400|Samraong Municipality
+220401|Sangkat Bansay Reak
+220402|Sangkat Bos Sbouv
+220403|Sangkat Koun Kriel
+220404|Sangkat Samraong
+220405|Sangkat Ou Smach
+220500|Trapeang Prasat District
+220501|Bak Anlung Commune
+220502|Ph'av Commune
+220503|Ou Svay Commune
+220504|Preah Pralay Commune
+220505|Tumnub Dach Commune
+220506|Trapeang Prasat Commune
+
+# Province 23: Kep
+230000|Kep Province
+230100|Damnak Chang'aeu District
+230101|Angkaol Commune
+230103|Pong Tuek Commune
+230200|Kaeb Municipality
+230201|Sangkat Kaeb
+230202|Sangkat Prey Thum
+230203|Sangkat Ou Krasar
+
+# Province 24: Pailin
+240000|Pailin Province
+240100|Pailin Municipality
+240101|Sangkat Pailin
+240102|Sangkat Ou Ta Vau
+240103|Sangkat Tuol Lvea
+240104|Sangkat Ba Yakha
+240200|Sala Krau District
+240201|Sala Krau Commune
+240202|Stueng Trang Commune
+240203|Stueng Kach Commune
+240204|Ou Andoung Commune
+
+# Province 25: Tboung Khmum
+250000|Tboung Khmum Province
+250100|Dambae District
+250101|Chong Cheach Commune
+250102|Dambae Commune
+250103|Kouk Srok Commune
+250104|Neang Teut Commune
+250105|Seda Commune
+250106|Tuek Chrov Commune
+250107|Trapeang Pring Commune
+250200|Krouch Chhmar District
+250201|Chhuk Commune
+250202|Chumnik Commune
+250203|Kampong Treas Commune
+250204|Kaoh Pir Commune
+250205|Krouch Chhmar Commune
+250206|Peus Muoy Commune
+250207|Peus Pir Commune
+250208|Preak A Chi Commune
+250209|Roka Khnor Commune
+250210|Svay Khleang Commune
+250211|Trea Commune
+250212|Tuol Snuol Commune
+250300|Memut District
+250301|Chan Mul Commune
+250302|Choam Commune
+250303|Choam Kravien Commune
+250304|Choam Ta Mau Commune
+250305|Dar Commune
+250306|Kampoan Commune
+250307|Memong Commune
+250308|Memut Commune
+250309|Rumchek Commune
+250310|Tramung Commune
+250311|Tunlung Commune
+250312|Triek Commune
+250313|Kokir Commune
+250400|Ou Reang Ov District
+250401|Ampil Ta Pok Commune
+250402|Chak Commune
+250403|Damrel Commune
+250404|Kong Chey Commune
+250405|Mien Commune
+250406|Preah Theat Commune
+250407|Tuol Souphi Commune
+250500|Ponhea Kraek District
+250501|Doun Tei Commune
+250502|Kak Commune
+250503|Kandaol Chrum Commune
+250504|Kaong Kang Commune
+250505|Kraek Commune
+250506|Popel Commune
+250507|Trapeang Phlong Commune
+250508|Veal Mlu Commune
+250600|Suong Municipality
+250601|Sangkat Suong
+250602|Sangkat Vihea Luong
+250700|Tboung Khmum District
+250701|Anhchaeum Commune
+250702|Boeng Pruol Commune
+250703|Chikor Commune
+250704|Chirou Ti Muoy Commune
+250705|Chirou Ti Pir Commune
+250706|Chub Commune
+250707|Kor Commune
+250708|Lngieng Commune
+250709|Mong Riev Commune
+250710|Peam Chileang Commune
+250711|Roka Po Pram Commune
+250712|Sralab Commune
+250713|Thma Pech Commune
+250714|Tonle Bet Commune

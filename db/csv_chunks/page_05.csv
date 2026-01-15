@@ -1,0 +1,34 @@
+postal_code,name_km,name_en,type,province_code,district_code
+010808,ឃុំ រលួស,Rolous Commune,commune,010000,010800
+010900,ស្រុក មាលៃ,Malai District,district,010000,010900
+010901,ឃុំ បឹងបេង,Boeng Beng Commune,commune,010000,010900
+010902,ឃុំ មាលៃ,Malai Commune,commune,010000,010900
+010903,ឃុំ អូរសំព័រ,Ou Sampoar Commune,commune,010000,010900
+010904,ឃុំ អូរស្រឡៅ,Ou Sralau Commune,commune,010000,010900
+010905,ឃុំ ទួលពង្រ,Tuol Pongro Commune,commune,010000,010900
+010906,ឃុំ តាគង់,Ta Kung Commune,commune,010000,010900
+011000,ក្រុង ប៉ោយប៉ែត,Paoy Paet Municipality,district,010000,011000
+011001,សង្កាត់ និមិត្ត,Sangkat Nimit,commune,010000,011000
+011002,សង្កាត់ ប៉ោយប៉ែត,Sangkat Paoy Paet,commune,010000,011000
+011003,សង្កាត់ ផ្សារកណ្ដាល,Sangkat Phsar Kandal,commune,010000,011000
+011004,សង្កាត់ អូរជ្រៅ,Sangkat Ou Chrov,commune,010000,011000
+011005,សង្កាត់ អូររុស្សី,Sangkat Ou Ruessei,commune,010000,011000
+020000,ខេត្ត បាត់ដំបង,Battambang Province,province,020000,
+020100,ស្រុក បាណន់,Banan District,district,020000,020100
+020101,ឃុំ កន្ទឺមួយ,Kantueu Muoy Commune,commune,020000,020100
+020102,ឃុំ កន្ទឺពីរ,Kantueu Pir Commune,commune,020000,020100
+020103,ឃុំ បាយដំរាំ,Bay Damram Commune,commune,020000,020100
+020104,ឃុំ ជើវទាល,Chheu Teal Commune,commune,020000,020100
+020105,ឃុំ ជៀងមានជ័យ,Chheung Mean Chey Commune,commune,020000,020100
+020106,ឃុំ ភ្នំសំពៅ,Phnum Sampov Commune,commune,020000,020100
+020107,ឃុំ ស្នឹង,Snoeng Commune,commune,020000,020100
+020108,ឃុំ តាក្រាម,Ta Kream Commune,commune,020000,020100
+020200,ស្រុក ថ្មគោល,Thma Koul District,district,020000,020200
+020201,ឃុំ តាពូង,Ta Pung Commune,commune,020000,020200
+020202,ឃុំ តាម៉ឺន,Ta Meun Commune,commune,020000,020200
+020203,ឃុំ អូរតាគី,Ou Ta Ki Commune,commune,020000,020200
+020204,ឃុំ ជ្រៃ,Chrey Commune,commune,020000,020200
+020205,ឃុំ អន្លង់រុន,Anlung Run Commune,commune,020000,020200
+020206,ឃុំ ជ្រួយស្តៅ,Chrouy Sdau Commune,commune,020000,020200
+020207,ឃុំ បឹងព្រីង,Boeng Pring Commune,commune,020000,020200
+020208,ឃុំ គោកឃ្មុំ,Kouk Khmum Commune,commune,020000,020200

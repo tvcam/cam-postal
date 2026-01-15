@@ -1,0 +1,32 @@
+<div class="results-section">
+  <% if query.present? %>
+    <% if results.any? %>
+      <p class="results-count">Found <%= results.size %> result<%= results.size == 1 ? '' : 's' %></p>
+
+      <div class="results-list">
+        <% results.each do |postal_code| %>
+          <div class="result-card <%= postal_code.location_type %>">
+            <div class="result-header">
+              <span class="postal-code"><%= postal_code.postal_code %></span>
+              <span class="location-type <%= postal_code.location_type %>"><%= postal_code.type_label %></span>
+            </div>
+            <div class="result-body">
+              <p class="name-en"><%= postal_code.name_en %></p>
+              <p class="name-km"><%= postal_code.name_km %></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    <% else %>
+      <div class="no-results">
+        <p>No results found for "<%= query %>"</p>
+        <p class="no-results-km">រកមិនឃើញលទ្ធផលសម្រាប់ "<%= query %>"</p>
+      </div>
+    <% end %>
+  <% else %>
+    <div class="welcome-message">
+      <p>Enter a search term to find postal codes</p>
+      <p class="welcome-km">បញ្ចូលពាក្យស្វែងរកដើម្បីរកលេខកូដប្រៃសណីយ៍</p>
+    </div>
+  <% end %>
+</div>

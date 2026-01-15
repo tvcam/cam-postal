@@ -1,0 +1,62 @@
+# Cambodia Postal Codes with Khmer Names
+# Format: postal_code|English Name|Khmer Name
+
+# Province 01: Banteay Meanchey
+010000|Banteay Meanchey Province|ខេត្ត បន្ទាយមានជ័យ
+010200|Mangkul Bourei District|ស្រុក មង្គលបូរី
+010201|Banteay Neang Commune|ឃុំ បន្ទាយនាង
+010202|Bat Trang Commune|ឃុំ បត្រាំង
+010203|Chamnaom Commune|ឃុំ ចំណោម
+010204|Kouk Ballang Commune|ឃុំ កោកបល្ល័ង្គ
+010205|Koy Maeng Commune|ឃុំ គយម៉ែង
+010206|Ou Prasat Commune|ឃុំ អូរប្រាសាទ
+010207|Phnum Touch Commune|ឃុំ ភ្នំទូច
+010208|Rohat Tuek Commune|ឃុំ រហាត់ទឹក
+010209|Ruessei Kraok Commune|ឃុំ រុស្សីក្រោក
+010210|Sambour Commune|ឃុំ សំបូរ
+010211|Soea Commune|ឃុំ សាអា
+010212|Srah Reang Commune|ឃុំ ស្រះរាំង
+010213|Ta Lam Commune|ឃុំ តាឡាំ
+010300|Phnum Srok District|ស្រុក ភ្នំស្រុក
+010301|Nam Tau Commune|ឃុំ ណាមតៅ
+010302|Paoy Char Commune|ឃុំ ប៉ោយចារ
+010303|Punley Commune|ឃុំ ពន្លៃ
+010304|Spean Sraeng Commune|ឃុំ ស្ពានស្រែង
+010305|Srah Chik Commune|ឃុំ ស្រះជីក
+010306|Phnum Dei Commune|ឃុំ ភ្នំដី
+010400|Preah Net Preah District|ស្រុក ព្រះនេត្រព្រះ
+010401|Chhnuom Mean Chey Commune|ឃុំ ឈ្នួមមានជ័យ
+010402|Chub Vari Commune|ឃុំ ជប់វារី
+010403|Phnum Lieb Commune|ឃុំ ភ្នំលៀប
+010404|Prasat Commune|ឃុំ ប្រាសាទ
+010405|Preah Net Preah Commune|ឃុំ ព្រះនេត្រព្រះ
+010406|Rohal Commune|ឃុំ រហាល
+010407|Tean Kam Commune|ឃុំ ទាសកាំ
+010408|Tuek Chour Commune|ឃុំ ទឹកជូរ
+010409|Bos Sbouv Commune|ឃុំ បុស្បូវ
+010500|Ou Chrov District|ស្រុក អូរជ្រៅ
+010501|Changha Commune|ឃុំ ចង្ហា
+010502|Koub Commune|ឃុំ គូប
+010503|Kuttasat Commune|ឃុំ កុដ្ដសត
+010504|Samraong Commune|ឃុំ សំរោង
+010505|Souphi Commune|ឃុំ សូភី
+010506|Soeng Commune|ឃុំ សឹង
+010507|Ou Beichoan Commune|ឃុំ អូរបីជាន់
+010600|Serei Saophoan Municipality|ក្រុង សិរីសោភ័ណ
+010601|Sangkat Kampong Svay|សង្កាត់ កំពង់ស្វាយ
+010602|Sangkat Kaoh Pong Sat|សង្កាត់ កោះពងសត្វ
+010603|Sangkat Mkak|សង្កាត់ ម្កាក់
+010604|Sangkat Ou Ambel|សង្កាត់ អូរអំបិល
+010605|Sangkat Phniet|សង្កាត់ ភ្នៀត
+010606|Sangkat Preah Punlea|សង្កាត់ ព្រះពន្លា
+010607|Sangkat Tuek Thla|សង្កាត់ ទឹកថ្លា
+010700|Thma Puok District|ស្រុក ថ្មពួក
+010701|Phkoam Commune|ឃុំ ភ្កាំ
+010702|Sarung Commune|ឃុំ សារុង
+010703|Sla Kram Commune|ឃុំ ស្លាក្រាម
+010704|Svay Chek Commune|ឃុំ ស្វាយចេក
+010705|Ta Baen Commune|ឃុំ តាបែន
+010706|Ta Phou Commune|ឃុំ តាភូ
+010707|Treas Commune|ឃុំ ទ្រាស
+010808|Roluos Commune|ឃុំ រលួស
+010900|Malai District|ស្រុក មាលorg org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org org

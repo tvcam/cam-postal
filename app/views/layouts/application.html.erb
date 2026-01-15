@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <title><%= content_for(:title) || "Cambodia Postal Code Directory" %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="Search Cambodia postal codes by province, district, or commune name in Khmer or English">
+    <meta name="theme-color" content="#1e40af">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="application-name" content="Cambodia Postal">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= yield :head %>
+
+    <%= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="/" class="logo">
+          <span class="logo-icon">&#x1F4EE;</span>
+          <span class="logo-text">Cambodia Postal</span>
+        </a>
+      </header>
+
+      <main class="main">
+        <%= yield %>
+      </main>
+
+      <aside class="ad-space" id="ad-top">
+        <!-- Google Ads Space - Top -->
+        <div class="ad-placeholder">Advertisement</div>
+      </aside>
+
+      <footer class="footer">
+        <p>Cambodia Postal Code Directory</p>
+        <p class="footer-km">បញ្ជីលេខកូដប្រៃសណីយ៍កម្ពុជា</p>
+      </footer>
+
+      <aside class="ad-space" id="ad-bottom">
+        <!-- Google Ads Space - Bottom -->
+        <div class="ad-placeholder">Advertisement</div>
+      </aside>
+    </div>
+  </body>
+</html>

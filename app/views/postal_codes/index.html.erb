@@ -1,0 +1,33 @@
+<% content_for :title, "Cambodia Postal Code Search" %>
+
+<div class="search-section">
+  <h1 class="title">Cambodia Postal Code</h1>
+  <h2 class="title-km">លេខកូដប្រៃសណីយ៍កម្ពុជា</h2>
+
+  <%= form_with url: search_path, method: :get, data: { controller: "search", turbo_frame: "results" } do |f| %>
+    <div class="search-box">
+      <input
+        type="search"
+        name="q"
+        value="<%= @query %>"
+        placeholder="Search by postal code, province, district, commune..."
+        class="search-input"
+        autocomplete="off"
+        autofocus
+        data-search-target="input"
+        data-action="input->search#search"
+      >
+      <button type="submit" class="search-btn">
+        Search
+      </button>
+    </div>
+  <% end %>
+
+  <p class="search-hint">
+    ស្វែងរកដោយលេខកូដ ឈ្មោះខេត្ត ស្រុក ឬឃុំ (ភាសាខ្មែរ ឬអង់គ្លេស)
+  </p>
+</div>
+
+<%= turbo_frame_tag "results" do %>
+  <%= render partial: "results", locals: { results: @results, query: @query } %>
+<% end %>
