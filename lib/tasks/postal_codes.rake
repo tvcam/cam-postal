@@ -35,9 +35,7 @@ namespace :postal_codes do
           postal_code: row["postal_code"],
           name_km: row["name_km"],
           name_en: row["name_en"],
-          location_type: row["type"],
-          province_code: row["province_code"],
-          district_code: row["district_code"]
+          location_type: row["type"]
         )
         created += 1
         puts "Created: #{postal_code} - #{row['name_en']}"
