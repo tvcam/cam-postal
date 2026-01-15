@@ -8,6 +8,7 @@ image: cam_postal
 servers:
   web:
     - 5.78.87.254
+registry:
   server: localhost:5555
 proxy:
   ssl: true
