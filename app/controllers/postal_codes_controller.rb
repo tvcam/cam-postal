@@ -42,6 +42,9 @@ class PostalCodesController < ApplicationController
     end
 
     render json: result
+  rescue StandardError => e
+    Rails.logger.error "Locate error: #{e.class} - #{e.message}"
+    render json: { error: "Service temporarily unavailable" }, status: :service_unavailable
   end
 
   private
@@ -55,6 +58,8 @@ class PostalCodesController < ApplicationController
 
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
+    http.open_timeout = 5
+    http.read_timeout = 5
 
     request = Net::HTTP::Get.new(uri)
     request["User-Agent"] = "CambodiaPostalCode/1.0"
