@@ -1,4 +1,31 @@
 class PostalCodesController < ApplicationController
+  def data
+    expires_in 1.week, public: true
+
+    postal_codes = PostalCode.order(:postal_code)
+
+    # Build lookups for parent names
+    provinces = postal_codes.select(&:province?).index_by(&:postal_code)
+    districts = postal_codes.select(&:district?).index_by(&:postal_code)
+
+    data = postal_codes.map do |pc|
+      parent = case pc.location_type
+      when "commune"
+        district = districts[pc.district_code]
+        province = provinces[pc.province_code]
+        [ district&.name_en, province&.name_en ].compact.join(", ")
+      when "district"
+        provinces[pc.province_code]&.name_en || ""
+      else
+        ""
+      end
+
+      { c: pc.postal_code, e: pc.name_en, k: pc.name_km, t: pc.location_type, p: parent }
+    end
+
+    render json: data
+  end
+
   def index
     @query = params[:q].to_s.strip
     @results = @query.present? ? PostalCode.search(@query) : []
@@ -25,6 +52,11 @@ class PostalCodesController < ApplicationController
 
   def track_copy
     SiteStat.increment("copies")
+    head :ok
+  end
+
+  def track_search
+    SiteStat.increment("searches")
     head :ok
   end
 
