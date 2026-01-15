@@ -32,7 +32,10 @@ CREATE TRIGGER postal_codes_au AFTER UPDATE ON postal_codes BEGIN
       END;
 CREATE TABLE IF NOT EXISTS "site_stats" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "value" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
 CREATE UNIQUE INDEX "index_site_stats_on_name" ON "site_stats" ("name") /*application='CamPostal'*/;
+CREATE TABLE IF NOT EXISTS "geocode_caches" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal(7,3) NOT NULL, "lng" decimal(7,3) NOT NULL, "postal_code" varchar, "area" varchar, "display_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
+CREATE UNIQUE INDEX "index_geocode_caches_on_lat_and_lng" ON "geocode_caches" ("lat", "lng") /*application='CamPostal'*/;
 INSERT INTO "schema_migrations" (version) VALUES
+('20260115055137'),
 ('20260115031238'),
 ('20260114181406');
 
