@@ -82,6 +82,13 @@ export default class extends Controller {
     if (this.hasResultsTarget) {
       this.resultsTarget.style.display = "block"
     }
+    // Render initial state based on current input
+    const query = this.hasInputTarget ? this.inputTarget.value.trim() : ""
+    if (query) {
+      this.clientSearch(query)
+    } else {
+      this.renderWelcome()
+    }
   }
 
   search() {
