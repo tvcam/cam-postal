@@ -112,11 +112,7 @@ export default class extends Controller {
       return
     }
 
-    const startTime = performance.now()
     const results = this.fuse.search(query, { limit: 50 })
-    const elapsed = performance.now() - startTime
-    console.debug(`Fuse search: ${elapsed.toFixed(2)}ms for "${query}"`)
-
     this.renderResults(results.map(r => r.item), query)
 
     // Save to recent searches if results found
