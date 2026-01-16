@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get "terms", to: "pages#terms", as: :terms
 
   # Postal codes
+  get "p/:postal_code", to: "postal_codes#show", as: :postal_code
   get "data", to: "postal_codes#data", as: :postal_data, defaults: { format: :json }
   get "search", to: "postal_codes#search", as: :search
   get "locate", to: "postal_codes#locate", as: :locate

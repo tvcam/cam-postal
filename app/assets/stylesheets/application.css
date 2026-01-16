@@ -798,6 +798,40 @@ body {
   }
 }
 
+/* Show Page */
+.show-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.show-page .back-link {
+  margin-bottom: 1rem;
+}
+
+.show-page .back-link a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  transition: color 0.2s;
+}
+
+.show-page .back-link a:hover {
+  color: var(--primary-dark);
+}
+
+.show-page .back-link svg {
+  flex-shrink: 0;
+}
+
+.show-page .result-card {
+  cursor: pointer;
+}
+
 /* Turbo loading indicator */
 .turbo-progress-bar {
   height: 3px;

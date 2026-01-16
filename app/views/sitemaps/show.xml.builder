@@ -8,11 +8,11 @@ xml.urlset xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" do
   end
 
   # Individual postal code pages
-  @postal_codes.each do |postal_code|
+  @postal_codes.each do |pc|
     xml.url do
-      xml.loc search_url(host: @host, protocol: @protocol, q: postal_code.postal_code)
+      xml.loc postal_code_url(pc.postal_code, host: @host, protocol: @protocol)
       xml.changefreq "monthly"
-      xml.priority postal_code.province? ? "0.8" : (postal_code.district? ? "0.6" : "0.5")
+      xml.priority pc.province? ? "0.8" : (pc.district? ? "0.6" : "0.5")
     end
   end
 end

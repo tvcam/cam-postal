@@ -32,6 +32,13 @@ class PostalCodesController < ApplicationController
     SiteStat.increment("visits")
   end
 
+  def show
+    @postal_code = PostalCode.find_by!(postal_code: params[:postal_code])
+    SiteStat.increment("visits")
+  rescue ActiveRecord::RecordNotFound
+    render file: Rails.root.join("public/404.html"), status: :not_found, layout: false
+  end
+
   def search
     @query = params[:q].to_s.strip
     @results = @query.present? ? PostalCode.search(@query) : []
