@@ -1,0 +1,229 @@
+<% content_for :title, "Cambodia Postal Code FAQ - Frequently Asked Questions" %>
+
+<% content_for :head do %>
+  <meta name="description" content="Frequently asked questions about Cambodia postal codes. Learn about the 6-digit ZIP code format, how to find your postal code, Phnom Penh postal codes, and shipping to Cambodia.">
+  <link rel="canonical" href="<%= faq_url %>">
+  <meta property="og:title" content="Cambodia Postal Code FAQ - Common Questions Answered">
+  <meta property="og:description" content="Everything you need to know about Cambodia postal codes. Format, lookup, and shipping information.">
+<% end %>
+
+<% content_for :structured_data do %>
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cam-postal.gotabs.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "FAQ",
+        "item": "https://cam-postal.gotabs.net/faq"
+      }
+    ]
+  }
+  </script>
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the postal code format in Cambodia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cambodia uses a 6-digit postal code system. The format is PPDDCC where PP represents the province (01-25), DD represents the district, and CC represents the commune. For example, 120101 is the postal code for central Phnom Penh."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Phnom Penh's postal code?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Phnom Penh province uses postal codes starting with 12. The main Phnom Penh postal code is 120000 for the province level. Different districts within Phnom Penh have specific codes like 120101 (Chamkar Mon), 120201 (Daun Penh), 120301 (7 Makara), etc."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I find my postal code in Cambodia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can find your Cambodia postal code by: 1) Using our search tool to search by province, district, or commune name in English or Khmer, 2) Using the 'Use my location' feature to automatically detect your postal code based on GPS, or 3) Browsing our provinces list to navigate through the hierarchy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When did Cambodia introduce the 6-digit postal code system?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cambodia upgraded from a 5-digit to a 6-digit postal code system in 2018. The new system provides more precise location identification down to the commune level, improving mail delivery accuracy throughout the country."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are postal codes required for shipping to Cambodia?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "While postal codes are not strictly mandatory for domestic mail in Cambodia, they are highly recommended for international shipping. Using the correct postal code ensures faster and more accurate delivery. Major courier services like DHL, FedEx, and local Cambodia Post benefit from accurate postal codes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the postal code for Siem Reap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Siem Reap province uses postal codes starting with 17. The main Siem Reap postal code is 170000 for the province level. Siem Reap city center areas typically use codes like 170101 or 170102 depending on the specific district."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many provinces does Cambodia have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cambodia has 25 provinces (including the capital Phnom Penh which has provincial status). Each province is assigned a unique 2-digit code from 01 to 25 that forms the first two digits of all postal codes within that province."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I search for postal codes in Khmer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Our postal code search supports both English and Khmer (ភាសាខ្មែរ). You can type location names in Khmer script and the search will find matching results. For example, searching 'ភ្នំពេញ' will find Phnom Penh postal codes."
+        }
+      }
+    ]
+  }
+  </script>
+<% end %>
+
+<div class="faq-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="<%= root_path %>">Home</a></li>
+      <li aria-current="page">FAQ</li>
+    </ol>
+  </nav>
+
+  <header class="faq-header">
+    <h1>Frequently Asked Questions</h1>
+    <p class="faq-subtitle">Everything you need to know about Cambodia postal codes</p>
+  </header>
+
+  <div class="faq-list">
+    <details class="faq-item" open>
+      <summary class="faq-question">
+        <h2>What is the postal code format in Cambodia?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>Cambodia uses a <strong>6-digit postal code system</strong>. The format is:</p>
+        <ul>
+          <li><strong>PP</strong> - First 2 digits: Province code (01-25)</li>
+          <li><strong>DD</strong> - Next 2 digits: District code</li>
+          <li><strong>CC</strong> - Last 2 digits: Commune code</li>
+        </ul>
+        <p>For example, <strong>120101</strong> is the postal code for central Phnom Penh (12 = Phnom Penh, 01 = district, 01 = commune).</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>What is Phnom Penh's postal code?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>Phnom Penh province uses postal codes starting with <strong>12</strong>.</p>
+        <ul>
+          <li><strong>120000</strong> - Phnom Penh (province level)</li>
+          <li><strong>120101</strong> - Chamkar Mon district</li>
+          <li><strong>120201</strong> - Daun Penh district</li>
+          <li><strong>120301</strong> - 7 Makara district</li>
+        </ul>
+        <p><a href="<%= province_path('phnom-penh') %>">View all Phnom Penh postal codes →</a></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>How do I find my postal code in Cambodia?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>There are three ways to find your Cambodia postal code:</p>
+        <ol>
+          <li><strong>Search</strong>: Use our <a href="<%= root_path %>">search tool</a> to search by province, district, or commune name in English or Khmer.</li>
+          <li><strong>GPS Location</strong>: Click "Use my location" on the homepage to automatically detect your postal code.</li>
+          <li><strong>Browse</strong>: Navigate through our <a href="<%= provinces_path %>">provinces list</a> → districts → communes.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>When did Cambodia introduce the 6-digit postal code system?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>Cambodia upgraded from a <strong>5-digit to a 6-digit postal code system in 2018</strong>. The new system provides more precise location identification down to the commune level, improving mail delivery accuracy throughout the country.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>Are postal codes required for shipping to Cambodia?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>While postal codes are not strictly mandatory for domestic mail, they are <strong>highly recommended for international shipping</strong>. Using the correct postal code ensures faster and more accurate delivery.</p>
+        <p>Major courier services like DHL, FedEx, and local Cambodia Post all benefit from accurate postal codes in the address.</p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>What is the postal code for Siem Reap?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>Siem Reap province uses postal codes starting with <strong>17</strong>.</p>
+        <ul>
+          <li><strong>170000</strong> - Siem Reap (province level)</li>
+          <li><strong>170101, 170102</strong> - Siem Reap city center areas</li>
+        </ul>
+        <p><a href="<%= province_path('siem-reap') %>">View all Siem Reap postal codes →</a></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>How many provinces does Cambodia have?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p>Cambodia has <strong>25 provinces</strong> (including Phnom Penh which has provincial status). Each province is assigned a unique 2-digit code from 01 to 25.</p>
+        <p><a href="<%= provinces_path %>">View all 25 provinces →</a></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2>Can I search for postal codes in Khmer?</h2>
+      </summary>
+      <div class="faq-answer">
+        <p><strong>Yes!</strong> Our postal code search supports both English and Khmer (ភាសាខ្មែរ). You can type location names in Khmer script and the search will find matching results.</p>
+        <p>For example, searching <span lang="km">ភ្នំពេញ</span> will find Phnom Penh postal codes.</p>
+      </div>
+    </details>
+  </div>
+
+  <div class="faq-footer">
+    <h3>Still have questions?</h3>
+    <p>Use our <a href="<%= root_path %>">postal code search</a> to find any Cambodia postal code instantly.</p>
+    <div class="footer-links">
+      <a href="<%= provinces_path %>" class="btn-secondary">Browse all provinces</a>
+      <a href="<%= root_path %>" class="btn-primary">Search postal codes</a>
+    </div>
+  </div>
+</div>

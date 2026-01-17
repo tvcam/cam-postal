@@ -18,6 +18,14 @@ Rails.application.routes.draw do
   get "privacy", to: "pages#privacy", as: :privacy
   get "terms", to: "pages#terms", as: :terms
 
+  # FAQ page (SEO)
+  get "faq", to: "pages#faq", as: :faq
+
+  # Location hierarchy pages (SEO)
+  get "provinces", to: "locations#provinces", as: :provinces
+  get "provinces/:province", to: "locations#province", as: :province
+  get "provinces/:province/:district", to: "locations#district", as: :province_district
+
   # Postal codes
   get "p/:postal_code", to: "postal_codes#show", as: :postal_code
   get "data", to: "postal_codes#data", as: :postal_data, defaults: { format: :json }

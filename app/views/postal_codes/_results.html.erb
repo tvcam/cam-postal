@@ -5,10 +5,10 @@
 
       <div class="results-list">
         <% results.each do |postal_code| %>
-          <div class="result-card <%= postal_code.location_type %>"
+          <a href="<%= postal_code_path(postal_code.postal_code) %>" class="result-card <%= postal_code.location_type %>"
                data-controller="copy"
                data-copy-text-value="<%= postal_code.postal_code %>"
-               data-action="click->copy#copy">
+               data-action="click->copy#copyAndPrevent">
             <div class="result-header">
               <span class="postal-code"><%= postal_code.postal_code %></span>
               <span class="location-type <%= postal_code.location_type %>"><%= postal_code.type_label %></span>
@@ -23,17 +23,19 @@
               <% end %>
             </div>
             <span class="copy-hint">Click to copy</span>
-          </div>
+          </a>
         <% end %>
       </div>
     <% else %>
       <div class="no-results">
         <p>No results found for "<%= query %>"</p>
+        <p class="browse-hint">Try <a href="<%= provinces_path %>">browsing by province</a> instead.</p>
       </div>
     <% end %>
   <% else %>
     <div class="welcome-message">
       <p>Enter a search term to find postal codes</p>
+      <p class="browse-hint">Or <a href="<%= provinces_path %>">browse all provinces</a></p>
     </div>
   <% end %>
 

@@ -37,7 +37,44 @@
     <meta name="twitter:description" content="Search postal codes for all Cambodia provinces, districts and communes.">
     <meta name="twitter:image" content="https://cam-postal.gotabs.net/icon-v2.png">
 
-    <!-- Structured Data -->
+    <!-- Hreflang for bilingual support -->
+    <link rel="alternate" hreflang="en" href="https://cam-postal.gotabs.net<%= request.path %>">
+    <link rel="alternate" hreflang="km" href="https://cam-postal.gotabs.net<%= request.path %>">
+    <link rel="alternate" hreflang="x-default" href="https://cam-postal.gotabs.net<%= request.path %>">
+
+    <!-- Structured Data: WebSite with SearchAction -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Cambodia Postal Code Directory",
+      "alternateName": ["Cambodia Postal", "កូដប្រៃសណីយ៍កម្ពុជា"],
+      "url": "https://cam-postal.gotabs.net",
+      "description": "Free Cambodia postal code lookup. Search ZIP codes for all 25 provinces, districts, and communes.",
+      "inLanguage": ["en", "km"],
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://cam-postal.gotabs.net/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Gotabs Consulting",
+      "url": "https://gotabs.net",
+      "logo": "https://cam-postal.gotabs.net/icon-v2.png"
+    }
+    </script>
+
+    <!-- Structured Data: WebApplication -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -59,6 +96,8 @@
       }
     }
     </script>
+
+    <%= yield :structured_data %>
 
     <!-- PWA -->
     <meta name="theme-color" content="#1e40af">
@@ -126,9 +165,12 @@
           <span><%= number_with_delimiter(SiteStat.searches) %> searches</span>
           <span><%= number_with_delimiter(SiteStat.copies) %> copies</span>
         </div>
-        <div class="legal-links">
-          <%= link_to "Privacy", privacy_path %> | <%= link_to "Terms", terms_path %>
-        </div>
+        <nav class="footer-nav">
+          <%= link_to "All Provinces", provinces_path %> |
+          <%= link_to "FAQ", faq_path %> |
+          <%= link_to "Privacy", privacy_path %> |
+          <%= link_to "Terms", terms_path %>
+        </nav>
         <p>Hobby project by <a href="https://gotabs.net" target="_blank" rel="noopener">Gotabs Consulting</a></p>
       </footer>
     </div>

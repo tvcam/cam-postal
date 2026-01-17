@@ -1,0 +1,127 @@
+<% content_for :title, "#{@province.name_en} Postal Codes - Districts in #{@province.name_en}, Cambodia" %>
+
+<% content_for :head do %>
+  <meta name="description" content="All postal codes for <%= @province.name_en %><%= " (#{@province.name_km})" if @province.name_km.present? %> province, Cambodia. Browse <%= @districts.count %> districts with ZIP codes starting with <%= @province.postal_code[0,2] %>.">
+  <link rel="canonical" href="<%= province_url(@province.name_en.parameterize) %>">
+  <meta property="og:title" content="<%= @province.name_en %> Postal Codes - All Districts">
+  <meta property="og:description" content="Find postal codes for all districts in <%= @province.name_en %>, Cambodia. <%= @districts.count %> districts available.">
+<% end %>
+
+<% content_for :structured_data do %>
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cam-postal.gotabs.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Provinces",
+        "item": "https://cam-postal.gotabs.net/provinces"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "<%= @province.name_en %>",
+        "item": "https://cam-postal.gotabs.net/provinces/<%= @province.name_en.parameterize %>"
+      }
+    ]
+  }
+  </script>
+
+  <!-- AdministrativeArea Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AdministrativeArea",
+    "name": "<%= @province.name_en %>",
+    <% if @province.name_km.present? %>"alternateName": "<%= @province.name_km %>",<% end %>
+    "address": {
+      "@type": "PostalAddress",
+      "postalCode": "<%= @province.postal_code %>",
+      "addressRegion": "<%= @province.name_en %>",
+      "addressCountry": "KH"
+    },
+    "containedInPlace": {
+      "@type": "Country",
+      "name": "Cambodia"
+    }
+  }
+  </script>
+
+  <!-- ItemList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Districts in <%= @province.name_en %>",
+    "numberOfItems": <%= @districts.count %>,
+    "itemListElement": [
+      <% @districts.each_with_index do |district, index| %>
+      {
+        "@type": "ListItem",
+        "position": <%= index + 1 %>,
+        "name": "<%= district.name_en %>",
+        "url": "https://cam-postal.gotabs.net/provinces/<%= @province.name_en.parameterize %>/<%= district.name_en.parameterize %>"
+      }<%= index < @districts.count - 1 ? ',' : '' %>
+      <% end %>
+    ]
+  }
+  </script>
+<% end %>
+
+<div class="location-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="<%= root_path %>">Home</a></li>
+      <li><a href="<%= provinces_path %>">Provinces</a></li>
+      <li aria-current="page"><%= @province.name_en %></li>
+    </ol>
+  </nav>
+
+  <header class="location-header">
+    <div class="location-title-row">
+      <div>
+        <h1><%= @province.name_en %> Province</h1>
+        <% if @province.name_km.present? %>
+          <p class="location-name-km"><%= @province.name_km %></p>
+        <% end %>
+      </div>
+      <div class="location-code-badge">
+        <span class="code-label">Province Code</span>
+        <span class="code-value"><%= @province.postal_code %></span>
+      </div>
+    </div>
+    <p class="location-subtitle">Browse <%= @districts.count %> districts in <%= @province.name_en %></p>
+  </header>
+
+  <div class="districts-grid">
+    <% @districts.each do |district| %>
+      <a href="<%= province_district_path(@province.name_en.parameterize, district.name_en.parameterize) %>" class="district-card">
+        <div class="district-code"><%= district.postal_code %></div>
+        <div class="district-info">
+          <h2 class="district-name"><%= district.name_en %></h2>
+          <% if district.name_km.present? %>
+            <p class="district-name-km"><%= district.name_km %></p>
+          <% end %>
+        </div>
+        <span class="district-arrow">→</span>
+      </a>
+    <% end %>
+  </div>
+
+  <div class="location-footer">
+    <p>Postal codes in <%= @province.name_en %> start with <strong><%= @province.postal_code[0,2] %></strong>. The next 2 digits identify the district.</p>
+    <div class="footer-links">
+      <a href="<%= provinces_path %>" class="back-link">← All provinces</a>
+      <a href="<%= root_path %>" class="search-link">Search postal codes</a>
+    </div>
+  </div>
+</div>

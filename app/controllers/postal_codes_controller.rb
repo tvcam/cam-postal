@@ -35,6 +35,21 @@ class PostalCodesController < ApplicationController
   def show
     @postal_code = PostalCode.find_by!(postal_code: params[:postal_code])
     SiteStat.increment("visits")
+
+    # Get related postal codes for internal linking
+    @related_codes = if @postal_code.commune?
+      PostalCode.communes.where("postal_code LIKE ?", "#{@postal_code.postal_code[0, 4]}%")
+                .where.not(id: @postal_code.id)
+                .order(:name_en)
+                .limit(6)
+    elsif @postal_code.district?
+      PostalCode.districts.where("postal_code LIKE ?", "#{@postal_code.postal_code[0, 2]}%")
+                .where.not(id: @postal_code.id)
+                .order(:name_en)
+                .limit(6)
+    else
+      PostalCode.provinces.where.not(id: @postal_code.id).order(:name_en).limit(6)
+    end
   rescue ActiveRecord::RecordNotFound
     render file: Rails.root.join("public/404.html"), status: :not_found, layout: false
   end

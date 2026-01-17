@@ -326,6 +326,7 @@ body {
 
 /* Result Card */
 .result-card {
+  display: block;
   background: var(--white);
   border-radius: var(--radius-sm);
   padding: 1rem 1.25rem;
@@ -334,6 +335,13 @@ body {
   transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
   cursor: pointer;
   position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.result-card {
+  text-decoration: none;
+  color: inherit;
 }
 
 .result-card:hover {
@@ -466,6 +474,20 @@ body {
   text-align: center;
   padding: 3rem 1rem;
   color: var(--text-light);
+}
+
+.browse-hint {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.browse-hint a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.browse-hint a:hover {
+  text-decoration: underline;
 }
 
 /* Recent Searches */
@@ -695,7 +717,21 @@ body {
   }
 }
 
-/* Legal Links in Footer */
+/* Footer Navigation */
+.footer .footer-nav {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.footer .footer-nav a {
+  color: var(--text-light);
+}
+
+.footer .footer-nav a:hover {
+  color: var(--primary);
+}
+
+/* Legacy: Legal Links in Footer */
 .footer .legal-links {
   margin-bottom: 0.5rem;
   font-size: 0.8rem;
@@ -836,4 +872,591 @@ body {
 .turbo-progress-bar {
   height: 3px;
   background: var(--primary-light);
+}
+
+/* ========================================
+   Breadcrumb Navigation (SEO)
+   ======================================== */
+.breadcrumb {
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0;
+}
+
+.breadcrumb ol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  font-size: 0.875rem;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  content: "›";
+  margin-left: 0.5rem;
+  color: var(--text-light);
+}
+
+.breadcrumb a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.breadcrumb li[aria-current="page"] {
+  color: var(--text-light);
+}
+
+/* ========================================
+   Location Pages (Provinces, Districts)
+   ======================================== */
+.location-page {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.location-header {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.location-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  gap: 1rem;
+}
+
+.location-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.location-name-km {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 0.25rem;
+}
+
+.location-parent {
+  font-size: 0.875rem;
+  color: var(--text-light);
+}
+
+.location-subtitle {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin-top: 0.5rem;
+}
+
+.location-code-badge {
+  background: var(--secondary);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.code-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-light);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+.code-value {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+}
+
+/* Province Grid */
+.provinces-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.province-card,
+.district-card,
+.commune-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.25rem;
+  box-shadow: var(--shadow);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border-left: 4px solid var(--province);
+}
+
+.district-card {
+  border-left-color: var(--district);
+}
+
+.commune-card {
+  border-left-color: var(--commune);
+  cursor: pointer;
+  position: relative;
+}
+
+.province-card:hover,
+.district-card:hover,
+.commune-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.province-code,
+.district-code,
+.commune-code {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  background: var(--secondary);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.province-info,
+.district-info,
+.commune-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.province-name,
+.district-name,
+.commune-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.province-name-km,
+.district-name-km,
+.commune-name-km {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.province-arrow,
+.district-arrow {
+  color: var(--text-light);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Districts and Communes Grid */
+.districts-grid,
+.communes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+/* Location Footer */
+.location-footer {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.location-footer p {
+  color: var(--text-light);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.location-footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.location-footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.location-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1.5rem;
+}
+
+.empty-state p {
+  color: var(--text-light);
+  margin-bottom: 1rem;
+}
+
+.district-only-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--secondary);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.district-only-card:hover {
+  transform: scale(1.02);
+}
+
+.district-only-card .postal-code {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+}
+
+.district-only-card .copy-hint {
+  position: static;
+  transform: none;
+  opacity: 1;
+}
+
+/* ========================================
+   Related Codes Section (Internal Linking)
+   ======================================== */
+.related-section {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.related-section h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.related-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.related-link {
+  display: flex;
+  flex-direction: column;
+  padding: 0.75rem;
+  background: var(--secondary);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.related-link:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.related-code {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--primary);
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+}
+
+.related-name {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-all-link {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.view-all-link:hover {
+  text-decoration: underline;
+}
+
+/* ========================================
+   FAQ Page
+   ======================================== */
+.faq-page {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-header {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.faq-header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.faq-subtitle {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+  flex: 1;
+}
+
+.faq-question::after {
+  content: "+";
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--primary);
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+
+.faq-item[open] .faq-question::after {
+  content: "−";
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+.faq-answer p {
+  margin-bottom: 0.75rem;
+}
+
+.faq-answer ul,
+.faq-answer ol {
+  margin-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-answer li {
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.faq-answer a:hover {
+  text-decoration: underline;
+}
+
+.faq-footer {
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.faq-footer h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.faq-footer > p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.faq-footer .footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  background: var(--secondary);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--border);
+}
+
+/* Show page h1 styling */
+.show-page .result-body h1.name-en {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.125rem;
+}
+
+/* Responsive for location pages */
+@media (max-width: 640px) {
+  .location-header {
+    padding: 1.25rem;
+  }
+
+  .location-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .location-title-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .location-code-badge {
+    align-self: center;
+  }
+
+  .provinces-grid,
+  .districts-grid,
+  .communes-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .province-card,
+  .district-card,
+  .commune-card {
+    padding: 0.875rem 1rem;
+  }
+
+  .breadcrumb ol {
+    font-size: 0.8rem;
+  }
+
+  .faq-header {
+    padding: 1.25rem;
+  }
+
+  .faq-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .faq-question {
+    padding: 1rem 1.25rem;
+  }
+
+  .faq-question h2 {
+    font-size: 0.9375rem;
+  }
+
+  .faq-answer {
+    padding: 0 1.25rem 1.25rem;
+    font-size: 0.9375rem;
+  }
+
+  .related-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

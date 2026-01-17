@@ -1,0 +1,87 @@
+<% content_for :title, "All Cambodia Provinces - Postal Codes by Province" %>
+
+<% content_for :head do %>
+  <meta name="description" content="Complete list of all 25 Cambodia provinces with postal codes. Find ZIP codes for Phnom Penh, Siem Reap, Battambang, Kandal, and all provinces. Browse by region.">
+  <link rel="canonical" href="<%= provinces_url %>">
+  <meta property="og:title" content="Cambodia Provinces - All Postal Codes by Province">
+  <meta property="og:description" content="Browse postal codes for all 25 Cambodia provinces. Find ZIP codes organized by province, district, and commune.">
+<% end %>
+
+<% content_for :structured_data do %>
+  <!-- BreadcrumbList Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://cam-postal.gotabs.net/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Provinces",
+        "item": "https://cam-postal.gotabs.net/provinces"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ItemList Schema for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Cambodia Provinces",
+    "description": "List of all provinces in Cambodia with postal codes",
+    "numberOfItems": <%= @provinces.count %>,
+    "itemListElement": [
+      <% @provinces.each_with_index do |province, index| %>
+      {
+        "@type": "ListItem",
+        "position": <%= index + 1 %>,
+        "name": "<%= province.name_en %>",
+        "url": "https://cam-postal.gotabs.net/provinces/<%= province.name_en.parameterize %>"
+      }<%= index < @provinces.count - 1 ? ',' : '' %>
+      <% end %>
+    ]
+  }
+  </script>
+<% end %>
+
+<div class="location-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="<%= root_path %>">Home</a></li>
+      <li aria-current="page">Provinces</li>
+    </ol>
+  </nav>
+
+  <header class="location-header">
+    <h1>Cambodia Provinces</h1>
+    <p class="location-subtitle">Browse postal codes for all <%= @provinces.count %> provinces of Cambodia</p>
+  </header>
+
+  <div class="provinces-grid">
+    <% @provinces.each do |province| %>
+      <a href="<%= province_path(province.name_en.parameterize) %>" class="province-card">
+        <div class="province-code"><%= province.postal_code %></div>
+        <div class="province-info">
+          <h2 class="province-name"><%= province.name_en %></h2>
+          <% if province.name_km.present? %>
+            <p class="province-name-km"><%= province.name_km %></p>
+          <% end %>
+        </div>
+        <span class="province-arrow">→</span>
+      </a>
+    <% end %>
+  </div>
+
+  <div class="location-footer">
+    <p>Cambodia uses 6-digit postal codes. The first 2 digits represent the province.</p>
+    <a href="<%= root_path %>" class="search-link">← Search postal codes</a>
+  </div>
+</div>

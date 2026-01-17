@@ -19,4 +19,10 @@ export default class extends Controller {
       }).catch(() => {})
     })
   }
+
+  // Copy and prevent navigation (for links)
+  copyAndPrevent(event) {
+    event.preventDefault()
+    this.copy()
+  }
 }

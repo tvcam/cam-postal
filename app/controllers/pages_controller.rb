@@ -4,4 +4,8 @@ class PagesController < ApplicationController
 
   def terms
   end
+
+  def faq
+    SiteStat.increment("visits")
+  end
 end
