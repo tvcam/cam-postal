@@ -3,8 +3,8 @@ en:
   site:
     name: "Cambodia Postal Code"
     tagline: "Find ZIP codes for all provinces"
-    description: "Free Cambodia postal code lookup. Search ZIP codes for Phnom Penh, Siem Reap, Battambang and all 25 provinces."
-    keywords: "Cambodia postal code, Cambodia ZIP code, Phnom Penh postal code, Cambodia post office, Cambodia address, postal code lookup"
+    description: "Free Cambodia postal code lookup. Search by landmarks like Russian Market, BKK1, Pub Street, or official names for all 25 provinces."
+    keywords: "Cambodia postal code, Cambodia ZIP code, Phnom Penh postal code, BKK1, Russian Market, Pub Street, Naga World, postal code lookup"
 
   # Navigation
   nav:
@@ -18,7 +18,7 @@ en:
   # Homepage
   home:
     title: "Cambodia Postal Code Search"
-    search_placeholder: "Search by postal code, province, district, commune..."
+    search_placeholder: "Search by name, landmark, or postal code..."
     search_button: "Search"
     use_location: "Use my location"
     welcome: "Enter a search term to find postal codes"
@@ -114,6 +114,10 @@ en:
 
     q8: "Can I search for postal codes in Khmer?"
     a8: "Yes! Our search supports both English and Khmer. Type location names in Khmer script to find matching results."
+
+    q9: "Can I search by landmark or popular area names?"
+    a9: "Absolutely! You can search using common names like 'BKK1', 'Russian Market', 'Pub Street', 'Naga World', 'Riverside', 'Otres Beach', or 'TK Avenue'. Our search automatically recognizes over 250 popular landmarks, markets, malls, and expat areas across Cambodia."
+    a9_examples: "Examples: BKK1, Russian Market, Pub Street, Naga World, Riverside, Otres Beach"
 
   # Breadcrumb
   breadcrumb:

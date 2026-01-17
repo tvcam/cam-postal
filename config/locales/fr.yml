@@ -3,8 +3,8 @@ fr:
   site:
     name: "Code Postal Cambodge"
     tagline: "Trouvez les codes postaux de toutes les provinces"
-    description: "Recherche gratuite de codes postaux cambodgiens. Trouvez les codes postaux pour Phnom Penh, Siem Reap, Battambang et les 25 provinces."
-    keywords: "code postal Cambodge, code ZIP Cambodge, code postal Phnom Penh, poste Cambodge, adresse Cambodge"
+    description: "Recherche gratuite de codes postaux cambodgiens. Cherchez par lieu comme Russian Market, BKK1, Pub Street ou noms officiels pour les 25 provinces."
+    keywords: "code postal Cambodge, code ZIP Cambodge, BKK1, Russian Market, Pub Street, Naga World, recherche code postal"
 
   # Navigation
   nav:
@@ -18,7 +18,7 @@ fr:
   # Homepage
   home:
     title: "Recherche de Code Postal Cambodge"
-    search_placeholder: "Rechercher par code postal, province, district, commune..."
+    search_placeholder: "Rechercher par nom, lieu ou code postal..."
     search_button: "Rechercher"
     use_location: "Utiliser ma position"
     welcome: "Entrez un terme de recherche pour trouver les codes postaux"
@@ -114,6 +114,10 @@ fr:
 
     q8: "Puis-je rechercher en khmer?"
     a8: "Oui! Notre recherche supporte l'anglais et le khmer. Tapez les noms en écriture khmère."
+
+    q9: "Puis-je rechercher par nom de lieu populaire?"
+    a9: "Absolument! Vous pouvez rechercher avec des noms courants comme 'BKK1', 'Russian Market', 'Pub Street', 'Naga World', 'Riverside', 'Otres Beach' ou 'TK Avenue'. Notre recherche reconnaît plus de 250 lieux populaires à travers le Cambodge."
+    a9_examples: "Exemples: BKK1, Russian Market, Pub Street, Naga World, Riverside, Otres Beach"
 
   # Breadcrumb
   breadcrumb:

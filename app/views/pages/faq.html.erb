@@ -99,6 +99,14 @@
           "@type": "Answer",
           "text": "<%= t('faq.a8') %>"
         }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q9') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a9') %>"
+        }
       }
     ]
   }
@@ -202,6 +210,16 @@
       </summary>
       <div class="faq-answer">
         <p><%= t('faq.a8') %></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q9') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a9') %></p>
+        <p class="faq-examples"><strong><%= t('faq.a9_examples') %></strong></p>
       </div>
     </details>
   </div>
