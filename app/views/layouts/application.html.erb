@@ -24,6 +24,9 @@
     <meta property="og:description" content="<%= content_for(:og_description) || t('site.description') %>">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="<%= I18n.locale == :km ? 'km_KH' : (I18n.locale == :fr ? 'fr_FR' : 'en_US') %>">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="km_KH">
+    <meta property="og:locale:alternate" content="fr_FR">
     <meta property="og:url" content="https://cam-postal.gotabs.net<%= request.fullpath %>">
     <meta property="og:site_name" content="<%= t('site.name') %>">
     <meta property="og:image" content="https://cam-postal.gotabs.net/icon.svg">
@@ -38,10 +41,11 @@
     <meta name="twitter:image" content="https://cam-postal.gotabs.net/icon.svg">
 
     <!-- Hreflang for multilingual support -->
-    <link rel="alternate" hreflang="en" href="https://cam-postal.gotabs.net<%= request.path %>">
-    <link rel="alternate" hreflang="km" href="https://cam-postal.gotabs.net<%= request.path %>">
-    <link rel="alternate" hreflang="fr" href="https://cam-postal.gotabs.net<%= request.path %>">
-    <link rel="alternate" hreflang="x-default" href="https://cam-postal.gotabs.net<%= request.path %>">
+    <% base_path = request.path == '/' ? '' : request.path %>
+    <link rel="alternate" hreflang="en" href="https://cam-postal.gotabs.net<%= base_path %>?locale=en">
+    <link rel="alternate" hreflang="km" href="https://cam-postal.gotabs.net<%= base_path %>?locale=km">
+    <link rel="alternate" hreflang="fr" href="https://cam-postal.gotabs.net<%= base_path %>?locale=fr">
+    <link rel="alternate" hreflang="x-default" href="https://cam-postal.gotabs.net<%= base_path %>">
 
     <!-- Structured Data: WebSite with SearchAction -->
     <script type="application/ld+json">
