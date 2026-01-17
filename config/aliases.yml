@@ -30,9 +30,9 @@ chamkar mon: Chamkar Mon
 chamkarmon: Chamkar Mon
 
 # Sen Sok - Growing expat area
-sen sok: Saensokh
-sensok: Saensokh
-saensok: Saensokh
+sen sok: Saen Sokh
+sensok: Saen Sokh
+saensok: Saen Sokh
 
 # Pur Senchey
 porsenchey: Pur Senchey
@@ -78,11 +78,11 @@ doun penh: Doun Penh
 # =============================================================================
 
 # Riverside / Sisowath Quay - Tourist hotspot
-riverside: Chaktomuk
-river side: Chaktomuk
-sisowath quay: Chaktomuk
-sisowath: Chaktomuk
-riverfront: Chaktomuk
+riverside: Chakto Mukh
+river side: Chakto Mukh
+sisowath quay: Chakto Mukh
+sisowath: Chakto Mukh
+riverfront: Chakto Mukh
 
 # Royal Palace area
 royal palace: Chey Chumneas
@@ -159,10 +159,10 @@ aeon1: Tuol Svay Prey Muoy
 aeon 1: Tuol Svay Prey Muoy
 aeon mall: Tuol Svay Prey Muoy
 aeon mall 1: Tuol Svay Prey Muoy
-aeon2: Saensokh
-aeon 2: Saensokh
-aeon mall 2: Saensokh
-aeon sen sok: Saensokh
+aeon2: Saen Sokh
+aeon 2: Saen Sokh
+aeon mall 2: Saen Sokh
+aeon sen sok: Saen Sokh
 
 # Other Malls
 sorya: Phsar Thmei Muoy
@@ -170,10 +170,10 @@ sorya mall: Phsar Thmei Muoy
 sorya center: Phsar Thmei Muoy
 exchange square: Voat Phnum
 lucky market: Tuek Laak Muoy
-makro: Saensokh
+makro: Saen Sokh
 big c: Pur Senchey
-chip mong mall: Saensokh
-chip mong: Saensokh
+chip mong mall: Saen Sokh
+chip mong: Saen Sokh
 parkson: Tonle Basak
 
 # =============================================================================
@@ -202,7 +202,7 @@ royal phnom penh: Boeng Keng Kang Muoy
 royal pp hospital: Boeng Keng Kang Muoy
 calmette: Voat Phnum
 calmette hospital: Voat Phnum
-sen sok hospital: Saensokh
+sen sok hospital: Saen Sokh
 khmer soviet: Tuol Svay Prey Muoy
 children hospital: Tuol Svay Prey Muoy
 
@@ -216,7 +216,7 @@ phnom penh university: Tuol Kouk
 ispp: Boeng Keng Kang Muoy
 cia school: Tuol Svay Prey Muoy
 nis: Boeng Keng Kang Muoy
-northbridge: Saensokh
+northbridge: Saen Sokh
 lycee descartes: Tuol Svay Prey Muoy
 
 # =============================================================================
