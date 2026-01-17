@@ -1,0 +1,138 @@
+fr:
+  # Site-wide
+  site:
+    name: "Code Postal Cambodge"
+    tagline: "Trouvez les codes postaux de toutes les provinces"
+    description: "Recherche gratuite de codes postaux cambodgiens. Trouvez les codes postaux pour Phnom Penh, Siem Reap, Battambang et les 25 provinces."
+    keywords: "code postal Cambodge, code ZIP Cambodge, code postal Phnom Penh, poste Cambodge, adresse Cambodge"
+
+  # Navigation
+  nav:
+    home: "Accueil"
+    provinces: "Provinces"
+    faq: "FAQ"
+    privacy: "Confidentialité"
+    terms: "Conditions"
+    language: "Langue"
+
+  # Homepage
+  home:
+    title: "Recherche de Code Postal Cambodge"
+    search_placeholder: "Rechercher par code postal, province, district, commune..."
+    search_button: "Rechercher"
+    use_location: "Utiliser ma position"
+    welcome: "Entrez un terme de recherche pour trouver les codes postaux"
+    browse_hint: "Ou parcourir toutes les provinces"
+    no_results: "Aucun résultat trouvé pour"
+    try_browse: "Essayez de parcourir par province."
+    found_results:
+      one: "1 résultat trouvé"
+      other: "%{count} résultats trouvés"
+    click_to_copy: "Cliquer pour copier"
+    copied: "Copié!"
+    recent_searches: "Recherches récentes"
+
+  # Location types
+  location_type:
+    province: "Province"
+    district: "District"
+    commune: "Commune"
+
+  # Provinces page
+  provinces:
+    title: "Provinces du Cambodge"
+    subtitle: "Parcourir les codes postaux des %{count} provinces du Cambodge"
+    meta_description: "Liste complète des 25 provinces du Cambodge avec codes postaux. Trouvez les codes pour Phnom Penh, Siem Reap, Battambang."
+    footer_note: "Le Cambodge utilise des codes postaux à 6 chiffres. Les 2 premiers chiffres représentent la province."
+    search_link: "Rechercher les codes postaux"
+
+  # Province detail page
+  province:
+    title: "Province de %{name}"
+    subtitle: "Parcourir %{count} districts dans %{name}"
+    meta_description: "Tous les codes postaux pour la province de %{name}, Cambodge. Parcourir %{count} districts."
+    code_label: "Code Province"
+    footer_note: "Les codes postaux dans %{name} commencent par %{prefix}. Les 2 chiffres suivants identifient le district."
+    back_link: "Toutes les provinces"
+
+  # District detail page
+  district:
+    title: "District de %{name}"
+    subtitle: "Parcourir %{count} communes dans %{name}"
+    meta_description: "Tous les codes postaux pour le district de %{name}, Cambodge. Parcourir %{count} communes."
+    code_label: "Code District"
+    footer_note: "Tous les codes postaux dans %{name} commencent par %{prefix}."
+    back_link: "Retour à %{province}"
+    empty_state: "Aucune commune trouvée dans ce district. Le code postal %{code} couvre tout le district."
+
+  # Postal code show page
+  postal_code:
+    meta_description: "Code postal %{code} pour %{name}, %{type} au Cambodge."
+    related_title: "Codes postaux connexes dans %{area}"
+    view_all: "Voir tout dans %{area}"
+
+  # FAQ page
+  faq:
+    title: "Questions Fréquemment Posées"
+    subtitle: "Tout ce que vous devez savoir sur les codes postaux cambodgiens"
+    meta_description: "Questions fréquentes sur les codes postaux cambodgiens. Découvrez le format à 6 chiffres et comment trouver votre code postal."
+    still_questions: "Encore des questions?"
+    use_search: "Utilisez notre recherche pour trouver n'importe quel code postal cambodgien instantanément."
+    browse_provinces: "Parcourir toutes les provinces"
+    search_codes: "Rechercher les codes postaux"
+
+    q1: "Quel est le format des codes postaux au Cambodge?"
+    a1_intro: "Le Cambodge utilise un système de codes postaux à 6 chiffres. Le format est:"
+    a1_pp: "2 premiers chiffres: Code province (01-25)"
+    a1_dd: "2 chiffres suivants: Code district"
+    a1_cc: "2 derniers chiffres: Code commune"
+    a1_example: "Par exemple, 120101 est le code postal du centre de Phnom Penh."
+
+    q2: "Quel est le code postal de Phnom Penh?"
+    a2: "La province de Phnom Penh utilise des codes commençant par 12. Le code principal est 120000."
+    a2_link: "Voir tous les codes de Phnom Penh"
+
+    q3: "Comment trouver mon code postal au Cambodge?"
+    a3_intro: "Il y a trois façons de trouver votre code postal cambodgien:"
+    a3_search: "Recherche: Utilisez notre outil pour rechercher par nom en anglais ou khmer."
+    a3_gps: "Position GPS: Cliquez sur 'Utiliser ma position' pour détecter automatiquement."
+    a3_browse: "Parcourir: Naviguez dans notre liste de provinces."
+
+    q4: "Quand le Cambodge a-t-il introduit le système à 6 chiffres?"
+    a4: "Le Cambodge est passé de 5 à 6 chiffres en 2018 pour une identification plus précise."
+
+    q5: "Les codes postaux sont-ils obligatoires pour l'expédition au Cambodge?"
+    a5: "Bien que non obligatoires, les codes postaux sont fortement recommandés pour l'expédition internationale."
+
+    q6: "Quel est le code postal de Siem Reap?"
+    a6: "La province de Siem Reap utilise des codes commençant par 17. Le code principal est 170000."
+    a6_link: "Voir tous les codes de Siem Reap"
+
+    q7: "Combien de provinces le Cambodge compte-t-il?"
+    a7: "Le Cambodge compte 25 provinces, chacune avec un code unique à 2 chiffres (01-25)."
+    a7_link: "Voir les 25 provinces"
+
+    q8: "Puis-je rechercher en khmer?"
+    a8: "Oui! Notre recherche supporte l'anglais et le khmer. Tapez les noms en écriture khmère."
+
+  # Breadcrumb
+  breadcrumb:
+    home: "Accueil"
+    provinces: "Provinces"
+
+  # Footer
+  footer:
+    visits: "visites"
+    searches: "recherches"
+    copies: "copies"
+    made_by: "Projet hobby par"
+
+  # Unity slogan
+  slogan:
+    km: "សាមគ្គីជាកម្លាំង"
+    en: "L'union fait la force"
+
+  # Misc
+  misc:
+    back_to_search: "Retour à la recherche"
+    all_provinces: "Toutes les provinces"

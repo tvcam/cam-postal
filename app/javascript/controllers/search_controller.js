@@ -9,12 +9,14 @@ const MAX_RECENT = 8
 
 export default class extends Controller {
   static targets = ["input", "results", "frame", "form"]
+  static values = { translations: Object }
 
   connect() {
     this.timeout = null
     this.fuse = null
     this.clientMode = false
     this.lastQuery = ""
+    this.t = this.translationsValue || {}
     this.loadData()
   }
 
@@ -138,18 +140,24 @@ export default class extends Controller {
   renderResults(items, query) {
     if (!this.hasResultsTarget) return
 
+    const noResultsText = this.t.no_results || "No results found for"
+
     if (!items.length) {
       this.resultsTarget.innerHTML = `
         <div class="results-section">
-          <div class="no-results"><p>No results found for "${this.escapeHtml(query)}"</p></div>
+          <div class="no-results"><p>${noResultsText} "${this.escapeHtml(query)}"</p></div>
           ${this.sloganTemplate()}
         </div>`
       return
     }
 
+    const countText = items.length === 1
+      ? (this.t.found_results_one || "Found 1 result")
+      : (this.t.found_results_other || `Found ${items.length} results`).replace("%{count}", items.length)
+
     this.resultsTarget.innerHTML = `
       <div class="results-section">
-        <p class="results-count">Found ${items.length} result${items.length === 1 ? "" : "s"}</p>
+        <p class="results-count">${countText}</p>
         <div class="results-list">
           ${items.map(item => this.cardTemplate(item, query)).join("")}
         </div>
@@ -158,15 +166,22 @@ export default class extends Controller {
   }
 
   sloganTemplate() {
+    const sloganKm = this.t.slogan_km || "🇰🇭 សាមគ្គីជាកម្លាំង 🇰🇭"
+    const sloganEn = this.t.slogan_en || "Unity is Strength"
     return `
       <div class="unity-slogan">
-        <p class="slogan-km">🇰🇭 សាមគ្គីជាកម្លាំង 🇰🇭</p>
-        <p class="slogan-en">Unity is Strength</p>
+        <p class="slogan-km">${sloganKm}</p>
+        <p class="slogan-en">${sloganEn}</p>
       </div>`
   }
 
   cardTemplate(item, query) {
-    const types = { province: "Province", district: "District", commune: "Commune" }
+    const types = {
+      province: this.t.province || "Province",
+      district: this.t.district || "District",
+      commune: this.t.commune || "Commune"
+    }
+    const copyHint = this.t.click_to_copy || "Click to copy"
     return `
       <div class="result-card ${item.t}" data-controller="copy" data-copy-text-value="${item.c}" data-action="click->copy#copy">
         <div class="result-header">
@@ -178,27 +193,29 @@ export default class extends Controller {
           ${item.k ? `<p class="name-km">${this.highlight(item.k, query)}</p>` : ""}
           ${item.p ? `<p class="parent-location">${item.p}</p>` : ""}
         </div>
-        <span class="copy-hint">Click to copy</span>
+        <span class="copy-hint">${copyHint}</span>
       </div>`
   }
 
   renderWelcome() {
     if (!this.hasResultsTarget) return
     const recent = this.getRecentSearches()
+    const welcomeText = this.t.welcome || "Enter a search term to find postal codes"
 
     if (recent.length === 0) {
       this.resultsTarget.innerHTML = `
         <div class="results-section">
-          <div class="welcome-message"><p>Enter a search term to find postal codes</p></div>
+          <div class="welcome-message"><p>${welcomeText}</p></div>
           ${this.sloganTemplate()}
         </div>`
       return
     }
 
+    const recentTitle = this.t.recent_searches || "Recent searches"
     this.resultsTarget.innerHTML = `
       <div class="results-section">
         <div class="recent-searches">
-          <p class="recent-title">Recent searches</p>
+          <p class="recent-title">${recentTitle}</p>
           <div class="recent-list">
             ${recent.map(item => `
               <button type="button" class="recent-item" data-action="click->search#selectRecent" data-query="${this.escapeHtml(item)}">

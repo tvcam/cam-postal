@@ -1,29 +1,31 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background with gradient -->
   <defs>
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#1e40af"/>
       <stop offset="100%" style="stop-color:#3b82f6"/>
     </linearGradient>
   </defs>
+
+  <!-- Rounded square background -->
   <rect width="512" height="512" rx="108" fill="url(#bg)"/>
 
-  <!-- Mailbox post -->
-  <rect x="232" y="320" width="48" height="120" rx="8" fill="#ffffff"/>
+  <!-- Location pin shape -->
+  <path
+    d="M256 440 C256 440 400 290 400 190 C400 110.6 335.4 46 256 46 C176.6 46 112 110.6 112 190 C112 290 256 440 256 440Z"
+    fill="#ffffff"
+  />
 
-  <!-- Mailbox body -->
-  <rect x="136" y="160" width="240" height="176" rx="24" fill="#ffffff"/>
+  <!-- Inner circle cutout effect -->
+  <circle cx="256" cy="190" r="90" fill="url(#bg)"/>
 
-  <!-- Mailbox top (rounded) -->
-  <path d="M136 200 Q136 136 256 136 Q376 136 376 200" fill="#ffffff"/>
-
-  <!-- Mail slot -->
-  <rect x="176" y="220" width="160" height="20" rx="10" fill="#1e40af"/>
-
-  <!-- Flag -->
-  <rect x="376" y="180" width="12" height="80" rx="4" fill="#ef4444"/>
-  <path d="M388 180 L388 220 L440 200 Z" fill="#ef4444"/>
-
-  <!-- Decorative postal stamp circle -->
-  <circle cx="256" cy="300" r="32" fill="none" stroke="#1e40af" stroke-width="6" stroke-dasharray="8 6"/>
+  <!-- Postal code digits "12" stylized -->
+  <text
+    x="256"
+    y="210"
+    font-family="system-ui, -apple-system, sans-serif"
+    font-size="80"
+    font-weight="700"
+    fill="#ffffff"
+    text-anchor="middle"
+  >12</text>
 </svg>

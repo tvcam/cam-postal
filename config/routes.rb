@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   # Sitemap
   get "sitemap", to: "sitemaps#show", as: :sitemap, defaults: { format: :xml }
 
+  # Locale switching
+  get "locale/:locale", to: "locale#switch", as: :switch_locale
+
   # Legal pages
   get "privacy", to: "pages#privacy", as: :privacy
   get "terms", to: "pages#terms", as: :terms

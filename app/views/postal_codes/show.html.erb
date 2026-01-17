@@ -1,9 +1,9 @@
-<% content_for :title, "#{@postal_code.postal_code} - #{@postal_code.name_en} | Cambodia Postal Code" %>
+<% content_for :title, "#{@postal_code.postal_code} - #{@postal_code.name_en} | #{t('site.name')}" %>
 
 <% content_for :head do %>
-  <meta name="description" content="Postal code <%= @postal_code.postal_code %> for <%= @postal_code.name_en %><%= " (#{@postal_code.name_km})" if @postal_code.name_km.present? %>, <%= @postal_code.type_label %> in Cambodia<%= ", #{@postal_code.parent_location}" if @postal_code.parent_location.present? %>. Find ZIP codes for shipping and mailing to Cambodia.">
-  <meta property="og:title" content="<%= @postal_code.postal_code %> - <%= @postal_code.name_en %> | Cambodia Postal Code">
-  <meta property="og:description" content="Cambodia postal code <%= @postal_code.postal_code %> for <%= @postal_code.name_en %><%= ", #{@postal_code.parent_location}" if @postal_code.parent_location.present? %>. Free lookup for shipping and mail.">
+  <meta name="description" content="<%= t('postal_code.meta_description', code: @postal_code.postal_code, name: @postal_code.name_en, type: t("location_type.#{@postal_code.location_type}")) %>">
+  <meta property="og:title" content="<%= @postal_code.postal_code %> - <%= @postal_code.name_en %> | <%= t('site.name') %>">
+  <meta property="og:description" content="<%= t('postal_code.meta_description', code: @postal_code.postal_code, name: @postal_code.name_en, type: t("location_type.#{@postal_code.location_type}")) %>">
   <link rel="canonical" href="<%= postal_code_url(@postal_code.postal_code) %>">
 <% end %>
 
@@ -17,13 +17,13 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": "<%= t('breadcrumb.home') %>",
         "item": "https://cam-postal.gotabs.net/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Provinces",
+        "name": "<%= t('breadcrumb.provinces') %>",
         "item": "https://cam-postal.gotabs.net/provinces"
       }<% if @postal_code.province %>,
       {
@@ -79,8 +79,8 @@
   <!-- Breadcrumb Navigation -->
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <ol>
-      <li><a href="<%= root_path %>">Home</a></li>
-      <li><a href="<%= provinces_path %>">Provinces</a></li>
+      <li><a href="<%= root_path %>"><%= t('breadcrumb.home') %></a></li>
+      <li><a href="<%= provinces_path %>"><%= t('breadcrumb.provinces') %></a></li>
       <% if @postal_code.province %>
         <li><a href="<%= province_path(@postal_code.province.name_en.parameterize) %>"><%= @postal_code.province.name_en %></a></li>
       <% end %>
@@ -99,7 +99,7 @@
            data-action="click->copy#copy">
         <div class="result-header">
           <span class="postal-code"><%= @postal_code.postal_code %></span>
-          <span class="location-type <%= @postal_code.location_type %>"><%= @postal_code.type_label %></span>
+          <span class="location-type <%= @postal_code.location_type %>"><%= t("location_type.#{@postal_code.location_type}") %></span>
         </div>
         <div class="result-body">
           <h1 class="name-en"><%= @postal_code.name_en %></h1>
@@ -110,14 +110,15 @@
             <p class="parent-location"><%= @postal_code.parent_location %></p>
           <% end %>
         </div>
-        <span class="copy-hint">Click to copy</span>
+        <span class="copy-hint"><%= t('home.click_to_copy') %></span>
       </div>
     </div>
 
     <!-- Related postal codes section -->
     <% if @related_codes&.any? %>
       <div class="related-section">
-        <h2>Related Postal Codes in <%= @postal_code.commune? ? @postal_code.district&.name_en : @postal_code.province&.name_en %></h2>
+        <% parent = @postal_code.commune? ? @postal_code.district : @postal_code.province %>
+        <h2><%= t('postal_code.related_title', area: parent&.name_en) %></h2>
         <div class="related-list">
           <% @related_codes.first(6).each do |related| %>
             <a href="<%= postal_code_path(related.postal_code) %>" class="related-link">
@@ -126,18 +127,17 @@
             </a>
           <% end %>
         </div>
-        <% parent = @postal_code.commune? ? @postal_code.district : @postal_code.province %>
         <% if parent %>
           <a href="<%= @postal_code.commune? ? province_district_path(@postal_code.province.name_en.parameterize, @postal_code.district.name_en.parameterize) : province_path(@postal_code.province.name_en.parameterize) %>" class="view-all-link">
-            View all in <%= parent.name_en %> →
+            <%= t('postal_code.view_all', area: parent.name_en) %> →
           </a>
         <% end %>
       </div>
     <% end %>
 
     <div class="unity-slogan">
-      <p class="slogan-km">🇰🇭 សាមគ្គីជាកម្លាំង 🇰🇭</p>
-      <p class="slogan-en">Unity is Strength</p>
+      <p class="slogan-km"><%= t('slogan.km') %></p>
+      <p class="slogan-en"><%= t('slogan.en') %></p>
     </div>
   </div>
 </div>

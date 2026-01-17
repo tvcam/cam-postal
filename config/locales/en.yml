@@ -1,31 +1,138 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  # Site-wide
+  site:
+    name: "Cambodia Postal Code"
+    tagline: "Find ZIP codes for all provinces"
+    description: "Free Cambodia postal code lookup. Search ZIP codes for Phnom Penh, Siem Reap, Battambang and all 25 provinces."
+    keywords: "Cambodia postal code, Cambodia ZIP code, Phnom Penh postal code, Cambodia post office, Cambodia address, postal code lookup"
+
+  # Navigation
+  nav:
+    home: "Home"
+    provinces: "Provinces"
+    faq: "FAQ"
+    privacy: "Privacy"
+    terms: "Terms"
+    language: "Language"
+
+  # Homepage
+  home:
+    title: "Cambodia Postal Code Search"
+    search_placeholder: "Search by postal code, province, district, commune..."
+    search_button: "Search"
+    use_location: "Use my location"
+    welcome: "Enter a search term to find postal codes"
+    browse_hint: "Or browse all provinces"
+    no_results: "No results found for"
+    try_browse: "Try browsing by province instead."
+    found_results:
+      one: "Found 1 result"
+      other: "Found %{count} results"
+    click_to_copy: "Click to copy"
+    copied: "Copied!"
+    recent_searches: "Recent searches"
+
+  # Location types
+  location_type:
+    province: "Province"
+    district: "District"
+    commune: "Commune"
+
+  # Provinces page
+  provinces:
+    title: "Cambodia Provinces"
+    subtitle: "Browse postal codes for all %{count} provinces of Cambodia"
+    meta_description: "Complete list of all 25 Cambodia provinces with postal codes. Find ZIP codes for Phnom Penh, Siem Reap, Battambang, and all provinces."
+    footer_note: "Cambodia uses 6-digit postal codes. The first 2 digits represent the province."
+    search_link: "Search postal codes"
+
+  # Province detail page
+  province:
+    title: "%{name} Province"
+    subtitle: "Browse %{count} districts in %{name}"
+    meta_description: "All postal codes for %{name} province, Cambodia. Browse %{count} districts with ZIP codes."
+    code_label: "Province Code"
+    footer_note: "Postal codes in %{name} start with %{prefix}. The next 2 digits identify the district."
+    back_link: "All provinces"
+
+  # District detail page
+  district:
+    title: "%{name} District"
+    subtitle: "Browse %{count} communes in %{name}"
+    meta_description: "All postal codes for %{name} district, Cambodia. Browse %{count} communes with ZIP codes."
+    code_label: "District Code"
+    footer_note: "All postal codes in %{name} start with %{prefix}."
+    back_link: "Back to %{province}"
+    empty_state: "No communes found in this district. The postal code %{code} covers the entire district."
+
+  # Postal code show page
+  postal_code:
+    meta_description: "Postal code %{code} for %{name}, %{type} in Cambodia. Find ZIP codes for shipping and mailing."
+    related_title: "Related Postal Codes in %{area}"
+    view_all: "View all in %{area}"
+
+  # FAQ page
+  faq:
+    title: "Frequently Asked Questions"
+    subtitle: "Everything you need to know about Cambodia postal codes"
+    meta_description: "Frequently asked questions about Cambodia postal codes. Learn about the 6-digit ZIP code format, how to find your postal code, and shipping to Cambodia."
+    still_questions: "Still have questions?"
+    use_search: "Use our postal code search to find any Cambodia postal code instantly."
+    browse_provinces: "Browse all provinces"
+    search_codes: "Search postal codes"
+
+    q1: "What is the postal code format in Cambodia?"
+    a1_intro: "Cambodia uses a 6-digit postal code system. The format is:"
+    a1_pp: "First 2 digits: Province code (01-25)"
+    a1_dd: "Next 2 digits: District code"
+    a1_cc: "Last 2 digits: Commune code"
+    a1_example: "For example, 120101 is the postal code for central Phnom Penh."
+
+    q2: "What is Phnom Penh's postal code?"
+    a2: "Phnom Penh province uses postal codes starting with 12. The main code is 120000 for province level."
+    a2_link: "View all Phnom Penh postal codes"
+
+    q3: "How do I find my postal code in Cambodia?"
+    a3_intro: "There are three ways to find your Cambodia postal code:"
+    a3_search: "Search: Use our search tool to search by name in English or Khmer."
+    a3_gps: "GPS Location: Click 'Use my location' to automatically detect your postal code."
+    a3_browse: "Browse: Navigate through our provinces list."
+
+    q4: "When did Cambodia introduce the 6-digit postal code system?"
+    a4: "Cambodia upgraded from 5-digit to 6-digit postal codes in 2018 for more precise location identification."
+
+    q5: "Are postal codes required for shipping to Cambodia?"
+    a5: "While not strictly mandatory, postal codes are highly recommended for international shipping for faster, more accurate delivery."
+
+    q6: "What is the postal code for Siem Reap?"
+    a6: "Siem Reap province uses codes starting with 17. The main code is 170000."
+    a6_link: "View all Siem Reap postal codes"
+
+    q7: "How many provinces does Cambodia have?"
+    a7: "Cambodia has 25 provinces, each with a unique 2-digit code (01-25)."
+    a7_link: "View all 25 provinces"
+
+    q8: "Can I search for postal codes in Khmer?"
+    a8: "Yes! Our search supports both English and Khmer. Type location names in Khmer script to find matching results."
+
+  # Breadcrumb
+  breadcrumb:
+    home: "Home"
+    provinces: "Provinces"
+
+  # Footer
+  footer:
+    visits: "visits"
+    searches: "searches"
+    copies: "copies"
+    made_by: "Hobby project by"
+
+  # Unity slogan
+  slogan:
+    km: "សាមគ្គីជាកម្លាំង"
+    en: "Unity is Strength"
+
+  # Misc
+  misc:
+    back_to_search: "Back to search"
+    all_provinces: "All Provinces"

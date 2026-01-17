@@ -1,10 +1,10 @@
-<% content_for :title, "All Cambodia Provinces - Postal Codes by Province" %>
+<% content_for :title, "#{t('provinces.title')} - #{t('site.name')}" %>
 
 <% content_for :head do %>
-  <meta name="description" content="Complete list of all 25 Cambodia provinces with postal codes. Find ZIP codes for Phnom Penh, Siem Reap, Battambang, Kandal, and all provinces. Browse by region.">
+  <meta name="description" content="<%= t('provinces.meta_description') %>">
   <link rel="canonical" href="<%= provinces_url %>">
-  <meta property="og:title" content="Cambodia Provinces - All Postal Codes by Province">
-  <meta property="og:description" content="Browse postal codes for all 25 Cambodia provinces. Find ZIP codes organized by province, district, and commune.">
+  <meta property="og:title" content="<%= t('provinces.title') %> - <%= t('site.name') %>">
+  <meta property="og:description" content="<%= t('provinces.meta_description') %>">
 <% end %>
 
 <% content_for :structured_data do %>
@@ -17,13 +17,13 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": "<%= t('breadcrumb.home') %>",
         "item": "https://cam-postal.gotabs.net/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Provinces",
+        "name": "<%= t('breadcrumb.provinces') %>",
         "item": "https://cam-postal.gotabs.net/provinces"
       }
     ]
@@ -35,8 +35,8 @@
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Cambodia Provinces",
-    "description": "List of all provinces in Cambodia with postal codes",
+    "name": "<%= t('provinces.title') %>",
+    "description": "<%= t('provinces.meta_description') %>",
     "numberOfItems": <%= @provinces.count %>,
     "itemListElement": [
       <% @provinces.each_with_index do |province, index| %>
@@ -55,14 +55,14 @@
 <div class="location-page">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <ol>
-      <li><a href="<%= root_path %>">Home</a></li>
-      <li aria-current="page">Provinces</li>
+      <li><a href="<%= root_path %>"><%= t('breadcrumb.home') %></a></li>
+      <li aria-current="page"><%= t('breadcrumb.provinces') %></li>
     </ol>
   </nav>
 
   <header class="location-header">
-    <h1>Cambodia Provinces</h1>
-    <p class="location-subtitle">Browse postal codes for all <%= @provinces.count %> provinces of Cambodia</p>
+    <h1><%= t('provinces.title') %></h1>
+    <p class="location-subtitle"><%= t('provinces.subtitle', count: @provinces.count) %></p>
   </header>
 
   <div class="provinces-grid">
@@ -81,7 +81,7 @@
   </div>
 
   <div class="location-footer">
-    <p>Cambodia uses 6-digit postal codes. The first 2 digits represent the province.</p>
-    <a href="<%= root_path %>" class="search-link">← Search postal codes</a>
+    <p><%= t('provinces.footer_note') %></p>
+    <a href="<%= root_path %>" class="search-link">← <%= t('provinces.search_link') %></a>
   </div>
 </div>

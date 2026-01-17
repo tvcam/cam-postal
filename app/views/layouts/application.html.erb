@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= I18n.locale %>">
   <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5XGNMTH4T9"></script>
@@ -10,36 +10,37 @@
       gtag('config', 'G-5XGNMTH4T9');
     </script>
 
-    <title><%= content_for(:title) || "Cambodia Postal Code Directory - Find ZIP Codes for All Provinces" %></title>
+    <title><%= content_for(:title) || t('site.name') %></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="description" content="Free Cambodia postal code lookup. Search ZIP codes for Phnom Penh, Siem Reap, Battambang and all 25 provinces. Find postal codes by district, commune or use GPS location.">
-    <meta name="keywords" content="Cambodia postal code, Cambodia ZIP code, Phnom Penh postal code, Cambodia post office, លេខកូដប្រៃសណីយ៍កម្ពុជា, Cambodia address, postal code lookup, Cambodia shipping">
+    <meta name="description" content="<%= content_for(:description) || t('site.description') %>">
+    <meta name="keywords" content="<%= t('site.keywords') %>">
     <meta name="author" content="Gotabs Consulting">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cam-postal.gotabs.net/">
+    <link rel="canonical" href="https://cam-postal.gotabs.net<%= request.path %>">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Cambodia Postal Code Directory">
-    <meta property="og:description" content="Search postal codes for all Cambodia provinces, districts and communes. Free and fast lookup.">
+    <meta property="og:title" content="<%= content_for(:og_title) || t('site.name') %>">
+    <meta property="og:description" content="<%= content_for(:og_description) || t('site.description') %>">
     <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:url" content="https://cam-postal.gotabs.net/">
-    <meta property="og:site_name" content="Cambodia Postal">
-    <meta property="og:image" content="https://cam-postal.gotabs.net/icon-v2.png">
+    <meta property="og:locale" content="<%= I18n.locale == :km ? 'km_KH' : (I18n.locale == :fr ? 'fr_FR' : 'en_US') %>">
+    <meta property="og:url" content="https://cam-postal.gotabs.net<%= request.fullpath %>">
+    <meta property="og:site_name" content="<%= t('site.name') %>">
+    <meta property="og:image" content="https://cam-postal.gotabs.net/icon.svg">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
-    <meta property="og:image:alt" content="Cambodia Postal Code Directory">
+    <meta property="og:image:alt" content="<%= t('site.name') %>">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Cambodia Postal Code Directory">
-    <meta name="twitter:description" content="Search postal codes for all Cambodia provinces, districts and communes.">
-    <meta name="twitter:image" content="https://cam-postal.gotabs.net/icon-v2.png">
+    <meta name="twitter:title" content="<%= content_for(:og_title) || t('site.name') %>">
+    <meta name="twitter:description" content="<%= content_for(:og_description) || t('site.description') %>">
+    <meta name="twitter:image" content="https://cam-postal.gotabs.net/icon.svg">
 
-    <!-- Hreflang for bilingual support -->
+    <!-- Hreflang for multilingual support -->
     <link rel="alternate" hreflang="en" href="https://cam-postal.gotabs.net<%= request.path %>">
     <link rel="alternate" hreflang="km" href="https://cam-postal.gotabs.net<%= request.path %>">
+    <link rel="alternate" hreflang="fr" href="https://cam-postal.gotabs.net<%= request.path %>">
     <link rel="alternate" hreflang="x-default" href="https://cam-postal.gotabs.net<%= request.path %>">
 
     <!-- Structured Data: WebSite with SearchAction -->
@@ -47,11 +48,11 @@
     {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Cambodia Postal Code Directory",
-      "alternateName": ["Cambodia Postal", "កូដប្រៃសណីយ៍កម្ពុជា"],
+      "name": "<%= t('site.name') %>",
+      "alternateName": ["Cambodia Postal", "កូដប្រៃសណីយ៍កម្ពុជា", "Code Postal Cambodge"],
       "url": "https://cam-postal.gotabs.net",
-      "description": "Free Cambodia postal code lookup. Search ZIP codes for all 25 provinces, districts, and communes.",
-      "inLanguage": ["en", "km"],
+      "description": "<%= t('site.description') %>",
+      "inLanguage": ["en", "km", "fr"],
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
@@ -70,7 +71,7 @@
       "@type": "Organization",
       "name": "Gotabs Consulting",
       "url": "https://gotabs.net",
-      "logo": "https://cam-postal.gotabs.net/icon-v2.png"
+      "logo": "https://cam-postal.gotabs.net/icon.svg"
     }
     </script>
 
@@ -79,8 +80,8 @@
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Cambodia Postal Code Directory",
-      "description": "Free Cambodia postal code lookup. Search ZIP codes for all 25 provinces, districts, and communes.",
+      "name": "<%= t('site.name') %>",
+      "description": "<%= t('site.description') %>",
       "url": "https://cam-postal.gotabs.net",
       "applicationCategory": "UtilityApplication",
       "operatingSystem": "Any",
@@ -103,7 +104,7 @@
     <meta name="theme-color" content="#1e40af">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="application-name" content="Cambodia Postal">
+    <meta name="application-name" content="<%= t('site.name') %>">
     <meta name="mobile-web-app-capable" content="yes">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -112,7 +113,7 @@
 
     <%= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
 
-    <link rel="icon" href="/icon-v2.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon-v2.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -124,12 +125,38 @@
   </head>
 
   <body>
-    <div class="container" data-controller="theme install share">
+    <div class="container" data-controller="theme install share language">
       <header class="header">
-        <a href="/" class="logo">
-          <img src="/icon-v2.png" alt="Cambodia Postal" class="logo-icon">
+        <a href="<%= root_path %>" class="logo">
+          <img src="/icon.svg" alt="<%= t('site.name') %>" class="logo-icon">
         </a>
         <div class="header-actions">
+          <!-- Language Switcher -->
+          <div class="language-switcher" data-language-target="menu">
+            <button type="button" class="language-btn" data-action="language#toggle" aria-label="<%= t('nav.language') %>">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span class="current-lang"><%= I18n.locale.to_s.upcase %></span>
+            </button>
+            <div class="language-dropdown" data-language-target="dropdown" style="display: none;">
+              <%= link_to switch_locale_path(:en), class: "lang-option #{'active' if I18n.locale == :en}" do %>
+                <span class="lang-flag">🇺🇸</span>
+                <span class="lang-name">English</span>
+              <% end %>
+              <%= link_to switch_locale_path(:km), class: "lang-option #{'active' if I18n.locale == :km}" do %>
+                <span class="lang-flag">🇰🇭</span>
+                <span class="lang-name">ខ្មែរ</span>
+              <% end %>
+              <%= link_to switch_locale_path(:fr), class: "lang-option #{'active' if I18n.locale == :fr}" do %>
+                <span class="lang-flag">🇫🇷</span>
+                <span class="lang-name">Français</span>
+              <% end %>
+            </div>
+          </div>
+
           <button type="button" class="share-btn" data-share-target="button" data-action="share#share" aria-label="Share" style="display: none;">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="18" cy="5" r="3"/>
@@ -161,17 +188,17 @@
 
       <footer class="footer">
         <div class="stats">
-          <span><%= number_with_delimiter(SiteStat.visits) %> visits</span>
-          <span><%= number_with_delimiter(SiteStat.searches) %> searches</span>
-          <span><%= number_with_delimiter(SiteStat.copies) %> copies</span>
+          <span><%= number_with_delimiter(SiteStat.visits) %> <%= t('footer.visits') %></span>
+          <span><%= number_with_delimiter(SiteStat.searches) %> <%= t('footer.searches') %></span>
+          <span><%= number_with_delimiter(SiteStat.copies) %> <%= t('footer.copies') %></span>
         </div>
         <nav class="footer-nav">
-          <%= link_to "All Provinces", provinces_path %> |
-          <%= link_to "FAQ", faq_path %> |
-          <%= link_to "Privacy", privacy_path %> |
-          <%= link_to "Terms", terms_path %>
+          <%= link_to t('misc.all_provinces'), provinces_path %> |
+          <%= link_to t('nav.faq'), faq_path %> |
+          <%= link_to t('nav.privacy'), privacy_path %> |
+          <%= link_to t('nav.terms'), terms_path %>
         </nav>
-        <p>Hobby project by <a href="https://gotabs.net" target="_blank" rel="noopener">Gotabs Consulting</a></p>
+        <p><%= t('footer.made_by') %> <a href="https://gotabs.net" target="_blank" rel="noopener">Gotabs Consulting</a></p>
       </footer>
     </div>
   </body>

@@ -36,6 +36,11 @@ module CamPostal
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    # i18n configuration
+    config.i18n.available_locales = [ :en, :km, :fr ]
+    config.i18n.default_locale = :en
+    config.i18n.fallbacks = true
+
     # Use structure.sql instead of schema.rb to support FTS5 virtual tables
     config.active_record.schema_format = :sql
   end

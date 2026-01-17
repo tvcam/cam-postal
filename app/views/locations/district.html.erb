@@ -1,10 +1,10 @@
-<% content_for :title, "#{@district.name_en} Postal Codes - Communes in #{@district.name_en}, #{@province.name_en}" %>
+<% content_for :title, "#{t('district.title', name: @district.name_en)} - #{@province.name_en} | #{t('site.name')}" %>
 
 <% content_for :head do %>
-  <meta name="description" content="All postal codes for <%= @district.name_en %><%= " (#{@district.name_km})" if @district.name_km.present? %> district in <%= @province.name_en %>, Cambodia. Browse <%= @communes.count %> communes with ZIP codes.">
+  <meta name="description" content="<%= t('district.meta_description', name: @district.name_en, count: @communes.count) %>">
   <link rel="canonical" href="<%= province_district_url(@province.name_en.parameterize, @district.name_en.parameterize) %>">
-  <meta property="og:title" content="<%= @district.name_en %>, <%= @province.name_en %> - Postal Codes">
-  <meta property="og:description" content="Find postal codes for all <%= @communes.count %> communes in <%= @district.name_en %> district, <%= @province.name_en %>.">
+  <meta property="og:title" content="<%= t('district.title', name: @district.name_en) %>, <%= @province.name_en %>">
+  <meta property="og:description" content="<%= t('district.meta_description', name: @district.name_en, count: @communes.count) %>">
 <% end %>
 
 <% content_for :structured_data do %>
@@ -17,13 +17,13 @@
       {
         "@type": "ListItem",
         "position": 1,
-        "name": "Home",
+        "name": "<%= t('breadcrumb.home') %>",
         "item": "https://cam-postal.gotabs.net/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Provinces",
+        "name": "<%= t('breadcrumb.provinces') %>",
         "item": "https://cam-postal.gotabs.net/provinces"
       },
       {
@@ -66,33 +66,13 @@
     }
   }
   </script>
-
-  <!-- ItemList Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Communes in <%= @district.name_en %>",
-    "numberOfItems": <%= @communes.count %>,
-    "itemListElement": [
-      <% @communes.each_with_index do |commune, index| %>
-      {
-        "@type": "ListItem",
-        "position": <%= index + 1 %>,
-        "name": "<%= commune.name_en %>",
-        "url": "https://cam-postal.gotabs.net/p/<%= commune.postal_code %>"
-      }<%= index < @communes.count - 1 ? ',' : '' %>
-      <% end %>
-    ]
-  }
-  </script>
 <% end %>
 
 <div class="location-page">
   <nav class="breadcrumb" aria-label="Breadcrumb">
     <ol>
-      <li><a href="<%= root_path %>">Home</a></li>
-      <li><a href="<%= provinces_path %>">Provinces</a></li>
+      <li><a href="<%= root_path %>"><%= t('breadcrumb.home') %></a></li>
+      <li><a href="<%= provinces_path %>"><%= t('breadcrumb.provinces') %></a></li>
       <li><a href="<%= province_path(@province.name_en.parameterize) %>"><%= @province.name_en %></a></li>
       <li aria-current="page"><%= @district.name_en %></li>
     </ol>
@@ -101,18 +81,18 @@
   <header class="location-header">
     <div class="location-title-row">
       <div>
-        <h1><%= @district.name_en %> District</h1>
+        <h1><%= t('district.title', name: @district.name_en) %></h1>
         <% if @district.name_km.present? %>
           <p class="location-name-km"><%= @district.name_km %></p>
         <% end %>
-        <p class="location-parent"><%= @province.name_en %> Province</p>
+        <p class="location-parent"><%= t('province.title', name: @province.name_en) %></p>
       </div>
       <div class="location-code-badge">
-        <span class="code-label">District Code</span>
+        <span class="code-label"><%= t('district.code_label') %></span>
         <span class="code-value"><%= @district.postal_code %></span>
       </div>
     </div>
-    <p class="location-subtitle">Browse <%= @communes.count %> communes in <%= @district.name_en %></p>
+    <p class="location-subtitle"><%= t('district.subtitle', count: @communes.count, name: @district.name_en) %></p>
   </header>
 
   <div class="communes-grid">
@@ -120,7 +100,7 @@
       <a href="<%= postal_code_path(commune.postal_code) %>" class="commune-card"
          data-controller="copy"
          data-copy-text-value="<%= commune.postal_code %>"
-         data-action="click->copy#copy">
+         data-action="click->copy#copyAndPrevent">
         <div class="commune-code"><%= commune.postal_code %></div>
         <div class="commune-info">
           <h2 class="commune-name"><%= commune.name_en %></h2>
@@ -128,29 +108,29 @@
             <p class="commune-name-km"><%= commune.name_km %></p>
           <% end %>
         </div>
-        <span class="copy-hint">Click to copy</span>
+        <span class="copy-hint"><%= t('home.click_to_copy') %></span>
       </a>
     <% end %>
   </div>
 
   <% if @communes.empty? %>
     <div class="empty-state">
-      <p>No communes found in this district. The postal code <strong><%= @district.postal_code %></strong> covers the entire district.</p>
+      <p><%= t('district.empty_state', code: @district.postal_code) %></p>
       <div class="district-only-card"
            data-controller="copy"
            data-copy-text-value="<%= @district.postal_code %>"
            data-action="click->copy#copy">
         <span class="postal-code"><%= @district.postal_code %></span>
-        <span class="copy-hint">Click to copy</span>
+        <span class="copy-hint"><%= t('home.click_to_copy') %></span>
       </div>
     </div>
   <% end %>
 
   <div class="location-footer">
-    <p>All postal codes in <%= @district.name_en %> start with <strong><%= @district.postal_code[0,4] %></strong>.</p>
+    <p><%= t('district.footer_note', name: @district.name_en, prefix: @district.postal_code[0,4]) %></p>
     <div class="footer-links">
-      <a href="<%= province_path(@province.name_en.parameterize) %>" class="back-link">← Back to <%= @province.name_en %></a>
-      <a href="<%= root_path %>" class="search-link">Search postal codes</a>
+      <a href="<%= province_path(@province.name_en.parameterize) %>" class="back-link">← <%= t('district.back_link', province: @province.name_en) %></a>
+      <a href="<%= root_path %>" class="search-link"><%= t('provinces.search_link') %></a>
     </div>
   </div>
 </div>

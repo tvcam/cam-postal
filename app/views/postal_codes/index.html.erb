@@ -1,8 +1,21 @@
-<% content_for :title, "Cambodia Postal Code Search" %>
+<% content_for :title, t('home.title') %>
 
-<div data-controller="search" id="search-controller">
+<div data-controller="search" id="search-controller"
+     data-search-translations-value="<%= {
+       found_results_one: t('home.found_results', count: 1),
+       found_results_other: t('home.found_results', count: 2),
+       no_results: t('home.no_results'),
+       welcome: t('home.welcome'),
+       recent_searches: t('home.recent_searches'),
+       click_to_copy: t('home.click_to_copy'),
+       province: t('location_type.province'),
+       district: t('location_type.district'),
+       commune: t('location_type.commune'),
+       slogan_km: t('slogan.km'),
+       slogan_en: t('slogan.en')
+     }.to_json %>">
   <div class="search-section" data-controller="geolocation" data-geolocation-search-outlet="#search-controller">
-    <h1 class="title">Cambodia Postal Code</h1>
+    <h1 class="title"><%= t('site.name') %></h1>
 
     <%= form_with url: search_path, method: :get, id: "search-form", data: { turbo_frame: "results" } do |f| %>
       <div class="search-box">
@@ -10,7 +23,7 @@
           type="search"
           name="q"
           value="<%= @query %>"
-          placeholder="Search by postal code, province, district, commune..."
+          placeholder="<%= t('home.search_placeholder') %>"
           class="search-input"
           autocomplete="off"
           autofocus
@@ -20,7 +33,7 @@
           data-action="input->search#search"
         >
         <button type="submit" class="search-btn">
-          Search
+          <%= t('home.search_button') %>
         </button>
       </div>
     <% end %>
@@ -31,7 +44,7 @@
           <circle cx="12" cy="12" r="3"/>
           <path d="M12 2v4m0 12v4m10-10h-4M6 12H2"/>
         </svg>
-        Use my location
+        <%= t('home.use_location') %>
       </button>
       <span class="location-status" data-geolocation-target="status"></span>
     </div>

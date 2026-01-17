@@ -1,7 +1,7 @@
 <div class="results-section">
   <% if query.present? %>
     <% if results.any? %>
-      <p class="results-count">Found <%= results.size %> result<%= results.size == 1 ? '' : 's' %></p>
+      <p class="results-count"><%= t('home.found_results', count: results.size) %></p>
 
       <div class="results-list">
         <% results.each do |postal_code| %>
@@ -11,7 +11,7 @@
                data-action="click->copy#copyAndPrevent">
             <div class="result-header">
               <span class="postal-code"><%= postal_code.postal_code %></span>
-              <span class="location-type <%= postal_code.location_type %>"><%= postal_code.type_label %></span>
+              <span class="location-type <%= postal_code.location_type %>"><%= t("location_type.#{postal_code.location_type}") %></span>
             </div>
             <div class="result-body">
               <p class="name-en"><%= highlight_match(postal_code.name_en, query) %></p>
@@ -22,25 +22,25 @@
                 <p class="parent-location"><%= postal_code.parent_location %></p>
               <% end %>
             </div>
-            <span class="copy-hint">Click to copy</span>
+            <span class="copy-hint"><%= t('home.click_to_copy') %></span>
           </a>
         <% end %>
       </div>
     <% else %>
       <div class="no-results">
-        <p>No results found for "<%= query %>"</p>
-        <p class="browse-hint">Try <a href="<%= provinces_path %>">browsing by province</a> instead.</p>
+        <p><%= t('home.no_results') %> "<%= query %>"</p>
+        <p class="browse-hint"><%= t('home.try_browse') %> <a href="<%= provinces_path %>"><%= t('misc.all_provinces') %></a></p>
       </div>
     <% end %>
   <% else %>
     <div class="welcome-message">
-      <p>Enter a search term to find postal codes</p>
-      <p class="browse-hint">Or <a href="<%= provinces_path %>">browse all provinces</a></p>
+      <p><%= t('home.welcome') %></p>
+      <p class="browse-hint"><%= t('home.browse_hint') %> <a href="<%= provinces_path %>"><%= t('misc.all_provinces') %></a></p>
     </div>
   <% end %>
 
   <div class="unity-slogan">
-    <p class="slogan-km">🇰🇭 សាមគ្គីជាកម្លាំង 🇰🇭</p>
-    <p class="slogan-en">Unity is Strength</p>
+    <p class="slogan-km"><%= t('slogan.km') %></p>
+    <p class="slogan-en"><%= t('slogan.en') %></p>
   </div>
 </div>
