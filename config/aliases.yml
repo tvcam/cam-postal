@@ -7,16 +7,16 @@
 # =============================================================================
 
 # BKK - Most popular expat area
-bkk1: Boeng Keng Kang Muoy
-bkk2: Boeng Keng Kang Pir
-bkk3: Boeng Keng Kang Bei
-bkk i: Boeng Keng Kang Muoy
-bkk ii: Boeng Keng Kang Pir
-bkk iii: Boeng Keng Kang Bei
-bkk 1: Boeng Keng Kang Muoy
-bkk 2: Boeng Keng Kang Pir
-bkk 3: Boeng Keng Kang Bei
-boeng keng kang: Boeng Keng Kang Muoy
+bkk1: Boeng Keng Kang Ti Muoy
+bkk2: Boeng Keng Kang Ti Pir
+bkk3: Boeng Keng Kang Ti Bei
+bkk i: Boeng Keng Kang Ti Muoy
+bkk ii: Boeng Keng Kang Ti Pir
+bkk iii: Boeng Keng Kang Ti Bei
+bkk 1: Boeng Keng Kang Ti Muoy
+bkk 2: Boeng Keng Kang Ti Pir
+bkk 3: Boeng Keng Kang Ti Bei
+boeng keng kang: Boeng Keng Kang
 
 # Tuol Kouk - Popular residential area
 tk: Tuol Kouk
@@ -35,14 +35,14 @@ sensok: Saen Sokh
 saensok: Saen Sokh
 
 # Pur Senchey
-porsenchey: Pur Senchey
-pur sen chey: Pur Senchey
-por senchey: Pur Senchey
+porsenchey: Pou Saen Chey
+pur sen chey: Pou Saen Chey
+por senchey: Pou Saen Chey
 
 # Russei Kaev
-russey keo: Russei Kaev
-russey kaev: Russei Kaev
-ruseykeo: Russei Kaev
+russey keo: Ruessei Kaev
+russey kaev: Ruessei Kaev
+ruseykeo: Ruessei Kaev
 
 # Dangkao
 dangkor: Dangkao
@@ -62,12 +62,13 @@ prek pnow: Preaek Pnov
 praek pnov: Preaek Pnov
 
 # Kambol
-kamboul: Kambol
+kamboul: Kamboul
+kambol: Kamboul
 
 # Chruy Changvar (Peninsula)
-chroy changvar: Chruy Changvar
-chroy changva: Chruy Changvar
-chruy changva: Chruy Changvar
+chroy changvar: Chrouy Changvar
+chroy changva: Chrouy Changvar
+chruy changva: Chrouy Changvar
 
 # Daun Penh (Central/Tourist area)
 daun penh: Doun Penh
@@ -85,9 +86,9 @@ sisowath: Chakto Mukh
 riverfront: Chakto Mukh
 
 # Royal Palace area
-royal palace: Chey Chumneas
-palace: Chey Chumneas
-silver pagoda: Chey Chumneas
+royal palace: Chey Chumneah
+palace: Chey Chumneah
+silver pagoda: Chey Chumneah
 
 # Diamond Island / Koh Pich
 diamond island: Kaoh Dach
@@ -115,63 +116,59 @@ wat phnum: Voat Phnum
 # =============================================================================
 
 # Russian Market (Tuol Tom Poung) - Famous expat market
-russian market: Tuol Tumpung Muoy
-psah toul tom poung: Tuol Tumpung Muoy
-tuol tom poung: Tuol Tumpung Muoy
-psar tuol tom poung: Tuol Tumpung Muoy
-ttp: Tuol Tumpung Muoy
-tt1: Tuol Tumpung Muoy
-tt2: Tuol Tumpung Pir
+russian market: Tuol Tumpung Ti Muoy
+psah toul tom poung: Tuol Tumpung Ti Muoy
+tuol tom poung: Tuol Tumpung Ti Muoy
+psar tuol tom poung: Tuol Tumpung Ti Muoy
+ttp: Tuol Tumpung Ti Muoy
+tt1: Tuol Tumpung Ti Muoy
+tt2: Tuol Tumpung Ti Pir
 
 # Central Market (Phsar Thmei)
-central market: Phsar Thmei Muoy
-phsar thmei: Phsar Thmei Muoy
-new market: Phsar Thmei Muoy
-psar thmey: Phsar Thmei Muoy
-psar thmei: Phsar Thmei Muoy
+central market: Phsar Thmei Ti Muoy
+phsar thmei: Phsar Thmei Ti Muoy
+new market: Phsar Thmei Ti Muoy
+psar thmey: Phsar Thmei Ti Muoy
+psar thmei: Phsar Thmei Ti Muoy
 
 # Old Market
 old market: Phsar Chas
 phsar chas: Phsar Chas
 psar chas: Phsar Chas
 
-# Night Market
-night market: Phsar Reatrey
-phsar reatrey: Phsar Reatrey
-
 # Olympic Market
-olympic: Veal Vong
-olympic stadium: Veal Vong
-olympic market: Veal Vong
-national stadium: Veal Vong
+olympic: Veal Vung
+olympic stadium: Veal Vung
+olympic market: Veal Vung
+national stadium: Veal Vung
 
 # Orussey Market
-orussey market: Orussei Muoy
-psar orussey: Orussei Muoy
-o russey: Orussei Muoy
+orussey market: Ou Ruessei Ti Muoy
+psar orussey: Ou Ruessei Ti Muoy
+o russey: Ou Ruessei Ti Muoy
 
 # =============================================================================
 # PHNOM PENH - Shopping Malls
 # =============================================================================
 
 # Aeon Mall
-aeon1: Tuol Svay Prey Muoy
-aeon 1: Tuol Svay Prey Muoy
-aeon mall: Tuol Svay Prey Muoy
-aeon mall 1: Tuol Svay Prey Muoy
+aeon1: Tuol Svay Prey Ti Muoy
+aeon 1: Tuol Svay Prey Ti Muoy
+aeon mall: Tuol Svay Prey Ti Muoy
+aeon mall 1: Tuol Svay Prey Ti Muoy
 aeon2: Saen Sokh
 aeon 2: Saen Sokh
 aeon mall 2: Saen Sokh
 aeon sen sok: Saen Sokh
 
 # Other Malls
-sorya: Phsar Thmei Muoy
-sorya mall: Phsar Thmei Muoy
-sorya center: Phsar Thmei Muoy
+sorya: Phsar Thmei Ti Muoy
+sorya mall: Phsar Thmei Ti Muoy
+sorya center: Phsar Thmei Ti Muoy
 exchange square: Voat Phnum
-lucky market: Tuek Laak Muoy
+lucky market: Tuek Lak Ti Muoy
 makro: Saen Sokh
-big c: Pur Senchey
+big c: Pou Saen Chey
 chip mong mall: Saen Sokh
 chip mong: Saen Sokh
 parkson: Tonle Basak
@@ -189,22 +186,22 @@ phnom penh international airport: Kakab
 # Bridges
 chbar ampov bridge: Chbar Ampov
 monivong bridge: Chbar Ampov
-japanese bridge: Chruy Changvar
-friendship bridge: Chruy Changvar
+japanese bridge: Chrouy Changvar
+friendship bridge: Chrouy Changvar
 kbal thnal: Chbar Ampov
-takhmao bridge: Takhmau
+takhmao bridge: Ta Khmau
 
 # =============================================================================
 # PHNOM PENH - Hospitals
 # =============================================================================
 
-royal phnom penh: Boeng Keng Kang Muoy
-royal pp hospital: Boeng Keng Kang Muoy
+royal phnom penh: Boeng Keng Kang Ti Muoy
+royal pp hospital: Boeng Keng Kang Ti Muoy
 calmette: Voat Phnum
 calmette hospital: Voat Phnum
 sen sok hospital: Saen Sokh
-khmer soviet: Tuol Svay Prey Muoy
-children hospital: Tuol Svay Prey Muoy
+khmer soviet: Tuol Svay Prey Ti Muoy
+children hospital: Tuol Svay Prey Ti Muoy
 
 # =============================================================================
 # PHNOM PENH - Universities & Schools
@@ -213,39 +210,39 @@ children hospital: Tuol Svay Prey Muoy
 rupp: Tuol Kouk
 royal university: Tuol Kouk
 phnom penh university: Tuol Kouk
-ispp: Boeng Keng Kang Muoy
-cia school: Tuol Svay Prey Muoy
-nis: Boeng Keng Kang Muoy
+ispp: Boeng Keng Kang Ti Muoy
+cia school: Tuol Svay Prey Ti Muoy
+nis: Boeng Keng Kang Ti Muoy
 northbridge: Saen Sokh
-lycee descartes: Tuol Svay Prey Muoy
+lycee descartes: Tuol Svay Prey Ti Muoy
 
 # =============================================================================
 # PHNOM PENH - Expat/Residential Areas
 # =============================================================================
 
-embassy area: Boeng Keng Kang Muoy
-embassy row: Boeng Keng Kang Muoy
+embassy area: Boeng Keng Kang Ti Muoy
+embassy row: Boeng Keng Kang Ti Muoy
 bassac lane: Tonle Basak
 bassac: Tonle Basak
-street 240: Boeng Keng Kang Muoy
-street 51: Boeng Keng Kang Muoy
-st 51: Boeng Keng Kang Muoy
-golden street: Boeng Keng Kang Muoy
-street 278: Boeng Keng Kang Muoy
-cafe street: Boeng Keng Kang Muoy
-street 308: Boeng Keng Kang Muoy
-st 308: Boeng Keng Kang Muoy
-de castle: Boeng Keng Kang Muoy
+street 240: Boeng Keng Kang Ti Muoy
+street 51: Boeng Keng Kang Ti Muoy
+st 51: Boeng Keng Kang Ti Muoy
+golden street: Boeng Keng Kang Ti Muoy
+street 278: Boeng Keng Kang Ti Muoy
+cafe street: Boeng Keng Kang Ti Muoy
+street 308: Boeng Keng Kang Ti Muoy
+st 308: Boeng Keng Kang Ti Muoy
+de castle: Boeng Keng Kang Ti Muoy
 the bridge: Kaoh Dach
 the peak: Tonle Basak
-olympia city: Veal Vong
+olympia city: Veal Vung
 
 # Industrial/Factory zones
-factory area: Pur Senchey
-industrial area: Pur Senchey
-garment zone: Pur Senchey
-special economic zone: Pur Senchey
-sez: Pur Senchey
+factory area: Pou Saen Chey
+industrial area: Pou Saen Chey
+garment zone: Pou Saen Chey
+special economic zone: Pou Saen Chey
+sez: Pou Saen Chey
 
 # =============================================================================
 # SIEM REAP
@@ -261,18 +258,18 @@ bayon: Nokor Thum
 ta prohm: Nokor Thum
 
 # Downtown Siem Reap
-pub street: Svay Dangkum
-bar street: Svay Dangkum
-downtown siem reap: Svay Dangkum
-old market siem reap: Svay Dangkum
-psar chas siem reap: Svay Dangkum
-siem reap old market: Svay Dangkum
-alley west: Svay Dangkum
-the lane: Svay Dangkum
-sok san road: Svay Dangkum
-sok san: Svay Dangkum
-sivutha road: Svay Dangkum
-sivutha: Svay Dangkum
+pub street: Svay Dankum
+bar street: Svay Dankum
+downtown siem reap: Svay Dankum
+old market siem reap: Svay Dankum
+psar chas siem reap: Svay Dankum
+siem reap old market: Svay Dankum
+alley west: Svay Dankum
+the lane: Svay Dankum
+sok san road: Svay Dankum
+sok san: Svay Dankum
+sivutha road: Svay Dankum
+sivutha: Svay Dankum
 
 # Wat Bo Area (Expat area)
 wat bo: Sala Kamraeuk
@@ -280,43 +277,42 @@ wat bo village: Sala Kamraeuk
 wat bo area: Sala Kamraeuk
 
 # Night Markets & Shopping
-angkor night market: Svay Dangkum
-night market siem reap: Svay Dangkum
-lucky mall siem reap: Svay Dangkum
-t galleria: Svay Dangkum
+angkor night market: Svay Dankum
+night market siem reap: Svay Dankum
+lucky mall siem reap: Svay Dankum
+t galleria: Svay Dankum
 
 # Museums
-angkor museum: Svay Dangkum
-national museum siem reap: Svay Dangkum
-museum area: Svay Dangkum
-war museum: Svay Dangkum
-landmine museum: Svay Dangkum
+angkor museum: Svay Dankum
+national museum siem reap: Svay Dankum
+museum area: Svay Dankum
+war museum: Svay Dankum
+landmine museum: Svay Dankum
 
 # Airport & Roads
-siem reap airport: Siem Reab
-rep airport: Siem Reab
-airport road: Siem Reab
-national road 6: Siem Reab
-route 6: Siem Reab
-charles de gaulle: Siem Reab
+siem reap airport: Siem Reap
+rep airport: Siem Reap
+airport road: Siem Reap
+national road 6: Siem Reap
+route 6: Siem Reap
+charles de gaulle: Siem Reap
 
 # Other Siem Reap areas
-river road: Svay Dangkum
-siem reap river: Svay Dangkum
-artisan angkor: Siem Reab
-made in cambodia: Svay Dangkum
-kandal village: Svay Dangkum
-theam house: Svay Dangkum
-wat preah prom rath: Svay Dangkum
-preah prom rath: Svay Dangkum
-royal gardens: Svay Dangkum
-royal residence: Svay Dangkum
+river road: Svay Dankum
+siem reap river: Svay Dankum
+artisan angkor: Siem Reap
+made in cambodia: Svay Dankum
+kandal village: Svay Dankum
+theam house: Svay Dankum
+wat preah prom rath: Svay Dankum
+preah prom rath: Svay Dankum
+royal gardens: Svay Dankum
+royal residence: Svay Dankum
 
 # Tonle Sap Lake
-tonle sap: Chong Knies
-chong kneas: Chong Knies
-floating village: Chong Knies
-kampong phluk: Kampong Phluk
+tonle sap: Chong Khnies
+chong kneas: Chong Khnies
+floating village: Chong Khnies
 kampong khleang: Kampong Khleang
 
 # =============================================================================
@@ -329,32 +325,32 @@ kompong som: Preah Sihanouk
 sihanouk ville: Preah Sihanouk
 
 # Beaches
-ochheuteal beach: Sangkat Bei
-ocheuteal: Sangkat Bei
-otres beach: Sangkat Buon
-otres: Sangkat Buon
-otres 1: Sangkat Buon
-otres 2: Sangkat Buon
-serendipity beach: Sangkat Bei
-serendipity: Sangkat Bei
-sokha beach: Sangkat Muoy
-sokha: Sangkat Muoy
-independence beach: Sangkat Pir
-victory beach: Sangkat Pir
+ochheuteal beach: Lekh Bei
+ocheuteal: Lekh Bei
+otres beach: Lekh Buon
+otres: Lekh Buon
+otres 1: Lekh Buon
+otres 2: Lekh Buon
+serendipity beach: Lekh Bei
+serendipity: Lekh Bei
+sokha beach: Lekh Muoy
+sokha: Lekh Muoy
+independence beach: Lekh Pir
+victory beach: Lekh Pir
 
 # Downtown
-downtown sihanoukville: Sangkat Bei
-golden lions: Sangkat Bei
+downtown sihanoukville: Lekh Bei
+golden lions: Lekh Bei
 
 # Islands
-koh rong: Kaoh Rung
-koh rong island: Kaoh Rung
-koh rong samloem: Kaoh Rung Samloem
-koh rong sanloem: Kaoh Rung Samloem
+koh rong: Kaoh Rong
+koh rong island: Kaoh Rong
+koh rong samloem: Kaoh Rong Sanloem
+koh rong sanloem: Kaoh Rong Sanloem
 
 # Port
-sihanoukville port: Sangkat Muoy
-autonomous port: Sangkat Muoy
+sihanoukville port: Lekh Muoy
+autonomous port: Lekh Muoy
 
 # =============================================================================
 # KAMPOT
@@ -365,9 +361,9 @@ kampot town: Kampot
 kampot riverside: Kampot
 old market kampot: Kampot
 durian roundabout: Kampot
-bokor: Bokor
-bokor mountain: Bokor
-bokor hill: Bokor
+bokor: Bouk Kou
+bokor mountain: Bouk Kou
+bokor hill: Bouk Kou
 pepper farm: Kampot
 
 # =============================================================================
@@ -449,5 +445,5 @@ angkor borei: Angkor Borei
 pursat city: Pursat
 
 # Kandal
-takhmao: Takhmau
-ta khmao: Takhmau
+takhmao: Ta Khmau
+ta khmao: Ta Khmau
