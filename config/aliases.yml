@@ -1,0 +1,162 @@
+# Cambodia Postal Code Aliases
+# Maps common names, abbreviations, and landmarks to official location names
+# Format: alias => official_name_en (case-insensitive matching)
+
+# Phnom Penh Districts (Khan)
+bkk1: Boeng Keng Kang Muoy
+bkk2: Boeng Keng Kang Pir
+bkk3: Boeng Keng Kang Bei
+bkk i: Boeng Keng Kang Muoy
+bkk ii: Boeng Keng Kang Pir
+bkk iii: Boeng Keng Kang Bei
+bkk 1: Boeng Keng Kang Muoy
+bkk 2: Boeng Keng Kang Pir
+bkk 3: Boeng Keng Kang Bei
+tk: Tuol Kouk
+toul kork: Tuol Kouk
+toul kok: Tuol Kouk
+chamkar mon: Chamkar Mon
+chamkarmon: Chamkar Mon
+sen sok: Saensokh
+sensok: Saensokh
+saensok: Saensokh
+porsenchey: Pur Senchey
+pur sen chey: Pur Senchey
+por senchey: Pur Senchey
+russey keo: Russei Kaev
+russey kaev: Russei Kaev
+ruseykeo: Russei Kaev
+dangkor: Dangkao
+dang kor: Dangkao
+mean chey: Mean Chey
+meanchey: Mean Chey
+chbar ampov: Chbar Ampov
+chbar ampov: Chbar Ampov
+chbar ampeou: Chbar Ampov
+prek pnov: Preaek Pnov
+prek pnow: Preaek Pnov
+praek pnov: Preaek Pnov
+kamboul: Kambol
+chroy changvar: Chruy Changvar
+chroy changva: Chruy Changvar
+chruy changva: Chruy Changvar
+
+# Phnom Penh Sangkats (Communes)
+riverside: Chaktomuk
+river side: Chaktomuk
+sisowath quay: Chaktomuk
+royal palace: Chey Chumneas
+palace: Chey Chumneas
+diamond island: Kaoh Dach
+koh pich: Kaoh Dach
+koh dach: Kaoh Dach
+olympic: Veal Vong
+olympic stadium: Veal Vong
+olympic market: Veal Vong
+russian market: Tuol Tumpung Muoy
+psah toul tom poung: Tuol Tumpung Muoy
+tuol tom poung: Tuol Tumpung Muoy
+tt1: Tuol Tumpung Muoy
+tt2: Tuol Tumpung Pir
+central market: Phsar Thmei Muoy
+phsar thmei: Phsar Thmei Muoy
+new market: Phsar Thmei Muoy
+old market: Phsar Chas
+night market: Phsar Reatrey
+psar thmey: Phsar Thmei Muoy
+phsar chas: Phsar Chas
+lucky market: Tuek Laak Muoy
+aeon1: Tuol Svay Prey Muoy
+aeon 1: Tuol Svay Prey Muoy
+aeon mall: Tuol Svay Prey Muoy
+naga world: Tonle Basak
+nagaworld: Tonle Basak
+naga: Tonle Basak
+independence monument: Tonle Basak
+wat phnom: Voat Phnum
+wat phnum: Voat Phnum
+
+# Phnom Penh Areas by Landmark
+airport: Kakab
+phnom penh airport: Kakab
+ppn airport: Kakab
+pochentong: Kakab
+embassy area: Boeng Keng Kang Muoy
+aeon2: Saensokh
+aeon 2: Saensokh
+makro: Saensokh
+big c: Pur Senchey
+sorya: Phsar Thmei Muoy
+sorya mall: Phsar Thmei Muoy
+exchange square: Voat Phnum
+factory area: Pur Senchey
+industrial area: Pur Senchey
+garment zone: Pur Senchey
+chbar ampov bridge: Chbar Ampov
+monivong bridge: Chbar Ampov
+japanese bridge: Chruy Changvar
+friendship bridge: Chruy Changvar
+kbal thnal: Chbar Ampov
+
+# Siem Reap
+angkor wat: Nokor Thum
+angkor: Nokor Thum
+angkor thom: Nokor Thum
+angkor temple: Nokor Thum
+pub street: Svay Dangkum
+bar street: Svay Dangkum
+downtown siem reap: Svay Dangkum
+old market siem reap: Svay Dangkum
+psar chas siem reap: Svay Dangkum
+wat bo: Sala Kamraeuk
+wat bo village: Sala Kamraeuk
+sok san road: Svay Dangkum
+sok san: Svay Dangkum
+lucky mall siem reap: Svay Dangkum
+angkor night market: Svay Dangkum
+night market siem reap: Svay Dangkum
+siem reap airport: Siem Reab
+rep airport: Siem Reab
+airport road: Siem Reab
+national road 6: Siem Reab
+route 6: Siem Reab
+charles de gaulle: Siem Reab
+museum area: Svay Dangkum
+angkor museum: Svay Dangkum
+national museum siem reap: Svay Dangkum
+river road: Svay Dangkum
+siem reap river: Svay Dangkum
+artisan angkor: Siem Reab
+made in cambodia: Svay Dangkum
+kandal village: Svay Dangkum
+theam house: Svay Dangkum
+wat preah prom rath: Svay Dangkum
+preah prom rath: Svay Dangkum
+royal gardens: Svay Dangkum
+royal residence: Svay Dangkum
+sivutha road: Svay Dangkum
+sivutha: Svay Dangkum
+tonle sap: Chong Knies
+chong kneas: Chong Knies
+floating village: Chong Knies
+
+# Provincial Capitals
+battambang city: Battambang
+btb city: Battambang
+sihanoukville: Preah Sihanouk
+snv: Preah Sihanouk
+kompong som: Preah Sihanouk
+kampot city: Kampot
+kep city: Kaeb
+kep beach: Kaeb
+kampong cham city: Kampong Cham
+kampong thom city: Kampong Thom
+prey veng city: Prey Veaeng
+svay rieng city: Svay Rieng
+kratie city: Kratie
+stung treng city: Stung Treng
+ratanakiri: Ratanak Kiri
+mondulkiri: Mondul Kiri
+sen monorom: Mondul Kiri
+banlung: Ratanak Kiri
+ban lung: Ratanak Kiri

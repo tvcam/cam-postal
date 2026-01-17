@@ -1,5 +1,6 @@
 class PostalCode < ApplicationRecord
   LOCATION_TYPES = %w[province district commune].freeze
+  ALIASES_PATH = Rails.root.join("config/aliases.yml").freeze
 
   validates :postal_code, presence: true
   validates :name_en, presence: true
@@ -9,23 +10,50 @@ class PostalCode < ApplicationRecord
   scope :districts, -> { where(location_type: "district") }
   scope :communes, -> { where(location_type: "commune") }
 
+  # Load and cache aliases from YAML
+  def self.aliases
+    @aliases ||= begin
+      if File.exist?(ALIASES_PATH)
+        YAML.load_file(ALIASES_PATH).transform_keys(&:downcase)
+      else
+        {}
+      end
+    end
+  end
+
+  # Reload aliases (useful for development)
+  def self.reload_aliases!
+    @aliases = nil
+    aliases
+  end
+
+  # Resolve alias to official name, returns original if no alias found
+  def self.resolve_alias(query)
+    normalized = query.to_s.strip.downcase
+    aliases[normalized] || query
+  end
+
   def self.search(query)
     return none if query.blank?
 
     sanitized = query.to_s.strip
     return none if sanitized.empty?
 
+    # Try alias resolution first
+    resolved = resolve_alias(sanitized)
+    search_term = resolved != sanitized ? resolved : sanitized
+
     # Combine FTS and fuzzy results for best matches
-    fts_results = fts_search(sanitized)
+    fts_results = fts_search(search_term)
 
     # Skip fuzzy search for Khmer queries (soundex won't help)
-    if khmer_query?(sanitized)
+    if khmer_query?(search_term)
       # For Khmer, also do direct LIKE search on name_km
-      khmer_like_results = where("name_km LIKE ?", "%#{sanitized}%").limit(50)
+      khmer_like_results = where("name_km LIKE ?", "%#{search_term}%").limit(50)
       fts_ids = fts_results.map(&:id).to_set
       combined = fts_results + khmer_like_results.reject { |r| fts_ids.include?(r.id) }
     else
-      fuzzy_results = fuzzy_search(sanitized)
+      fuzzy_results = fuzzy_search(search_term)
       fts_ids = fts_results.map(&:id).to_set
       combined = fts_results + fuzzy_results.reject { |r| fts_ids.include?(r.id) }
     end

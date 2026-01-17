@@ -23,7 +23,8 @@ class PostalCodesController < ApplicationController
       { c: pc.postal_code, e: pc.name_en, k: pc.name_km, t: pc.location_type, p: parent }
     end
 
-    render json: data
+    # Include aliases for client-side search
+    render json: { data: data, aliases: PostalCode.aliases }
   end
 
   def index

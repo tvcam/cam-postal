@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 import Fuse from "fuse.js"
 import LZString from "lz-string"
 
-const STORAGE_KEY = "postal_data_v1"
+const STORAGE_KEY = "postal_data_v2"
 const RECENT_KEY = "recent_searches"
 const DATA_URL = "/data.json"
 const MAX_RECENT = 8
@@ -14,6 +14,7 @@ export default class extends Controller {
   connect() {
     this.timeout = null
     this.fuse = null
+    this.aliases = {}
     this.clientMode = false
     this.lastQuery = ""
     this.t = this.translationsValue || {}
@@ -24,15 +25,19 @@ export default class extends Controller {
     // Try compressed cache first
     const cached = this.getFromStorage()
     if (cached) {
-      this.initFuse(cached)
+      this.aliases = cached.aliases || {}
+      this.initFuse(cached.data || cached)
       return
     }
 
     // Fetch fresh data
     try {
       const response = await fetch(DATA_URL)
-      const data = await response.json()
-      this.saveToStorage(data)
+      const json = await response.json()
+      // Handle both old format (array) and new format ({ data, aliases })
+      const data = json.data || json
+      this.aliases = json.aliases || {}
+      this.saveToStorage({ data, aliases: this.aliases })
       this.initFuse(data)
     } catch (e) {
       console.warn("Client search unavailable:", e)
@@ -44,15 +49,22 @@ export default class extends Controller {
       const compressed = localStorage.getItem(STORAGE_KEY)
       if (!compressed) return null
       const json = LZString.decompressFromUTF16(compressed)
-      return JSON.parse(json)
+      const parsed = JSON.parse(json)
+      // Ensure we have the new format with aliases
+      if (parsed && parsed.data && parsed.aliases) {
+        return parsed
+      }
+      // Old format - clear and refetch
+      localStorage.removeItem(STORAGE_KEY)
+      return null
     } catch {
       return null
     }
   }
 
-  saveToStorage(data) {
+  saveToStorage(payload) {
     try {
-      const json = JSON.stringify(data)
+      const json = JSON.stringify(payload)
       const compressed = LZString.compressToUTF16(json)
       localStorage.setItem(STORAGE_KEY, compressed)
     } catch (e) {
@@ -74,6 +86,13 @@ export default class extends Controller {
       minMatchCharLength: 2
     })
     this.enableClientMode()
+  }
+
+  // Resolve alias to official name
+  resolveAlias(query) {
+    if (!query || !this.aliases) return query
+    const normalized = query.toLowerCase().trim()
+    return this.aliases[normalized] || query
   }
 
   enableClientMode() {
@@ -114,7 +133,11 @@ export default class extends Controller {
       return
     }
 
-    const results = this.fuse.search(query, { limit: 50 })
+    // Try alias resolution first
+    const resolved = this.resolveAlias(query)
+    const searchTerm = resolved !== query ? resolved : query
+
+    const results = this.fuse.search(searchTerm, { limit: 50 })
     this.renderResults(results.map(r => r.item), query)
 
     // Save to recent searches if results found
