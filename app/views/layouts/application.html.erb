@@ -47,6 +47,19 @@
     <link rel="alternate" hreflang="fr" href="https://cam-postal.gotabs.net<%= base_path %>?locale=fr">
     <link rel="alternate" hreflang="x-default" href="https://cam-postal.gotabs.net<%= base_path %>">
 
+    <!-- AI/LLM-friendly metadata -->
+    <link rel="alternate" type="text/plain" href="https://cam-postal.gotabs.net/llms.txt" title="LLM Information">
+    <link rel="alternate" type="text/plain" href="https://cam-postal.gotabs.net/llms-full.txt" title="Complete Postal Code Data">
+    <link rel="alternate" type="application/json" href="https://cam-postal.gotabs.net/data.json" title="Postal Code API">
+    <meta name="ai:data_sources" content="llms.txt, llms-full.txt, data.json">
+    <meta name="dc.title" content="<%= t('site.name') %>">
+    <meta name="dc.creator" content="Gotabs Consulting">
+    <meta name="dc.subject" content="Cambodia, postal codes, ZIP codes, provinces, districts, communes">
+    <meta name="dc.description" content="<%= t('site.description') %>">
+    <meta name="dc.language" content="<%= I18n.locale %>">
+    <meta name="dc.coverage" content="Cambodia">
+    <meta name="dc.type" content="Dataset">
+
     <!-- Structured Data: WebSite with SearchAction -->
     <script type="application/ld+json">
     {

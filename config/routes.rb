@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   # Sitemap
   get "sitemap", to: "sitemaps#show", as: :sitemap, defaults: { format: :xml }
 
+  # AI/LLM-friendly endpoints
+  get "llms-full", to: "postal_codes#llms_full", as: :llms_full, defaults: { format: :txt }
+
   # Locale switching
   get "locale/:locale", to: "locale#switch", as: :switch_locale
 

@@ -82,6 +82,45 @@ class PostalCodesController < ApplicationController
     head :ok
   end
 
+  def llms_full
+    expires_in 1.day, public: true
+
+    postal_codes = PostalCode.order(:postal_code)
+
+    # Build lookups for parent names
+    provinces = postal_codes.select(&:province?).index_by(&:postal_code)
+    districts = postal_codes.select(&:district?).index_by(&:postal_code)
+
+    lines = [ "# Cambodia Postal Codes - Complete Database",
+              "# Format: POSTAL_CODE | TYPE | NAME_EN | NAME_KM | PARENT_LOCATION",
+              "# Generated: #{Time.current.strftime('%Y-%m-%d')}",
+              "# Total records: #{postal_codes.count}",
+              "#",
+              "# Province codes: 01-25 (first 2 digits)",
+              "# District codes: 4 digits (province + district)",
+              "# Commune codes: 6 digits (province + district + commune)",
+              "",
+              "POSTAL_CODE | TYPE | NAME_EN | NAME_KM | PARENT",
+              "-" * 80 ]
+
+    postal_codes.each do |pc|
+      parent = case pc.location_type
+      when "commune"
+        district = districts[pc.district_code]
+        province = provinces[pc.province_code]
+        [ district&.name_en, province&.name_en ].compact.join(", ")
+      when "district"
+        provinces[pc.province_code]&.name_en || ""
+      else
+        "Cambodia"
+      end
+
+      lines << "#{pc.postal_code} | #{pc.location_type.ljust(8)} | #{pc.name_en} | #{pc.name_km || '-'} | #{parent}"
+    end
+
+    render plain: lines.join("\n"), content_type: "text/plain; charset=utf-8"
+  end
+
   def locate
     lat = params[:lat].to_f
     lng = params[:lng].to_f

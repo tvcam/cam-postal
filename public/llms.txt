@@ -1,0 +1,70 @@
+# Cambodia Postal Code Directory
+> Official postal code lookup service for Cambodia (Kingdom of Cambodia)
+
+This website provides a comprehensive database of Cambodian postal codes, covering all 25 provinces, districts, and communes.
+
+## Overview
+
+Cambodia uses a 6-digit postal code system introduced in 2018:
+- First 2 digits: Province code (01-25)
+- Next 2 digits: District code
+- Last 2 digits: Commune code
+
+Example: 120101 = Phnom Penh (12) > Chamkar Mon District (01) > Tonle Bassac Commune (01)
+
+## Data Access
+
+- Website: https://cam-postal.gotabs.net
+- Search API: https://cam-postal.gotabs.net/search?q={query}
+- Full Data (JSON): https://cam-postal.gotabs.net/data.json
+- Full Data (Text): https://cam-postal.gotabs.net/llms-full.txt
+- Sitemap: https://cam-postal.gotabs.net/sitemap.xml
+
+## Key Pages
+
+- Home/Search: https://cam-postal.gotabs.net/
+- All Provinces: https://cam-postal.gotabs.net/provinces
+- FAQ: https://cam-postal.gotabs.net/faq
+- Individual codes: https://cam-postal.gotabs.net/p/{postal_code}
+
+## Province Codes
+
+| Code | Province (English) | Province (Khmer) |
+|------|-------------------|------------------|
+| 01 | Banteay Meanchey | បន្ទាយមានជ័យ |
+| 02 | Battambang | បាត់ដំបង |
+| 03 | Kampong Cham | កំពង់ចាម |
+| 04 | Kampong Chhnang | កំពង់ឆ្នាំង |
+| 05 | Kampong Speu | កំពង់ស្ពឺ |
+| 06 | Kampong Thom | កំពង់ធំ |
+| 07 | Kampot | កំពត |
+| 08 | Kandal | កណ្ដាល |
+| 09 | Koh Kong | កោះកុង |
+| 10 | Kratie | ក្រចេះ |
+| 11 | Mondul Kiri | មណ្ឌលគិរី |
+| 12 | Phnom Penh | ភ្នំពេញ |
+| 13 | Preah Vihear | ព្រះវិហារ |
+| 14 | Prey Veng | ព្រៃវែង |
+| 15 | Pursat | ពោធិ៍សាត់ |
+| 16 | Ratanak Kiri | រតនគិរី |
+| 17 | Siem Reap | សៀមរាប |
+| 18 | Preah Sihanouk | ព្រះសីហនុ |
+| 19 | Stung Treng | ស្ទឹងត្រែង |
+| 20 | Svay Rieng | ស្វាយរៀង |
+| 21 | Takeo | តាកែវ |
+| 22 | Oddar Meanchey | ឧត្តរមានជ័យ |
+| 23 | Kep | កែប |
+| 24 | Pailin | ប៉ៃលិន |
+| 25 | Tboung Khmum | ត្បូងឃ្មុំ |
+
+## Languages
+
+The site supports English, Khmer (ខ្មែរ), and French (Français).
+
+## Contact
+
+Website maintained by Gotabs Consulting (https://gotabs.net)
+
+## License
+
+Data is provided free for public use. Please cite the source when using this data.
