@@ -2,7 +2,11 @@
 # Maps common names, abbreviations, and landmarks to official location names
 # Format: alias => official_name_en (case-insensitive matching)
 
-# Phnom Penh Districts (Khan)
+# =============================================================================
+# PHNOM PENH - Districts (Khan)
+# =============================================================================
+
+# BKK - Most popular expat area
 bkk1: Boeng Keng Kang Muoy
 bkk2: Boeng Keng Kang Pir
 bkk3: Boeng Keng Kang Bei
@@ -12,118 +16,291 @@ bkk iii: Boeng Keng Kang Bei
 bkk 1: Boeng Keng Kang Muoy
 bkk 2: Boeng Keng Kang Pir
 bkk 3: Boeng Keng Kang Bei
+boeng keng kang: Boeng Keng Kang Muoy
+
+# Tuol Kouk - Popular residential area
 tk: Tuol Kouk
 toul kork: Tuol Kouk
 toul kok: Tuol Kouk
+tk avenue: Tuol Kouk
+toul kork avenue: Tuol Kouk
+
+# Chamkar Mon
 chamkar mon: Chamkar Mon
 chamkarmon: Chamkar Mon
+
+# Sen Sok - Growing expat area
 sen sok: Saensokh
 sensok: Saensokh
 saensok: Saensokh
+
+# Pur Senchey
 porsenchey: Pur Senchey
 pur sen chey: Pur Senchey
 por senchey: Pur Senchey
+
+# Russei Kaev
 russey keo: Russei Kaev
 russey kaev: Russei Kaev
 ruseykeo: Russei Kaev
+
+# Dangkao
 dangkor: Dangkao
 dang kor: Dangkao
+
+# Mean Chey
 mean chey: Mean Chey
 meanchey: Mean Chey
-chbar ampov: Chbar Ampov
+
+# Chbar Ampov
 chbar ampov: Chbar Ampov
 chbar ampeou: Chbar Ampov
+
+# Preaek Pnov
 prek pnov: Preaek Pnov
 prek pnow: Preaek Pnov
 praek pnov: Preaek Pnov
+
+# Kambol
 kamboul: Kambol
+
+# Chruy Changvar (Peninsula)
 chroy changvar: Chruy Changvar
 chroy changva: Chruy Changvar
 chruy changva: Chruy Changvar
 
-# Phnom Penh Sangkats (Communes)
+# Daun Penh (Central/Tourist area)
+daun penh: Doun Penh
+doun penh: Doun Penh
+
+# =============================================================================
+# PHNOM PENH - Popular Areas & Landmarks
+# =============================================================================
+
+# Riverside / Sisowath Quay - Tourist hotspot
 riverside: Chaktomuk
 river side: Chaktomuk
 sisowath quay: Chaktomuk
+sisowath: Chaktomuk
+riverfront: Chaktomuk
+
+# Royal Palace area
 royal palace: Chey Chumneas
 palace: Chey Chumneas
+silver pagoda: Chey Chumneas
+
+# Diamond Island / Koh Pich
 diamond island: Kaoh Dach
 koh pich: Kaoh Dach
 koh dach: Kaoh Dach
-olympic: Veal Vong
-olympic stadium: Veal Vong
-olympic market: Veal Vong
-russian market: Tuol Tumpung Muoy
-psah toul tom poung: Tuol Tumpung Muoy
-tuol tom poung: Tuol Tumpung Muoy
-tt1: Tuol Tumpung Muoy
-tt2: Tuol Tumpung Pir
-central market: Phsar Thmei Muoy
-phsar thmei: Phsar Thmei Muoy
-new market: Phsar Thmei Muoy
-old market: Phsar Chas
-night market: Phsar Reatrey
-psar thmey: Phsar Thmei Muoy
-phsar chas: Phsar Chas
-lucky market: Tuek Laak Muoy
-aeon1: Tuol Svay Prey Muoy
-aeon 1: Tuol Svay Prey Muoy
-aeon mall: Tuol Svay Prey Muoy
+elysee: Kaoh Dach
+
+# Naga World / Casino area
 naga world: Tonle Basak
 nagaworld: Tonle Basak
 naga: Tonle Basak
+naga 1: Tonle Basak
+naga 2: Tonle Basak
+casino: Tonle Basak
 independence monument: Tonle Basak
+vattanac tower: Tonle Basak
+vattanac capital: Tonle Basak
+
+# Wat Phnom
 wat phnom: Voat Phnum
 wat phnum: Voat Phnum
 
-# Phnom Penh Areas by Landmark
+# =============================================================================
+# PHNOM PENH - Markets
+# =============================================================================
+
+# Russian Market (Tuol Tom Poung) - Famous expat market
+russian market: Tuol Tumpung Muoy
+psah toul tom poung: Tuol Tumpung Muoy
+tuol tom poung: Tuol Tumpung Muoy
+psar tuol tom poung: Tuol Tumpung Muoy
+ttp: Tuol Tumpung Muoy
+tt1: Tuol Tumpung Muoy
+tt2: Tuol Tumpung Pir
+
+# Central Market (Phsar Thmei)
+central market: Phsar Thmei Muoy
+phsar thmei: Phsar Thmei Muoy
+new market: Phsar Thmei Muoy
+psar thmey: Phsar Thmei Muoy
+psar thmei: Phsar Thmei Muoy
+
+# Old Market
+old market: Phsar Chas
+phsar chas: Phsar Chas
+psar chas: Phsar Chas
+
+# Night Market
+night market: Phsar Reatrey
+phsar reatrey: Phsar Reatrey
+
+# Olympic Market
+olympic: Veal Vong
+olympic stadium: Veal Vong
+olympic market: Veal Vong
+national stadium: Veal Vong
+
+# Orussey Market
+orussey market: Orussei Muoy
+psar orussey: Orussei Muoy
+o russey: Orussei Muoy
+
+# =============================================================================
+# PHNOM PENH - Shopping Malls
+# =============================================================================
+
+# Aeon Mall
+aeon1: Tuol Svay Prey Muoy
+aeon 1: Tuol Svay Prey Muoy
+aeon mall: Tuol Svay Prey Muoy
+aeon mall 1: Tuol Svay Prey Muoy
+aeon2: Saensokh
+aeon 2: Saensokh
+aeon mall 2: Saensokh
+aeon sen sok: Saensokh
+
+# Other Malls
+sorya: Phsar Thmei Muoy
+sorya mall: Phsar Thmei Muoy
+sorya center: Phsar Thmei Muoy
+exchange square: Voat Phnum
+lucky market: Tuek Laak Muoy
+makro: Saensokh
+big c: Pur Senchey
+chip mong mall: Saensokh
+chip mong: Saensokh
+parkson: Tonle Basak
+
+# =============================================================================
+# PHNOM PENH - Airport & Transportation
+# =============================================================================
+
 airport: Kakab
 phnom penh airport: Kakab
 ppn airport: Kakab
 pochentong: Kakab
-embassy area: Boeng Keng Kang Muoy
-aeon2: Saensokh
-aeon 2: Saensokh
-makro: Saensokh
-big c: Pur Senchey
-sorya: Phsar Thmei Muoy
-sorya mall: Phsar Thmei Muoy
-exchange square: Voat Phnum
-factory area: Pur Senchey
-industrial area: Pur Senchey
-garment zone: Pur Senchey
+phnom penh international airport: Kakab
+
+# Bridges
 chbar ampov bridge: Chbar Ampov
 monivong bridge: Chbar Ampov
 japanese bridge: Chruy Changvar
 friendship bridge: Chruy Changvar
 kbal thnal: Chbar Ampov
+takhmao bridge: Takhmau
 
-# Siem Reap
+# =============================================================================
+# PHNOM PENH - Hospitals
+# =============================================================================
+
+royal phnom penh: Boeng Keng Kang Muoy
+royal pp hospital: Boeng Keng Kang Muoy
+calmette: Voat Phnum
+calmette hospital: Voat Phnum
+sen sok hospital: Saensokh
+khmer soviet: Tuol Svay Prey Muoy
+children hospital: Tuol Svay Prey Muoy
+
+# =============================================================================
+# PHNOM PENH - Universities & Schools
+# =============================================================================
+
+rupp: Tuol Kouk
+royal university: Tuol Kouk
+phnom penh university: Tuol Kouk
+ispp: Boeng Keng Kang Muoy
+cia school: Tuol Svay Prey Muoy
+nis: Boeng Keng Kang Muoy
+northbridge: Saensokh
+lycee descartes: Tuol Svay Prey Muoy
+
+# =============================================================================
+# PHNOM PENH - Expat/Residential Areas
+# =============================================================================
+
+embassy area: Boeng Keng Kang Muoy
+embassy row: Boeng Keng Kang Muoy
+bassac lane: Tonle Basak
+bassac: Tonle Basak
+street 240: Boeng Keng Kang Muoy
+street 51: Boeng Keng Kang Muoy
+st 51: Boeng Keng Kang Muoy
+golden street: Boeng Keng Kang Muoy
+street 278: Boeng Keng Kang Muoy
+cafe street: Boeng Keng Kang Muoy
+street 308: Boeng Keng Kang Muoy
+st 308: Boeng Keng Kang Muoy
+de castle: Boeng Keng Kang Muoy
+the bridge: Kaoh Dach
+the peak: Tonle Basak
+olympia city: Veal Vong
+
+# Industrial/Factory zones
+factory area: Pur Senchey
+industrial area: Pur Senchey
+garment zone: Pur Senchey
+special economic zone: Pur Senchey
+sez: Pur Senchey
+
+# =============================================================================
+# SIEM REAP
+# =============================================================================
+
+# Angkor Temples
 angkor wat: Nokor Thum
 angkor: Nokor Thum
 angkor thom: Nokor Thum
 angkor temple: Nokor Thum
+angkor temples: Nokor Thum
+bayon: Nokor Thum
+ta prohm: Nokor Thum
+
+# Downtown Siem Reap
 pub street: Svay Dangkum
 bar street: Svay Dangkum
 downtown siem reap: Svay Dangkum
 old market siem reap: Svay Dangkum
 psar chas siem reap: Svay Dangkum
-wat bo: Sala Kamraeuk
-wat bo village: Sala Kamraeuk
+siem reap old market: Svay Dangkum
+alley west: Svay Dangkum
+the lane: Svay Dangkum
 sok san road: Svay Dangkum
 sok san: Svay Dangkum
-lucky mall siem reap: Svay Dangkum
+sivutha road: Svay Dangkum
+sivutha: Svay Dangkum
+
+# Wat Bo Area (Expat area)
+wat bo: Sala Kamraeuk
+wat bo village: Sala Kamraeuk
+wat bo area: Sala Kamraeuk
+
+# Night Markets & Shopping
 angkor night market: Svay Dangkum
 night market siem reap: Svay Dangkum
+lucky mall siem reap: Svay Dangkum
+t galleria: Svay Dangkum
+
+# Museums
+angkor museum: Svay Dangkum
+national museum siem reap: Svay Dangkum
+museum area: Svay Dangkum
+war museum: Svay Dangkum
+landmine museum: Svay Dangkum
+
+# Airport & Roads
 siem reap airport: Siem Reab
 rep airport: Siem Reab
 airport road: Siem Reab
 national road 6: Siem Reab
 route 6: Siem Reab
 charles de gaulle: Siem Reab
-museum area: Svay Dangkum
-angkor museum: Svay Dangkum
-national museum siem reap: Svay Dangkum
+
+# Other Siem Reap areas
 river road: Svay Dangkum
 siem reap river: Svay Dangkum
 artisan angkor: Siem Reab
@@ -134,29 +311,143 @@ wat preah prom rath: Svay Dangkum
 preah prom rath: Svay Dangkum
 royal gardens: Svay Dangkum
 royal residence: Svay Dangkum
-sivutha road: Svay Dangkum
-sivutha: Svay Dangkum
+
+# Tonle Sap Lake
 tonle sap: Chong Knies
 chong kneas: Chong Knies
 floating village: Chong Knies
+kampong phluk: Kampong Phluk
+kampong khleang: Kampong Khleang
 
-# Provincial Capitals
-battambang city: Battambang
-btb city: Battambang
+# =============================================================================
+# SIHANOUKVILLE (Preah Sihanouk)
+# =============================================================================
+
 sihanoukville: Preah Sihanouk
 snv: Preah Sihanouk
 kompong som: Preah Sihanouk
+sihanouk ville: Preah Sihanouk
+
+# Beaches
+ochheuteal beach: Sangkat Bei
+ocheuteal: Sangkat Bei
+otres beach: Sangkat Buon
+otres: Sangkat Buon
+otres 1: Sangkat Buon
+otres 2: Sangkat Buon
+serendipity beach: Sangkat Bei
+serendipity: Sangkat Bei
+sokha beach: Sangkat Muoy
+sokha: Sangkat Muoy
+independence beach: Sangkat Pir
+victory beach: Sangkat Pir
+
+# Downtown
+downtown sihanoukville: Sangkat Bei
+golden lions: Sangkat Bei
+
+# Islands
+koh rong: Kaoh Rung
+koh rong island: Kaoh Rung
+koh rong samloem: Kaoh Rung Samloem
+koh rong sanloem: Kaoh Rung Samloem
+
+# Port
+sihanoukville port: Sangkat Muoy
+autonomous port: Sangkat Muoy
+
+# =============================================================================
+# KAMPOT
+# =============================================================================
+
 kampot city: Kampot
+kampot town: Kampot
+kampot riverside: Kampot
+old market kampot: Kampot
+durian roundabout: Kampot
+bokor: Bokor
+bokor mountain: Bokor
+bokor hill: Bokor
+pepper farm: Kampot
+
+# =============================================================================
+# KEP
+# =============================================================================
+
 kep city: Kaeb
 kep beach: Kaeb
+kep town: Kaeb
+crab market: Kaeb
+rabbit island: Kaeb
+koh tonsay: Kaeb
+
+# =============================================================================
+# BATTAMBANG
+# =============================================================================
+
+battambang city: Battambang
+btb city: Battambang
+battambang town: Battambang
+white elephant: Battambang
+bamboo train: Battambang
+bat caves: Battambang
+
+# =============================================================================
+# OTHER PROVINCES
+# =============================================================================
+
+# Kampong Cham
 kampong cham city: Kampong Cham
+kompong cham: Kampong Cham
+koh pen: Kaoh Soutin
+
+# Kampong Thom
 kampong thom city: Kampong Thom
+kompong thom: Kampong Thom
+sambor prei kuk: Prasat Sambour
+
+# Prey Veng
 prey veng city: Prey Veaeng
+
+# Svay Rieng
 svay rieng city: Svay Rieng
+bavet: Bavet
+bavet border: Bavet
+moc bai: Bavet
+
+# Kratie
 kratie city: Kratie
+kratie town: Kratie
+dolphin watching: Sambo
+
+# Stung Treng
 stung treng city: Stung Treng
+
+# Ratanak Kiri
 ratanakiri: Ratanak Kiri
-mondulkiri: Mondul Kiri
-sen monorom: Mondul Kiri
 banlung: Ratanak Kiri
 ban lung: Ratanak Kiri
+yeak laom: Ratanak Kiri
+
+# Mondul Kiri
+mondulkiri: Mondul Kiri
+sen monorom: Mondul Kiri
+elephant valley: Mondul Kiri
+bou sra: Mondul Kiri
+
+# Poipet (Border)
+poipet: Paoy Paet
+poi pet: Paoy Paet
+poipet border: Paoy Paet
+aranyaprathet border: Paoy Paet
+
+# Takeo
+takeo city: Takeo
+angkor borei: Angkor Borei
+
+# Pursat
+pursat city: Pursat
+
+# Kandal
+takhmao: Takhmau
+ta khmao: Takhmau
