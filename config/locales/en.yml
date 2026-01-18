@@ -12,6 +12,7 @@ en:
     provinces: "Provinces"
     faq: "FAQ"
     api: "Open Data"
+    stats: "Stats"
     privacy: "Privacy"
     terms: "Terms"
     language: "Language"
@@ -141,6 +142,25 @@ en:
     a15_html: "Yes! We provide free access to Cambodia postal code data. Use <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> for the complete dataset in JSON format, or <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> for plain text. No API key required."
     a15_link: "View Open Data page"
 
+  # Stats page
+  stats:
+    title: "Public Stats"
+    subtitle: "Transparent usage data for Cambodia Postal Code Directory"
+    meta_description: "Public statistics for Cambodia Postal Code Directory. View site usage, search trends, and database information."
+    site_title: "Site Usage"
+    visits: "Total Visits"
+    searches: "Total Searches"
+    copies: "Codes Copied"
+    database_title: "Database"
+    postal_codes: "Postal Codes"
+    aliases: "Location Aliases"
+    api_title: "Data Downloads"
+    api_total: "Total Requests"
+    api_month: "This Month"
+    api_week: "This Week"
+    top_searches_title: "Popular Searches"
+    no_searches: "No searches recorded yet."
+
   # Open Data
   api:
     title: "Open Data"
@@ -149,11 +169,6 @@ en:
 
     overview_title: "Overview"
     overview_text: "Cambodia Postal Code Directory provides free access to our complete postal code database. Download the data for your apps, websites, or AI systems."
-
-    usage_title: "Usage Stats"
-    usage_total: "Total Requests"
-    usage_month: "This Month"
-    usage_week: "This Week"
 
     endpoints_title: "Data Downloads"
 

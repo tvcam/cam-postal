@@ -12,6 +12,7 @@ km:
     provinces: "ខេត្ត"
     faq: "សំណួរញឹកញាប់"
     api: "ទិន្នន័យបើកចំហ"
+    stats: "ស្ថិតិ"
     privacy: "ឯកជនភាព"
     terms: "លក្ខខណ្ឌ"
     language: "ភាសា"
@@ -141,6 +142,25 @@ km:
     a15_html: "មាន! យើងផ្តល់ទិន្នន័យកូដប្រៃសណីយ៍កម្ពុជាដោយឥតគិតថ្លៃ។ ប្រើ <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> សម្រាប់ទិន្នន័យពេញលេញជាទម្រង់ JSON ឬ <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> សម្រាប់អត្ថបទធម្មតា។ មិនត្រូវការ API key ទេ។"
     a15_link: "មើលឯកសារ API"
 
+  # Stats page
+  stats:
+    title: "ស្ថិតិសាធារណៈ"
+    subtitle: "ទិន្នន័យប្រើប្រាស់បើកចំហសម្រាប់បញ្ជីកូដប្រៃសណីយ៍កម្ពុជា"
+    meta_description: "ស្ថិតិសាធារណៈសម្រាប់បញ្ជីកូដប្រៃសណីយ៍កម្ពុជា។"
+    site_title: "ការប្រើប្រាស់គេហទំព័រ"
+    visits: "ការចូលមើល"
+    searches: "ការស្វែងរក"
+    copies: "កូដបានចម្លង"
+    database_title: "មូលដ្ឋានទិន្នន័យ"
+    postal_codes: "កូដប្រៃសណីយ៍"
+    aliases: "ឈ្មោះទីកន្លែង"
+    api_title: "ការទាញយកទិន្នន័យ"
+    api_total: "សំណើសរុប"
+    api_month: "ខែនេះ"
+    api_week: "សប្តាហ៍នេះ"
+    top_searches_title: "ការស្វែងរកពេញនិយម"
+    no_searches: "មិនទាន់មានការស្វែងរកទេ។"
+
   # API Documentation
   api:
     title: "ទិន្នន័យបើកចំហ"
@@ -149,11 +169,6 @@ km:
 
     overview_title: "ទិដ្ឋភាពទូទៅ"
     overview_text: "បញ្ជីកូដប្រៃសណីយ៍កម្ពុជាផ្តល់ការចូលប្រើ API ដោយឥតគិតថ្លៃទៅកាន់មូលដ្ឋានទិន្នន័យកូដប្រៃសណីយ៍ពេញលេញរបស់យើង។ ទិន្នន័យនេះអាចប្រើដោយអ្នកអភិវឌ្ឍន៍ ជំនួយការ AI និងប្រព័ន្ធស្វ័យប្រវត្តិ។"
-
-    usage_title: "ស្ថិតិការប្រើប្រាស់"
-    usage_total: "សំណើសរុប"
-    usage_month: "ខែនេះ"
-    usage_week: "សប្តាហ៍នេះ"
 
     endpoints_title: "Endpoints API"
 

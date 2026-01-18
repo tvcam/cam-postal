@@ -1,0 +1,82 @@
+<% content_for :title, "#{t('stats.title')} - #{t('site.name')}" %>
+
+<% content_for :head do %>
+  <meta name="description" content="<%= t('stats.meta_description') %>">
+  <link rel="canonical" href="<%= stats_url %>">
+<% end %>
+
+<div class="legal-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="<%= root_path %>"><%= t('breadcrumb.home') %></a></li>
+      <li aria-current="page"><%= t('stats.title') %></li>
+    </ol>
+  </nav>
+
+  <h1><%= t('stats.title') %></h1>
+  <p class="subtitle"><%= t('stats.subtitle') %></p>
+
+  <section>
+    <h2><%= t('stats.site_title') %></h2>
+    <div class="usage-stats">
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@site_visits) %></span>
+        <span class="stat-label"><%= t('stats.visits') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@site_searches) %></span>
+        <span class="stat-label"><%= t('stats.searches') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@site_copies) %></span>
+        <span class="stat-label"><%= t('stats.copies') %></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><%= t('stats.database_title') %></h2>
+    <div class="usage-stats">
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@postal_codes_count) %></span>
+        <span class="stat-label"><%= t('stats.postal_codes') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@aliases_count) %></span>
+        <span class="stat-label"><%= t('stats.aliases') %></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><%= t('stats.api_title') %></h2>
+    <div class="usage-stats">
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@api_requests_total) %></span>
+        <span class="stat-label"><%= t('stats.api_total') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@api_requests_month) %></span>
+        <span class="stat-label"><%= t('stats.api_month') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@api_requests_week) %></span>
+        <span class="stat-label"><%= t('stats.api_week') %></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2><%= t('stats.top_searches_title') %></h2>
+    <div class="top-searches">
+      <% @top_searches.each do |query, count| %>
+        <span class="search-tag"><%= query %> (<%= count %>)</span>
+      <% end %>
+      <% if @top_searches.empty? %>
+        <p class="text-muted"><%= t('stats.no_searches') %></p>
+      <% end %>
+    </div>
+  </section>
+
+  <p class="back-link"><a href="<%= root_path %>"><%= t('misc.back_to_search') %></a></p>
+</div>

@@ -12,6 +12,7 @@ fr:
     provinces: "Provinces"
     faq: "FAQ"
     api: "Données Ouvertes"
+    stats: "Statistiques"
     privacy: "Confidentialité"
     terms: "Conditions"
     language: "Langue"
@@ -141,6 +142,25 @@ fr:
     a15_html: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> pour l'ensemble des données au format JSON, ou <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> pour le texte brut. Aucune clé API requise."
     a15_link: "Voir la page Données Ouvertes"
 
+  # Stats page
+  stats:
+    title: "Statistiques"
+    subtitle: "Données d'utilisation transparentes pour l'annuaire des codes postaux du Cambodge"
+    meta_description: "Statistiques publiques pour l'annuaire des codes postaux du Cambodge."
+    site_title: "Utilisation du Site"
+    visits: "Visites"
+    searches: "Recherches"
+    copies: "Codes Copiés"
+    database_title: "Base de Données"
+    postal_codes: "Codes Postaux"
+    aliases: "Alias de Lieux"
+    api_title: "Téléchargements"
+    api_total: "Total Requêtes"
+    api_month: "Ce Mois"
+    api_week: "Cette Semaine"
+    top_searches_title: "Recherches Populaires"
+    no_searches: "Aucune recherche enregistrée."
+
   # Open Data
   api:
     title: "Données Ouvertes"
@@ -149,11 +169,6 @@ fr:
 
     overview_title: "Aperçu"
     overview_text: "L'annuaire des codes postaux du Cambodge offre un accès gratuit à notre base de données complète. Téléchargez les données pour vos applications, sites web ou systèmes IA."
-
-    usage_title: "Statistiques"
-    usage_total: "Total Requêtes"
-    usage_month: "Ce Mois"
-    usage_week: "Cette Semaine"
 
     endpoints_title: "Téléchargements"
 

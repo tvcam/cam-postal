@@ -32,6 +32,9 @@ Rails.application.routes.draw do
   # API documentation for AI/developers
   get "open-data", to: "pages#api", as: :api
 
+  # Public stats
+  get "stats", to: "pages#stats", as: :stats
+
   # Location hierarchy pages (SEO)
   get "provinces", to: "locations#provinces", as: :provinces
   get "provinces/:province", to: "locations#province", as: :province
