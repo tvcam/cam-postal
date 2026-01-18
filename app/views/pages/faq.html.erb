@@ -153,7 +153,7 @@
         "name": "<%= t('faq.q15') %>",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "<%= t('faq.a15') %>"
+          "text": "<%= strip_tags(t('faq.a15_html')) %>"
         }
       }
     ]
@@ -323,7 +323,7 @@
         <h2><%= t('faq.q15') %></h2>
       </summary>
       <div class="faq-answer">
-        <p><%= t('faq.a15') %></p>
+        <p><%= t('faq.a15_html') %></p>
         <p><a href="<%= api_path %>"><%= t('faq.a15_link') %> →</a></p>
       </div>
     </details>

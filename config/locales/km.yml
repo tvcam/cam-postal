@@ -138,7 +138,7 @@ km:
     a14: "សម្រាប់បញ្ញើអន្តរជាតិមកកម្ពុជា សូមប្រើទម្រង់នេះ៖ [ឈ្មោះ] [ផ្ទះ/ផ្លូវ] [សង្កាត់/ឃុំ] [ខណ្ឌ/ស្រុក] [ខេត្ត] [កូដប្រៃសណីយ៍] Cambodia។"
 
     q15: "តើមាន API សម្រាប់អ្នកអភិវឌ្ឍន៍ទេ?"
-    a15: "មាន! យើងផ្តល់ទិន្នន័យកូដប្រៃសណីយ៍កម្ពុជាដោយឥតគិតថ្លៃ។ ប្រើ https://cam-postal.gotabs.net/data.json សម្រាប់ទិន្នន័យពេញលេញជាទម្រង់ JSON ឬ https://cam-postal.gotabs.net/llms-full.txt សម្រាប់អត្ថបទធម្មតា។ មិនត្រូវការ API key ទេ។"
+    a15_html: "មាន! យើងផ្តល់ទិន្នន័យកូដប្រៃសណីយ៍កម្ពុជាដោយឥតគិតថ្លៃ។ ប្រើ <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> សម្រាប់ទិន្នន័យពេញលេញជាទម្រង់ JSON ឬ <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> សម្រាប់អត្ថបទធម្មតា។ មិនត្រូវការ API key ទេ។"
     a15_link: "មើលឯកសារ API"
 
   # API Documentation
