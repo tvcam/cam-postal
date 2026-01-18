@@ -28,7 +28,7 @@
 
     <h3>1. <%= t('api.full_data_title') %></h3>
     <p><%= t('api.full_data_description') %></p>
-    <pre><code>GET https://cam-postal.gotabs.net/data.json</code></pre>
+    <pre><code>GET <a href="https://cam-postal.gotabs.net/data.json">https://cam-postal.gotabs.net/data.json</a></code></pre>
     <p><%= t('api.full_data_response') %></p>
     <pre><code>{
   "data": [
@@ -50,18 +50,18 @@
 
     <h3>2. <%= t('api.search_title') %></h3>
     <p><%= t('api.search_description') %></p>
-    <pre><code>GET https://cam-postal.gotabs.net/search?q={query}</code></pre>
+    <pre><code>GET <a href="https://cam-postal.gotabs.net/search?q=phnom+penh">https://cam-postal.gotabs.net/search?q={query}</a></code></pre>
     <p><strong><%= t('api.parameters') %>:</strong></p>
     <ul>
       <li><code>q</code> - <%= t('api.search_param_q') %></li>
     </ul>
     <p><strong><%= t('api.example') %>:</strong></p>
-    <pre><code>GET https://cam-postal.gotabs.net/search?q=phnom+penh</code></pre>
+    <pre><code>GET <a href="https://cam-postal.gotabs.net/search?q=phnom+penh">https://cam-postal.gotabs.net/search?q=phnom+penh</a></code></pre>
 
     <h3>3. <%= t('api.llms_title') %></h3>
     <p><%= t('api.llms_description') %></p>
-    <pre><code>GET https://cam-postal.gotabs.net/llms.txt
-GET https://cam-postal.gotabs.net/llms-full.txt</code></pre>
+    <pre><code>GET <a href="https://cam-postal.gotabs.net/llms.txt">https://cam-postal.gotabs.net/llms.txt</a>
+GET <a href="https://cam-postal.gotabs.net/llms-full.txt">https://cam-postal.gotabs.net/llms-full.txt</a></code></pre>
   </section>
 
   <section>
