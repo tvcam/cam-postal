@@ -144,7 +144,6 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.gstatic.com/s/notosanskhmer/v24/ijw3s5roRME5LLRxjsRb-gssOenAyendxrgV2c-Zw-9vbVUti_Z_dWgtWYuNAZz4kAbrddiA.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
@@ -222,6 +221,7 @@
         <nav class="footer-nav">
           <%= link_to t('misc.all_provinces'), provinces_path %> |
           <%= link_to t('nav.faq'), faq_path %> |
+          <%= link_to t('nav.api'), api_path %> |
           <%= link_to t('nav.privacy'), privacy_path %> |
           <%= link_to t('nav.terms'), terms_path %>
         </nav>

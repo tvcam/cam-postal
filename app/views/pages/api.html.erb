@@ -1,0 +1,106 @@
+<% content_for :title, "#{t('api.title')} - #{t('site.name')}" %>
+
+<% content_for :head do %>
+  <meta name="description" content="<%= t('api.meta_description') %>">
+  <link rel="canonical" href="<%= api_url %>">
+  <meta property="og:title" content="<%= t('api.title') %> - <%= t('site.name') %>">
+  <meta property="og:description" content="<%= t('api.meta_description') %>">
+<% end %>
+
+<div class="legal-page">
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="<%= root_path %>"><%= t('breadcrumb.home') %></a></li>
+      <li aria-current="page"><%= t('api.title') %></li>
+    </ol>
+  </nav>
+
+  <h1><%= t('api.title') %></h1>
+  <p class="subtitle"><%= t('api.subtitle') %></p>
+
+  <section>
+    <h2><%= t('api.overview_title') %></h2>
+    <p><%= t('api.overview_text') %></p>
+  </section>
+
+  <section>
+    <h2><%= t('api.endpoints_title') %></h2>
+
+    <h3>1. <%= t('api.full_data_title') %></h3>
+    <p><%= t('api.full_data_description') %></p>
+    <pre><code>GET https://cam-postal.gotabs.net/data.json</code></pre>
+    <p><%= t('api.full_data_response') %></p>
+    <pre><code>{
+  "data": [
+    {
+      "code": "010101",
+      "name_en": "Banteay Neang",
+      "name_km": "បន្ទាយនាង",
+      "type": "commune",
+      "parent": "Mongkol Borei, Banteay Meanchey"
+    },
+    ...
+  ],
+  "aliases": {
+    "bkk1": "120308",
+    "russian market": "120309",
+    ...
+  }
+}</code></pre>
+
+    <h3>2. <%= t('api.search_title') %></h3>
+    <p><%= t('api.search_description') %></p>
+    <pre><code>GET https://cam-postal.gotabs.net/search?q={query}</code></pre>
+    <p><strong><%= t('api.parameters') %>:</strong></p>
+    <ul>
+      <li><code>q</code> - <%= t('api.search_param_q') %></li>
+    </ul>
+    <p><strong><%= t('api.example') %>:</strong></p>
+    <pre><code>GET https://cam-postal.gotabs.net/search?q=phnom+penh</code></pre>
+
+    <h3>3. <%= t('api.llms_title') %></h3>
+    <p><%= t('api.llms_description') %></p>
+    <pre><code>GET https://cam-postal.gotabs.net/llms.txt
+GET https://cam-postal.gotabs.net/llms-full.txt</code></pre>
+  </section>
+
+  <section>
+    <h2><%= t('api.rate_limits_title') %></h2>
+    <p><%= t('api.rate_limits_text') %></p>
+    <ul>
+      <li><strong><%= t('api.rate_search') %>:</strong> <%= t('api.rate_search_limit') %></li>
+      <li><strong><%= t('api.rate_data') %>:</strong> <%= t('api.rate_data_limit') %></li>
+    </ul>
+    <p><%= t('api.rate_limits_note') %></p>
+  </section>
+
+  <section>
+    <h2><%= t('api.ai_usage_title') %></h2>
+    <p><%= t('api.ai_usage_text') %></p>
+    <ul>
+      <li><%= t('api.ai_tip_1') %></li>
+      <li><%= t('api.ai_tip_2') %></li>
+      <li><%= t('api.ai_tip_3') %></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><%= t('api.data_format_title') %></h2>
+    <p><%= t('api.data_format_text') %></p>
+    <ul>
+      <li><strong>code</strong> - <%= t('api.field_code') %></li>
+      <li><strong>name_en</strong> - <%= t('api.field_name_en') %></li>
+      <li><strong>name_km</strong> - <%= t('api.field_name_km') %></li>
+      <li><strong>type</strong> - <%= t('api.field_type') %></li>
+      <li><strong>parent</strong> - <%= t('api.field_parent') %></li>
+    </ul>
+    <p><%= t('api.aliases_text') %></p>
+  </section>
+
+  <section>
+    <h2><%= t('api.license_title') %></h2>
+    <p><%= t('api.license_text') %></p>
+  </section>
+
+  <p class="back-link"><a href="<%= root_path %>"><%= t('misc.back_to_search') %></a></p>
+</div>

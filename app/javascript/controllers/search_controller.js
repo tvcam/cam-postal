@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 import Fuse from "fuse.js"
 import LZString from "lz-string"
 
-const STORAGE_KEY = "postal_data_v3"
+const STORAGE_KEY = "postal_data_v6"
 const RECENT_KEY = "recent_searches"
 const DATA_URL = "/data.json"
 const MAX_RECENT = 8
@@ -75,10 +75,10 @@ export default class extends Controller {
   initFuse(data) {
     this.fuse = new Fuse(data, {
       keys: [
-        { name: "c", weight: 2.0 },
-        { name: "e", weight: 1.5 },
-        { name: "k", weight: 1.5 },
-        { name: "p", weight: 0.3 }
+        { name: "code", weight: 2.0 },
+        { name: "name_en", weight: 1.5 },
+        { name: "name_km", weight: 1.5 },
+        { name: "parent", weight: 0.3 }
       ],
       threshold: 0.35,
       distance: 100,
@@ -210,15 +210,15 @@ export default class extends Controller {
     }
     const copyHint = this.t.click_to_copy || "Click to copy"
     return `
-      <div class="result-card ${item.t}" data-controller="copy" data-copy-text-value="${item.c}" data-action="click->copy#copy">
+      <div class="result-card ${item.type}" data-controller="copy" data-copy-text-value="${item.code}" data-action="click->copy#copy">
         <div class="result-header">
-          <span class="postal-code">${item.c}</span>
-          <span class="location-type ${item.t}">${types[item.t] || item.t}</span>
+          <span class="postal-code">${item.code}</span>
+          <span class="location-type ${item.type}">${types[item.type] || item.type}</span>
         </div>
         <div class="result-body">
-          <p class="name-en">${this.highlight(item.e, query)}</p>
-          ${item.k ? `<p class="name-km">${this.highlight(item.k, query)}</p>` : ""}
-          ${item.p ? `<p class="parent-location">${item.p}</p>` : ""}
+          <p class="name-en">${this.highlight(item.name_en, query)}</p>
+          ${item.name_km ? `<p class="name-km">${this.highlight(item.name_km, query)}</p>` : ""}
+          ${item.parent ? `<p class="parent-location">${item.parent}</p>` : ""}
         </div>
         <span class="copy-hint">${copyHint}</span>
       </div>`

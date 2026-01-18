@@ -20,7 +20,7 @@ class PostalCodesController < ApplicationController
         ""
       end
 
-      { c: pc.postal_code, e: pc.name_en, k: pc.name_km, t: pc.location_type, p: parent }
+      { code: pc.postal_code, name_en: pc.name_en, name_km: pc.name_km, type: pc.location_type, parent: parent }
     end
 
     # Include aliases for client-side search

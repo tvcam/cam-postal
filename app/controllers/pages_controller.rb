@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def faq
     track_visit
   end
+
+  def api
+  end
 end
