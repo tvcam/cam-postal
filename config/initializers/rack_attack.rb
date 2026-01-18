@@ -2,7 +2,7 @@
 # Protects the app from abuse while allowing normal usage
 
 class Rack::Attack
-  # Use Rails cache for storage (SolidCache in production)
+  # Use Rails cache for storage
   Rack::Attack.cache.store = Rails.cache
 
   # Safelist localhost in development
