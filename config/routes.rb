@@ -37,7 +37,7 @@ Rails.application.routes.draw do
   get "data", to: "postal_codes#data", as: :postal_data, defaults: { format: :json }
   get "search", to: "postal_codes#search", as: :search
   get "locate", to: "postal_codes#locate", as: :locate
-  post "track_copy", to: "postal_codes#track_copy", as: :track_copy
-  post "track_search", to: "postal_codes#track_search", as: :track_search
+  post "track/copy", to: "postal_codes#record_copy", as: :track_copy
+  post "track/search", to: "postal_codes#record_search", as: :track_search
   root "postal_codes#index"
 end

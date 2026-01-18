@@ -11,7 +11,7 @@ export default class extends Controller {
       }, 1500)
 
       // Track copy event
-      fetch("/track_copy", {
+      fetch("/track/copy", {
         method: "POST",
         headers: {
           "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content

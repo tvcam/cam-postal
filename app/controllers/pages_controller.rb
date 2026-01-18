@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
 
   def faq
-    SiteStat.increment("visits")
+    track_visit
   end
 end

@@ -1,7 +1,7 @@
 class LocationsController < ApplicationController
   def provinces
     @provinces = PostalCode.provinces.order(:name_en)
-    SiteStat.increment("visits")
+    track_visit
   end
 
   def province
@@ -15,7 +15,7 @@ class LocationsController < ApplicationController
     @districts = PostalCode.districts
                            .where("postal_code LIKE ?", "#{@province.postal_code[0, 2]}%")
                            .order(:name_en)
-    SiteStat.increment("visits")
+    track_visit
   end
 
   def district
@@ -30,7 +30,7 @@ class LocationsController < ApplicationController
     @communes = PostalCode.communes
                           .where("postal_code LIKE ?", "#{@district.postal_code[0, 4]}%")
                           .order(:name_en)
-    SiteStat.increment("visits")
+    track_visit
   end
 
   private

@@ -154,7 +154,7 @@ export default class extends Controller {
 
   trackSearch() {
     const token = document.querySelector('meta[name="csrf-token"]')?.content
-    fetch("/track_search", {
+    fetch("/track/search", {
       method: "POST",
       headers: { "X-CSRF-Token": token }
     }).catch(() => {})
