@@ -6,6 +6,12 @@
 # PHNOM PENH - Districts (Khan)
 # =============================================================================
 
+# Phnom Penh common typos
+pnom penh: Phnom Penh Capital
+phnom phen: Phnom Penh Capital
+phnompenh: Phnom Penh Capital
+pp: Phnom Penh Capital
+
 # BKK - Most popular expat area
 bkk1: Boeng Keng Kang Ti Muoy
 bkk2: Boeng Keng Kang Ti Pir
@@ -117,6 +123,8 @@ wat phnum: Voat Phnum
 
 # Russian Market (Tuol Tom Poung) - Famous expat market
 russian market: Tuol Tumpung Ti Muoy
+rusian market: Tuol Tumpung Ti Muoy
+russain market: Tuol Tumpung Ti Muoy
 psah toul tom poung: Tuol Tumpung Ti Muoy
 tuol tom poung: Tuol Tumpung Ti Muoy
 psar tuol tom poung: Tuol Tumpung Ti Muoy
@@ -184,6 +192,11 @@ techo international airport: Boeng Khyang
 new airport: Boeng Khyang
 kti airport: Boeng Khyang
 phnom penh new airport: Boeng Khyang
+# Common typos
+airpot: Boeng Khyang
+ariport: Boeng Khyang
+airort: Boeng Khyang
+aiport: Boeng Khyang
 
 # Old Phnom Penh International Airport (Pochentong)
 pochentong: Kakab
@@ -214,6 +227,10 @@ calmette hospital: Voat Phnum
 sen sok hospital: Khan Saen Sokh
 khmer soviet: Tuol Svay Prey Ti Muoy
 children hospital: Tuol Svay Prey Ti Muoy
+# Common typos
+hosptial: Voat Phnum
+hospitla: Voat Phnum
+hopsital: Voat Phnum
 
 # =============================================================================
 # PHNOM PENH - Universities & Schools
@@ -268,11 +285,21 @@ angkor temple: Nokor Thum
 angkor temples: Nokor Thum
 bayon: Nokor Thum
 ta prohm: Nokor Thum
+# Common typos
+ankor wat: Nokor Thum
+ankor: Nokor Thum
+angkor watt: Nokor Thum
+angkorwat: Nokor Thum
 
 # Downtown Siem Reap
 pub street: Svay Dankum
 bar street: Svay Dankum
 downtown siem reap: Svay Dankum
+# Common typos for Siem Reap
+siem reip: Svay Dankum
+siemreap: Svay Dankum
+siem rep: Svay Dankum
+seam reap: Svay Dankum
 old market siem reap: Svay Dankum
 psar chas siem reap: Svay Dankum
 siem reap old market: Svay Dankum
@@ -335,6 +362,11 @@ sihanoukville: Preah Sihanouk
 snv: Preah Sihanouk
 kompong som: Preah Sihanouk
 sihanouk ville: Preah Sihanouk
+# Common typos
+sihanoukvile: Preah Sihanouk
+sihanoukvill: Preah Sihanouk
+sihanouk: Preah Sihanouk
+shv: Preah Sihanouk
 
 # Beaches
 ochheuteal beach: Lekh Bei
