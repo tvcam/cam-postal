@@ -123,6 +123,56 @@ fr:
     a10: "Nos données de codes postaux proviennent du Prakas officiel (décret ministériel) publié par le gouvernement cambodgien. Cela garantit l'exactitude et la conformité avec le système officiel de codes postaux."
     a10_link: "Télécharger le PDF du Prakas officiel"
 
+  # API Documentation
+  api:
+    title: "Documentation API"
+    subtitle: "Accédez aux données des codes postaux cambodgiens par programmation pour vos applications et systèmes IA"
+    meta_description: "Documentation API pour l'annuaire des codes postaux du Cambodge. Accédez aux données via JSON API pour développeurs et systèmes AI/LLM."
+
+    overview_title: "Aperçu"
+    overview_text: "L'annuaire des codes postaux du Cambodge offre un accès API gratuit à notre base de données complète. Ces données peuvent être utilisées par les développeurs, les assistants IA et les systèmes automatisés."
+
+    endpoints_title: "Points d'accès API"
+
+    full_data_title: "Données complètes (JSON)"
+    full_data_description: "Retourne la base de données complète sous forme de JSON. Idéal pour la mise en cache locale ou les opérations en masse."
+    full_data_response: "Format de réponse:"
+
+    search_title: "API de recherche"
+    search_description: "Recherchez des codes postaux par nom en anglais ou khmer. Retourne des résultats HTML partiels."
+    parameters: "Paramètres"
+    search_param_q: "Requête de recherche (nom de lieu, code postal ou point de repère)"
+    example: "Exemple"
+
+    llms_title: "Formats pour LLM"
+    llms_description: "Formats texte optimisés pour AI/LLM:"
+
+    rate_limits_title: "Limites de débit"
+    rate_limits_text: "Pour garantir une utilisation équitable et la disponibilité du service, les limites suivantes s'appliquent:"
+    rate_search: "API de recherche"
+    rate_search_limit: "60 requêtes par minute par IP"
+    rate_data: "API données complètes"
+    rate_data_limit: "10 requêtes par heure par IP (données en cache, télécharger une fois)"
+    rate_limits_note: "Pour une utilisation intensive, veuillez télécharger le jeu de données complet une fois et le mettre en cache localement."
+
+    ai_usage_title: "Conseils d'utilisation AI/LLM"
+    ai_usage_text: "Pour les assistants IA et les modèles de langage:"
+    ai_tip_1: "Utilisez /llms.txt pour une référence rapide"
+    ai_tip_2: "Utilisez /data.json pour télécharger le jeu de données complet"
+    ai_tip_3: "Les données incluent les noms en anglais et en khmer pour tous les lieux"
+
+    data_format_title: "Format des données"
+    data_format_text: "Chaque enregistrement dans le tableau 'data' inclut:"
+    field_c: "Code postal (6 chiffres, format PPDDCC)"
+    field_e: "Nom du lieu en anglais"
+    field_k: "Nom du lieu en khmer"
+    field_t: "Type de lieu (province, district ou commune)"
+    field_p: "Lieu parent (noms du district et de la province)"
+    aliases_text: "L'objet 'aliases' associe les noms de lieux populaires (ex: 'bkk1', 'russian market') à leurs codes postaux correspondants."
+
+    license_title: "Licence et attribution"
+    license_text: "Ces données sont fournies gratuitement pour un usage public. Les données proviennent du Prakas officiel du gouvernement cambodgien. Veuillez citer 'Cambodia Postal Code Directory (cam-postal.gotabs.net)' lors de l'utilisation."
+
   # Breadcrumb
   breadcrumb:
     home: "Accueil"

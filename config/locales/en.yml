@@ -123,6 +123,56 @@ en:
     a10: "Our postal code data is sourced from the official Prakas (ministerial decree) issued by the Cambodian government. This ensures accuracy and compliance with the official postal code system."
     a10_link: "Download the official Prakas PDF"
 
+  # API Documentation
+  api:
+    title: "API Documentation"
+    subtitle: "Access Cambodia postal code data programmatically for your applications and AI systems"
+    meta_description: "API documentation for Cambodia Postal Code Directory. Access postal code data via JSON API for developers and AI/LLM systems."
+
+    overview_title: "Overview"
+    overview_text: "Cambodia Postal Code Directory provides free API access to our complete postal code database. This data can be used by developers, AI assistants, and automated systems."
+
+    endpoints_title: "API Endpoints"
+
+    full_data_title: "Full Data (JSON)"
+    full_data_description: "Returns the complete postal code database as a JSON array. Best for caching locally or bulk operations."
+    full_data_response: "Response format:"
+
+    search_title: "Search API"
+    search_description: "Search postal codes by name in English or Khmer. Returns HTML partial results."
+    parameters: "Parameters"
+    search_param_q: "Search query (location name, postal code, or landmark)"
+    example: "Example"
+
+    llms_title: "LLM-Friendly Formats"
+    llms_description: "Plain text formats optimized for AI/LLM consumption:"
+
+    rate_limits_title: "Rate Limits"
+    rate_limits_text: "To ensure fair usage and service availability, the following rate limits apply:"
+    rate_search: "Search API"
+    rate_search_limit: "60 requests per minute per IP"
+    rate_data: "Full Data API"
+    rate_data_limit: "10 requests per hour per IP (data is cached, download once)"
+    rate_limits_note: "For high-volume usage, please download the full dataset once and cache it locally."
+
+    ai_usage_title: "AI/LLM Usage Tips"
+    ai_usage_text: "For AI assistants and language models:"
+    ai_tip_1: "Use /llms.txt for quick reference and overview"
+    ai_tip_2: "Use /data.json to download the full dataset for comprehensive queries"
+    ai_tip_3: "The data includes both English and Khmer names for all locations"
+
+    data_format_title: "Data Format"
+    data_format_text: "Each postal code record in the 'data' array includes:"
+    field_c: "Postal code (6-digit, PPDDCC format)"
+    field_e: "Location name in English"
+    field_k: "Location name in Khmer"
+    field_t: "Location type (province, district, or commune)"
+    field_p: "Parent location (district and province names)"
+    aliases_text: "The 'aliases' object maps popular landmark names (e.g., 'bkk1', 'russian market') to their corresponding postal codes for easy lookup."
+
+    license_title: "License & Attribution"
+    license_text: "This data is provided free for public use. Data is sourced from the official Cambodian government Prakas. Please cite 'Cambodia Postal Code Directory (cam-postal.gotabs.net)' when using this data."
+
   # Breadcrumb
   breadcrumb:
     home: "Home"

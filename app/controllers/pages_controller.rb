@@ -8,4 +8,7 @@ class PagesController < ApplicationController
   def faq
     SiteStat.increment("visits")
   end
+
+  def api
+  end
 end
