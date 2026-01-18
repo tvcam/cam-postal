@@ -24,6 +24,38 @@ xml.urlset xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" do
     xml.priority "0.8"
   end
 
+  # Stats page
+  xml.url do
+    xml.loc stats_url(host: @host, protocol: @protocol)
+    xml.lastmod @lastmod
+    xml.changefreq "daily"
+    xml.priority "0.7"
+  end
+
+  # Open Data / API page
+  xml.url do
+    xml.loc api_url(host: @host, protocol: @protocol)
+    xml.lastmod @lastmod
+    xml.changefreq "monthly"
+    xml.priority "0.7"
+  end
+
+  # Privacy page
+  xml.url do
+    xml.loc privacy_url(host: @host, protocol: @protocol)
+    xml.lastmod @lastmod
+    xml.changefreq "yearly"
+    xml.priority "0.3"
+  end
+
+  # Terms page
+  xml.url do
+    xml.loc terms_url(host: @host, protocol: @protocol)
+    xml.lastmod @lastmod
+    xml.changefreq "yearly"
+    xml.priority "0.3"
+  end
+
   # Individual province pages
   @provinces.each do |province|
     xml.url do
