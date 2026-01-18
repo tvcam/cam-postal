@@ -213,11 +213,6 @@
       </main>
 
       <footer class="footer">
-        <div class="stats">
-          <span><%= number_with_delimiter(SiteStat.visits) %> <%= t('footer.visits') %></span>
-          <span><%= number_with_delimiter(SiteStat.searches) %> <%= t('footer.searches') %></span>
-          <span><%= number_with_delimiter(SiteStat.copies) %> <%= t('footer.copies') %></span>
-        </div>
         <nav class="footer-nav">
           <%= link_to t('misc.all_provinces'), provinces_path %> |
           <%= link_to t('nav.faq'), faq_path %> |
