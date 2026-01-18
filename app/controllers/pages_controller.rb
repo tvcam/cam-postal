@@ -11,4 +11,7 @@ class PagesController < ApplicationController
 
   def api
   end
+
+  def api
+  end
 end

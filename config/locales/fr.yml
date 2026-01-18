@@ -11,7 +11,7 @@ fr:
     home: "Accueil"
     provinces: "Provinces"
     faq: "FAQ"
-    api: "API"
+    api: "Données Ouvertes"
     privacy: "Confidentialité"
     terms: "Conditions"
     language: "Langue"
@@ -139,24 +139,24 @@ fr:
 
     q15: "Y a-t-il une API pour les développeurs?"
     a15: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez /data.json pour l'ensemble des données au format JSON, ou /llms-full.txt pour le texte brut. Aucune clé API requise."
-    a15_link: "Voir la documentation API"
+    a15_link: "Voir la page Données Ouvertes"
 
-  # API Documentation
+  # Open Data
   api:
-    title: "Documentation API"
-    subtitle: "Accédez aux données des codes postaux cambodgiens par programmation pour vos applications et systèmes IA"
-    meta_description: "Documentation API pour l'annuaire des codes postaux du Cambodge. Accédez aux données via JSON API pour développeurs et systèmes AI/LLM."
+    title: "Données Ouvertes"
+    subtitle: "Accès gratuit aux données des codes postaux cambodgiens pour développeurs, applications et systèmes IA"
+    meta_description: "Accès aux données ouvertes pour l'annuaire des codes postaux du Cambodge. Téléchargez les données en format JSON pour développeurs et systèmes AI/LLM."
 
     overview_title: "Aperçu"
-    overview_text: "L'annuaire des codes postaux du Cambodge offre un accès API gratuit à notre base de données complète. Ces données peuvent être utilisées par les développeurs, les assistants IA et les systèmes automatisés."
+    overview_text: "L'annuaire des codes postaux du Cambodge offre un accès gratuit à notre base de données complète. Téléchargez les données pour vos applications, sites web ou systèmes IA."
 
-    endpoints_title: "Points d'accès API"
+    endpoints_title: "Téléchargements"
 
     full_data_title: "Données complètes (JSON)"
     full_data_description: "Retourne la base de données complète sous forme de JSON. Idéal pour la mise en cache locale ou les opérations en masse."
     full_data_response: "Format de réponse:"
 
-    search_title: "API de recherche"
+    search_title: "Recherche"
     search_description: "Recherchez des codes postaux par nom en anglais ou khmer. Retourne des résultats HTML partiels."
     parameters: "Paramètres"
     search_param_q: "Requête de recherche (nom de lieu, code postal ou point de repère)"
@@ -165,13 +165,13 @@ fr:
     llms_title: "Formats pour LLM"
     llms_description: "Formats texte optimisés pour AI/LLM:"
 
-    rate_limits_title: "Limites de débit"
-    rate_limits_text: "Pour garantir une utilisation équitable et la disponibilité du service, les limites suivantes s'appliquent:"
-    rate_search: "API de recherche"
+    rate_limits_title: "Utilisation équitable"
+    rate_limits_text: "Pour garantir la disponibilité du service, veuillez suivre ces directives:"
+    rate_search: "Recherche"
     rate_search_limit: "60 requêtes par minute par IP"
-    rate_data: "API données complètes"
-    rate_data_limit: "10 requêtes par heure par IP (données en cache, télécharger une fois)"
-    rate_limits_note: "Pour une utilisation intensive, veuillez télécharger le jeu de données complet une fois et le mettre en cache localement."
+    rate_data: "Téléchargements"
+    rate_data_limit: "10 requêtes par heure par IP (télécharger une fois et mettre en cache)"
+    rate_limits_note: "Pour de meilleurs résultats, téléchargez le jeu de données complet une fois et stockez-le localement."
 
     ai_usage_title: "Conseils d'utilisation AI/LLM"
     ai_usage_text: "Pour les assistants IA et les modèles de langage:"
