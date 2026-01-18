@@ -1,0 +1,64 @@
+<h1>API Access Logs</h1>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="value"><%= number_with_delimiter(@total_count) %></div>
+    <div class="label">Total Requests</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= number_with_delimiter(@today_count) %></div>
+    <div class="label">Today</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= number_with_delimiter(@week_count) %></div>
+    <div class="label">This Week</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= @by_ip.size %></div>
+    <div class="label">Unique IPs</div>
+  </div>
+</div>
+
+<div class="two-columns">
+  <div class="section">
+    <h2>Top IPs</h2>
+    <div class="top-queries-list">
+      <% @by_ip.each do |ip, count| %>
+        <div class="top-query">
+          <span class="query"><%= ip %></span>
+          <span class="count"><%= count %></span>
+        </div>
+      <% end %>
+      <% if @by_ip.empty? %>
+        <p class="text-muted">No API requests recorded yet.</p>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Recent Requests</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>IP</th>
+          <th>User Agent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @logs.each do |log| %>
+          <tr>
+            <td class="text-muted"><%= time_ago_in_words(log.created_at) %> ago</td>
+            <td><%= log.ip_address %></td>
+            <td class="text-muted truncate" title="<%= log.user_agent %>"><%= truncate(log.user_agent, length: 50) %></td>
+          </tr>
+        <% end %>
+        <% if @logs.empty? %>
+          <tr>
+            <td colspan="3" class="text-muted">No API requests recorded yet.</td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :postal_codes, only: :index
     resources :search_logs, only: :index
+    resources :api_access_logs, only: :index
   end
 
   # Health check
