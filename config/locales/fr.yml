@@ -163,11 +163,11 @@ fr:
 
     data_format_title: "Format des données"
     data_format_text: "Chaque enregistrement dans le tableau 'data' inclut:"
-    field_c: "Code postal (6 chiffres, format PPDDCC)"
-    field_e: "Nom du lieu en anglais"
-    field_k: "Nom du lieu en khmer"
-    field_t: "Type de lieu (province, district ou commune)"
-    field_p: "Lieu parent (noms du district et de la province)"
+    field_code: "Code postal (6 chiffres, format PPDDCC)"
+    field_name_en: "Nom du lieu en anglais"
+    field_name_km: "Nom du lieu en khmer"
+    field_type: "Type de lieu (province, district ou commune)"
+    field_parent: "Lieu parent (noms du district et de la province)"
     aliases_text: "L'objet 'aliases' associe les noms de lieux populaires (ex: 'bkk1', 'russian market') à leurs codes postaux correspondants."
 
     license_title: "Licence et attribution"

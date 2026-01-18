@@ -33,11 +33,11 @@
     <pre><code>{
   "data": [
     {
-      "c": "010101",
-      "e": "Banteay Neang",
-      "k": "បន្ទាយនាង",
-      "t": "commune",
-      "p": "Mongkol Borei, Banteay Meanchey"
+      "code": "010101",
+      "name_en": "Banteay Neang",
+      "name_km": "បន្ទាយនាង",
+      "type": "commune",
+      "parent": "Mongkol Borei, Banteay Meanchey"
     },
     ...
   ],
@@ -88,11 +88,11 @@ GET https://cam-postal.gotabs.net/llms-full.txt</code></pre>
     <h2><%= t('api.data_format_title') %></h2>
     <p><%= t('api.data_format_text') %></p>
     <ul>
-      <li><strong>c</strong> - <%= t('api.field_c') %></li>
-      <li><strong>e</strong> - <%= t('api.field_e') %></li>
-      <li><strong>k</strong> - <%= t('api.field_k') %></li>
-      <li><strong>t</strong> - <%= t('api.field_t') %></li>
-      <li><strong>p</strong> - <%= t('api.field_p') %></li>
+      <li><strong>code</strong> - <%= t('api.field_code') %></li>
+      <li><strong>name_en</strong> - <%= t('api.field_name_en') %></li>
+      <li><strong>name_km</strong> - <%= t('api.field_name_km') %></li>
+      <li><strong>type</strong> - <%= t('api.field_type') %></li>
+      <li><strong>parent</strong> - <%= t('api.field_parent') %></li>
     </ul>
     <p><%= t('api.aliases_text') %></p>
   </section>

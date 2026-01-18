@@ -163,11 +163,11 @@ en:
 
     data_format_title: "Data Format"
     data_format_text: "Each postal code record in the 'data' array includes:"
-    field_c: "Postal code (6-digit, PPDDCC format)"
-    field_e: "Location name in English"
-    field_k: "Location name in Khmer"
-    field_t: "Location type (province, district, or commune)"
-    field_p: "Parent location (district and province names)"
+    field_code: "Postal code (6-digit, PPDDCC format)"
+    field_name_en: "Location name in English"
+    field_name_km: "Location name in Khmer"
+    field_type: "Location type (province, district, or commune)"
+    field_parent: "Parent location (district and province names)"
     aliases_text: "The 'aliases' object maps popular landmark names (e.g., 'bkk1', 'russian market') to their corresponding postal codes for easy lookup."
 
     license_title: "License & Attribution"
