@@ -123,6 +123,23 @@ fr:
     a10: "Nos données de codes postaux proviennent du Prakas officiel (décret ministériel) publié par le gouvernement cambodgien. Cela garantit l'exactitude et la conformité avec le système officiel de codes postaux."
     a10_link: "Télécharger le PDF du Prakas officiel"
 
+    q11: "Ai-je besoin d'un code postal pour Grab, Nham24 ou Food Panda?"
+    a11: "La plupart des applications de livraison au Cambodge utilisent les coordonnées GPS plutôt que les codes postaux. Cependant, certaines plateformes de commerce électronique nécessitent des codes postaux pour la commande."
+
+    q12: "Quel code postal utiliser pour l'inscription bancaire?"
+    a12: "Lors de l'ouverture d'un compte bancaire chez Wing, ABA, ACLEDA ou d'autres banques, utilisez le code postal de votre adresse résidentielle. Recherchez le nom de votre commune ou sangkat pour trouver le code à 6 chiffres correct."
+
+    q13: "Quels sont les codes postaux des aéroports du Cambodge?"
+    a13: "Le Cambodge possède deux aéroports principaux dans la région de la capitale. L'aéroport international Techo (nouveau, ouvert en 2025) est situé dans la commune de Boeng Khyang, district de Kandal Stueng, province de Kandal avec le code postal 080104. L'ancien aéroport international de Phnom Penh (Pochentong) est dans le sangkat Kakab, khan Por Sen Chey avec le code 120914."
+    a13_link: "Voir les codes du district de Kandal Stueng"
+
+    q14: "Comment formater mon adresse cambodgienne pour l'expédition internationale?"
+    a14: "Pour les colis internationaux vers le Cambodge, utilisez ce format: [Nom], [Maison/Rue], [Sangkat/Commune], [Khan/District], [Province] [Code Postal], Cambodia."
+
+    q15: "Y a-t-il une API pour les développeurs?"
+    a15: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez /data.json pour l'ensemble des données au format JSON, ou /llms-full.txt pour le texte brut. Aucune clé API requise."
+    a15_link: "Voir la documentation API"
+
   # Breadcrumb
   breadcrumb:
     home: "Accueil"

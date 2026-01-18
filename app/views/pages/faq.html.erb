@@ -115,6 +115,46 @@
           "@type": "Answer",
           "text": "<%= t('faq.a10') %>"
         }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q11') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a11') %>"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q12') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a12') %>"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q13') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a13') %>"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q14') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a14') %>"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q15') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a15') %>"
+        }
       }
     ]
   }
@@ -238,6 +278,53 @@
       <div class="faq-answer">
         <p><%= t('faq.a10') %></p>
         <p><a href="/prakas-postal-codes.pdf" target="_blank" rel="noopener"><%= t('faq.a10_link') %> ↓</a></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q11') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a11') %></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q12') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a12') %></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q13') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a13') %></p>
+        <p><a href="<%= province_district_path('kandal', 'kandal-stueng') %>"><%= t('faq.a13_link') %> →</a></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q14') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a14') %></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q15') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a15') %></p>
+        <p><a href="/data.json" target="_blank"><%= t('faq.a15_link') %> →</a></p>
       </div>
     </details>
   </div>

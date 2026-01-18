@@ -123,6 +123,23 @@ en:
     a10: "Our postal code data is sourced from the official Prakas (ministerial decree) issued by the Cambodian government. This ensures accuracy and compliance with the official postal code system."
     a10_link: "Download the official Prakas PDF"
 
+    q11: "Do I need a postal code for Grab, Nham24, or Food Panda?"
+    a11: "Most delivery apps in Cambodia use GPS coordinates rather than postal codes. However, some e-commerce platforms and online stores require postal codes for checkout. Having your postal code ready ensures smooth ordering."
+
+    q12: "What postal code should I use for bank account registration?"
+    a12: "When opening a bank account with Wing, ABA, ACLEDA, or other banks, use the postal code of your residential address. Search for your commune or sangkat name to find the correct 6-digit code."
+
+    q13: "What are the postal codes for Cambodia's airports?"
+    a13: "Cambodia has two main airports in the capital region. Techo International Airport (new, opened 2025) is in Boeng Khyang Commune, Kandal Stueng District, Kandal Province with postal code 080104. The old Phnom Penh International Airport (Pochentong) is in Sangkat Kakab, Khan Por Sen Chey with postal code 120914."
+    a13_link: "View Kandal Stueng district codes"
+
+    q14: "How should I format my Cambodia address for international shipping?"
+    a14: "For international packages coming to Cambodia, use this format: [Name], [House/Street], [Sangkat/Commune], [Khan/District], [Province] [Postal Code], Cambodia. Example: John Doe, #123 Street 271, Sangkat Tuol Tompong 2, Khan Chamkar Mon, Phnom Penh 120307, Cambodia."
+
+    q15: "Is there an API for developers?"
+    a15: "Yes! We provide free access to Cambodia postal code data. Use /data.json for the complete dataset in JSON format, or /llms-full.txt for plain text. No API key required. Please credit cam-postal.gotabs.net when using our data."
+    a15_link: "View API documentation"
+
   # Breadcrumb
   breadcrumb:
     home: "Home"
