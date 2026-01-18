@@ -138,7 +138,7 @@ fr:
     a14: "Pour les colis internationaux vers le Cambodge, utilisez ce format: [Nom], [Maison/Rue], [Sangkat/Commune], [Khan/District], [Province] [Code Postal], Cambodia."
 
     q15: "Y a-t-il une API pour les développeurs?"
-    a15: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez /data.json pour l'ensemble des données au format JSON, ou /llms-full.txt pour le texte brut. Aucune clé API requise."
+    a15: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez https://cam-postal.gotabs.net/data.json pour l'ensemble des données au format JSON, ou https://cam-postal.gotabs.net/llms-full.txt pour le texte brut. Aucune clé API requise."
     a15_link: "Voir la page Données Ouvertes"
 
   # Open Data
@@ -176,7 +176,7 @@ fr:
     ai_usage_title: "Conseils d'utilisation AI/LLM"
     ai_usage_text: "Pour les assistants IA et les modèles de langage:"
     ai_tip_1: "Utilisez /llms.txt pour une référence rapide"
-    ai_tip_2: "Utilisez /data.json pour télécharger le jeu de données complet"
+    ai_tip_2: "Utilisez https://cam-postal.gotabs.net/data.json pour télécharger le jeu de données complet"
     ai_tip_3: "Les données incluent les noms en anglais et en khmer pour tous les lieux"
 
     data_format_title: "Format des données"
