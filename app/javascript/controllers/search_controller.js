@@ -25,22 +25,26 @@ export default class extends Controller {
     // Try compressed cache first
     const cached = this.getFromStorage()
     if (cached) {
+      console.log("[Search Debug] Loaded from cache:", cached.data?.length || 0, "records,", Object.keys(cached.aliases || {}).length, "aliases")
       this.aliases = cached.aliases || {}
       this.initFuse(cached.data || cached)
       return
     }
 
     // Fetch fresh data
+    console.log("[Search Debug] Fetching fresh data from", DATA_URL)
     try {
       const response = await fetch(DATA_URL)
       const json = await response.json()
       // Handle both old format (array) and new format ({ data, aliases })
       const data = json.data || json
       this.aliases = json.aliases || {}
+      console.log("[Search Debug] Fetched:", data.length, "records,", Object.keys(this.aliases).length, "aliases")
       this.saveToStorage({ data, aliases: this.aliases })
       this.initFuse(data)
-    } catch {
+    } catch (e) {
       // Client search unavailable, will use server fallback
+      console.error("[Search Debug] Failed to load data:", e)
     }
   }
 
@@ -73,6 +77,11 @@ export default class extends Controller {
   }
 
   initFuse(data) {
+    console.log("[Search Debug] Initializing Fuse with", data.length, "records")
+    // Log sample records to verify data format
+    if (data.length > 0) {
+      console.log("[Search Debug] Sample record:", JSON.stringify(data[0]))
+    }
     this.fuse = new Fuse(data, {
       keys: [
         { name: "code", weight: 2.0 },
@@ -133,11 +142,20 @@ export default class extends Controller {
       return
     }
 
+    console.log("[Search Debug] Searching for:", query)
+
     // Try alias resolution first
     const resolved = this.resolveAlias(query)
     const searchTerm = resolved !== query ? resolved : query
+    if (resolved !== query) {
+      console.log("[Search Debug] Alias resolved:", query, "->", resolved)
+    }
 
     const results = this.fuse.search(searchTerm, { limit: 50 })
+    console.log("[Search Debug] Found", results.length, "results for:", searchTerm)
+    if (results.length > 0) {
+      console.log("[Search Debug] Top result:", JSON.stringify(results[0].item))
+    }
     this.renderResults(results.map(r => r.item), query)
 
     // Save to recent searches if results found

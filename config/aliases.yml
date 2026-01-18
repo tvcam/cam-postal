@@ -29,10 +29,10 @@ toul kork avenue: Tuol Kouk
 chamkar mon: Chamkar Mon
 chamkarmon: Chamkar Mon
 
-# Sen Sok - Growing expat area
-sen sok: Saen Sokh
-sensok: Saen Sokh
-saensok: Saen Sokh
+# Sen Sok - Growing expat area (actual name: Khan Saen Sokh)
+sen sok: Khan Saen Sokh
+sensok: Khan Saen Sokh
+saensok: Khan Saen Sokh
 
 # Pur Senchey
 porsenchey: Pou Saen Chey
@@ -156,10 +156,10 @@ aeon1: Tuol Svay Prey Ti Muoy
 aeon 1: Tuol Svay Prey Ti Muoy
 aeon mall: Tuol Svay Prey Ti Muoy
 aeon mall 1: Tuol Svay Prey Ti Muoy
-aeon2: Saen Sokh
-aeon 2: Saen Sokh
-aeon mall 2: Saen Sokh
-aeon sen sok: Saen Sokh
+aeon2: Khan Saen Sokh
+aeon 2: Khan Saen Sokh
+aeon mall 2: Khan Saen Sokh
+aeon sen sok: Khan Saen Sokh
 
 # Other Malls
 sorya: Phsar Thmei Ti Muoy
@@ -167,10 +167,10 @@ sorya mall: Phsar Thmei Ti Muoy
 sorya center: Phsar Thmei Ti Muoy
 exchange square: Voat Phnum
 lucky market: Tuek Lak Ti Muoy
-makro: Saen Sokh
+makro: Khan Saen Sokh
 big c: Pou Saen Chey
-chip mong mall: Saen Sokh
-chip mong: Saen Sokh
+chip mong mall: Khan Saen Sokh
+chip mong: Khan Saen Sokh
 parkson: Tonle Basak
 
 # =============================================================================
@@ -211,7 +211,7 @@ royal phnom penh: Boeng Keng Kang Ti Muoy
 royal pp hospital: Boeng Keng Kang Ti Muoy
 calmette: Voat Phnum
 calmette hospital: Voat Phnum
-sen sok hospital: Saen Sokh
+sen sok hospital: Khan Saen Sokh
 khmer soviet: Tuol Svay Prey Ti Muoy
 children hospital: Tuol Svay Prey Ti Muoy
 
@@ -225,7 +225,7 @@ phnom penh university: Tuol Kouk
 ispp: Boeng Keng Kang Ti Muoy
 cia school: Tuol Svay Prey Ti Muoy
 nis: Boeng Keng Kang Ti Muoy
-northbridge: Saen Sokh
+northbridge: Khan Saen Sokh
 lycee descartes: Tuol Svay Prey Ti Muoy
 
 # =============================================================================

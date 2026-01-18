@@ -82,13 +82,30 @@ async function runTests() {
 
   // Test 6: Aliases exist for common landmarks
   console.log("6. Validating common aliases exist")
-  const commonAliases = ["bkk1", "russian market", "pub street"]
+  const commonAliases = ["bkk1", "russian market", "pub street", "sen sok"]
   const missingAliases = commonAliases.filter(a => !aliases[a])
   if (missingAliases.length === 0) {
     console.log("   ✅ All common aliases present:", commonAliases.join(", "), "\n")
     passed++
   } else {
     console.log("   ❌ Missing aliases:", missingAliases.join(", "), "\n")
+    failed++
+  }
+
+  // Test 7: Alias resolution finds actual data
+  console.log("7. Validating alias 'sen sok' resolves to searchable data")
+  const senSokAlias = aliases["sen sok"]
+  if (senSokAlias) {
+    const senSokResults = data.filter(d => d.name_en && d.name_en.toLowerCase().includes(senSokAlias.toLowerCase()))
+    if (senSokResults.length > 0) {
+      console.log("   ✅ 'sen sok' ->", senSokAlias, "found", senSokResults.length, "results\n")
+      passed++
+    } else {
+      console.log("   ❌ Alias 'sen sok' ->", senSokAlias, "but no matching data found!\n")
+      failed++
+    }
+  } else {
+    console.log("   ❌ Missing 'sen sok' alias\n")
     failed++
   }
 
