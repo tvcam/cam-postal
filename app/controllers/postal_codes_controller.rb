@@ -1,6 +1,7 @@
 class PostalCodesController < ApplicationController
   def data
     expires_in 1.week, public: true
+    log_api_access("/data.json")
 
     postal_codes = PostalCode.order(:postal_code)
 
@@ -98,6 +99,17 @@ class PostalCodesController < ApplicationController
     )
   rescue StandardError => e
     Rails.logger.error "Failed to log search: #{e.message}"
+  end
+
+  def log_api_access(endpoint)
+    ApiAccessLog.log_access(
+      endpoint: endpoint,
+      ip_address: request.remote_ip,
+      user_agent: request.user_agent,
+      referer: request.referer
+    )
+  rescue StandardError => e
+    Rails.logger.error "Failed to log API access: #{e.message}"
   end
 
   def llms_full
