@@ -1,6 +1,5 @@
 module Admin
   class PostalCodesController < BaseController
-
     def index
       @provinces = PostalCode.provinces.order(:name_en).pluck(:name_en)
       @districts = PostalCode.districts.order(:name_en).pluck(:name_en)

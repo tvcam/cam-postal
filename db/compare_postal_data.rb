@@ -11,7 +11,7 @@ PROVINCE_CODES = {
   5 => "05", 6 => "06", 7 => "07", 8 => "08", 9 => "09",
   10 => "10", 11 => "11", 13 => "13", 14 => "14", 15 => "15",
   16 => "16", 17 => "17", 18 => "18", 19 => "19", 20 => "20",
-  21 => "21", 22 => "22", 23 => "23", 24 => "24", 25 => "25",
+  21 => "21", 22 => "22", 23 => "23", 24 => "24", 25 => "25"
 }
 
 puts "=" * 60
@@ -148,7 +148,7 @@ puts "\n" + "=" * 60
 puts "BREAKDOWN BY TYPE"
 puts "=" * 60
 
-['province', 'district', 'commune'].each do |type|
+[ 'province', 'district', 'commune' ].each do |type|
   old_count = old_records.count { |_, r| r[:type] == type }
   csv_count = csv_records.count { |_, r| r[:type] == type }
   puts "#{type.capitalize.ljust(10)}: old_postal=#{old_count.to_s.ljust(5)} csv=#{csv_count}"

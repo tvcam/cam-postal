@@ -15,7 +15,7 @@ PROVINCE_CODES = {
   5 => "05", 6 => "06", 7 => "07", 8 => "08", 9 => "09",
   10 => "10", 11 => "11", 13 => "13", 14 => "14", 15 => "15",
   16 => "16", 17 => "17", 18 => "18", 19 => "19", 20 => "20",
-  21 => "21", 22 => "22", 23 => "23", 24 => "24", 25 => "25",
+  21 => "21", 22 => "22", 23 => "23", 24 => "24", 25 => "25"
 }
 
 # Province Khmer names by postal code
@@ -44,7 +44,7 @@ PROVINCE_KM = {
   "220000" => "ខេត្តឧត្តរមានជ័យ",
   "230000" => "ខេត្តកែប",
   "240000" => "ខេត្តប៉ៃលិន",
-  "250000" => "ខេត្តត្បូងឃ្មុំ",
+  "250000" => "ខេត្តត្បូងឃ្មុំ"
 }
 
 # Levenshtein distance
@@ -62,7 +62,7 @@ def levenshtein(s1, s2)
   (1..m).each do |i|
     (1..n).each do |j|
       cost = s1[i - 1] == s2[j - 1] ? 0 : 1
-      d[i][j] = [d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost].min
+      d[i][j] = [ d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + cost ].min
     end
   end
   d[m][n]
@@ -70,7 +70,7 @@ end
 
 def similarity(s1, s2)
   return 0.0 if s1.nil? || s2.nil? || s1.empty? || s2.empty?
-  max_len = [s1.length, s2.length].max
+  max_len = [ s1.length, s2.length ].max
   1.0 - (levenshtein(s1, s2).to_f / max_len)
 end
 
@@ -265,9 +265,9 @@ new_csv_data.sort_by! { |row| row['postal_code'] }
 
 # Write updated CSV
 CSV.open('db/postal_codes.csv', 'w') do |csv|
-  csv << ['postal_code', 'name_km', 'name_en', 'type', 'province_code', 'district_code']
+  csv << [ 'postal_code', 'name_km', 'name_en', 'type', 'province_code', 'district_code' ]
   new_csv_data.each do |row|
-    csv << [row['postal_code'], row['name_km'], row['name_en'], row['type'], row['province_code'], row['district_code']]
+    csv << [ row['postal_code'], row['name_km'], row['name_en'], row['type'], row['province_code'], row['district_code'] ]
   end
 end
 

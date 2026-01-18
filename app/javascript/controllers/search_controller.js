@@ -277,7 +277,9 @@ export default class extends Controller {
       // Keep only MAX_RECENT
       recent = recent.slice(0, MAX_RECENT)
       localStorage.setItem(RECENT_KEY, JSON.stringify(recent))
-    } catch {}
+    } catch {
+      // Storage unavailable - ignore
+    }
   }
 
   selectRecent(event) {

@@ -5,7 +5,7 @@ namespace :postal_codes do
     require "json"
 
     # Only process records without Khmer names
-    records = PostalCode.where(name_km: [nil, ""])
+    records = PostalCode.where(name_km: [ nil, "" ])
     total = records.count
     puts "Found #{total} records missing Khmer names"
 

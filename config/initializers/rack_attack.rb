@@ -49,12 +49,12 @@ class Rack::Attack
     [
       429,
       { "Content-Type" => "application/json", "Retry-After" => "60" },
-      [{ error: "Rate limit exceeded. Please try again later." }.to_json]
+      [ { error: "Rate limit exceeded. Please try again later." }.to_json ]
     ]
   end
 
   # Custom response for blocked requests
   self.blocklisted_responder = lambda do |req|
-    [403, { "Content-Type" => "text/plain" }, ["Forbidden"]]
+    [ 403, { "Content-Type" => "text/plain" }, [ "Forbidden" ] ]
   end
 end
