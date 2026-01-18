@@ -11,12 +11,8 @@ jobs:
     concurrency:
       group: deploy-production
       cancel-in-progress: false
-
     env:
       RAILS_ENV: production
-      KAMAL_REGISTRY_USERNAME: ${{ github.actor }}
-      KAMAL_REGISTRY_PASSWORD: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v5
