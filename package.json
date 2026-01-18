@@ -1,0 +1,14 @@
+{
+  "name": "cam-postal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cambodia Postal Code Directory - search postal codes for all provinces, districts, and communes",
+  "scripts": {
+    "lint": "eslint app/javascript --ext .js",
+    "lint:fix": "eslint app/javascript --ext .js --fix"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "sharp": "^0.34.5"
+  }
+}

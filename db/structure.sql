@@ -34,7 +34,11 @@ CREATE TABLE IF NOT EXISTS "site_stats" ("id" integer PRIMARY KEY AUTOINCREMENT 
 CREATE UNIQUE INDEX "index_site_stats_on_name" ON "site_stats" ("name") /*application='CamPostal'*/;
 CREATE TABLE IF NOT EXISTS "geocode_caches" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "lat" decimal(7,3) NOT NULL, "lng" decimal(7,3) NOT NULL, "postal_code" varchar, "area" varchar, "display_name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
 CREATE UNIQUE INDEX "index_geocode_caches_on_lat_and_lng" ON "geocode_caches" ("lat", "lng") /*application='CamPostal'*/;
+CREATE TABLE IF NOT EXISTS "search_logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "query" varchar NOT NULL, "ip_address" varchar, "user_agent" varchar, "results_count" integer DEFAULT 0, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
+CREATE INDEX "index_search_logs_on_query" ON "search_logs" ("query") /*application='CamPostal'*/;
+CREATE INDEX "index_search_logs_on_created_at" ON "search_logs" ("created_at") /*application='CamPostal'*/;
 INSERT INTO "schema_migrations" (version) VALUES
+('20260118044035'),
 ('20260115055137'),
 ('20260115031238'),
 ('20260114181406');

@@ -2,7 +2,7 @@
 service: cam_postal
 
 # Name of the container image (use your-user/app-name on external registries).
-image: cam_postal
+image: tvcam/cam-postal
 
 # Deploy to these servers.
 servers:

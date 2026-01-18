@@ -39,8 +39,8 @@ export default class extends Controller {
       this.aliases = json.aliases || {}
       this.saveToStorage({ data, aliases: this.aliases })
       this.initFuse(data)
-    } catch (e) {
-      console.warn("Client search unavailable:", e)
+    } catch {
+      // Client search unavailable, will use server fallback
     }
   }
 
@@ -67,8 +67,8 @@ export default class extends Controller {
       const json = JSON.stringify(payload)
       const compressed = LZString.compressToUTF16(json)
       localStorage.setItem(STORAGE_KEY, compressed)
-    } catch (e) {
-      console.warn("Storage failed:", e)
+    } catch {
+      // Storage unavailable
     }
   }
 
@@ -148,15 +148,19 @@ export default class extends Controller {
     // Track search stat (fire and forget)
     if (query !== this.lastQuery) {
       this.lastQuery = query
-      this.trackSearch()
+      this.trackSearch(query)
     }
   }
 
-  trackSearch() {
+  trackSearch(query) {
     const token = document.querySelector('meta[name="csrf-token"]')?.content
-    fetch("/track_search", {
+    fetch("/track/search", {
       method: "POST",
-      headers: { "X-CSRF-Token": token }
+      headers: {
+        "X-CSRF-Token": token,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ q: query })
     }).catch(() => {})
   }
 
@@ -273,7 +277,9 @@ export default class extends Controller {
       // Keep only MAX_RECENT
       recent = recent.slice(0, MAX_RECENT)
       localStorage.setItem(RECENT_KEY, JSON.stringify(recent))
-    } catch {}
+    } catch {
+      // Storage unavailable - ignore
+    }
   }
 
   selectRecent(event) {

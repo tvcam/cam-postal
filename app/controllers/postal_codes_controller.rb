@@ -30,12 +30,12 @@ class PostalCodesController < ApplicationController
   def index
     @query = params[:q].to_s.strip
     @results = @query.present? ? PostalCode.search(@query) : []
-    SiteStat.increment("visits")
+    track_visit
   end
 
   def show
     @postal_code = PostalCode.find_by!(postal_code: params[:postal_code])
-    SiteStat.increment("visits")
+    track_visit
 
     # Get related postal codes for internal linking
     @related_codes = if @postal_code.commune?
@@ -59,7 +59,7 @@ class PostalCodesController < ApplicationController
     @query = params[:q].to_s.strip
     @results = @query.present? ? PostalCode.search(@query) : []
 
-    SiteStat.increment("searches") if @query.present?
+    track_search if @query.present?
 
     respond_to do |format|
       format.html do
@@ -73,14 +73,31 @@ class PostalCodesController < ApplicationController
     end
   end
 
-  def track_copy
-    SiteStat.increment("copies")
+  def record_copy
+    track_copy
     head :ok
   end
 
-  def track_search
-    SiteStat.increment("searches")
+  def record_search
+    query = params[:q].to_s.strip
+    if query.present? && !bot_request?
+      track_search
+      log_search_query(query)
+    end
     head :ok
+  end
+
+  private
+
+  def log_search_query(query, results_count: 0)
+    SearchLog.log_search(
+      query: query,
+      ip_address: request.remote_ip,
+      user_agent: request.user_agent,
+      results_count: results_count
+    )
+  rescue StandardError => e
+    Rails.logger.error "Failed to log search: #{e.message}"
   end
 
   def llms_full

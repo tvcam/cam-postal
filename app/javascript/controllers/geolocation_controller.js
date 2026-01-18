@@ -39,9 +39,8 @@ export default class extends Controller {
       } else {
         this.showStatus("Could not determine postal code for this location")
       }
-    } catch (error) {
+    } catch {
       this.showStatus("Error looking up location")
-      console.error(error)
     } finally {
       this.buttonTarget.disabled = false
     }
@@ -50,17 +49,17 @@ export default class extends Controller {
   onError(error) {
     this.buttonTarget.disabled = false
     switch (error.code) {
-      case error.PERMISSION_DENIED:
-        this.showStatus("Location permission denied")
-        break
-      case error.POSITION_UNAVAILABLE:
-        this.showStatus("Location unavailable")
-        break
-      case error.TIMEOUT:
-        this.showStatus("Location request timed out")
-        break
-      default:
-        this.showStatus("Error getting location")
+    case error.PERMISSION_DENIED:
+      this.showStatus("Location permission denied")
+      break
+    case error.POSITION_UNAVAILABLE:
+      this.showStatus("Location unavailable")
+      break
+    case error.TIMEOUT:
+      this.showStatus("Location request timed out")
+      break
+    default:
+      this.showStatus("Error getting location")
     }
   }
 

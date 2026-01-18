@@ -32,9 +32,9 @@ puts "\nTotal unique postal codes: #{all_data.size}"
 # Write merged CSV
 puts "\nWriting merged CSV to #{OUTPUT_CSV}..."
 CSV.open(OUTPUT_CSV, "w") do |csv|
-  csv << ["postal_code", "name_km", "name_en", "location_type"]
+  csv << [ "postal_code", "name_km", "name_en", "location_type" ]
   all_data.values.sort_by { |d| d[:postal_code] }.each do |data|
-    csv << [data[:postal_code], data[:name_km], data[:name_en], data[:type]]
+    csv << [ data[:postal_code], data[:name_km], data[:name_en], data[:type] ]
   end
 end
 

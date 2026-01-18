@@ -1,9 +1,10 @@
 // Service Worker - Offline capable with app shell caching
-const CACHE_NAME = "kh-postal-v2"
+const CACHE_NAME = "kh-postal-v5"
 const APP_SHELL = [
   "/",
   "/manifest.json",
-  "/icon-v2.png"
+  "/icon-small.png",
+  "/icon-v3.png"
 ]
 
 self.addEventListener("install", (event) => {

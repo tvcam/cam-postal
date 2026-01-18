@@ -174,14 +174,26 @@ chip mong: Saen Sokh
 parkson: Tonle Basak
 
 # =============================================================================
-# PHNOM PENH - Airport & Transportation
+# CAMBODIA - Airports
 # =============================================================================
 
-airport: Kakab
-phnom penh airport: Kakab
-ppn airport: Kakab
+# New Techo International Airport (opened 2025) - Kandal Province
+airport: Boeng Khyang
+techo airport: Boeng Khyang
+techo international airport: Boeng Khyang
+new airport: Boeng Khyang
+kti airport: Boeng Khyang
+phnom penh new airport: Boeng Khyang
+
+# Old Phnom Penh International Airport (Pochentong)
 pochentong: Kakab
-phnom penh international airport: Kakab
+pochentong airport: Kakab
+old airport: Kakab
+phnom penh old airport: Kakab
+
+# =============================================================================
+# PHNOM PENH - Transportation
+# =============================================================================
 
 # Bridges
 chbar ampov bridge: Chbar Ampov

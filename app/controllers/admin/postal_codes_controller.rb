@@ -1,8 +1,5 @@
 module Admin
-  class PostalCodesController < ApplicationController
-    http_basic_authenticate_with name: ENV.fetch("ADMIN_USER", "admin"),
-                                 password: ENV.fetch("ADMIN_PASSWORD", "password")
-
+  class PostalCodesController < BaseController
     def index
       @provinces = PostalCode.provinces.order(:name_en).pluck(:name_en)
       @districts = PostalCode.districts.order(:name_en).pluck(:name_en)
