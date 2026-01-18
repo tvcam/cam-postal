@@ -9,11 +9,7 @@ servers:
   web:
     - 5.78.87.254
 registry:
-  server: ghcr.io
-  username:
-    - KAMAL_REGISTRY_USERNAME
-  password:
-    - KAMAL_REGISTRY_PASSWORD
+  server: localhost:5555
 proxy:
   ssl: true
   hosts:
