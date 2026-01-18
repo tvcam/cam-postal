@@ -3,7 +3,8 @@ class PostalCodesController < ApplicationController
     expires_in 1.week, public: true
     log_api_access("/data.json")
 
-    postal_codes = PostalCode.order(:postal_code)
+    # Only include valid 6-digit postal codes
+    postal_codes = PostalCode.where("LENGTH(postal_code) = 6").order(:postal_code)
 
     # Build lookups for parent names
     provinces = postal_codes.select(&:province?).index_by(&:postal_code)
