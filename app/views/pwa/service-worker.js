@@ -1,5 +1,5 @@
 // Service Worker - Offline capable with app shell caching
-const CACHE_NAME = "kh-postal-v4"
+const CACHE_NAME = "kh-postal-v5"
 const APP_SHELL = [
   "/",
   "/manifest.json",
