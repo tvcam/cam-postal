@@ -29,7 +29,7 @@ Rails.application.routes.draw do
   get "faq", to: "pages#faq", as: :faq
 
   # API documentation for AI/developers
-  get "api", to: "pages#api", as: :api
+  get "open-data", to: "pages#api", as: :api
 
   # Location hierarchy pages (SEO)
   get "provinces", to: "locations#provinces", as: :provinces
