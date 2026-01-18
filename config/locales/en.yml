@@ -119,6 +119,10 @@ en:
     a9: "Absolutely! You can search using common names like 'BKK1', 'Russian Market', 'Pub Street', 'Naga World', 'Riverside', 'Otres Beach', or 'TK Avenue'. Our search automatically recognizes over 250 popular landmarks, markets, malls, and expat areas across Cambodia."
     a9_examples: "Examples: BKK1, Russian Market, Pub Street, Naga World, Riverside, Otres Beach"
 
+    q10: "Where does the postal code data come from?"
+    a10: "Our postal code data is sourced from the official Prakas (ministerial decree) issued by the Cambodian government. This ensures accuracy and compliance with the official postal code system."
+    a10_link: "Download the official Prakas PDF"
+
   # Breadcrumb
   breadcrumb:
     home: "Home"

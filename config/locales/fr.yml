@@ -119,6 +119,10 @@ fr:
     a9: "Absolument! Vous pouvez rechercher avec des noms courants comme 'BKK1', 'Russian Market', 'Pub Street', 'Naga World', 'Riverside', 'Otres Beach' ou 'TK Avenue'. Notre recherche reconnaît plus de 250 lieux populaires à travers le Cambodge."
     a9_examples: "Exemples: BKK1, Russian Market, Pub Street, Naga World, Riverside, Otres Beach"
 
+    q10: "D'où proviennent les données des codes postaux?"
+    a10: "Nos données de codes postaux proviennent du Prakas officiel (décret ministériel) publié par le gouvernement cambodgien. Cela garantit l'exactitude et la conformité avec le système officiel de codes postaux."
+    a10_link: "Télécharger le PDF du Prakas officiel"
+
   # Breadcrumb
   breadcrumb:
     home: "Accueil"
