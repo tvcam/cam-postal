@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 import Fuse from "fuse.js"
 import LZString from "lz-string"
 
-const STORAGE_KEY = "postal_data_v5"
+const STORAGE_KEY = "postal_data_v6"
 const RECENT_KEY = "recent_searches"
 const DATA_URL = "/data.json"
 const MAX_RECENT = 8
@@ -213,10 +213,10 @@ export default class extends Controller {
       <div class="result-card ${item.type}" data-controller="copy" data-copy-text-value="${item.code}" data-action="click->copy#copy">
         <div class="result-header">
           <span class="postal-code">${item.code}</span>
-          <span class="location-type ${item.type}">${types[item.t] || item.t}</span>
+          <span class="location-type ${item.type}">${types[item.type] || item.type}</span>
         </div>
         <div class="result-body">
-          <p class="name-en">${this.highlight(item.e, query)}</p>
+          <p class="name-en">${this.highlight(item.name_en, query)}</p>
           ${item.name_km ? `<p class="name-km">${this.highlight(item.name_km, query)}</p>` : ""}
           ${item.parent ? `<p class="parent-location">${item.parent}</p>` : ""}
         </div>
