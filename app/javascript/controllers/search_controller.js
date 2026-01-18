@@ -2,7 +2,7 @@ import { Controller } from "@hotwired/stimulus"
 import Fuse from "fuse.js"
 import LZString from "lz-string"
 
-const STORAGE_KEY = "postal_data_v6"
+const STORAGE_KEY = "postal_data_v7"
 const RECENT_KEY = "recent_searches"
 const DATA_URL = "/data.json"
 const MAX_RECENT = 8
