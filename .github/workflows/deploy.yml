@@ -31,10 +31,9 @@ jobs:
         uses: webfactory/ssh-agent@v0.9.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-
-      - name: Add server to known_hosts
-        run: ssh-keyscan -H 5.78.87.254 >> ~/.ssh/known_hosts
-
+      - name: Set RAILS_MASTER_KEY
+        run: |
+          echo "${{ secrets.RAILS_MASTER_KEY }}" > config/master.key
       - name: Release lock if any
         run: kamal lock release || true
 
