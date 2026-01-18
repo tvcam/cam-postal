@@ -11,7 +11,7 @@ en:
     home: "Home"
     provinces: "Provinces"
     faq: "FAQ"
-    api: "API"
+    api: "Open Data"
     privacy: "Privacy"
     terms: "Terms"
     language: "Language"
@@ -139,18 +139,18 @@ en:
 
     q15: "Is there an API for developers?"
     a15: "Yes! We provide free access to Cambodia postal code data. Use /data.json for the complete dataset in JSON format, or /llms-full.txt for plain text. No API key required. Please credit cam-postal.gotabs.net when using our data."
-    a15_link: "View API documentation"
+    a15_link: "View Open Data page"
 
-  # API Documentation
+  # Open Data
   api:
-    title: "API Documentation"
-    subtitle: "Access Cambodia postal code data programmatically for your applications and AI systems"
-    meta_description: "API documentation for Cambodia Postal Code Directory. Access postal code data via JSON API for developers and AI/LLM systems."
+    title: "Open Data"
+    subtitle: "Free access to Cambodia postal code data for developers, apps, and AI systems"
+    meta_description: "Open data access for Cambodia Postal Code Directory. Download postal code data in JSON format for developers and AI/LLM systems."
 
     overview_title: "Overview"
-    overview_text: "Cambodia Postal Code Directory provides free API access to our complete postal code database. This data can be used by developers, AI assistants, and automated systems."
+    overview_text: "Cambodia Postal Code Directory provides free access to our complete postal code database. Download the data for your apps, websites, or AI systems."
 
-    endpoints_title: "API Endpoints"
+    endpoints_title: "Data Downloads"
 
     full_data_title: "Full Data (JSON)"
     full_data_description: "Returns the complete postal code database as a JSON array. Best for caching locally or bulk operations."
@@ -165,13 +165,13 @@ en:
     llms_title: "LLM-Friendly Formats"
     llms_description: "Plain text formats optimized for AI/LLM consumption:"
 
-    rate_limits_title: "Rate Limits"
-    rate_limits_text: "To ensure fair usage and service availability, the following rate limits apply:"
-    rate_search: "Search API"
+    rate_limits_title: "Fair Use"
+    rate_limits_text: "To ensure service availability, please follow these guidelines:"
+    rate_search: "Search"
     rate_search_limit: "60 requests per minute per IP"
-    rate_data: "Full Data API"
-    rate_data_limit: "10 requests per hour per IP (data is cached, download once)"
-    rate_limits_note: "For high-volume usage, please download the full dataset once and cache it locally."
+    rate_data: "Data Downloads"
+    rate_data_limit: "10 requests per hour per IP (download once and cache locally)"
+    rate_limits_note: "For best results, download the full dataset once and store it locally."
 
     ai_usage_title: "AI/LLM Usage Tips"
     ai_usage_text: "For AI assistants and language models:"
