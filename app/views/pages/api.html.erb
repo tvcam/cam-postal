@@ -24,6 +24,24 @@
   </section>
 
   <section>
+    <h2><%= t('api.usage_title') %></h2>
+    <div class="usage-stats">
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@api_requests_total) %></span>
+        <span class="stat-label"><%= t('api.usage_total') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@api_requests_month) %></span>
+        <span class="stat-label"><%= t('api.usage_month') %></span>
+      </div>
+      <div class="stat">
+        <span class="stat-value"><%= number_with_delimiter(@api_requests_week) %></span>
+        <span class="stat-label"><%= t('api.usage_week') %></span>
+      </div>
+    </div>
+  </section>
+
+  <section>
     <h2><%= t('api.endpoints_title') %></h2>
 
     <h3>1. <%= t('api.full_data_title') %></h3>

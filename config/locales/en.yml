@@ -150,6 +150,11 @@ en:
     overview_title: "Overview"
     overview_text: "Cambodia Postal Code Directory provides free access to our complete postal code database. Download the data for your apps, websites, or AI systems."
 
+    usage_title: "Usage Stats"
+    usage_total: "Total Requests"
+    usage_month: "This Month"
+    usage_week: "This Week"
+
     endpoints_title: "Data Downloads"
 
     full_data_title: "Full Data (JSON)"

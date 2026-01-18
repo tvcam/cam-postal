@@ -10,8 +10,8 @@ class PagesController < ApplicationController
   end
 
   def api
-  end
-
-  def api
+    @api_requests_total = ApiAccessLog.count
+    @api_requests_week = ApiAccessLog.this_week.count
+    @api_requests_month = ApiAccessLog.this_month.count
   end
 end

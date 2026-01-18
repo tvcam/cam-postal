@@ -150,6 +150,11 @@ fr:
     overview_title: "Aperçu"
     overview_text: "L'annuaire des codes postaux du Cambodge offre un accès gratuit à notre base de données complète. Téléchargez les données pour vos applications, sites web ou systèmes IA."
 
+    usage_title: "Statistiques"
+    usage_total: "Total Requêtes"
+    usage_month: "Ce Mois"
+    usage_week: "Cette Semaine"
+
     endpoints_title: "Téléchargements"
 
     full_data_title: "Données complètes (JSON)"
