@@ -107,6 +107,14 @@
           "@type": "Answer",
           "text": "<%= t('faq.a9') %>"
         }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q10') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a10') %>"
+        }
       }
     ]
   }
@@ -220,6 +228,16 @@
       <div class="faq-answer">
         <p><%= t('faq.a9') %></p>
         <p class="faq-examples"><strong><%= t('faq.a9_examples') %></strong></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q10') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a10') %></p>
+        <p><a href="/prakas-postal-codes.pdf" target="_blank" rel="noopener"><%= t('faq.a10_link') %> ↓</a></p>
       </div>
     </details>
   </div>
