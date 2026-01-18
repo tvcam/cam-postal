@@ -5,7 +5,9 @@
   "description": "Cambodia Postal Code Directory - search postal codes for all provinces, districts, and communes",
   "scripts": {
     "lint": "eslint app/javascript --ext .js",
-    "lint:fix": "eslint app/javascript --ext .js --fix"
+    "lint:fix": "eslint app/javascript --ext .js --fix",
+    "test:search": "node test/javascript/search_test.js",
+    "test:search:local": "DATA_URL=http://localhost:3000/data.json node test/javascript/search_test.js"
   },
   "devDependencies": {
     "eslint": "^8.57.1",
