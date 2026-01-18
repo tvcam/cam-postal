@@ -2,14 +2,18 @@
 service: cam_postal
 
 # Name of the container image (use your-user/app-name on external registries).
-image: cam_postal
+image: tvcam/cam-postal
 
 # Deploy to these servers.
 servers:
   web:
     - 5.78.87.254
 registry:
-  server: localhost:5555
+  server: ghcr.io
+  username:
+    - KAMAL_REGISTRY_USERNAME
+  password:
+    - KAMAL_REGISTRY_PASSWORD
 proxy:
   ssl: true
   hosts:

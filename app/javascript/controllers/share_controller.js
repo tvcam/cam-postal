@@ -19,11 +19,8 @@ export default class extends Controller {
         text: "Search postal codes for all Cambodia provinces, districts and communes",
         url: window.location.href
       })
-    } catch (err) {
-      // User cancelled or share failed - ignore
-      if (err.name !== "AbortError") {
-        console.warn("Share failed:", err)
-      }
+    } catch {
+      // User cancelled or share failed - no action needed
     }
   }
 }

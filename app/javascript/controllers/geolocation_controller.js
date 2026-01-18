@@ -39,9 +39,8 @@ export default class extends Controller {
       } else {
         this.showStatus("Could not determine postal code for this location")
       }
-    } catch (error) {
+    } catch {
       this.showStatus("Error looking up location")
-      console.error(error)
     } finally {
       this.buttonTarget.disabled = false
     }

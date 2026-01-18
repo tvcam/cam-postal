@@ -79,8 +79,25 @@ class PostalCodesController < ApplicationController
   end
 
   def record_search
-    track_search
+    query = params[:q].to_s.strip
+    if query.present? && !bot_request?
+      track_search
+      log_search_query(query)
+    end
     head :ok
+  end
+
+  private
+
+  def log_search_query(query, results_count: 0)
+    SearchLog.log_search(
+      query: query,
+      ip_address: request.remote_ip,
+      user_agent: request.user_agent,
+      results_count: results_count
+    )
+  rescue StandardError => e
+    Rails.logger.error "Failed to log search: #{e.message}"
   end
 
   def llms_full
