@@ -16,7 +16,8 @@ class LearnedAlias < ApplicationRecord
 
   # Sorting scopes
   scope :order_by_rate, ->(direction = :desc) {
-    order(Arel.sql("CASE WHEN search_count = 0 THEN 0 ELSE CAST(click_count AS FLOAT) / search_count END #{direction}"))
+    dir = direction.to_s.downcase == "asc" ? "ASC" : "DESC"
+    order(Arel.sql("CASE WHEN search_count = 0 THEN 0 ELSE CAST(click_count AS FLOAT) / search_count END #{dir}"))
   }
 
   # Class method for average click rate
