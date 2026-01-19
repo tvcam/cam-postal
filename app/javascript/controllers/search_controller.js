@@ -229,6 +229,7 @@ export default class extends Controller {
       commune: this.t.commune || "Commune"
     }
     const copyHint = this.t.click_to_copy || "Click to copy"
+    const viewDetails = this.t.view_details || "View"
     return `
       <div class="result-card ${item.type}" data-controller="copy" data-copy-text-value="${item.code}" data-action="click->copy#copy">
         <div class="result-header">
@@ -241,6 +242,7 @@ export default class extends Controller {
           ${item.parent ? `<p class="parent-location">${item.parent}</p>` : ""}
         </div>
         <span class="copy-hint">${copyHint}</span>
+        <a href="/p/${item.code}" class="view-link" onclick="event.stopPropagation()">${viewDetails}</a>
       </div>`
   }
 

@@ -114,6 +114,31 @@
       </div>
     </div>
 
+    <!-- Time Capsules Section -->
+    <div class="time-capsules-section">
+      <div class="capsules-header">
+        <h2><%= t('time_capsules.title') %></h2>
+        <p class="capsules-subtitle"><%= t('time_capsules.subtitle') %></p>
+      </div>
+
+      <% if @time_capsules.any? %>
+        <div class="capsules-count-wrapper">
+          <span id="capsules-count"><%= render partial: "time_capsules/count", locals: { count: @time_capsules.size } %></span>
+        </div>
+        <div id="capsules-list" class="capsules-list">
+          <%= render partial: "time_capsules/capsule", collection: @time_capsules, as: :capsule %>
+        </div>
+      <% else %>
+        <div id="capsules-list" class="capsules-list">
+          <p class="no-capsules"><%= t('time_capsules.empty') %></p>
+        </div>
+      <% end %>
+
+      <div id="capsule-form" class="capsule-form-wrapper">
+        <%= render partial: "time_capsules/form", locals: { postal_code: @postal_code, time_capsule: @new_capsule } %>
+      </div>
+    </div>
+
     <!-- Related postal codes section -->
     <% if @related_codes&.any? %>
       <div class="related-section">

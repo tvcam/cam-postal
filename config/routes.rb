@@ -65,5 +65,11 @@ Rails.application.routes.draw do
   get "locate", to: "postal_codes#locate", as: :locate
   post "track/copy", to: "postal_codes#record_copy", as: :track_copy
   post "track/search", to: "postal_codes#record_search", as: :track_search
+
+  # Time Capsules
+  post "p/:postal_code/capsules", to: "time_capsules#create", as: :postal_code_capsules
+  post "capsules/:id/heart", to: "time_capsules#heart", as: :capsule_heart
+  post "capsules/:id/flag", to: "time_capsules#flag", as: :capsule_flag
+
   root "postal_codes#index"
 end

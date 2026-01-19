@@ -34,6 +34,7 @@ fr:
     click_to_copy: "Cliquer pour copier"
     copied: "Copié!"
     recent_searches: "Recherches récentes"
+    view_details: "Laisser un message"
 
   # Location types
   location_type:
@@ -256,6 +257,43 @@ fr:
   misc:
     back_to_search: "Retour à la recherche"
     all_provinces: "Toutes les provinces"
+
+  # Time Capsules
+  time_capsules:
+    title: "Capsules Temporelles"
+    subtitle: "Messages laissés ici par les visiteurs"
+    empty: "Aucune capsule enterrée ici. Soyez le premier à laisser un message !"
+    count:
+      one: "1 capsule enterrée ici"
+      other: "%{count} capsules enterrées ici"
+    buried_ago: "Enterrée %{time}"
+    flag: "Signaler"
+    rate_limited: "Vous ne pouvez enterrer qu'une capsule par jour. Revenez demain !"
+    created: "Votre capsule a été enterrée !"
+
+    moods:
+      hopeful: "Plein d'espoir"
+      nostalgic: "Nostalgique"
+      grateful: "Reconnaissant"
+      love: "Amour"
+      peaceful: "Paisible"
+      mysterious: "Mystérieux"
+
+    form:
+      message_label: "Votre message pour ce lieu"
+      message_placeholder: "Partagez un souvenir, une pensée ou un message pour les futurs visiteurs..."
+      mood_label: "Comment ce lieu vous fait-il sentir ?"
+      nickname_label: "Pseudonyme"
+      nickname_placeholder: "Anonyme"
+      optional: "Facultatif"
+      time_lock_title: "Définir comme capsule temporelle (facultatif)"
+      time_lock_hint: "Choisissez une date future pour l'apparition de ce message."
+      submit: "Enterrer la capsule"
+
+    success:
+      title: "Capsule enterrée !"
+      message: "Votre message fait maintenant partie de l'histoire de ce lieu."
+      another: "Enterrer une autre"
 
   # Error pages
   errors:

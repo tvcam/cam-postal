@@ -34,6 +34,7 @@ en:
     click_to_copy: "Click to copy"
     copied: "Copied!"
     recent_searches: "Recent searches"
+    view_details: "Leave a message"
 
   # Location types
   location_type:
@@ -258,6 +259,43 @@ en:
     all_provinces: "All Provinces"
 
   # Error pages
+  # Time Capsules
+  time_capsules:
+    title: "Time Capsules"
+    subtitle: "Messages buried here by visitors"
+    empty: "No capsules buried here yet. Be the first to leave a message!"
+    count:
+      one: "1 capsule buried here"
+      other: "%{count} capsules buried here"
+    buried_ago: "Buried %{time}"
+    flag: "Report"
+    rate_limited: "You can only bury one capsule per day. Come back tomorrow!"
+    created: "Your capsule has been buried!"
+
+    moods:
+      hopeful: "Hopeful"
+      nostalgic: "Nostalgic"
+      grateful: "Grateful"
+      love: "Love"
+      peaceful: "Peaceful"
+      mysterious: "Mysterious"
+
+    form:
+      message_label: "Your message to this place"
+      message_placeholder: "Share a memory, thought, or message for future visitors..."
+      mood_label: "How does this place make you feel?"
+      nickname_label: "Nickname"
+      nickname_placeholder: "Anonymous"
+      optional: "Optional"
+      time_lock_title: "Set as time capsule (optional)"
+      time_lock_hint: "Choose a future date when this message will appear."
+      submit: "Bury Capsule"
+
+    success:
+      title: "Capsule Buried!"
+      message: "Your message is now part of this place's story."
+      another: "Bury Another"
+
   errors:
     title: "Error"
     back_home: "Back to Home"

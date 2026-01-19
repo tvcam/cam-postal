@@ -1,0 +1,63 @@
+<div class="capsule-form" data-controller="capsule-form">
+  <div id="capsule-form-error" class="capsule-form-error"></div>
+
+  <%= form_with model: time_capsule, url: postal_code_capsules_path(postal_code.postal_code), data: { turbo_frame: "_top" } do |f| %>
+    <div class="form-group">
+      <label for="time_capsule_message"><%= t('time_capsules.form.message_label') %></label>
+      <%= f.text_area :message,
+                      placeholder: t('time_capsules.form.message_placeholder'),
+                      rows: 3,
+                      maxlength: 500,
+                      minlength: 10,
+                      required: true,
+                      class: "capsule-textarea #{'field-error' if time_capsule.errors[:message].any?}",
+                      data: { action: "input->capsule-form#updateCount", capsule_form_target: "message" } %>
+      <div class="form-hint">
+        <span data-capsule-form-target="charCount">0</span>/500
+        <% if time_capsule.errors[:message].any? %>
+          <span class="error-text"><%= time_capsule.errors[:message].first %></span>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group mood-group">
+        <label><%= t('time_capsules.form.mood_label') %></label>
+        <div class="mood-options" data-capsule-form-target="moods">
+          <% TimeCapsule::MOODS.each do |mood| %>
+            <label class="mood-option">
+              <%= f.radio_button :mood, mood, checked: (mood == 'hopeful'), data: { action: "change->capsule-form#selectMood" } %>
+              <span class="mood-emoji" title="<%= t("time_capsules.moods.#{mood}") %>"><%= raw TimeCapsule.new(mood: mood).mood_emoji %></span>
+            </label>
+          <% end %>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="time_capsule_nickname"><%= t('time_capsules.form.nickname_label') %></label>
+        <%= f.text_field :nickname,
+                         placeholder: t('time_capsules.form.nickname_placeholder'),
+                         maxlength: 30,
+                         class: "capsule-input" %>
+        <div class="form-hint"><%= t('time_capsules.form.optional') %></div>
+      </div>
+    </div>
+
+    <details class="time-lock-details">
+      <summary><%= t('time_capsules.form.time_lock_title') %></summary>
+      <div class="time-lock-content">
+        <p class="time-lock-hint"><%= t('time_capsules.form.time_lock_hint') %></p>
+        <div class="form-group">
+          <%= f.date_field :visible_at,
+                           min: Date.tomorrow,
+                           max: 10.years.from_now.to_date,
+                           class: "capsule-input" %>
+        </div>
+      </div>
+    </details>
+
+    <div class="form-actions">
+      <%= f.submit t('time_capsules.form.submit'), class: "capsule-submit-btn" %>
+    </div>
+  <% end %>
+</div>

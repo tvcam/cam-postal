@@ -2,6 +2,8 @@ class PostalCode < ApplicationRecord
   LOCATION_TYPES = %w[province district commune].freeze
   ALIASES_PATH = Rails.root.join("config/aliases.yml").freeze
 
+  has_many :time_capsules, dependent: :destroy
+
   validates :postal_code, presence: true
   validates :name_en, presence: true
   validates :location_type, inclusion: { in: LOCATION_TYPES }

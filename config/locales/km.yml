@@ -34,6 +34,7 @@ km:
     click_to_copy: "ចុចដើម្បីចម្លង"
     copied: "បានចម្លង!"
     recent_searches: "ការស្វែងរកថ្មីៗ"
+    view_details: "ទុកសារ"
 
   # Location types
   location_type:
@@ -256,6 +257,43 @@ km:
   misc:
     back_to_search: "ត្រឡប់ទៅស្វែងរក"
     all_provinces: "ខេត្តទាំងអស់"
+
+  # Time Capsules
+  time_capsules:
+    title: "កញ្ចប់ពេលវេលា"
+    subtitle: "សារដែលភ្ញៀវបានទុកនៅទីនេះ"
+    empty: "មិនទាន់មានកញ្ចប់នៅទីនេះទេ។ សូមក្លាយជាមនុស្សដំបូងដែលទុកសារ!"
+    count:
+      one: "១ កញ្ចប់នៅទីនេះ"
+      other: "%{count} កញ្ចប់នៅទីនេះ"
+    buried_ago: "បានទុក %{time}"
+    flag: "រាយការណ៍"
+    rate_limited: "អ្នកអាចទុកកញ្ចប់បានតែមួយក្នុងមួយថ្ងៃ។ សូមត្រឡប់មកវិញថ្ងៃស្អែក!"
+    created: "កញ្ចប់របស់អ្នកត្រូវបានទុកហើយ!"
+
+    moods:
+      hopeful: "សង្ឃឹម"
+      nostalgic: "ស្រមៃ"
+      grateful: "អរគុណ"
+      love: "ស្រលាញ់"
+      peaceful: "សុខសាន្ត"
+      mysterious: "អាថ៌កំបាំង"
+
+    form:
+      message_label: "សារទៅកាន់កន្លែងនេះ"
+      message_placeholder: "ចែករំលែកការចងចាំ គំនិត ឬសារសម្រាប់ភ្ញៀវនាពេលអនាគត..."
+      mood_label: "កន្លែងនេះធ្វើឱ្យអ្នកមានអារម្មណ៍យ៉ាងម៉េច?"
+      nickname_label: "ឈ្មោះ"
+      nickname_placeholder: "អនាមិក"
+      optional: "ជម្រើស"
+      time_lock_title: "កំណត់ជាកញ្ចប់ពេលវេលា (ជម្រើស)"
+      time_lock_hint: "ជ្រើសកាលបរិច្ឆេទនាពេលអនាគតដែលសារនេះនឹងបង្ហាញ។"
+      submit: "ទុកកញ្ចប់"
+
+    success:
+      title: "កញ្ចប់ត្រូវបានទុក!"
+      message: "សាររបស់អ្នកឥឡូវនេះជាផ្នែកនៃរឿងរ៉ាវរបស់កន្លែងនេះ។"
+      another: "ទុកកញ្ចប់មួយទៀត"
 
   # Error pages
   errors:

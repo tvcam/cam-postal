@@ -1,0 +1,25 @@
+<div id="capsule-<%= capsule.id %>" class="capsule-card" data-controller="capsule">
+  <div class="capsule-mood"><%= raw capsule.mood_emoji %></div>
+  <div class="capsule-content">
+    <p class="capsule-message"><%= capsule.message %></p>
+    <div class="capsule-meta">
+      <span class="capsule-age"><%= t('time_capsules.buried_ago', time: capsule.age_label) %></span>
+      <% if capsule.nickname.present? %>
+        <span class="capsule-author">— <%= capsule.nickname %></span>
+      <% end %>
+    </div>
+  </div>
+  <div class="capsule-actions">
+    <%= render partial: "time_capsules/heart_button", locals: { capsule: capsule, hearted: capsule.hearted_by?(request.remote_ip) } %>
+    <button type="button"
+            class="capsule-flag-btn"
+            data-action="click->capsule#flag"
+            data-capsule-url-value="<%= capsule_flag_path(capsule) %>"
+            title="<%= t('time_capsules.flag') %>">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+        <line x1="4" y1="22" x2="4" y2="15"></line>
+      </svg>
+    </button>
+  </div>
+</div>

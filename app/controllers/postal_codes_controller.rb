@@ -39,6 +39,10 @@ class PostalCodesController < ApplicationController
     @postal_code = PostalCode.find_by!(postal_code: params[:postal_code])
     track_visit
 
+    # Load time capsules for this postal code
+    @time_capsules = @postal_code.time_capsules.visible.recent.limit(10)
+    @new_capsule = @postal_code.time_capsules.build
+
     # Get related postal codes for internal linking
     @related_codes = if @postal_code.commune?
       PostalCode.communes.where("postal_code LIKE ?", "#{@postal_code.postal_code[0, 4]}%")

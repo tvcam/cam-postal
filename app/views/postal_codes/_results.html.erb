@@ -23,6 +23,7 @@
               <% end %>
             </div>
             <span class="copy-hint"><%= t('home.click_to_copy') %></span>
+            <a href="<%= postal_code_path(postal_code.postal_code) %>" class="view-link" onclick="event.stopPropagation()"><%= t('home.view_details') %></a>
           </a>
         <% end %>
       </div>
