@@ -120,7 +120,7 @@ class PostalCodesController < ApplicationController
     render json: { error: "Service temporarily unavailable" }, status: :service_unavailable
   end
 
-  #private
+  # private
 
   def log_search_query(query, results_count: 0)
     SearchLog.log_search(
