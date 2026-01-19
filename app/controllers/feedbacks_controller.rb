@@ -9,6 +9,7 @@ class FeedbacksController < ApplicationController
     @feedback.user_agent = request.user_agent
 
     if @feedback.save
+      TelegramNotifierService.notify_new_feedback(@feedback)
       redirect_to feedback_thanks_path, notice: t("feedback.success")
     else
       render :new, status: :unprocessable_entity
