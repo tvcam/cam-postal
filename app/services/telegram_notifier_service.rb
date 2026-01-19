@@ -1,3 +1,5 @@
+require "net/http"
+
 class TelegramNotifierService
   class << self
     def bot_token
