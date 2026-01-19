@@ -43,5 +43,8 @@ module CamPostal
 
     # Use structure.sql instead of schema.rb to support FTS5 virtual tables
     config.active_record.schema_format = :sql
+
+    # Use custom error pages via routes
+    config.exceptions_app = routes
   end
 end

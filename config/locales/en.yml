@@ -232,3 +232,27 @@ en:
   misc:
     back_to_search: "Back to search"
     all_provinces: "All Provinces"
+
+  # Error pages
+  errors:
+    title: "Error"
+    back_home: "Back to Home"
+    try_again: "Try Again"
+    not_found:
+      title: "Page Not Found"
+      message: "Sorry, we couldn't find the page you're looking for. It may have been moved or doesn't exist."
+    internal_error:
+      title: "Something Went Wrong"
+      message: "We're experiencing technical difficulties. Please try again later."
+    unprocessable:
+      title: "Unable to Process"
+      message: "The request could not be processed. Please try again."
+    bad_request:
+      title: "Bad Request"
+      message: "The request was invalid. Please check your input and try again."
+    search_error:
+      title: "Search Error"
+      message: "Unable to perform search. Please try again."
+    location_error:
+      title: "Location Error"
+      message: "Unable to detect your location. Please try searching manually."

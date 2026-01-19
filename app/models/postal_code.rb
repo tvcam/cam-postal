@@ -33,11 +33,13 @@ class PostalCode < ApplicationRecord
     aliases[normalized] || query
   end
 
-  def self.search(query)
+  def self.search(query, limit: nil)
     return none if query.blank?
 
     sanitized = query.to_s.strip
     return none if sanitized.empty?
+
+    max_results = limit || 50
 
     # Try alias resolution first
     resolved = resolve_alias(sanitized)
@@ -58,7 +60,7 @@ class PostalCode < ApplicationRecord
       combined = fts_results + fuzzy_results.reject { |r| fts_ids.include?(r.id) }
     end
 
-    combined.first(50)
+    combined.first(max_results)
   end
 
   def self.khmer_query?(query)

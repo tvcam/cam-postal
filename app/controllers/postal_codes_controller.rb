@@ -53,13 +53,15 @@ class PostalCodesController < ApplicationController
     else
       PostalCode.provinces.where.not(id: @postal_code.id).order(:name_en).limit(6)
     end
-  rescue ActiveRecord::RecordNotFound
-    render file: Rails.root.join("public/404.html"), status: :not_found, layout: false
   end
 
   def search
     @query = params[:q].to_s.strip
-    @results = @query.present? ? PostalCode.search(@query) : []
+    limit = params[:limit].to_i
+    limit = nil if limit <= 0 || limit > 50
+
+    @results = @query.present? ? PostalCode.search(@query, limit: limit) : []
+    @error = nil
 
     track_search if @query.present?
 
@@ -72,6 +74,22 @@ class PostalCodesController < ApplicationController
         end
       end
       format.turbo_stream
+    end
+  rescue StandardError => e
+    Rails.logger.error "Search error: #{e.class} - #{e.message}"
+    @error = I18n.t("errors.search_error.message")
+    @results = []
+
+    respond_to do |format|
+      format.html do
+        if turbo_frame_request?
+          render layout: false
+        else
+          render :search_page
+        end
+      end
+      format.turbo_stream { render turbo_stream: turbo_stream.replace("search-results", partial: "postal_codes/search_error") }
+      format.json { render json: { error: @error }, status: :service_unavailable }
     end
   end
 
@@ -102,7 +120,7 @@ class PostalCodesController < ApplicationController
     render json: { error: "Service temporarily unavailable" }, status: :service_unavailable
   end
 
-  #private
+  # private
 
   def log_search_query(query, results_count: 0)
     SearchLog.log_search(
@@ -163,18 +181,5 @@ class PostalCodesController < ApplicationController
     end
 
     render plain: lines.join("\n"), content_type: "text/plain; charset=utf-8"
-  end
-
-  def locate
-    lat = params[:lat].to_f
-    lng = params[:lng].to_f
-
-    return render json: { error: "Invalid coordinates" }, status: :bad_request if lat.zero? || lng.zero?
-
-    result = GeocodeCache.lookup(lat, lng)
-    render json: result
-  rescue StandardError => e
-    Rails.logger.error "Locate error: #{e.class} - #{e.message}"
-    render json: { error: "Service temporarily unavailable" }, status: :service_unavailable
   end
 end
