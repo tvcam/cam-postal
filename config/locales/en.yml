@@ -13,6 +13,7 @@ en:
     faq: "FAQ"
     api: "Open Data"
     stats: "Stats"
+    feedback: "Feedback"
     privacy: "Privacy"
     terms: "Terms"
     language: "Language"
@@ -144,6 +145,26 @@ en:
 
     q16: "Does the search get smarter over time?"
     a16: "Yes! Our search learns from popular usage patterns. When many users consistently search for the same term and find a particular result helpful, the system remembers this to improve future searches. This helps make common searches faster and more accurate."
+
+  # Feedback page
+  feedback:
+    title: "Send Feedback"
+    subtitle: "Have suggestions, found a bug, or just want to say hello? We'd love to hear from you."
+    meta_description: "Send feedback about Cambodia Postal Code Directory. Report issues, suggest features, or share your thoughts."
+    name_label: "Your Name"
+    name_placeholder: "John Doe"
+    email_label: "Email Address"
+    email_placeholder: "you@example.com"
+    email_hint: "Optional - only if you'd like a response"
+    message_label: "Message"
+    message_placeholder: "Share your feedback, suggestions, or report an issue..."
+    message_hint: "Minimum 10 characters"
+    optional: "Optional"
+    submit: "Send Feedback"
+    success: "Thank you for your feedback!"
+    thanks_title: "Thank You!"
+    thanks_message: "Your feedback has been received. We appreciate you taking the time to help us improve."
+    back_home: "Back to Home"
 
   # Stats page
   stats:

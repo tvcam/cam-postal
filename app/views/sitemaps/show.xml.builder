@@ -56,6 +56,14 @@ xml.urlset xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9" do
     xml.priority "0.3"
   end
 
+  # Feedback page
+  xml.url do
+    xml.loc new_feedback_url(host: @host, protocol: @protocol)
+    xml.lastmod @lastmod
+    xml.changefreq "yearly"
+    xml.priority "0.5"
+  end
+
   # Individual province pages
   @provinces.each do |province|
     xml.url do

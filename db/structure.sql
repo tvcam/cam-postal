@@ -46,7 +46,10 @@ CREATE INDEX "index_learned_aliases_on_search_term" ON "learned_aliases" ("searc
 CREATE INDEX "index_learned_aliases_on_promoted" ON "learned_aliases" ("promoted") /*application='CamPostal'*/;
 CREATE INDEX "index_learned_aliases_on_click_count" ON "learned_aliases" ("click_count") /*application='CamPostal'*/;
 CREATE INDEX "index_learned_aliases_on_last_clicked_at" ON "learned_aliases" ("last_clicked_at") /*application='CamPostal'*/;
+CREATE TABLE IF NOT EXISTS "feedbacks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "message" text, "ip_address" varchar, "user_agent" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "read_at" datetime(6) /*application='CamPostal'*/);
 INSERT INTO "schema_migrations" (version) VALUES
+('20260119051311'),
+('20260119051205'),
 ('20260119032117'),
 ('20260118085810'),
 ('20260118044035'),

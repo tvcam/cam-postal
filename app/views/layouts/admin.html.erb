@@ -171,6 +171,7 @@
         <nav class="admin-nav">
           <%= link_to "Search Logs", admin_search_logs_path, class: controller_name == "search_logs" ? "active" : "" %>
           <%= link_to "Learned Aliases", admin_learned_aliases_path, class: controller_name == "learned_aliases" ? "active" : "" %>
+          <%= link_to "Feedback", admin_feedbacks_path, class: controller_name == "feedbacks" ? "active" : "" %>
           <%= link_to "Postal Codes", admin_postal_codes_path, class: controller_name == "postal_codes" ? "active" : "" %>
           <%= link_to "Back to Site", root_path %>
         </nav>

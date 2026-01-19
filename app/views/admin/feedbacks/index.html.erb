@@ -1,0 +1,109 @@
+<h2>Feedback</h2>
+<p class="text-muted">User feedback and suggestions submitted through the contact form.</p>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="value"><%= @total_count %></div>
+    <div class="label">Total</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= @unread_count %></div>
+    <div class="label">Unread</div>
+  </div>
+</div>
+
+<div class="period-filter">
+  <%= link_to "All", admin_feedbacks_path, class: @status.blank? ? "active" : "" %>
+  <%= link_to "Unread", admin_feedbacks_path(status: "unread"), class: @status == "unread" ? "active" : "" %>
+  <%= link_to "Read", admin_feedbacks_path(status: "read"), class: @status == "read" ? "active" : "" %>
+</div>
+
+<% if @feedbacks.any? %>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Message</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @feedbacks.each do |feedback| %>
+        <tr class="<%= feedback.read_at.nil? ? 'unread-row' : '' %>">
+          <td><%= feedback.created_at.strftime("%Y-%m-%d %H:%M") %></td>
+          <td><%= feedback.name.presence || "-" %></td>
+          <td>
+            <% if feedback.email.present? %>
+              <a href="mailto:<%= feedback.email %>"><%= feedback.email %></a>
+            <% else %>
+              -
+            <% end %>
+          </td>
+          <td class="truncate"><%= truncate(feedback.message, length: 80) %></td>
+          <td>
+            <% if feedback.read_at.nil? %>
+              <span class="badge badge-pending">Unread</span>
+            <% else %>
+              <span class="badge badge-read">Read</span>
+            <% end %>
+          </td>
+          <td class="actions">
+            <%= link_to "View", admin_feedback_path(feedback), class: "btn-small btn-primary" %>
+            <%= button_to "Delete", admin_feedback_path(feedback, status: @status), method: :delete, class: "btn-small btn-danger", data: { turbo_confirm: "Delete this feedback?" } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p class="text-muted">No feedback yet.</p>
+<% end %>
+
+<style>
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .badge-pending {
+    background: #f59e0b;
+    color: white;
+  }
+  .badge-read {
+    background: #6b7280;
+    color: white;
+  }
+  .unread-row {
+    background: #fef3c7;
+  }
+  .actions {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .btn-small {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .btn-primary {
+    background: #3b82f6;
+    color: white;
+  }
+  .btn-danger {
+    background: #ef4444;
+    color: white;
+  }
+  .btn-small:hover {
+    opacity: 0.8;
+  }
+</style>

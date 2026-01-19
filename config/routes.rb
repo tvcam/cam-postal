@@ -16,6 +16,7 @@ Rails.application.routes.draw do
         post :demote
       end
     end
+    resources :feedbacks, only: [ :index, :show, :destroy ]
   end
 
   # Health check
@@ -46,6 +47,11 @@ Rails.application.routes.draw do
 
   # Public stats
   get "stats", to: "pages#stats", as: :stats
+
+  # Feedback form
+  get "feedback", to: "feedbacks#new", as: :new_feedback
+  post "feedback", to: "feedbacks#create", as: :feedback
+  get "feedback/thanks", to: "feedbacks#thanks", as: :feedback_thanks
 
   # Location hierarchy pages (SEO)
   get "provinces", to: "locations#provinces", as: :provinces

@@ -1,0 +1,123 @@
+<% content_for :title, t("feedback.title") %>
+<% content_for :meta_description, t("feedback.meta_description") %>
+
+<div class="content-page">
+  <header class="page-header">
+    <h1><%= t("feedback.title") %></h1>
+    <p class="subtitle"><%= t("feedback.subtitle") %></p>
+  </header>
+
+  <div class="feedback-form-container">
+    <%= form_with model: @feedback, url: feedback_path, local: true, class: "feedback-form" do |f| %>
+      <% if @feedback.errors.any? %>
+        <div class="error-messages">
+          <ul>
+            <% @feedback.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="form-group">
+        <%= f.label :name, t("feedback.name_label") %>
+        <%= f.text_field :name, placeholder: t("feedback.name_placeholder"), class: "form-input" %>
+        <span class="form-hint"><%= t("feedback.optional") %></span>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :email, t("feedback.email_label") %>
+        <%= f.email_field :email, placeholder: t("feedback.email_placeholder"), class: "form-input" %>
+        <span class="form-hint"><%= t("feedback.email_hint") %></span>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :message, t("feedback.message_label") %>
+        <%= f.text_area :message, placeholder: t("feedback.message_placeholder"), class: "form-input", rows: 6, required: true %>
+        <span class="form-hint"><%= t("feedback.message_hint") %></span>
+      </div>
+
+      <div class="form-actions">
+        <%= f.submit t("feedback.submit"), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<style>
+  .feedback-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .feedback-form {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+  }
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+  }
+  .form-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+  }
+  .form-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  textarea.form-input {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .form-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
+  }
+  .form-actions {
+    margin-top: 2rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--primary-color);
+    color: white;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+  .error-messages {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .error-messages ul {
+    margin: 0;
+    padding-left: 1.25rem;
+    color: #dc2626;
+  }
+</style>

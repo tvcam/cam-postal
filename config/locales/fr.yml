@@ -13,6 +13,7 @@ fr:
     faq: "FAQ"
     api: "Données Ouvertes"
     stats: "Statistiques"
+    feedback: "Commentaires"
     privacy: "Confidentialité"
     terms: "Conditions"
     language: "Langue"
@@ -144,6 +145,26 @@ fr:
 
     q16: "La recherche s'améliore-t-elle avec le temps?"
     a16: "Oui! Notre recherche apprend des habitudes d'utilisation populaires. Lorsque de nombreux utilisateurs recherchent régulièrement le même terme et trouvent un résultat particulier utile, le système le mémorise pour améliorer les recherches futures."
+
+  # Feedback page
+  feedback:
+    title: "Envoyer des commentaires"
+    subtitle: "Vous avez des suggestions, trouvé un bug, ou simplement envie de dire bonjour? Nous serions ravis de vous entendre."
+    meta_description: "Envoyez vos commentaires sur l'annuaire des codes postaux du Cambodge. Signalez des problèmes, suggérez des fonctionnalités ou partagez vos réflexions."
+    name_label: "Votre nom"
+    name_placeholder: "Jean Dupont"
+    email_label: "Adresse e-mail"
+    email_placeholder: "vous@example.com"
+    email_hint: "Facultatif - seulement si vous souhaitez une réponse"
+    message_label: "Message"
+    message_placeholder: "Partagez vos commentaires, suggestions ou signalez un problème..."
+    message_hint: "Minimum 10 caractères"
+    optional: "Facultatif"
+    submit: "Envoyer"
+    success: "Merci pour vos commentaires!"
+    thanks_title: "Merci!"
+    thanks_message: "Vos commentaires ont été reçus. Nous vous remercions d'avoir pris le temps de nous aider à nous améliorer."
+    back_home: "Retour à l'accueil"
 
   # Stats page
   stats:

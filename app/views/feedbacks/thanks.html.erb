@@ -1,0 +1,54 @@
+<% content_for :title, t("feedback.thanks_title") %>
+
+<div class="content-page">
+  <div class="thanks-container">
+    <div class="thanks-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+    </div>
+    <h1><%= t("feedback.thanks_title") %></h1>
+    <p><%= t("feedback.thanks_message") %></p>
+    <a href="<%= root_path %>" class="btn btn-primary"><%= t("feedback.back_home") %></a>
+  </div>
+</div>
+
+<style>
+  .thanks-container {
+    text-align: center;
+    max-width: 500px;
+    margin: 4rem auto;
+    padding: 2rem;
+  }
+  .thanks-icon {
+    color: #22c55e;
+    margin-bottom: 1.5rem;
+  }
+  .thanks-container h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+  }
+  .thanks-container p {
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .btn-primary {
+    background: var(--primary-color);
+    color: white;
+  }
+  .btn-primary:hover {
+    opacity: 0.9;
+  }
+</style>
