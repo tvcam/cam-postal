@@ -95,6 +95,14 @@ class PostalCodesController < ApplicationController
 
   def record_copy
     track_copy
+
+    # Track for learned aliases
+    query = params[:q].to_s.strip
+    postal_code = params[:code].to_s.strip
+    if query.present? && postal_code.present? && !bot_request?
+      LearnedAlias.record_click(query, postal_code, ip_address: request.remote_ip)
+    end
+
     head :ok
   end
 
@@ -103,6 +111,7 @@ class PostalCodesController < ApplicationController
     if query.present? && !bot_request?
       track_search
       log_search_query(query)
+      LearnedAlias.record_search(query, ip_address: request.remote_ip)
     end
     head :ok
   end

@@ -28,9 +28,19 @@ class PostalCode < ApplicationRecord
   end
 
   # Resolve alias to official name, returns original if no alias found
+  # Checks YAML aliases first, then learned aliases
   def self.resolve_alias(query)
     normalized = query.to_s.strip.downcase
-    aliases[normalized] || query
+
+    # Check YAML aliases first (manually curated)
+    return aliases[normalized] if aliases[normalized]
+
+    # Check learned aliases (auto-promoted from user behavior)
+    learned = LearnedAlias.resolve(normalized)
+    return learned if learned
+
+    # Return original if no alias found
+    query
   end
 
   def self.search(query, limit: nil)

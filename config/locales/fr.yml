@@ -142,6 +142,9 @@ fr:
     a15_html: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> pour l'ensemble des données au format JSON, ou <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> pour le texte brut. Aucune clé API requise."
     a15_link: "Voir la page Données Ouvertes"
 
+    q16: "La recherche s'améliore-t-elle avec le temps?"
+    a16: "Oui! Notre recherche apprend des habitudes d'utilisation populaires. Lorsque de nombreux utilisateurs recherchent régulièrement le même terme et trouvent un résultat particulier utile, le système le mémorise pour améliorer les recherches futures."
+
   # Stats page
   stats:
     title: "Statistiques"

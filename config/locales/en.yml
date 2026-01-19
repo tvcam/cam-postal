@@ -142,6 +142,9 @@ en:
     a15_html: "Yes! We provide free access to Cambodia postal code data. Use <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> for the complete dataset in JSON format, or <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> for plain text. No API key required."
     a15_link: "View Open Data page"
 
+    q16: "Does the search get smarter over time?"
+    a16: "Yes! Our search learns from popular usage patterns. When many users consistently search for the same term and find a particular result helpful, the system remembers this to improve future searches. This helps make common searches faster and more accurate."
+
   # Stats page
   stats:
     title: "Public Stats"
