@@ -1,7 +1,39 @@
+<% nlu_used ||= false %>
+<% nlu_context ||= nil %>
 <div class="results-section">
   <% if query.present? %>
     <% if results.any? %>
-      <p class="results-count"><%= t('home.found_results', count: results.size) %></p>
+      <div class="results-header">
+        <p class="results-count"><%= t('home.found_results', count: results.size) %></p>
+        <% if nlu_used && nlu_context %>
+          <span class="nlu-badge" title="<%= t('search.ai_understood') %>">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"/>
+              <circle cx="8" cy="14" r="1.5"/>
+              <circle cx="16" cy="14" r="1.5"/>
+            </svg>
+            <%= t('search.ai_assisted') %>
+          </span>
+        <% end %>
+      </div>
+      <% if nlu_used && nlu_context %>
+        <p class="nlu-context">
+          <% case nlu_context[:action] %>
+          <% when :list_by_parent %>
+            <%= t('search.listing_in', type: t("location_type.#{nlu_context[:child_type]}").pluralize, parent: nlu_context[:parent_name]) %>
+          <% when :search_landmark %>
+            <% if nlu_context[:resolved_to] %>
+              <%= t('search.landmark_resolved', landmark: nlu_context[:landmark], location: nlu_context[:resolved_to]) %>
+            <% else %>
+              <%= t('search.searching_for', term: nlu_context[:landmark]) %>
+            <% end %>
+          <% when :search_nearby %>
+            <%= t('search.showing_nearby', location: nlu_context[:reference]) %>
+          <% else %>
+            <%= t('search.searching_for', term: nlu_context[:search_term]) %>
+          <% end %>
+        </p>
+      <% end %>
 
       <div class="results-list">
         <% results.each do |postal_code| %>

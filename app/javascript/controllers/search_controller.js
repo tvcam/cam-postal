@@ -127,6 +127,12 @@ export default class extends Controller {
       const query = this.inputTarget.value.trim()
       const limit = options.limit || null
 
+      // Use server-side search for NLU queries
+      if (this.shouldUseNlu(query)) {
+        this.serverSearch(query)
+        return
+      }
+
       if (this.clientMode && this.fuse) {
         this.clientSearch(query, limit)
       } else {
@@ -135,6 +141,42 @@ export default class extends Controller {
         if (form) form.requestSubmit()
       }
     }, this.clientMode ? 100 : 300)
+  }
+
+  // Detect natural language queries that should use NLU
+  shouldUseNlu(query) {
+    if (!query || query.length < 5) return false
+    if (/^\d{2,6}$/.test(query)) return false // Pure postal code
+
+    const nluPatterns = [
+      /\b(what|where|which|how|find|get|show)\b/i,
+      /\b(postal\s*code|zip\s*code)\s+(for|of|in)\b/i,
+      /\b(communes?|districts?|provinces?)\s+(in|of|for)\b/i,
+      /\bnear\b/i,
+      /\bcode\s+for\b/i
+    ]
+
+    return nluPatterns.some(pattern => pattern.test(query))
+  }
+
+  // Send query to server for NLU processing
+  serverSearch(query) {
+    // Show loading state
+    if (this.hasResultsTarget) {
+      const loadingText = this.t.ai_thinking || "Understanding your question..."
+      this.resultsTarget.innerHTML = `
+        <div class="results-section">
+          <div class="nlu-loading">
+            <div class="nlu-spinner"></div>
+            <p>${loadingText}</p>
+          </div>
+          ${this.sloganTemplate()}
+        </div>`
+    }
+
+    // Submit form for server-side processing
+    const form = this.element.querySelector("form")
+    if (form) form.requestSubmit()
   }
 
   clientSearch(query, limit = null) {

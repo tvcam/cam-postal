@@ -60,8 +60,26 @@ class PostalCodesController < ApplicationController
     limit = params[:limit].to_i
     limit = nil if limit <= 0 || limit > 50
 
-    @results = @query.present? ? PostalCode.search(@query, limit: limit) : []
+    @nlu_used = false
+    @nlu_context = nil
     @error = nil
+
+    if @query.present?
+      # Try NLU for natural language queries
+      if should_use_nlu?(@query)
+        nlu_result = perform_nlu_search(@query)
+        if nlu_result
+          @results = nlu_result[:results]
+          @nlu_context = nlu_result[:context]
+          @nlu_used = true
+        end
+      end
+
+      # Fall back to regular search if NLU didn't produce results
+      @results ||= PostalCode.search(@query, limit: limit)
+    else
+      @results = []
+    end
 
     track_search if @query.present?
 
@@ -190,5 +208,40 @@ class PostalCodesController < ApplicationController
     end
 
     render plain: lines.join("\n"), content_type: "text/plain; charset=utf-8"
+  end
+
+  private
+
+  # Determine if query should trigger NLU processing
+  def should_use_nlu?(query)
+    return false unless NluSearchService.enabled?
+    return false if query.length < 5
+    return false if query.match?(/^\d{2,6}$/) # Pure postal code numbers
+
+    # Trigger NLU for natural language patterns
+    nlu_patterns = [
+      /\b(what|where|which|how|find|get|show)\b/i,
+      /\b(postal\s*code|zip\s*code)\s+(for|of|in)\b/i,
+      /\b(communes?|districts?|provinces?)\s+(in|of|for)\b/i,
+      /\bnear\b/i,
+      /\bcode\s+for\b/i
+    ]
+
+    nlu_patterns.any? { |pattern| query.match?(pattern) }
+  end
+
+  # Execute NLU search pipeline
+  def perform_nlu_search(query)
+    intent = NluSearchService.parse(query)
+    return nil unless intent
+    return nil if intent[:confidence].to_f < 0.7
+
+    result = NluQueryExecutor.execute(intent)
+    return nil if result[:results].empty?
+
+    result
+  rescue StandardError => e
+    Rails.logger.error "[NLU] Error in search: #{e.message}"
+    nil
   end
 end
