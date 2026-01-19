@@ -47,6 +47,53 @@ bin/brakeman --quiet   # Security scan
 3. `PostalCodesController#search` queries FTS5 or falls back to LIKE
 4. Results rendered as Turbo Stream partial
 
+### Natural Language Understanding (NLU)
+
+**Why NLU?**
+Users often search using natural language questions like "postal code for Siem Reap" or "communes in Phnom Penh" instead of simple keywords. The NLU feature understands these queries and provides more accurate, contextual results.
+
+**How It Works**:
+```
+User Query → NLU Detection → [Cache Check] → Claude API → Intent Extraction → Query Executor → Results
+```
+
+1. **Detection**: Queries are checked for natural language patterns (question words, "code for", "in/of/near")
+2. **Caching**: Parsed intents are cached in `nlu_caches` table to minimize API calls (~80% cache hit rate)
+3. **Parsing**: Claude 3 Haiku extracts intent type, location names, and confidence score
+4. **Execution**: `NluQueryExecutor` translates intents into appropriate database queries
+5. **Fallback**: If NLU fails or confidence < 0.7, falls back to regular FTS search
+
+**Intent Types**:
+- `search_location`: Direct location search ("postal code for Siem Reap")
+- `list_by_parent`: List children of a parent ("communes in Phnom Penh")
+- `search_landmark`: Search by landmark name ("near Angkor Wat")
+- `search_nearby`: Find nearby locations
+
+**Key Files**:
+- `app/services/nlu_search_service.rb` - Claude API integration
+- `app/services/nlu_query_executor.rb` - Intent execution
+- `app/models/nlu_cache.rb` - Response caching
+
+**Configuration**:
+Add Anthropic API key to credentials:
+```bash
+EDITOR=vim bin/rails credentials:edit
+```
+```yaml
+anthropic:
+  api_key: sk-ant-...
+```
+
+**Rake Tasks**:
+```bash
+rake nlu:stats              # View cache statistics
+rake nlu:test['your query'] # Test NLU parsing
+rake nlu:warm               # Pre-warm cache
+rake nlu:cleanup            # Remove stale entries
+```
+
+**Cost**: ~$0.00009 per query (~9 cents per 1000 queries), with caching reducing costs further
+
 **Database**:
 - FTS5 virtual table synced via triggers (INSERT/UPDATE/DELETE)
 - Migration creates both `postal_codes` table and `postal_codes_fts` virtual table

@@ -35,6 +35,16 @@ km:
     copied: "បានចម្លង!"
     recent_searches: "ការស្វែងរកថ្មីៗ"
 
+  # NLU/AI Search
+  search:
+    ai_understood: "AI យល់សំណួររបស់អ្នក"
+    ai_assisted: "ជំនួយ AI"
+    ai_thinking: "កំពុងយល់សំណួររបស់អ្នក..."
+    listing_in: "បង្ហាញ%{type}នៅក្នុង %{parent}"
+    searching_for: "ស្វែងរក \"%{term}\""
+    landmark_resolved: "រកឃើញ \"%{landmark}\" - បង្ហាញលទ្ធផលសម្រាប់ %{location}"
+    showing_nearby: "បង្ហាញទីតាំងជិត %{location}"
+
   # Location types
   location_type:
     province: "ខេត្ត"
