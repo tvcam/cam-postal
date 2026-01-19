@@ -121,13 +121,14 @@ export default class extends Controller {
     }
   }
 
-  search() {
+  search(options = {}) {
     clearTimeout(this.timeout)
     this.timeout = setTimeout(() => {
       const query = this.inputTarget.value.trim()
+      const limit = options.limit || null
 
       if (this.clientMode && this.fuse) {
-        this.clientSearch(query)
+        this.clientSearch(query, limit)
       } else {
         // Server fallback - find form and submit
         const form = this.element.querySelector("form")
@@ -136,7 +137,7 @@ export default class extends Controller {
     }, this.clientMode ? 100 : 300)
   }
 
-  clientSearch(query) {
+  clientSearch(query, limit = null) {
     if (!query) {
       this.renderWelcome()
       return
@@ -151,7 +152,8 @@ export default class extends Controller {
       console.log("[Search Debug] Alias resolved:", query, "->", resolved)
     }
 
-    const results = this.fuse.search(searchTerm, { limit: 50 })
+    const maxResults = limit || 50
+    const results = this.fuse.search(searchTerm, { limit: maxResults })
     console.log("[Search Debug] Found", results.length, "results for:", searchTerm)
     if (results.length > 0) {
       console.log("[Search Debug] Top result:", JSON.stringify(results[0].item))

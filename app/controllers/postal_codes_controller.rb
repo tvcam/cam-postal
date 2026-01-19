@@ -57,7 +57,10 @@ class PostalCodesController < ApplicationController
 
   def search
     @query = params[:q].to_s.strip
-    @results = @query.present? ? PostalCode.search(@query) : []
+    limit = params[:limit].to_i
+    limit = nil if limit <= 0 || limit > 50
+
+    @results = @query.present? ? PostalCode.search(@query, limit: limit) : []
     @error = nil
 
     track_search if @query.present?
