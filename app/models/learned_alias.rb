@@ -8,8 +8,22 @@ class LearnedAlias < ApplicationRecord
   validates :postal_code, presence: true
   validates :search_term, uniqueness: { scope: :postal_code }
 
+  # Association to get location details
+  belongs_to :postal_code_record, class_name: "PostalCode", primary_key: "postal_code", foreign_key: "postal_code", optional: true
+
   scope :promoted, -> { where(promoted: true) }
   scope :pending, -> { where(promoted: false) }
+
+  # Sorting scopes
+  scope :order_by_rate, ->(direction = :desc) {
+    order(Arel.sql("CASE WHEN search_count = 0 THEN 0 ELSE CAST(click_count AS FLOAT) / search_count END #{direction}"))
+  }
+
+  # Class method for average click rate
+  def self.average_click_rate
+    return 0 if count.zero?
+    where("search_count > 0").average("CAST(click_count AS FLOAT) / search_count") || 0
+  end
 
   # Record a search term (called when user searches)
   def self.record_search(term, ip_address: nil)

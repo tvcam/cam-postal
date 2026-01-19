@@ -155,6 +155,14 @@
           "@type": "Answer",
           "text": "<%= strip_tags(t('faq.a15_html')) %>"
         }
+      },
+      {
+        "@type": "Question",
+        "name": "<%= t('faq.q16') %>",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "<%= t('faq.a16') %>"
+        }
       }
     ]
   }
@@ -325,6 +333,15 @@
       <div class="faq-answer">
         <p><%= t('faq.a15_html') %></p>
         <p><a href="<%= api_path %>"><%= t('faq.a15_link') %> →</a></p>
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary class="faq-question">
+        <h2><%= t('faq.q16') %></h2>
+      </summary>
+      <div class="faq-answer">
+        <p><%= t('faq.a16') %></p>
       </div>
     </details>
   </div>

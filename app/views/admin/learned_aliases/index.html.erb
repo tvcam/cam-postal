@@ -1,0 +1,134 @@
+<h2>Learned Aliases</h2>
+<p class="text-muted">Search shortcuts learned from user behavior. Review and manage promoted aliases.</p>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="value"><%= @total_count %></div>
+    <div class="label">Total</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= @promoted_count %></div>
+    <div class="label">Promoted</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= @pending_count %></div>
+    <div class="label">Pending</div>
+  </div>
+  <div class="stat-card">
+    <div class="value"><%= number_to_percentage(@avg_click_rate * 100, precision: 1) %></div>
+    <div class="label">Avg Click Rate</div>
+  </div>
+</div>
+
+<div class="period-filter">
+  <%= link_to "All", admin_learned_aliases_path(sort: @sort, order: @order), class: @status.blank? ? "active" : "" %>
+  <%= link_to "Promoted", admin_learned_aliases_path(status: "promoted", sort: @sort, order: @order), class: @status == "promoted" ? "active" : "" %>
+  <%= link_to "Pending", admin_learned_aliases_path(status: "pending", sort: @sort, order: @order), class: @status == "pending" ? "active" : "" %>
+</div>
+
+<% if @learned_aliases.any? %>
+  <table class="data-table">
+    <thead>
+      <tr>
+        <th><%= sort_link("Search Term", "term") %></th>
+        <th>Postal Code</th>
+        <th>Location</th>
+        <th><%= sort_link("Clicks", "clicks") %></th>
+        <th><%= sort_link("Searches", "searches") %></th>
+        <th><%= sort_link("Click Rate", "rate") %></th>
+        <th>Unique IPs</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @learned_aliases.each do |la| %>
+        <tr>
+          <td><strong><%= la.search_term %></strong></td>
+          <td><code><%= la.postal_code %></code></td>
+          <td class="truncate"><%= la.postal_code_record&.name_en || "Unknown" %></td>
+          <td><%= la.click_count %></td>
+          <td><%= la.search_count %></td>
+          <td><%= number_to_percentage(la.click_rate * 100, precision: 1) %></td>
+          <td><%= la.unique_ips %></td>
+          <td>
+            <% if la.promoted? %>
+              <span class="badge badge-success">Promoted</span>
+            <% else %>
+              <span class="badge badge-pending">Pending</span>
+            <% end %>
+          </td>
+          <td class="actions">
+            <% if la.promoted? %>
+              <%= button_to "Demote", demote_admin_learned_alias_path(la, status: @status, sort: @sort, order: @order), method: :post, class: "btn-small btn-warning" %>
+            <% else %>
+              <%= button_to "Promote", promote_admin_learned_alias_path(la, status: @status, sort: @sort, order: @order), method: :post, class: "btn-small btn-success" %>
+            <% end %>
+            <%= button_to "Delete", admin_learned_alias_path(la, status: @status, sort: @sort, order: @order), method: :delete, class: "btn-small btn-danger", data: { turbo_confirm: "Are you sure you want to delete this alias?" } %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+<% else %>
+  <p class="text-muted">No learned aliases yet. Aliases are created when users search and click on results.</p>
+<% end %>
+
+<style>
+  .badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+  .badge-success {
+    background: #22c55e;
+    color: white;
+  }
+  .badge-pending {
+    background: #f59e0b;
+    color: white;
+  }
+  .actions {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+  .btn-small {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .btn-success {
+    background: #22c55e;
+    color: white;
+  }
+  .btn-warning {
+    background: #f59e0b;
+    color: white;
+  }
+  .btn-danger {
+    background: #ef4444;
+    color: white;
+  }
+  .btn-small:hover {
+    opacity: 0.8;
+  }
+  .sort-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  .sort-link:hover {
+    text-decoration: underline;
+  }
+  .sort-link.active {
+    font-weight: bold;
+  }
+  .sort-link .arrow {
+    font-size: 0.7em;
+  }
+</style>

@@ -10,6 +10,12 @@ Rails.application.routes.draw do
     resources :postal_codes, only: :index
     resources :search_logs, only: :index
     resources :api_access_logs, only: :index
+    resources :learned_aliases, only: [ :index, :destroy ] do
+      member do
+        post :promote
+        post :demote
+      end
+    end
   end
 
   # Health check
