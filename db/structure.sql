@@ -40,7 +40,14 @@ CREATE INDEX "index_search_logs_on_created_at" ON "search_logs" ("created_at") /
 CREATE TABLE IF NOT EXISTS "api_access_logs" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "ip_address" varchar, "user_agent" varchar, "endpoint" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
 CREATE INDEX "index_api_access_logs_on_created_at" ON "api_access_logs" ("created_at") /*application='CamPostal'*/;
 CREATE INDEX "index_api_access_logs_on_ip_address" ON "api_access_logs" ("ip_address") /*application='CamPostal'*/;
+CREATE TABLE IF NOT EXISTS "learned_aliases" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "search_term" varchar NOT NULL, "postal_code" varchar NOT NULL, "click_count" integer DEFAULT 0 NOT NULL, "search_count" integer DEFAULT 0 NOT NULL, "unique_ips" integer DEFAULT 0 NOT NULL, "promoted" boolean DEFAULT FALSE NOT NULL, "last_clicked_at" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL);
+CREATE UNIQUE INDEX "index_learned_aliases_on_search_term_and_postal_code" ON "learned_aliases" ("search_term", "postal_code") /*application='CamPostal'*/;
+CREATE INDEX "index_learned_aliases_on_search_term" ON "learned_aliases" ("search_term") /*application='CamPostal'*/;
+CREATE INDEX "index_learned_aliases_on_promoted" ON "learned_aliases" ("promoted") /*application='CamPostal'*/;
+CREATE INDEX "index_learned_aliases_on_click_count" ON "learned_aliases" ("click_count") /*application='CamPostal'*/;
+CREATE INDEX "index_learned_aliases_on_last_clicked_at" ON "learned_aliases" ("last_clicked_at") /*application='CamPostal'*/;
 INSERT INTO "schema_migrations" (version) VALUES
+('20260119032117'),
 ('20260118085810'),
 ('20260118044035'),
 ('20260115055137'),
