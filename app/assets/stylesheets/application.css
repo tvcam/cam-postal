@@ -1605,3 +1605,152 @@ a.result-card {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* ========================================
+   Error Pages
+   ======================================== */
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1.5rem;
+  min-height: 50vh;
+}
+
+.error-icon {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  opacity: 0.6;
+}
+
+.error-icon--warning {
+  color: #f59e0b;
+  opacity: 0.8;
+}
+
+.error-icon--danger {
+  color: #ef4444;
+  opacity: 0.8;
+}
+
+.error-code {
+  font-size: 5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+}
+
+.error-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.error-message {
+  font-size: 1rem;
+  color: var(--text-light);
+  max-width: 400px;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.error-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.error-actions .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.error-actions .btn-primary {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+.error-actions .btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.error-actions .btn-secondary {
+  background: var(--white);
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.error-actions .btn-secondary:hover {
+  background: var(--secondary);
+  border-color: var(--primary-light);
+}
+
+/* Inline Error (for Turbo/AJAX) */
+.error-inline {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+}
+
+.error-inline-icon {
+  color: #ef4444;
+  flex-shrink: 0;
+}
+
+.error-inline-message {
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+[data-theme="dark"] .error-inline {
+  background: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+}
+
+@media (max-width: 640px) {
+  .error-page {
+    padding: 2rem 1rem;
+  }
+
+  .error-code {
+    font-size: 4rem;
+  }
+
+  .error-title {
+    font-size: 1.25rem;
+  }
+
+  .error-message {
+    font-size: 0.9375rem;
+  }
+
+  .error-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .error-actions .btn {
+    width: 100%;
+  }
+}

@@ -232,3 +232,27 @@ fr:
   misc:
     back_to_search: "Retour à la recherche"
     all_provinces: "Toutes les provinces"
+
+  # Error pages
+  errors:
+    title: "Erreur"
+    back_home: "Retour à l'accueil"
+    try_again: "Réessayer"
+    not_found:
+      title: "Page non trouvée"
+      message: "Désolé, nous n'avons pas pu trouver la page que vous recherchez. Elle a peut-être été déplacée ou n'existe pas."
+    internal_error:
+      title: "Une erreur s'est produite"
+      message: "Nous rencontrons des difficultés techniques. Veuillez réessayer plus tard."
+    unprocessable:
+      title: "Impossible de traiter"
+      message: "La demande n'a pas pu être traitée. Veuillez réessayer."
+    bad_request:
+      title: "Requête invalide"
+      message: "La requête était invalide. Veuillez vérifier vos données et réessayer."
+    search_error:
+      title: "Erreur de recherche"
+      message: "Impossible d'effectuer la recherche. Veuillez réessayer."
+    location_error:
+      title: "Erreur de localisation"
+      message: "Impossible de détecter votre position. Veuillez essayer de rechercher manuellement."
