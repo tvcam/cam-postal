@@ -1,25 +1,15 @@
 namespace :learned_aliases do
-  desc "Cleanup stale learned aliases (not clicked in 2 months)"
-  task cleanup: :environment do
-    puts "Cleaning up stale learned aliases..."
-    result = LearnedAlias.cleanup_stale!
-    puts "Deleted #{result[:deleted]} stale records"
-    puts "Demoted #{result[:demoted]} stale promoted aliases"
-  end
-
   desc "Show statistics about learned aliases"
   task stats: :environment do
     total = LearnedAlias.count
     promoted = LearnedAlias.promoted.count
     pending = LearnedAlias.pending.count
-    stale = LearnedAlias.stale.count
 
     puts "Learned Aliases Statistics"
     puts "-" * 30
     puts "Total records:     #{total}"
     puts "Promoted aliases:  #{promoted}"
     puts "Pending:           #{pending}"
-    puts "Stale (>2 months): #{stale}"
 
     if promoted > 0
       puts "\nTop 10 Promoted Aliases:"

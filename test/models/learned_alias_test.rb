@@ -71,11 +71,11 @@ class LearnedAliasTest < ActiveSupport::TestCase
     record = LearnedAlias.create!(
       search_term: "test",
       postal_code: "120101",
-      click_count: 10,
+      click_count: 12,
       search_count: 20
     )
 
-    assert_equal 0.5, record.click_rate
+    assert_equal 0.6, record.click_rate
   end
 
   test "click_rate returns 0 when search_count is zero" do
@@ -93,8 +93,8 @@ class LearnedAliasTest < ActiveSupport::TestCase
     record = LearnedAlias.create!(
       search_term: "test",
       postal_code: "120101",
-      click_count: 15,
-      search_count: 20,
+      click_count: 12,
+      search_count: 20,  # click_rate = 0.6 (60%)
       unique_ips: 8
     )
 
@@ -118,7 +118,7 @@ class LearnedAliasTest < ActiveSupport::TestCase
       search_term: "test",
       postal_code: "120101",
       click_count: 10,
-      search_count: 100,  # click_rate = 0.1, below 0.5
+      search_count: 20,  # click_rate = 0.5, below 0.6
       unique_ips: 5
     )
 
@@ -129,8 +129,8 @@ class LearnedAliasTest < ActiveSupport::TestCase
     record = LearnedAlias.create!(
       search_term: "test",
       postal_code: "120101",
-      click_count: 10,
-      search_count: 15,
+      click_count: 12,
+      search_count: 20,
       unique_ips: 3  # below MIN_UNIQUE_IPS (5)
     )
 
@@ -142,7 +142,7 @@ class LearnedAliasTest < ActiveSupport::TestCase
       search_term: "test",
       postal_code: "120101",
       click_count: 15,
-      search_count: 20,
+      search_count: 20,  # click_rate = 0.75 (75%)
       unique_ips: 8,
       promoted: false
     )
@@ -203,57 +203,14 @@ class LearnedAliasTest < ActiveSupport::TestCase
     assert_nil result
   end
 
-  test "cleanup_stale deletes old non-promoted records" do
-    # Create stale record (last clicked 3 months ago)
-    stale = LearnedAlias.create!(
-      search_term: "stale",
-      postal_code: "120101",
-      promoted: false,
-      last_clicked_at: 3.months.ago
-    )
-
-    # Create fresh record
-    fresh = LearnedAlias.create!(
-      search_term: "fresh",
-      postal_code: "120102",
-      promoted: false,
-      last_clicked_at: 1.week.ago
-    )
-
-    result = LearnedAlias.cleanup_stale!
-
-    assert_equal 1, result[:deleted]
-    assert_nil LearnedAlias.find_by(id: stale.id)
-    assert_not_nil LearnedAlias.find_by(id: fresh.id)
-  end
-
-  test "cleanup_stale demotes old promoted records" do
-    # Create stale promoted record
-    stale_promoted = LearnedAlias.create!(
-      search_term: "stale promoted",
-      postal_code: "120101",
-      promoted: true,
-      last_clicked_at: 3.months.ago
-    )
-
-    result = LearnedAlias.cleanup_stale!
-
-    assert_equal 1, result[:demoted]
-    assert_not stale_promoted.reload.promoted?
-  end
-
   test "scopes work correctly" do
-    promoted = LearnedAlias.create!(search_term: "p1", postal_code: "120101", promoted: true, last_clicked_at: Time.current)
-    pending = LearnedAlias.create!(search_term: "p2", postal_code: "120102", promoted: false, last_clicked_at: Time.current)
-    stale = LearnedAlias.create!(search_term: "p3", postal_code: "120103", promoted: false, last_clicked_at: 3.months.ago)
+    promoted = LearnedAlias.create!(search_term: "p1", postal_code: "120101", promoted: true)
+    pending = LearnedAlias.create!(search_term: "p2", postal_code: "120102", promoted: false)
 
     assert_includes LearnedAlias.promoted, promoted
     assert_not_includes LearnedAlias.promoted, pending
 
     assert_includes LearnedAlias.pending, pending
     assert_not_includes LearnedAlias.pending, promoted
-
-    assert_includes LearnedAlias.stale, stale
-    assert_not_includes LearnedAlias.stale, promoted
   end
 end

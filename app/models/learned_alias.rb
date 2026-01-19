@@ -1,9 +1,8 @@
 class LearnedAlias < ApplicationRecord
   # Thresholds for auto-promotion
   MIN_CLICKS = 10
-  MIN_CLICK_RATE = 0.5  # 50%
+  MIN_CLICK_RATE = 0.6  # 60%
   MIN_UNIQUE_IPS = 5
-  STALE_AFTER = 2.months
 
   validates :search_term, presence: true
   validates :postal_code, presence: true
@@ -11,7 +10,6 @@ class LearnedAlias < ApplicationRecord
 
   scope :promoted, -> { where(promoted: true) }
   scope :pending, -> { where(promoted: false) }
-  scope :stale, -> { where("last_clicked_at < ?", STALE_AFTER.ago) }
 
   # Record a search term (called when user searches)
   def self.record_search(term, ip_address: nil)
@@ -81,18 +79,6 @@ class LearnedAlias < ApplicationRecord
 
     location = PostalCode.find_by(postal_code: record.postal_code)
     location&.name_en
-  end
-
-  # Cleanup stale records (not clicked in 2 months)
-  def self.cleanup_stale!
-    deleted = stale.where(promoted: false).delete_all
-    Rails.logger.info "LearnedAlias cleanup: removed #{deleted} stale records"
-
-    # Demote promoted aliases that are stale
-    demoted = stale.where(promoted: true).update_all(promoted: false)
-    Rails.logger.info "LearnedAlias cleanup: demoted #{demoted} stale aliases"
-
-    { deleted: deleted, demoted: demoted }
   end
 
   private
