@@ -1,0 +1,30 @@
+<% content_for :title, "#{@vibe[:name]} - #{t('surprise.title')} | #{t('site.name')}" %>
+
+<div class="surprise-page" data-controller="surprise">
+  <div class="surprise-header">
+    <h1><%= t('surprise.your_destiny') %></h1>
+  </div>
+
+  <div class="surprise-main">
+    <%= render partial: "surprise/result_card", locals: {
+      destination: @destination,
+      vibe: @vibe,
+      tagline: @tagline,
+      share_text: @share_text,
+      youtube_url: @youtube_url
+    } %>
+
+    <div class="reveal-actions">
+      <a href="<%= surprise_path %>" class="try-again-btn">
+        <span>🎲</span> <%= t('surprise.try_again') %>
+      </a>
+      <a href="<%= postal_code_path(@destination.postal_code) %>" class="explore-btn">
+        <span>📍</span> <%= t('surprise.explore') %>
+      </a>
+    </div>
+  </div>
+
+  <div class="surprise-footer">
+    <a href="<%= root_path %>" class="back-link"><%= t('misc.back_to_search') %></a>
+  </div>
+</div>

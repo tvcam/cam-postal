@@ -1,0 +1,48 @@
+<div class="destiny-card">
+  <div class="destiny-header">
+    <span class="destiny-label"><%= t('surprise.your_destiny') %></span>
+  </div>
+
+  <div class="destiny-content">
+    <div class="destiny-emoji"><%= vibe[:emoji] %></div>
+    <h2 class="destiny-name"><%= vibe[:name] %></h2>
+    <p class="destiny-code"><%= destination.postal_code %></p>
+    <p class="destiny-tagline">"<%= tagline %>"</p>
+
+    <% if destination.name_en != vibe[:name] %>
+      <p class="destiny-location">
+        <%= destination.name_en %>
+        <% if destination.name_km.present? %>
+          <span class="destiny-location-km"><%= destination.name_km %></span>
+        <% end %>
+      </p>
+    <% end %>
+  </div>
+
+  <div class="destiny-actions">
+    <button type="button" class="share-btn-card" data-action="click->surprise#shareResult" data-share-text="<%= share_text %>">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+        <polyline points="16 6 12 2 8 6"></polyline>
+        <line x1="12" y1="2" x2="12" y2="15"></line>
+      </svg>
+      <span><%= t('surprise.share') %></span>
+    </button>
+
+    <a href="<%= youtube_url %>" target="_blank" rel="noopener" class="youtube-btn">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+      </svg>
+      <span><%= t('surprise.watch') %></span>
+    </a>
+  </div>
+
+  <a href="<%= postal_code_path(destination.postal_code) %>" class="destiny-explore-btn">
+    <span>📍</span>
+    <span><%= t('surprise.explore') %> <%= destination.name_en %></span>
+  </a>
+
+  <div class="destiny-footer">
+    cam-postal.gotabs.net/surprise
+  </div>
+</div>

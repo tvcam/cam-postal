@@ -1,0 +1,9 @@
+<%= turbo_stream.update "surprise-result" do %>
+  <%= render partial: "surprise/result_card", locals: {
+    destination: @destination,
+    vibe: @vibe,
+    tagline: @tagline,
+    share_text: @share_text,
+    youtube_url: @youtube_url
+  } %>
+<% end %>

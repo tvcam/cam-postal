@@ -291,6 +291,28 @@ body {
   cursor: not-allowed;
 }
 
+.location-btn.surprise-link {
+  text-decoration: none;
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+  border-color: #fbbf24;
+  color: #78350f;
+}
+
+.location-btn.surprise-link:hover {
+  background: linear-gradient(135deg, #fde68a 0%, #fcd34d 100%);
+  color: #78350f;
+}
+
+[data-theme="dark"] .location-btn.surprise-link {
+  background: linear-gradient(135deg, #78350f 0%, #92400e 100%);
+  border-color: #b45309;
+  color: #fef3c7;
+}
+
+[data-theme="dark"] .location-btn.surprise-link:hover {
+  background: linear-gradient(135deg, #92400e 0%, #b45309 100%);
+}
+
 .location-btn svg {
   flex-shrink: 0;
 }
@@ -2243,5 +2265,626 @@ a.result-card {
 
   .related-name {
     font-size: 0.8rem;
+  }
+}
+
+/* ========================================
+   Surprise Me Page - Mobile First
+   ======================================== */
+.surprise-page {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.surprise-header {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(180deg, var(--white) 0%, transparent 100%);
+}
+
+.surprise-header h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary) 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.surprise-subtitle {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.surprise-main {
+  background: var(--white);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.08);
+  min-height: calc(100vh - 200px);
+}
+
+/* Category Filters - Mobile Grid */
+.category-filters {
+  margin-bottom: 1.5rem;
+}
+
+.filter-label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--text-light);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.category-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+}
+
+.category-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  font-size: 0.6875rem;
+  font-family: inherit;
+  background: var(--secondary);
+  color: var(--text);
+  border: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+  min-height: 60px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.category-btn:active {
+  transform: scale(0.95);
+}
+
+.category-btn.active {
+  background: linear-gradient(135deg, var(--primary) 0%, #6366f1 100%);
+  color: white;
+  border-color: transparent;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.category-emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.category-label {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+/* Big Reveal Button */
+.surprise-action {
+  text-align: center;
+  padding: 1rem 0 1.5rem;
+}
+
+.surprise-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 1.25rem 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: inherit;
+  background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.4);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.surprise-btn:active {
+  transform: scale(0.98);
+}
+
+.surprise-btn.spinning {
+  pointer-events: none;
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.surprise-btn.spinning .btn-emoji {
+  animation: spin 0.4s ease-in-out infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.btn-emoji {
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.surprise-hint {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin-top: 0.75rem;
+  opacity: 0.8;
+}
+
+/* Surprise Result */
+.surprise-result {
+  min-height: 20px;
+  transition: all 0.3s ease;
+}
+
+.surprise-result.revealed {
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Destiny Card - Mobile Optimized */
+.destiny-card {
+  background: linear-gradient(145deg, #fef3c7 0%, #fde68a 50%, #fbbf24 100%);
+  border-radius: 1rem;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(245, 158, 11, 0.25);
+}
+
+.destiny-card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+[data-theme="dark"] .destiny-card {
+  background: linear-gradient(145deg, #78350f 0%, #92400e 50%, #b45309 100%);
+}
+
+.destiny-header {
+  margin-bottom: 0.75rem;
+}
+
+.destiny-label {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #92400e;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 0.375rem 1rem;
+  border-radius: 2rem;
+}
+
+[data-theme="dark"] .destiny-label {
+  color: #fef3c7;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.destiny-content {
+  margin-bottom: 1.25rem;
+}
+
+.destiny-emoji {
+  font-size: 4.5rem;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1));
+}
+
+.destiny-name {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #78350f;
+  margin: 0 0 0.375rem 0;
+  text-shadow: 0 1px 2px rgba(255,255,255,0.5);
+}
+
+[data-theme="dark"] .destiny-name {
+  color: #fef3c7;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.destiny-code {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #92400e;
+  font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+  margin: 0 0 1rem 0;
+  background: rgba(255,255,255,0.4);
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+[data-theme="dark"] .destiny-code {
+  color: #fde68a;
+  background: rgba(0,0,0,0.2);
+}
+
+.destiny-tagline {
+  font-size: 1.0625rem;
+  font-style: italic;
+  font-weight: 500;
+  color: #78350f;
+  margin: 0;
+  line-height: 1.4;
+}
+
+[data-theme="dark"] .destiny-tagline {
+  color: #fde68a;
+}
+
+.destiny-location {
+  font-size: 0.8125rem;
+  color: #a16207;
+  margin: 0.75rem 0 0 0;
+  opacity: 0.9;
+}
+
+[data-theme="dark"] .destiny-location {
+  color: #fcd34d;
+}
+
+.destiny-location-km {
+  display: block;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+/* Destiny Actions - Full Width Buttons */
+.destiny-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.share-btn-card,
+.youtube-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.share-btn-card {
+  background: white;
+  color: #78350f;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.share-btn-card:active {
+  transform: scale(0.97);
+}
+
+.share-btn-card.success {
+  background: var(--success);
+  color: white;
+}
+
+.youtube-btn {
+  background: #ef4444;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+.youtube-btn:active {
+  transform: scale(0.97);
+}
+
+/* Explore Button - Full Width CTA */
+.destiny-explore-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  background: rgba(255,255,255,0.6);
+  color: #78350f;
+  border: 2px solid rgba(120, 53, 15, 0.2);
+  border-radius: 0.75rem;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: all 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.destiny-explore-btn:active {
+  transform: scale(0.98);
+  background: rgba(255,255,255,0.8);
+}
+
+[data-theme="dark"] .destiny-explore-btn {
+  background: rgba(0,0,0,0.2);
+  color: #fef3c7;
+  border-color: rgba(254, 243, 199, 0.2);
+}
+
+.destiny-footer {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  color: #a16207;
+  opacity: 0.6;
+  letter-spacing: 0.02em;
+}
+
+[data-theme="dark"] .destiny-footer {
+  color: #fcd34d;
+}
+
+/* Reveal Actions (for reveal.html.erb) */
+.reveal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.try-again-btn,
+.explore-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+  border-radius: 0.75rem;
+  text-decoration: none;
+  transition: transform 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.try-again-btn {
+  background: linear-gradient(135deg, var(--primary) 0%, #6366f1 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(30, 64, 175, 0.3);
+}
+
+.try-again-btn:active {
+  transform: scale(0.98);
+}
+
+.explore-btn {
+  background: var(--secondary);
+  color: var(--text);
+  border: 2px solid var(--border);
+}
+
+.explore-btn:active {
+  transform: scale(0.98);
+}
+
+/* History Section */
+.surprise-history {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--border);
+}
+
+.surprise-history h3 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: var(--secondary);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.15s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.history-item:active {
+  transform: scale(0.98);
+}
+
+.history-emoji {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.history-name {
+  flex: 1;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.history-date {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+/* Progress Bar */
+.history-progress {
+  text-align: center;
+  padding: 0.75rem;
+  background: var(--secondary);
+  border-radius: var(--radius-sm);
+}
+
+.progress-bar {
+  height: 10px;
+  background: var(--border);
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary) 0%, #10b981 100%);
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.progress-text {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Surprise Footer */
+.surprise-footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.surprise-footer .back-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+}
+
+/* Desktop Enhancements */
+@media (min-width: 641px) {
+  .surprise-page {
+    max-width: 500px;
+    padding: 1rem;
+  }
+
+  .surprise-header {
+    padding: 2rem 1rem;
+  }
+
+  .surprise-header h1 {
+    font-size: 2.25rem;
+  }
+
+  .surprise-main {
+    border-radius: var(--radius);
+    padding: 2rem;
+    min-height: auto;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .category-buttons {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .category-btn {
+    padding: 1rem 0.5rem;
+    min-height: 72px;
+  }
+
+  .category-emoji {
+    font-size: 1.75rem;
+  }
+
+  .category-label {
+    font-size: 0.6875rem;
+  }
+
+  .surprise-btn {
+    width: auto;
+    padding: 1.25rem 3rem;
+  }
+
+  .destiny-card {
+    padding: 2rem;
+  }
+
+  .destiny-emoji {
+    font-size: 5rem;
+  }
+
+  .destiny-name {
+    font-size: 2rem;
+  }
+
+  .destiny-actions {
+    justify-content: center;
+  }
+
+  .share-btn-card,
+  .youtube-btn {
+    flex: none;
+    min-width: 140px;
+  }
+
+  .destiny-explore-btn {
+    width: auto;
+    display: inline-flex;
+  }
+
+  .reveal-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .try-again-btn,
+  .explore-btn {
+    width: auto;
+    min-width: 180px;
   }
 }

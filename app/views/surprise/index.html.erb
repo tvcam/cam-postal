@@ -1,0 +1,54 @@
+<% content_for :title, "#{t('surprise.title')} | #{t('site.name')}" %>
+
+<% content_for :head do %>
+  <meta name="description" content="<%= t('surprise.meta_description') %>">
+  <meta property="og:title" content="<%= t('surprise.title') %> | <%= t('site.name') %>">
+  <meta property="og:description" content="<%= t('surprise.meta_description') %>">
+<% end %>
+
+<div class="surprise-page" data-controller="surprise">
+  <div class="surprise-header">
+    <h1><%= t('surprise.title') %></h1>
+    <p class="surprise-subtitle"><%= t('surprise.subtitle') %></p>
+  </div>
+
+  <div class="surprise-main">
+    <div class="category-filters">
+      <p class="filter-label"><%= t('surprise.filter_label') %></p>
+      <div class="category-buttons" data-surprise-target="categories">
+        <% @categories.each do |key, cat| %>
+          <button type="button"
+                  class="category-btn <%= 'active' if key == :any %>"
+                  data-category="<%= key %>"
+                  data-action="click->surprise#selectCategory">
+            <span class="category-emoji"><%= cat[:emoji] %></span>
+            <span class="category-label"><%= t("surprise.categories.#{key}") %></span>
+          </button>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="surprise-action">
+      <button type="button"
+              class="surprise-btn"
+              data-action="click->surprise#reveal"
+              data-surprise-target="button">
+        <span class="btn-emoji">🎲</span>
+        <span class="btn-text"><%= t('surprise.button') %></span>
+      </button>
+      <p class="surprise-hint"><%= t('surprise.hint') %></p>
+    </div>
+
+    <div id="surprise-result" data-surprise-target="result" class="surprise-result"></div>
+
+    <div class="surprise-history" data-surprise-target="historySection" style="display: none;">
+      <h3><%= t('surprise.history_title') %></h3>
+      <div class="history-list" data-surprise-target="historyList"></div>
+      <div class="history-progress" data-surprise-target="progress"></div>
+    </div>
+  </div>
+
+  <div class="surprise-footer">
+    <a href="<%= root_path %>" class="back-link"><%= t('misc.back_to_search') %></a>
+  </div>
+</div>

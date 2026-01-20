@@ -295,6 +295,29 @@ fr:
       message: "Votre message fait maintenant partie de l'histoire de ce lieu."
       another: "Enterrer une autre"
 
+  # Surprise Me
+  surprise:
+    title: "Surprenez-moi"
+    subtitle: "Laissez le destin choisir votre prochaine aventure au Cambodge"
+    meta_description: "Découvrez des destinations aléatoires à travers le Cambodge. Laissez le destin choisir votre prochaine aventure."
+    filter_label: "J'ai envie de..."
+    button: "Révéler mon destin"
+    hint: "Cliquez pour découvrir une destination aléatoire"
+    your_destiny: "Votre Destin"
+    share: "Partager"
+    watch: "Regarder"
+    explore: "Explorer"
+    try_again: "Réessayer"
+    history_title: "Votre Voyage"
+    categories:
+      any: "N'importe où"
+      beach: "Plage"
+      adventure: "Aventure"
+      culture: "Culture"
+      foodie: "Gastronomie"
+      nature: "Nature"
+      city: "Ville"
+
   # Error pages
   errors:
     title: "Erreur"

@@ -296,6 +296,29 @@ en:
       message: "Your message is now part of this place's story."
       another: "Bury Another"
 
+  # Surprise Me
+  surprise:
+    title: "Surprise Me"
+    subtitle: "Let fate pick your next Cambodia adventure"
+    meta_description: "Discover random destinations across Cambodia. Let fate pick your next adventure with our surprise destination picker."
+    filter_label: "I'm in the mood for..."
+    button: "Reveal My Destiny"
+    hint: "Click to discover a random destination"
+    your_destiny: "Your Destiny"
+    share: "Share"
+    watch: "Watch"
+    explore: "Explore"
+    try_again: "Try Again"
+    history_title: "Your Journey"
+    categories:
+      any: "Anywhere"
+      beach: "Beach"
+      adventure: "Adventure"
+      culture: "Culture"
+      foodie: "Foodie"
+      nature: "Nature"
+      city: "City"
+
   errors:
     title: "Error"
     back_home: "Back to Home"

@@ -1,15 +1,147 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  code: MyString
-  postal_code: MyString
-  name_km: MyString
-  name_en: MyString
-  location_type: MyString
+phnom_penh_province:
+  postal_code: "120000"
+  name_km: "ភ្នំពេញ"
+  name_en: "Phnom Penh"
+  location_type: "province"
 
-two:
-  code: MyString
-  postal_code: MyString
-  name_km: MyString
-  name_en: MyString
-  location_type: MyString
+chamkarmon_district:
+  postal_code: "120100"
+  name_km: "ចំការមន"
+  name_en: "Chamkar Mon"
+  location_type: "district"
+
+tuoltompong_commune:
+  postal_code: "120107"
+  name_km: "ទួលទំពូង"
+  name_en: "Tuol Tompong"
+  location_type: "commune"
+
+siem_reap_province:
+  postal_code: "170000"
+  name_km: "សៀមរាប"
+  name_en: "Siem Reap"
+  location_type: "province"
+
+siem_reap_district:
+  postal_code: "170100"
+  name_km: "សៀមរាប"
+  name_en: "Siem Reap"
+  location_type: "district"
+
+siem_reap_commune:
+  postal_code: "170101"
+  name_km: "ស្វាយដង្គំ"
+  name_en: "Svay Dangkum"
+  location_type: "commune"
+
+sihanoukville_province:
+  postal_code: "180000"
+  name_km: "ព្រះសីហនុ"
+  name_en: "Preah Sihanouk"
+  location_type: "province"
+
+sihanoukville_commune:
+  postal_code: "180101"
+  name_km: "ផ្សារលើ"
+  name_en: "Phsar Leu"
+  location_type: "commune"
+
+kampot_province:
+  postal_code: "070000"
+  name_km: "កំពត"
+  name_en: "Kampot"
+  location_type: "province"
+
+kampot_commune:
+  postal_code: "070101"
+  name_km: "កំពង់កណ្ដាល"
+  name_en: "Kampong Kandal"
+  location_type: "commune"
+
+# Additional provinces for temple category coverage
+kampong_thom_province:
+  postal_code: "060000"
+  name_km: "កំពង់ធំ"
+  name_en: "Kampong Thom"
+  location_type: "province"
+
+kampong_thom_commune:
+  postal_code: "060101"
+  name_km: "កំពង់រទេះ"
+  name_en: "Kampong Roteh"
+  location_type: "commune"
+
+preah_vihear_province:
+  postal_code: "130000"
+  name_km: "ព្រះវិហារ"
+  name_en: "Preah Vihear"
+  location_type: "province"
+
+preah_vihear_commune:
+  postal_code: "130101"
+  name_km: "ជើងមាស"
+  name_en: "Cheung Meas"
+  location_type: "commune"
+
+takeo_province:
+  postal_code: "210000"
+  name_km: "តាកែវ"
+  name_en: "Takeo"
+  location_type: "province"
+
+takeo_commune:
+  postal_code: "210101"
+  name_km: "រកាក្នុង"
+  name_en: "Roka Knong"
+  location_type: "commune"
+
+oddar_meanchey_province:
+  postal_code: "220000"
+  name_km: "ឧត្តរមានជ័យ"
+  name_en: "Oddar Meanchey"
+  location_type: "province"
+
+oddar_meanchey_commune:
+  postal_code: "220101"
+  name_km: "ស្រែម្អម"
+  name_en: "Srae Mom"
+  location_type: "commune"
+
+# Additional provinces for foodie and beach category coverage
+battambang_province:
+  postal_code: "020000"
+  name_km: "បាត់ដំបង"
+  name_en: "Battambang"
+  location_type: "province"
+
+battambang_commune:
+  postal_code: "020101"
+  name_km: "ស្វាយប៉ោ"
+  name_en: "Svay Po"
+  location_type: "commune"
+
+koh_kong_province:
+  postal_code: "090000"
+  name_km: "កោះកុង"
+  name_en: "Koh Kong"
+  location_type: "province"
+
+koh_kong_commune:
+  postal_code: "090101"
+  name_km: "ស្មាច់មានជ័យ"
+  name_en: "Smach Mean Chey"
+  location_type: "commune"
+
+kep_province:
+  postal_code: "230000"
+  name_km: "កែប"
+  name_en: "Kep"
+  location_type: "province"
+
+kep_commune:
+  postal_code: "230101"
+  name_km: "កែប"
+  name_en: "Kep"
+  location_type: "commune"

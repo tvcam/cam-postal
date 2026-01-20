@@ -71,5 +71,9 @@ Rails.application.routes.draw do
   post "capsules/:id/heart", to: "time_capsules#heart", as: :capsule_heart
   post "capsules/:id/flag", to: "time_capsules#flag", as: :capsule_flag
 
+  # Surprise Me / Random Destination
+  get "surprise", to: "surprise#index", as: :surprise
+  get "surprise/reveal", to: "surprise#reveal", as: :surprise_reveal
+
   root "postal_codes#index"
 end

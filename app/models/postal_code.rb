@@ -1,4 +1,6 @@
 class PostalCode < ApplicationRecord
+  include ProvinceVibes
+
   LOCATION_TYPES = %w[province district commune].freeze
   ALIASES_PATH = Rails.root.join("config/aliases.yml").freeze
 
