@@ -2809,45 +2809,49 @@ a.result-card {
 /* Desktop Enhancements */
 @media (min-width: 641px) {
   .surprise-page {
-    max-width: 500px;
-    padding: 1rem;
+    max-width: 640px;
+    padding: 2rem;
   }
 
   .surprise-header {
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
   }
 
   .surprise-header h1 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
   }
 
   .surprise-main {
     border-radius: var(--radius);
-    padding: 2rem;
+    padding: 2.5rem;
     min-height: auto;
     box-shadow: var(--shadow-lg);
   }
 
   .category-buttons {
     grid-template-columns: repeat(7, 1fr);
+    gap: 0.75rem;
   }
 
   .category-btn {
-    padding: 1rem 0.5rem;
-    min-height: 72px;
+    padding: 1rem 0.75rem;
+    min-height: 80px;
+    border-radius: var(--radius);
   }
 
   .category-emoji {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 
   .category-label {
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
   }
 
   .surprise-btn {
     width: auto;
-    padding: 1.25rem 3rem;
+    min-width: 280px;
+    padding: 1.25rem 2.5rem;
   }
 
   .destiny-card {
@@ -2886,5 +2890,29 @@ a.result-card {
   .explore-btn {
     width: auto;
     min-width: 180px;
+  }
+}
+
+/* Large Desktop */
+@media (min-width: 900px) {
+  .surprise-page {
+    max-width: 720px;
+  }
+
+  .category-buttons {
+    gap: 1rem;
+  }
+
+  .category-btn {
+    padding: 1.25rem 1rem;
+    min-height: 90px;
+  }
+
+  .category-emoji {
+    font-size: 2.25rem;
+  }
+
+  .category-label {
+    font-size: 0.8125rem;
   }
 }
