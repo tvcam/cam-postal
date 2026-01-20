@@ -28,7 +28,24 @@ class PostalCode < ApplicationRecord
   # Reload aliases (useful for development)
   def self.reload_aliases!
     @aliases = nil
+    @reverse_aliases = nil
     aliases
+  end
+
+  # Build reverse lookup: official name => [aliases]
+  def self.reverse_aliases
+    @reverse_aliases ||= begin
+      result = Hash.new { |h, k| h[k] = [] }
+      aliases.each do |alias_name, official_name|
+        result[official_name.downcase] << alias_name
+      end
+      result
+    end
+  end
+
+  # Get all aliases that point to this location's name
+  def aliases_for_location
+    self.class.reverse_aliases[name_en.downcase] || []
   end
 
   # Resolve alias to official name, returns original if no alias found

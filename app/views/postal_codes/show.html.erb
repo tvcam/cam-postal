@@ -1,9 +1,14 @@
 <% content_for :title, "#{@postal_code.postal_code} - #{@postal_code.name_en} | #{t('site.name')}" %>
+<% aliases = @postal_code.aliases_for_location %>
+<% aliases_text = aliases.any? ? " Also known as: #{aliases.first(5).join(', ')}." : "" %>
 
 <% content_for :head do %>
-  <meta name="description" content="<%= t('postal_code.meta_description', code: @postal_code.postal_code, name: @postal_code.name_en, type: t("location_type.#{@postal_code.location_type}")) %>">
+  <meta name="description" content="<%= t('postal_code.meta_description', code: @postal_code.postal_code, name: @postal_code.name_en, type: t("location_type.#{@postal_code.location_type}")) %><%= aliases_text %>">
   <meta property="og:title" content="<%= @postal_code.postal_code %> - <%= @postal_code.name_en %> | <%= t('site.name') %>">
-  <meta property="og:description" content="<%= t('postal_code.meta_description', code: @postal_code.postal_code, name: @postal_code.name_en, type: t("location_type.#{@postal_code.location_type}")) %>">
+  <meta property="og:description" content="<%= t('postal_code.meta_description', code: @postal_code.postal_code, name: @postal_code.name_en, type: t("location_type.#{@postal_code.location_type}")) %><%= aliases_text %>">
+  <% if aliases.any? %>
+  <meta name="keywords" content="<%= [@postal_code.postal_code, @postal_code.name_en, @postal_code.name_km, *aliases.first(10)].compact.join(', ') %>">
+  <% end %>
   <link rel="canonical" href="<%= postal_code_url(@postal_code.postal_code) %>">
 <% end %>
 
@@ -50,11 +55,12 @@
 
   <!-- Place/AdministrativeArea Schema -->
   <script type="application/ld+json">
+  <% alternate_names = [@postal_code.name_km.presence, *aliases.first(10)].compact %>
   {
     "@context": "https://schema.org",
     "@type": "AdministrativeArea",
     "name": "<%= @postal_code.name_en %>",
-    <% if @postal_code.name_km.present? %>"alternateName": "<%= @postal_code.name_km %>",<% end %>
+    <% if alternate_names.any? %>"alternateName": <%= alternate_names.to_json.html_safe %>,<% end %>
     "address": {
       "@type": "PostalAddress",
       "postalCode": "<%= @postal_code.postal_code %>",
