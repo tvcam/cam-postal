@@ -2614,6 +2614,31 @@ a.result-card {
   transform: scale(0.97);
 }
 
+.tiktok-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  font-family: inherit;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: #000000;
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.tiktok-btn:active {
+  transform: scale(0.97);
+}
+
 /* Explore Button - Full Width CTA */
 .destiny-explore-btn {
   display: flex;
@@ -2829,13 +2854,13 @@ a.result-card {
   }
 
   .category-buttons {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 0.75rem;
   }
 
   .category-btn {
-    padding: 1rem 0.75rem;
-    min-height: 80px;
+    padding: 1rem;
+    min-height: 85px;
     border-radius: var(--radius);
   }
 
@@ -2871,9 +2896,10 @@ a.result-card {
   }
 
   .share-btn-card,
-  .youtube-btn {
+  .youtube-btn,
+  .tiktok-btn {
     flex: none;
-    min-width: 140px;
+    min-width: 120px;
   }
 
   .destiny-explore-btn {
@@ -2896,16 +2922,17 @@ a.result-card {
 /* Large Desktop */
 @media (min-width: 900px) {
   .surprise-page {
-    max-width: 720px;
+    max-width: 700px;
   }
 
   .category-buttons {
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
 
   .category-btn {
-    padding: 1.25rem 1rem;
-    min-height: 90px;
+    padding: 1.25rem;
+    min-height: 95px;
   }
 
   .category-emoji {

@@ -16,6 +16,7 @@ class SurpriseController < ApplicationController
     @tagline = @destination.random_tagline
     @share_text = @destination.share_text
     @youtube_url = @destination.youtube_search_url
+    @tiktok_url = @destination.tiktok_search_url
 
     respond_to do |format|
       format.html

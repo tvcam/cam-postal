@@ -225,8 +225,32 @@ module ProvinceVibes
     TEXT
   end
 
-  def youtube_search_url
-    query = "#{vibe[:name]} Cambodia travel"
+  def youtube_search_url(locale: I18n.locale)
+    query = build_search_query(locale, "travel")
     "https://www.youtube.com/results?search_query=#{CGI.escape(query)}"
+  end
+
+  def tiktok_search_url(locale: I18n.locale)
+    query = build_search_query(locale)
+    "https://www.tiktok.com/search?q=#{CGI.escape(query)}"
+  end
+
+  private
+
+  def build_search_query(locale, suffix = nil)
+    province_name = vibe[:name]
+    case locale.to_sym
+    when :km
+      # Khmer: use Khmer name if available, plus ប្រទេសកម្ពុជា (Cambodia)
+      khmer_name = name_km.presence || province_name
+      base = "#{khmer_name} កម្ពុជា"
+      suffix ? "#{base} ទេសចរណ៍" : base  # ទេសចរណ៍ = tourism/travel
+    when :fr
+      base = "#{province_name} Cambodge"
+      suffix ? "#{base} voyage" : base
+    else
+      base = "#{province_name} Cambodia"
+      suffix ? "#{base} #{suffix}" : base
+    end
   end
 end
