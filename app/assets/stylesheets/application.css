@@ -2566,13 +2566,16 @@ a.result-card {
 /* Destiny Actions - Full Width Buttons */
 .destiny-actions {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 0.75rem;
 }
 
 .share-btn-card,
-.youtube-btn {
-  flex: 1;
+.youtube-btn,
+.tiktok-btn {
+  flex: 1 1 calc(50% - 0.25rem);
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2615,24 +2618,10 @@ a.result-card {
 }
 
 .tiktok-btn {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.875rem 1rem;
-  font-size: 0.9375rem;
-  font-weight: 600;
-  font-family: inherit;
-  border: none;
-  border-radius: var(--radius-sm);
   background: #000000;
   color: white;
   text-decoration: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: transform 0.1s, box-shadow 0.1s;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .tiktok-btn:active {
