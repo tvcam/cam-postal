@@ -1,4 +1,6 @@
 class LocaleController < ApplicationController
+  skip_around_action :switch_locale
+
   def switch
     locale = params[:locale]&.to_sym
 

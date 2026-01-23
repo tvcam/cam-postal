@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
   rescue_from ActionController::ParameterMissing, with: :render_bad_request
 
   private
-
+  
   def switch_locale(&action)
     locale = params[:locale] || session[:locale] || cookies[:locale] || extract_locale_from_accept_language_header || I18n.default_locale
     locale = locale.to_s.to_sym
