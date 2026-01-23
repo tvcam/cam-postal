@@ -168,15 +168,15 @@
               <span class="current-lang"><%= I18n.locale.to_s.upcase %></span>
             </button>
             <div class="language-dropdown" data-language-target="dropdown" style="display: none;">
-              <%= link_to switch_locale_path(:en), class: "lang-option #{'active' if I18n.locale == :en}" do %>
+              <%= link_to switch_locale_path(:en), class: "lang-option #{'active' if I18n.locale == :en}", data: { turbo: false } do %>
                 <span class="lang-flag">🇺🇸</span>
                 <span class="lang-name">English</span>
               <% end %>
-              <%= link_to switch_locale_path(:km), class: "lang-option #{'active' if I18n.locale == :km}" do %>
+              <%= link_to switch_locale_path(:km), class: "lang-option #{'active' if I18n.locale == :km}", data: { turbo: false } do %>
                 <span class="lang-flag">🇰🇭</span>
                 <span class="lang-name">ខ្មែរ</span>
               <% end %>
-              <%= link_to switch_locale_path(:fr), class: "lang-option #{'active' if I18n.locale == :fr}" do %>
+              <%= link_to switch_locale_path(:fr), class: "lang-option #{'active' if I18n.locale == :fr}", data: { turbo: false } do %>
                 <span class="lang-flag">🇫🇷</span>
                 <span class="lang-name">Français</span>
               <% end %>
