@@ -36,7 +36,12 @@ class LocationsController < ApplicationController
   private
 
   def find_province_by_slug(slug)
-    PostalCode.provinces.find { |p| p.name_en.parameterize == slug }
+    PostalCode.provinces.find do |p|
+      full_slug = p.name_en.parameterize
+      # Match full slug or slug without "-province" / "-capital" suffix
+      base_slug = full_slug.sub(/-(?:province|capital)\z/, "")
+      full_slug == slug || base_slug == slug
+    end
   end
 
   def find_district_by_slug(slug, province)
@@ -44,6 +49,11 @@ class LocationsController < ApplicationController
 
     PostalCode.districts
               .where("postal_code LIKE ?", "#{province.postal_code[0, 2]}%")
-              .find { |d| d.name_en.parameterize == slug }
+              .find do |d|
+                full_slug = d.name_en.parameterize
+                # Match full slug or slug without "-district" / "-municipality" suffix
+                base_slug = full_slug.sub(/-(?:district|municipality)\z/, "")
+                full_slug == slug || base_slug == slug
+              end
   end
 end
