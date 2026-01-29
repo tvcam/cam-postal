@@ -1,5 +1,5 @@
 # Cambodia Postal Code Directory
-# https://cam-postal.gotabs.net
+# https://cambo-postal.com
 
 # Allow all crawlers
 User-agent: *
@@ -38,4 +38,4 @@ Allow: /
 # llms-full.txt - Complete postal code database in plain text
 
 # Sitemap
-Sitemap: https://cam-postal.gotabs.net/sitemap.xml
+Sitemap: https://cambo-postal.com/sitemap.xml

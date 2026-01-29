@@ -219,7 +219,7 @@ module ProvinceVibes
       "#{random_tagline}"
 
       Let fate decide YOUR adventure 👇
-      cam-postal.gotabs.net/surprise
+      cambo-postal.com/surprise
 
       #CambodiaTravel #WhereToGo #RandomAdventure
     TEXT

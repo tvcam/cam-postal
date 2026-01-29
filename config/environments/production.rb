@@ -1,6 +1,9 @@
 require "active_support/core_ext/integer/time"
+require_relative "../../app/middleware/domain_redirect"
 
 Rails.application.configure do
+  # Redirect old domain to new primary domain
+  config.middleware.insert_before 0, DomainRedirect
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.

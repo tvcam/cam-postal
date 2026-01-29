@@ -23,25 +23,25 @@
         "@type": "ListItem",
         "position": 1,
         "name": "<%= t('breadcrumb.home') %>",
-        "item": "https://cam-postal.gotabs.net/"
+        "item": "https://cambo-postal.com/"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "<%= t('breadcrumb.provinces') %>",
-        "item": "https://cam-postal.gotabs.net/provinces"
+        "item": "https://cambo-postal.com/provinces"
       }<% if @postal_code.province %>,
       {
         "@type": "ListItem",
         "position": 3,
         "name": "<%= @postal_code.province.name_en %>",
-        "item": "https://cam-postal.gotabs.net/provinces/<%= @postal_code.province.name_en.parameterize %>"
+        "item": "https://cambo-postal.com/provinces/<%= @postal_code.province.name_en.parameterize %>"
       }<% end %><% if @postal_code.district? || @postal_code.commune? %><% if @postal_code.district %>,
       {
         "@type": "ListItem",
         "position": <%= @postal_code.commune? ? 4 : 4 %>,
         "name": "<%= @postal_code.commune? ? @postal_code.district.name_en : @postal_code.name_en %>",
-        "item": "https://cam-postal.gotabs.net/provinces/<%= @postal_code.province&.name_en&.parameterize %>/<%= (@postal_code.commune? ? @postal_code.district : @postal_code).name_en.parameterize %>"
+        "item": "https://cambo-postal.com/provinces/<%= @postal_code.province&.name_en&.parameterize %>/<%= (@postal_code.commune? ? @postal_code.district : @postal_code).name_en.parameterize %>"
       }<% end %><% end %><% if @postal_code.commune? %>,
       {
         "@type": "ListItem",

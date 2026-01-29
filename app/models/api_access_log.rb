@@ -5,7 +5,7 @@ class ApiAccessLog < ApplicationRecord
   scope :this_month, -> { where("created_at >= ?", 1.month.ago) }
 
   # Domains to exclude from logging (our own app)
-  OWN_DOMAINS = %w[cam-postal.gotabs.net localhost 127.0.0.1].freeze
+  OWN_DOMAINS = %w[cambo-postal.com localhost 127.0.0.1].freeze
 
   def self.log_access(endpoint:, ip_address:, user_agent:, referer: nil)
     # Skip logging for our own app requests

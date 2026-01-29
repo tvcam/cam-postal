@@ -26,7 +26,7 @@
     <meta name="keywords" content="<%= t('site.keywords') %>">
     <meta name="author" content="Gotabs Consulting">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://cam-postal.gotabs.net<%= request.path %>">
+    <link rel="canonical" href="https://cambo-postal.com<%= request.path %>">
 
     <!-- Open Graph -->
     <meta property="og:title" content="<%= content_for(:og_title) || t('site.name') %>">
@@ -36,9 +36,9 @@
     <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="km_KH">
     <meta property="og:locale:alternate" content="fr_FR">
-    <meta property="og:url" content="https://cam-postal.gotabs.net<%= request.fullpath %>">
+    <meta property="og:url" content="https://cambo-postal.com<%= request.fullpath %>">
     <meta property="og:site_name" content="<%= t('site.name') %>">
-    <meta property="og:image" content="https://cam-postal.gotabs.net/icon-v3.png">
+    <meta property="og:image" content="https://cambo-postal.com/icon-v3.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
     <meta property="og:image:alt" content="<%= t('site.name') %>">
@@ -47,19 +47,19 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="<%= content_for(:og_title) || t('site.name') %>">
     <meta name="twitter:description" content="<%= content_for(:og_description) || t('site.description') %>">
-    <meta name="twitter:image" content="https://cam-postal.gotabs.net/icon-v3.png">
+    <meta name="twitter:image" content="https://cambo-postal.com/icon-v3.png">
 
     <!-- Hreflang for multilingual support -->
     <% base_path = request.path == '/' ? '' : request.path %>
-    <link rel="alternate" hreflang="en" href="https://cam-postal.gotabs.net<%= base_path %>?locale=en">
-    <link rel="alternate" hreflang="km" href="https://cam-postal.gotabs.net<%= base_path %>?locale=km">
-    <link rel="alternate" hreflang="fr" href="https://cam-postal.gotabs.net<%= base_path %>?locale=fr">
-    <link rel="alternate" hreflang="x-default" href="https://cam-postal.gotabs.net<%= base_path %>">
+    <link rel="alternate" hreflang="en" href="https://cambo-postal.com<%= base_path %>?locale=en">
+    <link rel="alternate" hreflang="km" href="https://cambo-postal.com<%= base_path %>?locale=km">
+    <link rel="alternate" hreflang="fr" href="https://cambo-postal.com<%= base_path %>?locale=fr">
+    <link rel="alternate" hreflang="x-default" href="https://cambo-postal.com<%= base_path %>">
 
     <!-- AI/LLM-friendly metadata -->
-    <link rel="alternate" type="text/plain" href="https://cam-postal.gotabs.net/llms.txt" title="LLM Information">
-    <link rel="alternate" type="text/plain" href="https://cam-postal.gotabs.net/llms-full.txt" title="Complete Postal Code Data">
-    <link rel="alternate" type="application/json" href="https://cam-postal.gotabs.net/data.json" title="Postal Code API">
+    <link rel="alternate" type="text/plain" href="https://cambo-postal.com/llms.txt" title="LLM Information">
+    <link rel="alternate" type="text/plain" href="https://cambo-postal.com/llms-full.txt" title="Complete Postal Code Data">
+    <link rel="alternate" type="application/json" href="https://cambo-postal.com/data.json" title="Postal Code API">
     <meta name="ai:data_sources" content="llms.txt, llms-full.txt, data.json">
     <meta name="dc.title" content="<%= t('site.name') %>">
     <meta name="dc.creator" content="Gotabs Consulting">
@@ -76,14 +76,14 @@
       "@type": "WebSite",
       "name": "<%= t('site.name') %>",
       "alternateName": ["Cambodia Postal", "កូដប្រៃសណីយ៍កម្ពុជា", "Code Postal Cambodge"],
-      "url": "https://cam-postal.gotabs.net",
+      "url": "https://cambo-postal.com",
       "description": "<%= t('site.description') %>",
       "inLanguage": ["en", "km", "fr"],
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://cam-postal.gotabs.net/search?q={search_term_string}"
+          "urlTemplate": "https://cambo-postal.com/search?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
@@ -97,7 +97,7 @@
       "@type": "Organization",
       "name": "Gotabs Consulting",
       "url": "https://gotabs.net",
-      "logo": "https://cam-postal.gotabs.net/icon-v3.png"
+      "logo": "https://cambo-postal.com/icon-v3.png"
     }
     </script>
 
@@ -108,7 +108,7 @@
       "@type": "WebApplication",
       "name": "<%= t('site.name') %>",
       "description": "<%= t('site.description') %>",
-      "url": "https://cam-postal.gotabs.net",
+      "url": "https://cambo-postal.com",
       "applicationCategory": "UtilityApplication",
       "operatingSystem": "Any",
       "offers": {

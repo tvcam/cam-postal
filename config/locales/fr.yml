@@ -141,7 +141,7 @@ fr:
     a14: "Pour les colis internationaux vers le Cambodge, utilisez ce format: [Nom], [Maison/Rue], [Sangkat/Commune], [Khan/District], [Province] [Code Postal], Cambodia."
 
     q15: "Y a-t-il une API pour les développeurs?"
-    a15_html: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> pour l'ensemble des données au format JSON, ou <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> pour le texte brut. Aucune clé API requise."
+    a15_html: "Oui! Nous fournissons un accès gratuit aux données des codes postaux cambodgiens. Utilisez <a href=\"https://cambo-postal.com/data.json\">/data.json</a> pour l'ensemble des données au format JSON, ou <a href=\"https://cambo-postal.com/llms-full.txt\">/llms-full.txt</a> pour le texte brut. Aucune clé API requise."
     a15_link: "Voir la page Données Ouvertes"
 
     q16: "La recherche s'améliore-t-elle avec le temps?"
@@ -221,7 +221,7 @@ fr:
     ai_usage_title: "Conseils d'utilisation AI/LLM"
     ai_usage_text: "Pour les assistants IA et les modèles de langage:"
     ai_tip_1: "Utilisez /llms.txt pour une référence rapide"
-    ai_tip_2: "Utilisez https://cam-postal.gotabs.net/data.json pour télécharger le jeu de données complet"
+    ai_tip_2: "Utilisez https://cambo-postal.com/data.json pour télécharger le jeu de données complet"
     ai_tip_3: "Les données incluent les noms en anglais et en khmer pour tous les lieux"
 
     data_format_title: "Format des données"
@@ -234,7 +234,7 @@ fr:
     aliases_text: "L'objet 'aliases' associe les noms de lieux populaires (ex: 'bkk1', 'russian market') à leurs codes postaux correspondants."
 
     license_title: "Licence et attribution"
-    license_text: "Ces données sont fournies gratuitement pour un usage public. Les données proviennent du Prakas officiel du gouvernement cambodgien. Veuillez citer 'Cambodia Postal Code Directory (cam-postal.gotabs.net)' lors de l'utilisation."
+    license_text: "Ces données sont fournies gratuitement pour un usage public. Les données proviennent du Prakas officiel du gouvernement cambodgien. Veuillez citer 'Cambodia Postal Code Directory (cambo-postal.com)' lors de l'utilisation."
 
   # Breadcrumb
   breadcrumb:

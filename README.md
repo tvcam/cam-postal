@@ -2,7 +2,7 @@
 
 A fast, bilingual (English/Khmer) web application for searching Cambodian postal codes across all 25 provinces, districts, and communes.
 
-**Live site:** https://cam-postal.gotabs.net
+**Live site:** https://cambo-postal.com
 
 ## Features
 

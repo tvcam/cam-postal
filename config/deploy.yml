@@ -13,6 +13,7 @@ registry:
 proxy:
   ssl: true
   hosts:
+    - cambo-postal.com
     - cam-postal.gotabs.net
 env:
   secret:

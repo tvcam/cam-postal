@@ -141,7 +141,7 @@ en:
     a14: "For international packages coming to Cambodia, use this format: [Name], [House/Street], [Sangkat/Commune], [Khan/District], [Province] [Postal Code], Cambodia. Example: John Doe, #123 Street 271, Sangkat Tuol Tompong 2, Khan Chamkar Mon, Phnom Penh 120307, Cambodia."
 
     q15: "Is there an API for developers?"
-    a15_html: "Yes! We provide free access to Cambodia postal code data. Use <a href=\"https://cam-postal.gotabs.net/data.json\">/data.json</a> for the complete dataset in JSON format, or <a href=\"https://cam-postal.gotabs.net/llms-full.txt\">/llms-full.txt</a> for plain text. No API key required."
+    a15_html: "Yes! We provide free access to Cambodia postal code data. Use <a href=\"https://cambo-postal.com/data.json\">/data.json</a> for the complete dataset in JSON format, or <a href=\"https://cambo-postal.com/llms-full.txt\">/llms-full.txt</a> for plain text. No API key required."
     a15_link: "View Open Data page"
 
     q16: "Does the search get smarter over time?"
@@ -221,7 +221,7 @@ en:
     ai_usage_title: "AI/LLM Usage Tips"
     ai_usage_text: "For AI assistants and language models:"
     ai_tip_1: "Use /llms.txt for quick reference and overview"
-    ai_tip_2: "Use https://cam-postal.gotabs.net/data.json to download the full dataset for comprehensive queries"
+    ai_tip_2: "Use https://cambo-postal.com/data.json to download the full dataset for comprehensive queries"
     ai_tip_3: "The data includes both English and Khmer names for all locations"
 
     data_format_title: "Data Format"
@@ -234,7 +234,7 @@ en:
     aliases_text: "The 'aliases' object maps popular landmark names (e.g., 'bkk1', 'russian market') to their corresponding postal codes for easy lookup."
 
     license_title: "License & Attribution"
-    license_text: "This data is provided free for public use. Data is sourced from the official Cambodian government Prakas. Please cite 'Cambodia Postal Code Directory (cam-postal.gotabs.net)' when using this data."
+    license_text: "This data is provided free for public use. Data is sourced from the official Cambodian government Prakas. Please cite 'Cambodia Postal Code Directory (cambo-postal.com)' when using this data."
 
   # Breadcrumb
   breadcrumb:

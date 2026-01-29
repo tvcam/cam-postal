@@ -9,7 +9,7 @@
  * 3. Search can find results
  */
 
-const DATA_URL = process.env.DATA_URL || "https://cam-postal.gotabs.net/data.json"
+const DATA_URL = process.env.DATA_URL || "https://cambo-postal.com/data.json"
 
 async function runTests() {
   console.log("🧪 Running frontend search tests...\n")

@@ -14,18 +14,18 @@ Example: 120101 = Phnom Penh (12) > Chamkar Mon District (01) > Tonle Bassac Com
 
 ## Data Access
 
-- Website: https://cam-postal.gotabs.net
-- Search API: https://cam-postal.gotabs.net/search?q={query}
-- Full Data (JSON): https://cam-postal.gotabs.net/data.json
-- Full Data (Text): https://cam-postal.gotabs.net/llms-full.txt
-- Sitemap: https://cam-postal.gotabs.net/sitemap.xml
+- Website: https://cambo-postal.com
+- Search API: https://cambo-postal.com/search?q={query}
+- Full Data (JSON): https://cambo-postal.com/data.json
+- Full Data (Text): https://cambo-postal.com/llms-full.txt
+- Sitemap: https://cambo-postal.com/sitemap.xml
 
 ## Key Pages
 
-- Home/Search: https://cam-postal.gotabs.net/
-- All Provinces: https://cam-postal.gotabs.net/provinces
-- FAQ: https://cam-postal.gotabs.net/faq
-- Individual codes: https://cam-postal.gotabs.net/p/{postal_code}
+- Home/Search: https://cambo-postal.com/
+- All Provinces: https://cambo-postal.com/provinces
+- FAQ: https://cambo-postal.com/faq
+- Individual codes: https://cambo-postal.com/p/{postal_code}
 
 ## Province Codes
 
